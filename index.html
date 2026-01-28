@@ -1,26 +1,318 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Work in Progress</title>
-    <style>
-      body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: system-ui, sans-serif;
-        background: #f7f7f7;
-        color: #333;
-      }
-    </style>
-  </head>
-  <body>
-    <div>
-      <h1>🚧 Work in Progress</h1>
-      <p>This page is under construction.</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes">
+  <meta name="keywords" content="Scene Generation, Simulation, Indoor Scenes, VLM, Agents">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tags for link preview -->
+  <meta property="og:title" content="SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes" />
+  <meta property="og:description"
+    content="A hierarchical agentic framework that generates simulation-ready indoor environments from natural language prompts." />
+  <meta property="og:image" content="static/images/teaser.webp" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="static/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png" />
+
+  <title>SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes</title>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css" />
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/vis.js" defer></script>
+  <script type="text/javascript" src="./static/slick/slick.min.js"></script>
+
+  <!-- Prevent model-viewer interactions from triggering carousel navigation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('model-viewer').forEach(viewer => {
+        viewer.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+        viewer.addEventListener('mousedown', e => e.stopPropagation());
+        viewer.addEventListener('pointerdown', e => e.stopPropagation());
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-  </body>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <!-- Removed home link and More Research dropdown for anonymous submission -->
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              <img src="./static/images/symbol.svg" alt="SceneSmith symbol" style="height: 1em; vertical-align: middle; margin-right: 0.1em;">SceneSmith<br>Agentic Generation of Simulation-Ready Indoor Scenes
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Anonymous Authors
+              </span>
+            </div>
+
+            <!-- No affiliations for anonymous submission -->
+
+            <!-- No venue text for anonymous submission -->
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- arXiv Link (Coming Soon) -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark has-tooltip-top"
+                    style="color: gray; pointer-events: auto; cursor: default;" data-tooltip="Coming Soon">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link (Coming Soon) -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark has-tooltip-top"
+                    style="color: gray; pointer-events: auto; cursor: default;" data-tooltip="Coming Soon">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link (Coming Soon) -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark has-tooltip-top"
+                    style="color: gray; pointer-events: auto; cursor: default;" data-tooltip="Coming Soon">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser Video Section -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <!-- Placeholder for teaser video -->
+          <div class="content has-text-centered"
+            style="background-color: #f5f5f5; border-radius: 8px; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center;">
+            <p style="color: #888;">
+              <i class="fab fa-youtube fa-3x"></i><br><br>
+              Teaser video placeholder
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Simulation has become a key tool for training and evaluating home robots at scale, yet existing
+              environments fail to capture the diversity and physical complexity of real indoor spaces. Current scene
+              synthesis methods produce sparsely furnished rooms that lack the dense clutter, articulated furniture, and
+              physical properties essential for robotic manipulation. We introduce SceneSmith, a hierarchical agentic
+              framework that generates simulation-ready indoor environments from natural language prompts. SceneSmith
+              constructs scenes through successive stages—from architectural layout to furniture placement to small
+              object population—each implemented as an interaction among VLM agents: designer, critic, and orchestrator.
+              The framework tightly integrates asset generation through text-to-3D synthesis for static objects, dataset
+              retrieval for articulated objects, and physical property estimation. SceneSmith generates 3-6x more
+              objects than prior methods, with no inter-object collisions and 96% of objects remaining stable under
+              physics simulation. In a user study with 205 participants, it achieves 92% average realism and 91%
+              average prompt faithfulness win rates against baselines. We further demonstrate that these environments
+              can be used in an end-to-end pipeline for automatic robot policy evaluation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+    </div>
+  </section>
+
+
+  <!-- Example Scene Section -->
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <h2 class="title is-3 has-text-centered">Example Generated Scene</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/teaser.webp" alt="SceneSmith teaser showing a generated community center scene" style="width: 100%;">
+          </div>
+          <div class="content has-text-justified" style="margin-top: 1em;">
+            <p>
+              <strong>Fully automated text-to-scene generation.</strong> This entire community center was generated by
+              SceneSmith without any human intervention, from a single 151-word text prompt. Beyond explicitly specified elements, SceneSmith places additional
+              objects from inferred contextual information, such as ping pong paddles and balls placed near a ping pong
+              table. Objects are generated on-demand, are fully separable (non-composite), and include estimated
+              physical properties, enabling direct interaction within a simulation. The resulting scenes are immediately
+              usable in arbitrary physics simulators (robots added for demonstration).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualitative Results Section (Placeholder) -->
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+          <div class="content has-text-centered">
+            <p>
+              Comparison with baseline methods and additional generated scenes.
+            </p>
+          </div>
+          <br>
+          <!-- Placeholder for comparison figures -->
+          <div class="content has-text-centered" style="padding: 5em; background-color: #f5f5f5; border-radius: 8px;">
+            <p style="color: #888;">
+              <i class="fas fa-images fa-3x"></i><br><br>
+              Comparison figures placeholder
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 3D Scenes Section (Placeholder) -->
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <h2 class="title is-3 has-text-centered">Interactive Generated Scenes</h2>
+          <div class="content has-text-centered">
+            <p>
+              The following scenes were generated by SceneSmith. Use mouse controls to interact with the scenes.
+            </p>
+          </div>
+          <br>
+
+          <!-- Placeholder carousel structure -->
+          <div id="simulation-carousel" class="carousel results-carousel">
+            <div class="results-item">
+              <h2 class="title is-5 has-text-centered">Scene 1</h2>
+              <div class="column">
+                <div class="content is-centered"
+                  style="padding: 3em; background-color: #f5f5f5; border-radius: 8px; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center;">
+                  <p style="color: #888; text-align: center;">
+                    <i class="fas fa-cube fa-3x"></i><br><br>
+                    3D model placeholder
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="results-item">
+              <h2 class="title is-5 has-text-centered">Scene 2</h2>
+              <div class="column">
+                <div class="content is-centered"
+                  style="padding: 3em; background-color: #f5f5f5; border-radius: 8px; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center;">
+                  <p style="color: #888; text-align: center;">
+                    <i class="fas fa-cube fa-3x"></i><br><br>
+                    3D model placeholder
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="results-item">
+              <h2 class="title is-5 has-text-centered">Scene 3</h2>
+              <div class="column">
+                <div class="content is-centered"
+                  style="padding: 3em; background-color: #f5f5f5; border-radius: 8px; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center;">
+                  <p style="color: #888; text-align: center;">
+                    <i class="fas fa-cube fa-3x"></i><br><br>
+                    3D model placeholder
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BibTeX section hidden for anonymous submission -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
