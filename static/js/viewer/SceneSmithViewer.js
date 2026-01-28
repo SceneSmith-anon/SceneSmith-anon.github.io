@@ -9,7 +9,7 @@ import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 
-import { SelectionEffect } from './SelectionEffect.js';
+import { OutlineEffect } from './OutlineEffect.js';
 import { ObjectPicker } from './ObjectPicker.js';
 import { IsolatedViewer } from './IsolatedViewer.js';
 import { SceneCache } from './SceneCache.js';
@@ -24,7 +24,7 @@ export class SceneSmithViewer {
       onSelect: options.onSelect || null,
       onClearSelection: options.onClearSelection || null,
       outlineColor: options.outlineColor || '#e91e63',
-      outlineThickness: options.outlineThickness || 30,
+      outlineThickness: options.outlineThickness || 4,
       ...options
     };
 
@@ -38,7 +38,7 @@ export class SceneSmithViewer {
     this.isInitialized = false;
 
     // Components
-    this.selectionEffect = null;
+    this.outlineEffect = null;
     this.picker = null;
     this.isolatedViewer = null;
     this.cache = new SceneCache(5);
@@ -94,8 +94,8 @@ export class SceneSmithViewer {
     // Add lights
     this.setupLights();
 
-    // Create selection effect (will be initialized after scene is added)
-    this.selectionEffect = null;
+    // Create outline effect (lazy initialized on first selection)
+    this.outlineEffect = null;
 
     // Create picker
     this.picker = new ObjectPicker(this.camera, this.renderer.domElement);
@@ -307,15 +307,16 @@ export class SceneSmithViewer {
 
     this.selectedObject = object;
 
-    // Initialize selection effect if needed
-    if (!this.selectionEffect) {
-      this.selectionEffect = new SelectionEffect(this.scene, {
-        color: this.options.outlineColor
+    // Initialize outline effect if needed
+    if (!this.outlineEffect) {
+      this.outlineEffect = new OutlineEffect({
+        color: this.options.outlineColor,
+        thickness: this.options.outlineThickness,
       });
     }
 
-    // Update selection effect
-    this.selectionEffect.setSelection(object);
+    // Update outline effect
+    this.outlineEffect.setSelection(object);
 
     // Show in isolated viewer
     if (this.isolatedViewer) {
@@ -335,8 +336,8 @@ export class SceneSmithViewer {
   clearSelection() {
     this.selectedObject = null;
 
-    if (this.selectionEffect) {
-      this.selectionEffect.clearSelection();
+    if (this.outlineEffect) {
+      this.outlineEffect.clearSelection();
     }
 
     if (this.isolatedViewer) {
@@ -499,13 +500,13 @@ export class SceneSmithViewer {
 
     this.controls.update();
 
-    // Update selection effect
-    if (this.selectionEffect) {
-      this.selectionEffect.update();
-    }
-
     // Render main scene
     this.renderer.render(this.scene, this.camera);
+
+    // Render outline effect on top
+    if (this.outlineEffect && this.selectedObject) {
+      this.outlineEffect.render(this.renderer, this.scene, this.camera);
+    }
   }
 
   /**
@@ -531,8 +532,8 @@ export class SceneSmithViewer {
     }
 
     // Dispose components
-    if (this.selectionEffect) {
-      this.selectionEffect.dispose();
+    if (this.outlineEffect) {
+      this.outlineEffect.dispose();
     }
 
     if (this.isolatedViewer) {
