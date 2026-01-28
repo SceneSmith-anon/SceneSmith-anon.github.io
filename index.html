@@ -39,6 +39,17 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/viewer.css">
+
+  <!-- Three.js import map -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+    }
+  }
+  </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -87,7 +98,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
-              <img src="./static/images/symbol.svg" alt="SceneSmith symbol" style="height: 1em; vertical-align: middle; margin-right: 0.1em;">SceneSmith<br>Agentic Generation of Simulation-Ready Indoor Scenes
+              <img src="./static/images/symbol.svg" alt="SceneSmith symbol" style="height: 1em; vertical-align: middle; margin-right: 0.1em;">SceneSmith:<br>Agentic Generation of Simulation-Ready Indoor Scenes
             </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
@@ -212,82 +223,201 @@
     </div>
   </section>
 
-  <!-- Qualitative Results Section (Placeholder) -->
-  <section class="section">
+  <!-- Room-Scale Scenes Section -->
+  <section class="section viewer-section" id="room-scenes-section">
     <div class="container is-max-widescreen">
-      <div class="columns is-centered">
-        <div class="column is-10">
-          <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
-          <div class="content has-text-centered">
-            <p>
-              Comparison with baseline methods and additional generated scenes.
-            </p>
+      <h2 class="title is-3 has-text-centered">Room-Scale Scenes</h2>
+      <div class="content has-text-centered">
+        <p>
+          Select a scene to explore. Click objects to view them in isolation.
+        </p>
+        <p class="has-text-grey is-size-7 quality-note">
+          <i class="fas fa-info-circle"></i> Scenes shown are slightly lower quality than originals due to compression, mesh decimation, and texture downsampling for faster web loading.
+        </p>
+      </div>
+
+      <!-- Scene selector -->
+      <div class="scene-selector-wrapper">
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <div class="select is-fullwidth">
+              <select id="room-selector">
+                <option value="">Choose a scene...</option>
+              </select>
+            </div>
           </div>
-          <br>
-          <!-- Placeholder for comparison figures -->
-          <div class="content has-text-centered" style="padding: 5em; background-color: #f5f5f5; border-radius: 8px;">
-            <p style="color: #888;">
-              <i class="fas fa-images fa-3x"></i><br><br>
-              Comparison figures placeholder
-            </p>
+          <div class="control">
+            <button class="button is-info" id="room-random-btn" title="Load random scene">
+              <span class="icon"><i class="fas fa-random"></i></span>
+            </button>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control has-icons-left">
+            <input class="input" type="text" id="room-search" placeholder="Type to filter scenes...">
+            <span class="icon is-left"><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prompt display -->
+      <div class="notification is-info is-light prompt-display" id="room-prompt">
+        <span class="prompt-placeholder">Select a scene to see its prompt</span>
+      </div>
+
+      <!-- Viewer layout -->
+      <div class="columns">
+        <div class="column is-8">
+          <div class="box viewer-box" id="room-viewer">
+            <!-- Progress bar -->
+            <div class="progress-wrapper" id="room-progress">
+              <p class="progress-text">Loading scene...</p>
+              <progress class="progress is-primary" max="100" value="0">0%</progress>
+            </div>
+            <!-- Floating controls -->
+            <div class="viewer-controls">
+              <button class="button is-small" id="room-help-btn" title="Help">
+                <span class="icon"><i class="fas fa-question"></i></span>
+              </button>
+              <button class="button is-small" id="room-frame-btn" title="Frame selected (F)" style="display: none;">
+                <span class="icon"><i class="fas fa-crosshairs"></i></span>
+              </button>
+              <button class="button is-small" id="room-hide-btn" title="Hide selected (H)" style="display: none;">
+                <span class="icon"><i class="fas fa-eye-slash"></i></span>
+              </button>
+              <button class="button is-small is-warning" id="room-show-all-btn" title="Show all hidden" style="display: none;">
+                <span class="icon"><i class="fas fa-eye"></i></span>
+                <span>Show <span id="room-hidden-count">0</span></span>
+              </button>
+              <button class="button is-small" id="room-reset-btn" title="Reset camera (R)">
+                <span class="icon"><i class="fas fa-undo"></i></span>
+              </button>
+              <button class="button is-small" id="room-fullscreen-btn" title="Fullscreen">
+                <span class="icon"><i class="fas fa-expand"></i></span>
+              </button>
+            </div>
+            <!-- Help tooltip -->
+            <div class="help-tooltip" id="room-help">
+              <ul>
+                <li><strong>Rotate:</strong> Left-click + drag</li>
+                <li><strong>Pan:</strong> Right-click + drag</li>
+                <li><strong>Zoom:</strong> Scroll wheel</li>
+                <li><strong>Select:</strong> Click on object</li>
+                <li><kbd>F</kbd> Frame selected object</li>
+                <li><kbd>H</kbd> Hide selected object</li>
+                <li><kbd>R</kbd> Reset camera</li>
+                <li><kbd>Esc</kbd> Clear selection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="box selection-panel">
+            <h4 class="title is-5">Selected Object</h4>
+            <p id="room-no-selection" class="no-selection">Click an object in the scene to select it</p>
+            <div id="room-selection-info" class="is-hidden">
+              <div class="isolated-viewer" id="room-isolated-viewer"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive 3D Scenes Section (Placeholder) -->
-  <section class="section">
+  <!-- House-Scale Scenes Section -->
+  <section class="section viewer-section" id="house-scenes-section">
     <div class="container is-max-widescreen">
-      <div class="columns is-centered">
-        <div class="column is-10">
-          <h2 class="title is-3 has-text-centered">Interactive Generated Scenes</h2>
-          <div class="content has-text-centered">
-            <p>
-              The following scenes were generated by SceneSmith. Use mouse controls to interact with the scenes.
-            </p>
+      <h2 class="title is-3 has-text-centered">House-Scale Scenes</h2>
+      <div class="content has-text-centered">
+        <p>
+          Multi-room environments with complex layouts. Select a scene to explore.
+        </p>
+        <p class="has-text-grey is-size-7 quality-note">
+          <i class="fas fa-info-circle"></i> House scenes are larger and may take longer to load.
+        </p>
+      </div>
+
+      <!-- Scene selector -->
+      <div class="scene-selector-wrapper">
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <div class="select is-fullwidth">
+              <select id="house-selector">
+                <option value="">Choose a scene...</option>
+              </select>
+            </div>
           </div>
-          <br>
+          <div class="control">
+            <button class="button is-info" id="house-random-btn" title="Load random scene">
+              <span class="icon"><i class="fas fa-random"></i></span>
+            </button>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control has-icons-left">
+            <input class="input" type="text" id="house-search" placeholder="Type to filter scenes...">
+            <span class="icon is-left"><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+      </div>
 
-          <!-- Placeholder carousel structure -->
-          <div id="simulation-carousel" class="carousel results-carousel">
-            <div class="results-item">
-              <h2 class="title is-5 has-text-centered">Scene 1</h2>
-              <div class="column">
-                <div class="content is-centered"
-                  style="padding: 3em; background-color: #f5f5f5; border-radius: 8px; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center;">
-                  <p style="color: #888; text-align: center;">
-                    <i class="fas fa-cube fa-3x"></i><br><br>
-                    3D model placeholder
-                  </p>
-                </div>
-              </div>
+      <!-- Prompt display -->
+      <div class="notification is-info is-light prompt-display" id="house-prompt">
+        <span class="prompt-placeholder">Select a scene to see its prompt</span>
+      </div>
+
+      <!-- Viewer layout -->
+      <div class="columns">
+        <div class="column is-8">
+          <div class="box viewer-box" id="house-viewer">
+            <!-- Progress bar -->
+            <div class="progress-wrapper" id="house-progress">
+              <p class="progress-text">Loading scene...</p>
+              <progress class="progress is-primary" max="100" value="0">0%</progress>
             </div>
-
-            <div class="results-item">
-              <h2 class="title is-5 has-text-centered">Scene 2</h2>
-              <div class="column">
-                <div class="content is-centered"
-                  style="padding: 3em; background-color: #f5f5f5; border-radius: 8px; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center;">
-                  <p style="color: #888; text-align: center;">
-                    <i class="fas fa-cube fa-3x"></i><br><br>
-                    3D model placeholder
-                  </p>
-                </div>
-              </div>
+            <!-- Floating controls -->
+            <div class="viewer-controls">
+              <button class="button is-small" id="house-help-btn" title="Help">
+                <span class="icon"><i class="fas fa-question"></i></span>
+              </button>
+              <button class="button is-small" id="house-frame-btn" title="Frame selected (F)" style="display: none;">
+                <span class="icon"><i class="fas fa-crosshairs"></i></span>
+              </button>
+              <button class="button is-small" id="house-hide-btn" title="Hide selected (H)" style="display: none;">
+                <span class="icon"><i class="fas fa-eye-slash"></i></span>
+              </button>
+              <button class="button is-small is-warning" id="house-show-all-btn" title="Show all hidden" style="display: none;">
+                <span class="icon"><i class="fas fa-eye"></i></span>
+                <span>Show <span id="house-hidden-count">0</span></span>
+              </button>
+              <button class="button is-small" id="house-reset-btn" title="Reset camera (R)">
+                <span class="icon"><i class="fas fa-undo"></i></span>
+              </button>
+              <button class="button is-small" id="house-fullscreen-btn" title="Fullscreen">
+                <span class="icon"><i class="fas fa-expand"></i></span>
+              </button>
             </div>
-
-            <div class="results-item">
-              <h2 class="title is-5 has-text-centered">Scene 3</h2>
-              <div class="column">
-                <div class="content is-centered"
-                  style="padding: 3em; background-color: #f5f5f5; border-radius: 8px; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center;">
-                  <p style="color: #888; text-align: center;">
-                    <i class="fas fa-cube fa-3x"></i><br><br>
-                    3D model placeholder
-                  </p>
-                </div>
-              </div>
+            <!-- Help tooltip -->
+            <div class="help-tooltip" id="house-help">
+              <ul>
+                <li><strong>Rotate:</strong> Left-click + drag</li>
+                <li><strong>Pan:</strong> Right-click + drag</li>
+                <li><strong>Zoom:</strong> Scroll wheel</li>
+                <li><strong>Select:</strong> Click on object</li>
+                <li><kbd>F</kbd> Frame selected object</li>
+                <li><kbd>H</kbd> Hide selected object</li>
+                <li><kbd>R</kbd> Reset camera</li>
+                <li><kbd>Esc</kbd> Clear selection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="box selection-panel">
+            <h4 class="title is-5">Selected Object</h4>
+            <p id="house-no-selection" class="no-selection">Click an object in the scene to select it</p>
+            <div id="house-selection-info" class="is-hidden">
+              <div class="isolated-viewer" id="house-isolated-viewer"></div>
             </div>
           </div>
         </div>
@@ -296,6 +426,49 @@
   </section>
 
   <!-- BibTeX section hidden for anonymous submission -->
+
+  <!-- Fullscreen Viewer Modal -->
+  <div class="modal" id="viewer-fullscreen-modal">
+    <div class="modal-background" id="fullscreen-backdrop"></div>
+    <div class="modal-content viewer-fullscreen-modal">
+      <div class="notification is-info is-light fullscreen-prompt" id="fullscreen-prompt"></div>
+      <div class="fullscreen-viewer" id="fullscreen-canvas">
+        <!-- Fullscreen floating controls -->
+        <div class="viewer-controls" id="fullscreen-controls">
+          <button class="button is-small" id="fullscreen-help-btn" title="Help">
+            <span class="icon"><i class="fas fa-question"></i></span>
+          </button>
+          <button class="button is-small" id="fullscreen-frame-btn" title="Frame selected (F)" style="display: none;">
+            <span class="icon"><i class="fas fa-crosshairs"></i></span>
+          </button>
+          <button class="button is-small" id="fullscreen-hide-btn" title="Hide selected (H)" style="display: none;">
+            <span class="icon"><i class="fas fa-eye-slash"></i></span>
+          </button>
+          <button class="button is-small is-warning" id="fullscreen-show-all-btn" title="Show all hidden" style="display: none;">
+            <span class="icon"><i class="fas fa-eye"></i></span>
+            <span>Show <span id="fullscreen-hidden-count">0</span></span>
+          </button>
+          <button class="button is-small" id="fullscreen-reset-btn" title="Reset camera (R)">
+            <span class="icon"><i class="fas fa-undo"></i></span>
+          </button>
+        </div>
+        <!-- Fullscreen help tooltip -->
+        <div class="help-tooltip" id="fullscreen-help">
+          <ul>
+            <li><strong>Rotate:</strong> Left-click + drag</li>
+            <li><strong>Pan:</strong> Right-click + drag</li>
+            <li><strong>Zoom:</strong> Scroll wheel</li>
+            <li><strong>Select:</strong> Click on object</li>
+            <li><kbd>F</kbd> Frame selected object</li>
+            <li><kbd>H</kbd> Hide selected object</li>
+            <li><kbd>R</kbd> Reset camera</li>
+            <li><kbd>Esc</kbd> Exit fullscreen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close" id="fullscreen-close-btn"></button>
+  </div>
 
   <footer class="footer">
     <div class="container">
@@ -313,6 +486,393 @@
     </div>
   </footer>
 
+  <!-- 3D Viewer Initialization -->
+  <script type="module">
+    import { SceneSmithViewer } from './static/js/viewer/SceneSmithViewer.js';
+    import { SCENES, getSceneById, searchScenes } from './static/js/viewer/scene-data.js';
+
+    // Helper to truncate prompt for dropdown display
+    function truncatePrompt(prompt, maxLength = 80) {
+      if (prompt.length <= maxLength) return prompt;
+      return prompt.substring(0, maxLength) + '...';
+    }
+
+    // Populate dropdown with scenes
+    function populateDropdown(selectId, scenes) {
+      const select = document.getElementById(selectId);
+      scenes.forEach((scene, index) => {
+        const option = document.createElement('option');
+        option.value = scene.id;
+        option.textContent = truncatePrompt(scene.prompt);
+        option.dataset.prompt = scene.prompt;
+        option.dataset.path = scene.path;
+        select.appendChild(option);
+      });
+    }
+
+    // Filter dropdown based on search query
+    function filterDropdown(selectId, scenes, query) {
+      const select = document.getElementById(selectId);
+      const lowerQuery = query.toLowerCase();
+
+      // Clear existing options except first
+      while (select.options.length > 1) {
+        select.remove(1);
+      }
+
+      // Filter and re-add matching scenes
+      const filtered = query
+        ? scenes.filter(s => s.prompt.toLowerCase().includes(lowerQuery))
+        : scenes;
+
+      filtered.forEach(scene => {
+        const option = document.createElement('option');
+        option.value = scene.id;
+        option.textContent = truncatePrompt(scene.prompt);
+        option.dataset.prompt = scene.prompt;
+        option.dataset.path = scene.path;
+        select.appendChild(option);
+      });
+
+      // Reset selection to show placeholder when searching
+      if (query) {
+        select.selectedIndex = 0;
+      }
+
+      // Show match count feedback
+      const firstOption = select.options[0];
+      if (query) {
+        firstOption.textContent = filtered.length > 0
+          ? `${filtered.length} scene${filtered.length !== 1 ? 's' : ''} found...`
+          : 'No scenes found...';
+      } else {
+        firstOption.textContent = 'Choose a scene...';
+      }
+    }
+
+    // Update prompt display
+    function updatePromptDisplay(promptId, prompt) {
+      const container = document.getElementById(promptId);
+      if (prompt) {
+        container.innerHTML = `<span class="prompt-text">"${prompt}"</span>`;
+      } else {
+        container.innerHTML = '<span class="prompt-placeholder">Select a scene to see its prompt</span>';
+      }
+    }
+
+    // Show/hide progress bar
+    function setProgress(progressId, value, visible) {
+      const wrapper = document.getElementById(progressId);
+      const progress = wrapper.querySelector('progress');
+      if (visible) {
+        wrapper.classList.remove('is-hidden');
+        progress.value = value;
+      } else {
+        wrapper.classList.add('is-hidden');
+      }
+    }
+
+    // Setup a viewer section
+    function setupViewer(prefix, scenes) {
+      const viewer = new SceneSmithViewer(
+        document.getElementById(`${prefix}-viewer`),
+        {
+          isolatedContainer: document.getElementById(`${prefix}-isolated-viewer`),
+          onProgress: (percent) => {
+            setProgress(`${prefix}-progress`, percent, true);
+            if (percent >= 100) {
+              setTimeout(() => setProgress(`${prefix}-progress`, 100, false), 300);
+            }
+          },
+          onSelect: (object, name) => {
+            document.getElementById(`${prefix}-no-selection`).classList.add('is-hidden');
+            document.getElementById(`${prefix}-selection-info`).classList.remove('is-hidden');
+            // Show frame and hide buttons
+            document.getElementById(`${prefix}-frame-btn`).style.display = 'inline-flex';
+            document.getElementById(`${prefix}-hide-btn`).style.display = 'inline-flex';
+            // Also update fullscreen controls if in fullscreen mode
+            if (document.getElementById('viewer-fullscreen-modal').classList.contains('is-active')) {
+              document.getElementById('fullscreen-frame-btn').style.display = 'inline-flex';
+              document.getElementById('fullscreen-hide-btn').style.display = 'inline-flex';
+            }
+          },
+          onClearSelection: () => {
+            document.getElementById(`${prefix}-no-selection`).classList.remove('is-hidden');
+            document.getElementById(`${prefix}-selection-info`).classList.add('is-hidden');
+            // Hide frame and hide buttons
+            document.getElementById(`${prefix}-frame-btn`).style.display = 'none';
+            document.getElementById(`${prefix}-hide-btn`).style.display = 'none';
+            // Also update fullscreen controls if in fullscreen mode
+            if (document.getElementById('viewer-fullscreen-modal').classList.contains('is-active')) {
+              document.getElementById('fullscreen-frame-btn').style.display = 'none';
+              document.getElementById('fullscreen-hide-btn').style.display = 'none';
+            }
+          },
+          onHide: (hiddenCount) => {
+            document.getElementById(`${prefix}-hidden-count`).textContent = hiddenCount;
+            document.getElementById(`${prefix}-show-all-btn`).style.display = hiddenCount > 0 ? 'inline-flex' : 'none';
+            // Also update fullscreen controls if in fullscreen mode
+            if (document.getElementById('viewer-fullscreen-modal').classList.contains('is-active')) {
+              document.getElementById('fullscreen-hidden-count').textContent = hiddenCount;
+              document.getElementById('fullscreen-show-all-btn').style.display = hiddenCount > 0 ? 'inline-flex' : 'none';
+            }
+          },
+          onShowAll: () => {
+            document.getElementById(`${prefix}-hidden-count`).textContent = '0';
+            document.getElementById(`${prefix}-show-all-btn`).style.display = 'none';
+            // Also update fullscreen controls if in fullscreen mode
+            if (document.getElementById('viewer-fullscreen-modal').classList.contains('is-active')) {
+              document.getElementById('fullscreen-hidden-count').textContent = '0';
+              document.getElementById('fullscreen-show-all-btn').style.display = 'none';
+            }
+          }
+        }
+      );
+
+      // Populate dropdown
+      populateDropdown(`${prefix}-selector`, scenes);
+
+      // Search filtering
+      document.getElementById(`${prefix}-search`).addEventListener('input', (e) => {
+        filterDropdown(`${prefix}-selector`, scenes, e.target.value);
+      });
+
+      // Scene selection
+      document.getElementById(`${prefix}-selector`).addEventListener('change', async (e) => {
+        const select = e.target;
+        if (select.value) {
+          const option = select.options[select.selectedIndex];
+          setProgress(`${prefix}-progress`, 0, true);
+          try {
+            await viewer.loadScene(option.dataset.path, select.value);
+            updatePromptDisplay(`${prefix}-prompt`, option.dataset.prompt);
+          } catch (err) {
+            console.error('Failed to load scene:', err);
+            setProgress(`${prefix}-progress`, 0, false);
+          }
+        }
+      });
+
+      // Random button
+      document.getElementById(`${prefix}-random-btn`).addEventListener('click', () => {
+        const randomIndex = Math.floor(Math.random() * scenes.length);
+        const scene = scenes[randomIndex];
+        const select = document.getElementById(`${prefix}-selector`);
+        select.value = scene.id;
+        select.dispatchEvent(new Event('change'));
+      });
+
+      // Reset camera button
+      document.getElementById(`${prefix}-reset-btn`).addEventListener('click', () => {
+        viewer.resetCamera();
+      });
+
+      // Frame selected button
+      document.getElementById(`${prefix}-frame-btn`).addEventListener('click', () => {
+        viewer.frameSelected();
+      });
+
+      // Hide selected button
+      document.getElementById(`${prefix}-hide-btn`).addEventListener('click', () => {
+        viewer.hideSelected();
+      });
+
+      // Show all button
+      document.getElementById(`${prefix}-show-all-btn`).addEventListener('click', () => {
+        viewer.showAll();
+      });
+
+      // Help button
+      document.getElementById(`${prefix}-help-btn`).addEventListener('click', () => {
+        const help = document.getElementById(`${prefix}-help`);
+        help.classList.toggle('is-visible');
+      });
+
+      // Fullscreen button - opens modal overlay
+      const fullscreenBtn = document.getElementById(`${prefix}-fullscreen-btn`);
+      if (fullscreenBtn) {
+        fullscreenBtn.addEventListener('click', () => {
+          openFullscreenModal(viewer, prefix);
+        });
+      }
+
+      // Hide progress initially
+      setProgress(`${prefix}-progress`, 0, false);
+
+      return { viewer, scenes };
+    }
+
+    // Fullscreen modal state
+    let fullscreenViewer = null;
+    let originalContainer = null;
+    let currentPrefix = null;
+
+    function openFullscreenModal(viewer, prefix) {
+      const modal = document.getElementById('viewer-fullscreen-modal');
+      const fullscreenCanvas = document.getElementById('fullscreen-canvas');
+      const promptDisplay = document.getElementById('fullscreen-prompt');
+
+      // Get current prompt
+      const currentPrompt = document.getElementById(`${prefix}-prompt`).querySelector('.prompt-text');
+      if (currentPrompt) {
+        promptDisplay.innerHTML = currentPrompt.innerHTML;
+        promptDisplay.style.display = 'block';
+      } else {
+        promptDisplay.style.display = 'none';
+      }
+
+      // Store original container and move renderer
+      originalContainer = viewer.container;
+      currentPrefix = prefix;
+
+      // Move the canvas to fullscreen container
+      if (viewer.renderer && viewer.renderer.domElement) {
+        fullscreenCanvas.appendChild(viewer.renderer.domElement);
+        viewer.container = fullscreenCanvas;
+
+        // Force proper pixel ratio for fullscreen
+        viewer.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+        // Wait for modal to be visible, then resize
+        requestAnimationFrame(() => {
+          viewer.handleResize();
+        });
+      }
+
+      fullscreenViewer = viewer;
+      modal.classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+
+      // Sync control state
+      updateFullscreenControls();
+    }
+
+    function closeFullscreenModal() {
+      const modal = document.getElementById('viewer-fullscreen-modal');
+
+      if (fullscreenViewer && originalContainer) {
+        // Move canvas back to original container
+        originalContainer.appendChild(fullscreenViewer.renderer.domElement);
+        fullscreenViewer.container = originalContainer;
+        fullscreenViewer.handleResize();
+      }
+
+      modal.classList.remove('is-active');
+      document.body.style.overflow = '';
+      fullscreenViewer = null;
+      originalContainer = null;
+      currentPrefix = null;
+    }
+
+    // Update fullscreen control visibility based on viewer state
+    function updateFullscreenControls() {
+      if (!fullscreenViewer) return;
+
+      const hasSelection = fullscreenViewer.selectedObject !== null;
+      const hiddenCount = fullscreenViewer.getHiddenCount();
+
+      document.getElementById('fullscreen-frame-btn').style.display = hasSelection ? 'inline-flex' : 'none';
+      document.getElementById('fullscreen-hide-btn').style.display = hasSelection ? 'inline-flex' : 'none';
+      document.getElementById('fullscreen-show-all-btn').style.display = hiddenCount > 0 ? 'inline-flex' : 'none';
+      document.getElementById('fullscreen-hidden-count').textContent = hiddenCount;
+    }
+
+    // Setup fullscreen modal close handlers
+    function setupFullscreenModal() {
+      const backdrop = document.getElementById('fullscreen-backdrop');
+      const closeBtn = document.getElementById('fullscreen-close-btn');
+
+      // Click backdrop to close
+      backdrop.addEventListener('click', closeFullscreenModal);
+
+      // Click X button to close
+      closeBtn.addEventListener('click', closeFullscreenModal);
+
+      // Escape key to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && document.getElementById('viewer-fullscreen-modal').classList.contains('is-active')) {
+          closeFullscreenModal();
+        }
+      });
+
+      // Fullscreen control buttons
+      document.getElementById('fullscreen-frame-btn').addEventListener('click', () => {
+        if (fullscreenViewer) {
+          fullscreenViewer.frameSelected();
+        }
+      });
+
+      document.getElementById('fullscreen-hide-btn').addEventListener('click', () => {
+        if (fullscreenViewer) {
+          fullscreenViewer.hideSelected();
+          updateFullscreenControls();
+          // Also update the main viewer's UI
+          if (currentPrefix) {
+            document.getElementById(`${currentPrefix}-frame-btn`).style.display = 'none';
+            document.getElementById(`${currentPrefix}-hide-btn`).style.display = 'none';
+            const hiddenCount = fullscreenViewer.getHiddenCount();
+            document.getElementById(`${currentPrefix}-hidden-count`).textContent = hiddenCount;
+            document.getElementById(`${currentPrefix}-show-all-btn`).style.display = hiddenCount > 0 ? 'inline-flex' : 'none';
+          }
+        }
+      });
+
+      document.getElementById('fullscreen-show-all-btn').addEventListener('click', () => {
+        if (fullscreenViewer) {
+          fullscreenViewer.showAll();
+          updateFullscreenControls();
+          // Also update the main viewer's UI
+          if (currentPrefix) {
+            document.getElementById(`${currentPrefix}-hidden-count`).textContent = '0';
+            document.getElementById(`${currentPrefix}-show-all-btn`).style.display = 'none';
+          }
+        }
+      });
+
+      document.getElementById('fullscreen-reset-btn').addEventListener('click', () => {
+        if (fullscreenViewer) {
+          fullscreenViewer.resetCamera();
+        }
+      });
+
+      // Fullscreen help button
+      document.getElementById('fullscreen-help-btn').addEventListener('click', () => {
+        const help = document.getElementById('fullscreen-help');
+        help.classList.toggle('is-visible');
+      });
+    }
+
+    // Load a scene by selecting it in the dropdown
+    async function loadFirstScene(prefix, scenes, viewer) {
+      if (scenes.length > 0) {
+        const select = document.getElementById(`${prefix}-selector`);
+        const firstScene = scenes[0];
+        select.value = firstScene.id;
+        setProgress(`${prefix}-progress`, 0, true);
+        try {
+          await viewer.loadScene(firstScene.path, firstScene.id);
+          updatePromptDisplay(`${prefix}-prompt`, firstScene.prompt);
+        } catch (err) {
+          console.error('Failed to load first scene:', err);
+          setProgress(`${prefix}-progress`, 0, false);
+        }
+      }
+    }
+
+    // Initialize when DOM is ready
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Setup fullscreen modal handlers
+      setupFullscreenModal();
+
+      // Setup room viewer and preload first scene
+      const { viewer: roomViewer, scenes: roomScenes } = setupViewer('room', SCENES.rooms);
+      await loadFirstScene('room', roomScenes, roomViewer);
+
+      // Setup house viewer and preload first scene (massage parlor)
+      const { viewer: houseViewer, scenes: houseScenes } = setupViewer('house', SCENES.houses);
+      await loadFirstScene('house', houseScenes, houseViewer);
+    });
+  </script>
 </body>
 
 </html>
