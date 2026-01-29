@@ -41,12 +41,16 @@ export class SceneSmithViewer {
     this.outlineEffect = null;
     this.picker = null;
     this.isolatedViewer = null;
-    this.cache = new SceneCache(5);
+    this.cache = new SceneCache(10);
     this.loader = null;
 
     // Hidden objects tracking
     this.hiddenObjects = new Set();
     this.environmentMap = null;
+
+    // Load ID counter and abort controller to guard against concurrent loads
+    this._loadId = 0;
+    this._abortController = null;
 
     // Bind methods
     this.handleClick = this.handleClick.bind(this);
@@ -191,6 +195,14 @@ export class SceneSmithViewer {
       this.init();
     }
 
+    const loadId = ++this._loadId;
+
+    // Abort any in-flight download so it doesn't compete for bandwidth
+    if (this._abortController) {
+      this._abortController.abort();
+    }
+    this._abortController = new AbortController();
+
     // Clear current scene
     this.clearScene();
     this.clearSelection();
@@ -198,7 +210,14 @@ export class SceneSmithViewer {
     const fullPath = this.options.basePath + path;
 
     try {
-      const gltf = await this.cache.get(sceneId, () => this.loadGLTF(fullPath));
+      const gltf = await this.cache.get(sceneId, () =>
+        this.loadGLTF(fullPath, loadId, this._abortController.signal)
+      );
+
+      // If another loadScene() was called while we were loading, discard this result
+      if (loadId !== this._loadId) {
+        return;
+      }
 
       // Clone the scene from cache
       this.loadedScene = gltf.scene.clone();
@@ -229,6 +248,10 @@ export class SceneSmithViewer {
       }
 
     } catch (error) {
+      // Silently ignore aborted loads — they were intentionally cancelled
+      if (error.name === 'AbortError') {
+        return;
+      }
       console.error('Failed to load scene:', error);
       throw error;
     }
@@ -239,19 +262,43 @@ export class SceneSmithViewer {
    * @param {string} url - URL to load
    * @returns {Promise<Object>} - Loaded GLTF
    */
-  loadGLTF(url) {
+  async loadGLTF(url, loadId, signal) {
+    const response = await fetch(url, { signal });
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${url}: ${response.status}`);
+    }
+
+    const contentLength = response.headers.get('Content-Length');
+    const total = contentLength ? parseInt(contentLength, 10) : 0;
+
+    // Read the body as a stream so we can report progress
+    const reader = response.body.getReader();
+    const chunks = [];
+    let loaded = 0;
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      chunks.push(value);
+      loaded += value.length;
+
+      if (this.options.onProgress && total > 0 && loadId === this._loadId) {
+        const percent = Math.round((loaded / total) * 100);
+        this.options.onProgress(percent);
+      }
+    }
+
+    // Combine chunks into a single ArrayBuffer
+    const buffer = new Uint8Array(loaded);
+    let offset = 0;
+    for (const chunk of chunks) {
+      buffer.set(chunk, offset);
+      offset += chunk.length;
+    }
+
+    // Parse the GLB buffer with GLTFLoader
     return new Promise((resolve, reject) => {
-      this.loader.load(
-        url,
-        (gltf) => resolve(gltf),
-        (progress) => {
-          if (this.options.onProgress && progress.total > 0) {
-            const percent = Math.round((progress.loaded / progress.total) * 100);
-            this.options.onProgress(percent);
-          }
-        },
-        (error) => reject(error)
-      );
+      this.loader.parse(buffer.buffer, '', resolve, reject);
     });
   }
 
