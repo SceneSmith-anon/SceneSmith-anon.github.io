@@ -1,0 +1,4222 @@
+{
+  "scene_dir": "/mnt/fs1/efs/nicholas/scene-agent-eval-scenes/SceneAgent_Cleaned/SceneAgent_Ours_Room/scene_051",
+  "layout": {
+    "wall_height": 2.7,
+    "house_prompt": "A simple bedroom featuring a full bed flanked by two bedside lamps, with a large wardrobe positioned directly facing the bed."
+  },
+  "rooms": {
+    "bedroom": {
+      "room_id": "bedroom",
+      "text_description": "A simple bedroom featuring a full bed flanked by two bedside lamps, with a large wardrobe positioned directly facing the bed.",
+      "width": 4.0,
+      "length": 4.5,
+      "wall_height": 2.7,
+      "offset": [
+        2.25,
+        2.0
+      ]
+    }
+  },
+  "objects": [
+    {
+      "object_id": "flush_mount_0",
+      "name": "flush_mount",
+      "description": "Modern low-profile LED drum flush-mount ceiling light, matte white diffuser with thin brushed-brass trim, warm-white glow",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          2.309973042553782,
+          2.004233296705469,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.999994900378006,
+          0.0,
+          0.0,
+          -0.003193621452515382
+        ]
+      },
+      "bbox_min": [
+        -0.2750000059604645,
+        -0.1811099350452423,
+        -0.05807793140411377
+      ],
+      "bbox_max": [
+        0.2750000059604645,
+        0.1811099350452423,
+        0.0
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/flush_mount_1767850952/flush_mount.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/flush_mount_1767850952/flush_mount.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/ceiling_mounted/sdf/flush_mount_1767850952/flush_mount.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.5,
+            "inertia_pose": [
+              -9.5e-05,
+              8.1e-05,
+              -0.0263,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.01257436,
+              "ixy": -1.108981e-05,
+              "ixz": 8.727997e-06,
+              "iyy": 0.02866216,
+              "iyz": 3.032809e-06,
+              "izz": 0.04063566
+            },
+            "collision_meshes": [
+              "flush_mount_collision_0.obj",
+              "flush_mount_collision_1.obj",
+              "flush_mount_collision_2.obj",
+              "flush_mount_collision_3.obj",
+              "flush_mount_collision_4.obj",
+              "flush_mount_collision_5.obj",
+              "flush_mount_collision_6.obj",
+              "flush_mount_collision_7.obj",
+              "flush_mount_collision_8.obj",
+              "flush_mount_collision_9.obj",
+              "flush_mount_collision_10.obj",
+              "flush_mount_collision_11.obj",
+              "flush_mount_collision_12.obj",
+              "flush_mount_collision_13.obj",
+              "flush_mount_collision_14.obj",
+              "flush_mount_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "flush_mount.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "recessed_light_0",
+      "name": "recessed_light",
+      "description": "Small round recessed LED downlight (gimbal/adjustable), matte white trim, warm-white",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          1.3628402395905046,
+          3.276238994441224,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.9999999993818723,
+          0.0,
+          0.0,
+          3.516042452103081e-05
+        ]
+      },
+      "bbox_min": [
+        -0.05999999865889549,
+        -0.050502605736255646,
+        -0.04258490726351738
+      ],
+      "bbox_max": [
+        0.05999999865889549,
+        0.050502605736255646,
+        0.0
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.4,
+            "inertia_pose": [
+              -0.000434,
+              -0.002144,
+              -0.018352,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0003065739,
+              "ixy": -1.335501e-06,
+              "ixz": -3.510673e-07,
+              "iyy": 0.0004025055,
+              "iyz": -2.32223e-05,
+              "izz": 0.0006629049
+            },
+            "collision_meshes": [
+              "recessed_light_collision_0.obj",
+              "recessed_light_collision_1.obj",
+              "recessed_light_collision_2.obj",
+              "recessed_light_collision_3.obj",
+              "recessed_light_collision_4.obj",
+              "recessed_light_collision_5.obj",
+              "recessed_light_collision_6.obj",
+              "recessed_light_collision_7.obj",
+              "recessed_light_collision_8.obj",
+              "recessed_light_collision_9.obj",
+              "recessed_light_collision_10.obj",
+              "recessed_light_collision_11.obj",
+              "recessed_light_collision_12.obj",
+              "recessed_light_collision_13.obj",
+              "recessed_light_collision_14.obj",
+              "recessed_light_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "recessed_light.gltf"
+            ],
+            "friction": {
+              "mu": 1.1,
+              "mu2": 1.1
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "recessed_light_1",
+      "name": "recessed_light",
+      "description": "Small round recessed LED downlight (gimbal/adjustable), matte white trim, warm-white",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          3.142564794037206,
+          3.257769793201094,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.999999789093416,
+          0.0,
+          0.0,
+          0.0006494714183342294
+        ]
+      },
+      "bbox_min": [
+        -0.05999999865889549,
+        -0.050502605736255646,
+        -0.04258490726351738
+      ],
+      "bbox_max": [
+        0.05999999865889549,
+        0.050502605736255646,
+        0.0
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.4,
+            "inertia_pose": [
+              -0.000434,
+              -0.002144,
+              -0.018352,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0003065739,
+              "ixy": -1.335501e-06,
+              "ixz": -3.510673e-07,
+              "iyy": 0.0004025055,
+              "iyz": -2.32223e-05,
+              "izz": 0.0006629049
+            },
+            "collision_meshes": [
+              "recessed_light_collision_0.obj",
+              "recessed_light_collision_1.obj",
+              "recessed_light_collision_2.obj",
+              "recessed_light_collision_3.obj",
+              "recessed_light_collision_4.obj",
+              "recessed_light_collision_5.obj",
+              "recessed_light_collision_6.obj",
+              "recessed_light_collision_7.obj",
+              "recessed_light_collision_8.obj",
+              "recessed_light_collision_9.obj",
+              "recessed_light_collision_10.obj",
+              "recessed_light_collision_11.obj",
+              "recessed_light_collision_12.obj",
+              "recessed_light_collision_13.obj",
+              "recessed_light_collision_14.obj",
+              "recessed_light_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "recessed_light.gltf"
+            ],
+            "friction": {
+              "mu": 1.1,
+              "mu2": 1.1
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "recessed_light_2",
+      "name": "recessed_light",
+      "description": "Small round recessed LED downlight (gimbal/adjustable), matte white trim, warm-white",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          1.370897927690463,
+          1.0114394030656908,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.9999950585473213,
+          0.0,
+          0.0,
+          -0.0031437049701412713
+        ]
+      },
+      "bbox_min": [
+        -0.05999999865889549,
+        -0.050502605736255646,
+        -0.04258490726351738
+      ],
+      "bbox_max": [
+        0.05999999865889549,
+        0.050502605736255646,
+        0.0
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.4,
+            "inertia_pose": [
+              -0.000434,
+              -0.002144,
+              -0.018352,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0003065739,
+              "ixy": -1.335501e-06,
+              "ixz": -3.510673e-07,
+              "iyy": 0.0004025055,
+              "iyz": -2.32223e-05,
+              "izz": 0.0006629049
+            },
+            "collision_meshes": [
+              "recessed_light_collision_0.obj",
+              "recessed_light_collision_1.obj",
+              "recessed_light_collision_2.obj",
+              "recessed_light_collision_3.obj",
+              "recessed_light_collision_4.obj",
+              "recessed_light_collision_5.obj",
+              "recessed_light_collision_6.obj",
+              "recessed_light_collision_7.obj",
+              "recessed_light_collision_8.obj",
+              "recessed_light_collision_9.obj",
+              "recessed_light_collision_10.obj",
+              "recessed_light_collision_11.obj",
+              "recessed_light_collision_12.obj",
+              "recessed_light_collision_13.obj",
+              "recessed_light_collision_14.obj",
+              "recessed_light_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "recessed_light.gltf"
+            ],
+            "friction": {
+              "mu": 1.1,
+              "mu2": 1.1
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "recessed_light_3",
+      "name": "recessed_light",
+      "description": "Small round recessed LED downlight (gimbal/adjustable), matte white trim, warm-white",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          3.1419290884935878,
+          0.9876126066033579,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.9999775312278267,
+          0.0,
+          0.0,
+          0.006703509491367122
+        ]
+      },
+      "bbox_min": [
+        -0.05999999865889549,
+        -0.050502605736255646,
+        -0.04258490726351738
+      ],
+      "bbox_max": [
+        0.05999999865889549,
+        0.050502605736255646,
+        0.0
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/ceiling_mounted/sdf/recessed_light_1767850952/recessed_light.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.4,
+            "inertia_pose": [
+              -0.000434,
+              -0.002144,
+              -0.018352,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0003065739,
+              "ixy": -1.335501e-06,
+              "ixz": -3.510673e-07,
+              "iyy": 0.0004025055,
+              "iyz": -2.32223e-05,
+              "izz": 0.0006629049
+            },
+            "collision_meshes": [
+              "recessed_light_collision_0.obj",
+              "recessed_light_collision_1.obj",
+              "recessed_light_collision_2.obj",
+              "recessed_light_collision_3.obj",
+              "recessed_light_collision_4.obj",
+              "recessed_light_collision_5.obj",
+              "recessed_light_collision_6.obj",
+              "recessed_light_collision_7.obj",
+              "recessed_light_collision_8.obj",
+              "recessed_light_collision_9.obj",
+              "recessed_light_collision_10.obj",
+              "recessed_light_collision_11.obj",
+              "recessed_light_collision_12.obj",
+              "recessed_light_collision_13.obj",
+              "recessed_light_collision_14.obj",
+              "recessed_light_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "recessed_light.gltf"
+            ],
+            "friction": {
+              "mu": 1.1,
+              "mu2": 1.1
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "smoke_detector_0",
+      "name": "smoke_detector",
+      "description": "Slim-profile smoke detector (photoelectric), round matte white disk with subtle vents, very shallow (does not hang down much)",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          1.05,
+          2.2,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.9999940792786748,
+          0.0,
+          0.0,
+          0.0034411346377750942
+        ]
+      },
+      "bbox_min": [
+        -0.07000000029802322,
+        -0.06963463127613068,
+        -0.0189311932772398
+      ],
+      "bbox_max": [
+        0.07000000029802322,
+        0.06963463127613068,
+        3.8904942914522936e-18
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/smoke_detector_1767851105/smoke_detector.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/smoke_detector_1767851105/smoke_detector.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/ceiling_mounted/sdf/smoke_detector_1767851105/smoke_detector.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.22,
+            "inertia_pose": [
+              1.7e-05,
+              -0.000218,
+              -0.009434,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0002623838,
+              "ixy": -4.149451e-07,
+              "ixz": -1.780283e-07,
+              "iyy": 0.0002691891,
+              "iyz": -1.491005e-07,
+              "izz": 0.0005185628
+            },
+            "collision_meshes": [
+              "smoke_detector_collision_0.obj",
+              "smoke_detector_collision_1.obj",
+              "smoke_detector_collision_2.obj",
+              "smoke_detector_collision_3.obj",
+              "smoke_detector_collision_4.obj",
+              "smoke_detector_collision_5.obj",
+              "smoke_detector_collision_6.obj",
+              "smoke_detector_collision_7.obj",
+              "smoke_detector_collision_8.obj",
+              "smoke_detector_collision_9.obj",
+              "smoke_detector_collision_10.obj",
+              "smoke_detector_collision_11.obj",
+              "smoke_detector_collision_12.obj",
+              "smoke_detector_collision_13.obj",
+              "smoke_detector_collision_14.obj",
+              "smoke_detector_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "smoke_detector.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "floor_bedroom",
+      "name": "Floor",
+      "description": "Floor surface",
+      "object_type": "floor",
+      "transform": {
+        "translation": [
+          2.25,
+          2.0,
+          0.0
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -2.25,
+        -2.0,
+        -0.1
+      ],
+      "bbox_max": [
+        2.25,
+        2.0,
+        0.0
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_051/floor_plans/bedroom/floors/floor.gltf",
+      "is_articulated": false
+    },
+    {
+      "object_id": "bed_0",
+      "name": "bed",
+      "description": "Modern platform bed for tall adults with bedding and headboard; narrow 125cm wide and standard adult length 200cm (overall footprint)",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          2.249790802277979,
+          1.0330069305568235,
+          -0.0019392739679363494
+        ],
+        "rotation_wxyz": [
+          0.9999995528703278,
+          0.0006227145474989228,
+          0.0005318750171576005,
+          -0.0004728580151441412
+        ]
+      },
+      "bbox_min": [
+        -0.725,
+        -0.9735092902183532,
+        0.0
+      ],
+      "bbox_max": [
+        0.725,
+        0.9735092902183532,
+        0.8479050397872924
+      ],
+      "scale_factor": 1.16,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/bed_1767847412/bed.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/bed_1767847412/bed.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/furniture/sdf/bed_1767847412/bed.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 55.0,
+            "inertia_pose": [
+              0.01136452,
+              -0.0795122,
+              0.36912012,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 18.52976,
+              "ixy": 0.04573505,
+              "ixz": -0.01231624,
+              "iyy": 6.571784,
+              "iyz": 1.267403,
+              "izz": 23.3601
+            },
+            "collision_meshes": [
+              "bed_collision_0.obj",
+              "bed_collision_1.obj",
+              "bed_collision_2.obj",
+              "bed_collision_3.obj",
+              "bed_collision_4.obj",
+              "bed_collision_5.obj",
+              "bed_collision_6.obj",
+              "bed_collision_7.obj",
+              "bed_collision_8.obj",
+              "bed_collision_9.obj",
+              "bed_collision_10.obj",
+              "bed_collision_11.obj",
+              "bed_collision_12.obj",
+              "bed_collision_13.obj",
+              "bed_collision_14.obj",
+              "bed_collision_15.obj",
+              "bed_collision_16.obj",
+              "bed_collision_17.obj",
+              "bed_collision_18.obj",
+              "bed_collision_19.obj",
+              "bed_collision_20.obj",
+              "bed_collision_21.obj",
+              "bed_collision_22.obj",
+              "bed_collision_23.obj",
+              "bed_collision_24.obj",
+              "bed_collision_25.obj",
+              "bed_collision_26.obj",
+              "bed_collision_27.obj",
+              "bed_collision_28.obj",
+              "bed_collision_29.obj",
+              "bed_collision_30.obj",
+              "bed_collision_31.obj",
+              "bed_collision_32.obj",
+              "bed_collision_33.obj",
+              "bed_collision_34.obj",
+              "bed_collision_35.obj",
+              "bed_collision_36.obj",
+              "bed_collision_37.obj",
+              "bed_collision_38.obj",
+              "bed_collision_39.obj",
+              "bed_collision_40.obj",
+              "bed_collision_41.obj",
+              "bed_collision_42.obj",
+              "bed_collision_43.obj",
+              "bed_collision_44.obj",
+              "bed_collision_45.obj",
+              "bed_collision_46.obj",
+              "bed_collision_47.obj",
+              "bed_collision_48.obj",
+              "bed_collision_49.obj",
+              "bed_collision_50.obj",
+              "bed_collision_51.obj",
+              "bed_collision_52.obj",
+              "bed_collision_53.obj",
+              "bed_collision_54.obj",
+              "bed_collision_55.obj",
+              "bed_collision_56.obj",
+              "bed_collision_57.obj",
+              "bed_collision_58.obj",
+              "bed_collision_59.obj",
+              "bed_collision_60.obj",
+              "bed_collision_61.obj",
+              "bed_collision_62.obj",
+              "bed_collision_63.obj",
+              "bed_collision_64.obj",
+              "bed_collision_65.obj",
+              "bed_collision_66.obj",
+              "bed_collision_67.obj",
+              "bed_collision_68.obj",
+              "bed_collision_69.obj",
+              "bed_collision_70.obj",
+              "bed_collision_71.obj",
+              "bed_collision_72.obj",
+              "bed_collision_73.obj",
+              "bed_collision_74.obj",
+              "bed_collision_75.obj",
+              "bed_collision_76.obj",
+              "bed_collision_77.obj",
+              "bed_collision_78.obj",
+              "bed_collision_79.obj",
+              "bed_collision_80.obj",
+              "bed_collision_81.obj",
+              "bed_collision_82.obj",
+              "bed_collision_83.obj",
+              "bed_collision_84.obj",
+              "bed_collision_85.obj",
+              "bed_collision_86.obj",
+              "bed_collision_87.obj",
+              "bed_collision_88.obj",
+              "bed_collision_89.obj",
+              "bed_collision_90.obj",
+              "bed_collision_91.obj",
+              "bed_collision_92.obj",
+              "bed_collision_93.obj",
+              "bed_collision_94.obj",
+              "bed_collision_95.obj",
+              "bed_collision_96.obj",
+              "bed_collision_97.obj",
+              "bed_collision_98.obj",
+              "bed_collision_99.obj",
+              "bed_collision_100.obj",
+              "bed_collision_101.obj",
+              "bed_collision_102.obj",
+              "bed_collision_103.obj",
+              "bed_collision_104.obj",
+              "bed_collision_105.obj",
+              "bed_collision_106.obj",
+              "bed_collision_107.obj",
+              "bed_collision_108.obj",
+              "bed_collision_109.obj",
+              "bed_collision_110.obj",
+              "bed_collision_111.obj",
+              "bed_collision_112.obj",
+              "bed_collision_113.obj",
+              "bed_collision_114.obj",
+              "bed_collision_115.obj",
+              "bed_collision_116.obj",
+              "bed_collision_117.obj",
+              "bed_collision_118.obj",
+              "bed_collision_119.obj",
+              "bed_collision_120.obj",
+              "bed_collision_121.obj",
+              "bed_collision_122.obj",
+              "bed_collision_123.obj",
+              "bed_collision_124.obj",
+              "bed_collision_125.obj",
+              "bed_collision_126.obj",
+              "bed_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "bed.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "floor_lamp_0",
+      "name": "floor_lamp",
+      "description": "Simple straight floor lamp (bedside lamp) with round base and fabric shade",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          0.7432346340678142,
+          0.2644407149354313,
+          -0.0003919276552401493
+        ],
+        "rotation_wxyz": [
+          0.9999995105951677,
+          -0.0005248216097625229,
+          -0.0003642174955366268,
+          -0.0007554583502524711
+        ]
+      },
+      "bbox_min": [
+        -0.1875000074505806,
+        -0.18994344398379326,
+        0.0
+      ],
+      "bbox_max": [
+        0.1875000074505806,
+        0.18994344398379326,
+        1.4689399302005768
+      ],
+      "scale_factor": 1.25,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/floor_lamp_1767844973/floor_lamp.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/floor_lamp_1767844973/floor_lamp.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/furniture/sdf/floor_lamp_1767844973/floor_lamp.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 5.0,
+            "inertia_pose": [
+              -0.00032,
+              0.00115125,
+              0.67840625,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 1.97367,
+              "ixy": -0.0001772055,
+              "ixz": 0.00161308,
+              "iyy": 1.970286,
+              "iyz": -0.001614066,
+              "izz": 0.09376639
+            },
+            "collision_meshes": [
+              "floor_lamp_collision_0.obj",
+              "floor_lamp_collision_1.obj",
+              "floor_lamp_collision_2.obj",
+              "floor_lamp_collision_3.obj",
+              "floor_lamp_collision_4.obj",
+              "floor_lamp_collision_5.obj",
+              "floor_lamp_collision_6.obj",
+              "floor_lamp_collision_7.obj",
+              "floor_lamp_collision_8.obj",
+              "floor_lamp_collision_9.obj",
+              "floor_lamp_collision_10.obj",
+              "floor_lamp_collision_11.obj",
+              "floor_lamp_collision_12.obj",
+              "floor_lamp_collision_13.obj",
+              "floor_lamp_collision_14.obj",
+              "floor_lamp_collision_15.obj",
+              "floor_lamp_collision_16.obj",
+              "floor_lamp_collision_17.obj",
+              "floor_lamp_collision_18.obj",
+              "floor_lamp_collision_19.obj",
+              "floor_lamp_collision_20.obj",
+              "floor_lamp_collision_21.obj",
+              "floor_lamp_collision_22.obj",
+              "floor_lamp_collision_23.obj",
+              "floor_lamp_collision_24.obj",
+              "floor_lamp_collision_25.obj",
+              "floor_lamp_collision_26.obj",
+              "floor_lamp_collision_27.obj",
+              "floor_lamp_collision_28.obj",
+              "floor_lamp_collision_29.obj",
+              "floor_lamp_collision_30.obj",
+              "floor_lamp_collision_31.obj",
+              "floor_lamp_collision_32.obj",
+              "floor_lamp_collision_33.obj",
+              "floor_lamp_collision_34.obj",
+              "floor_lamp_collision_35.obj",
+              "floor_lamp_collision_36.obj",
+              "floor_lamp_collision_37.obj",
+              "floor_lamp_collision_38.obj",
+              "floor_lamp_collision_39.obj",
+              "floor_lamp_collision_40.obj",
+              "floor_lamp_collision_41.obj",
+              "floor_lamp_collision_42.obj",
+              "floor_lamp_collision_43.obj",
+              "floor_lamp_collision_44.obj",
+              "floor_lamp_collision_45.obj",
+              "floor_lamp_collision_46.obj",
+              "floor_lamp_collision_47.obj",
+              "floor_lamp_collision_48.obj",
+              "floor_lamp_collision_49.obj",
+              "floor_lamp_collision_50.obj",
+              "floor_lamp_collision_51.obj",
+              "floor_lamp_collision_52.obj",
+              "floor_lamp_collision_53.obj",
+              "floor_lamp_collision_54.obj",
+              "floor_lamp_collision_55.obj",
+              "floor_lamp_collision_56.obj",
+              "floor_lamp_collision_57.obj",
+              "floor_lamp_collision_58.obj",
+              "floor_lamp_collision_59.obj",
+              "floor_lamp_collision_60.obj",
+              "floor_lamp_collision_61.obj",
+              "floor_lamp_collision_62.obj",
+              "floor_lamp_collision_63.obj",
+              "floor_lamp_collision_64.obj",
+              "floor_lamp_collision_65.obj",
+              "floor_lamp_collision_66.obj",
+              "floor_lamp_collision_67.obj",
+              "floor_lamp_collision_68.obj",
+              "floor_lamp_collision_69.obj",
+              "floor_lamp_collision_70.obj",
+              "floor_lamp_collision_71.obj",
+              "floor_lamp_collision_72.obj",
+              "floor_lamp_collision_73.obj",
+              "floor_lamp_collision_74.obj",
+              "floor_lamp_collision_75.obj",
+              "floor_lamp_collision_76.obj",
+              "floor_lamp_collision_77.obj",
+              "floor_lamp_collision_78.obj",
+              "floor_lamp_collision_79.obj",
+              "floor_lamp_collision_80.obj",
+              "floor_lamp_collision_81.obj",
+              "floor_lamp_collision_82.obj",
+              "floor_lamp_collision_83.obj",
+              "floor_lamp_collision_84.obj",
+              "floor_lamp_collision_85.obj",
+              "floor_lamp_collision_86.obj",
+              "floor_lamp_collision_87.obj",
+              "floor_lamp_collision_88.obj",
+              "floor_lamp_collision_89.obj",
+              "floor_lamp_collision_90.obj",
+              "floor_lamp_collision_91.obj",
+              "floor_lamp_collision_92.obj",
+              "floor_lamp_collision_93.obj",
+              "floor_lamp_collision_94.obj",
+              "floor_lamp_collision_95.obj",
+              "floor_lamp_collision_96.obj",
+              "floor_lamp_collision_97.obj",
+              "floor_lamp_collision_98.obj",
+              "floor_lamp_collision_99.obj",
+              "floor_lamp_collision_100.obj",
+              "floor_lamp_collision_101.obj",
+              "floor_lamp_collision_102.obj",
+              "floor_lamp_collision_103.obj",
+              "floor_lamp_collision_104.obj",
+              "floor_lamp_collision_105.obj",
+              "floor_lamp_collision_106.obj",
+              "floor_lamp_collision_107.obj",
+              "floor_lamp_collision_108.obj",
+              "floor_lamp_collision_109.obj",
+              "floor_lamp_collision_110.obj",
+              "floor_lamp_collision_111.obj",
+              "floor_lamp_collision_112.obj",
+              "floor_lamp_collision_113.obj",
+              "floor_lamp_collision_114.obj",
+              "floor_lamp_collision_115.obj",
+              "floor_lamp_collision_116.obj",
+              "floor_lamp_collision_117.obj",
+              "floor_lamp_collision_118.obj",
+              "floor_lamp_collision_119.obj",
+              "floor_lamp_collision_120.obj",
+              "floor_lamp_collision_121.obj",
+              "floor_lamp_collision_122.obj",
+              "floor_lamp_collision_123.obj",
+              "floor_lamp_collision_124.obj",
+              "floor_lamp_collision_125.obj",
+              "floor_lamp_collision_126.obj",
+              "floor_lamp_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "floor_lamp.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "floor_lamp_1",
+      "name": "floor_lamp",
+      "description": "Simple straight floor lamp (bedside lamp) with round base and fabric shade",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          3.755626830164168,
+          0.2645902232440429,
+          -0.0003919276552401492
+        ],
+        "rotation_wxyz": [
+          0.9999987827765712,
+          -0.0005240267492529587,
+          -0.00036536019514456474,
+          0.0014235003581910294
+        ]
+      },
+      "bbox_min": [
+        -0.1875000074505806,
+        -0.18994344398379326,
+        0.0
+      ],
+      "bbox_max": [
+        0.1875000074505806,
+        0.18994344398379326,
+        1.4689399302005768
+      ],
+      "scale_factor": 1.25,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/floor_lamp_1767844973/floor_lamp.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/floor_lamp_1767844973/floor_lamp.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/furniture/sdf/floor_lamp_1767844973/floor_lamp.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 5.0,
+            "inertia_pose": [
+              -0.00032,
+              0.00115125,
+              0.67840625,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 1.97367,
+              "ixy": -0.0001772055,
+              "ixz": 0.00161308,
+              "iyy": 1.970286,
+              "iyz": -0.001614066,
+              "izz": 0.09376639
+            },
+            "collision_meshes": [
+              "floor_lamp_collision_0.obj",
+              "floor_lamp_collision_1.obj",
+              "floor_lamp_collision_2.obj",
+              "floor_lamp_collision_3.obj",
+              "floor_lamp_collision_4.obj",
+              "floor_lamp_collision_5.obj",
+              "floor_lamp_collision_6.obj",
+              "floor_lamp_collision_7.obj",
+              "floor_lamp_collision_8.obj",
+              "floor_lamp_collision_9.obj",
+              "floor_lamp_collision_10.obj",
+              "floor_lamp_collision_11.obj",
+              "floor_lamp_collision_12.obj",
+              "floor_lamp_collision_13.obj",
+              "floor_lamp_collision_14.obj",
+              "floor_lamp_collision_15.obj",
+              "floor_lamp_collision_16.obj",
+              "floor_lamp_collision_17.obj",
+              "floor_lamp_collision_18.obj",
+              "floor_lamp_collision_19.obj",
+              "floor_lamp_collision_20.obj",
+              "floor_lamp_collision_21.obj",
+              "floor_lamp_collision_22.obj",
+              "floor_lamp_collision_23.obj",
+              "floor_lamp_collision_24.obj",
+              "floor_lamp_collision_25.obj",
+              "floor_lamp_collision_26.obj",
+              "floor_lamp_collision_27.obj",
+              "floor_lamp_collision_28.obj",
+              "floor_lamp_collision_29.obj",
+              "floor_lamp_collision_30.obj",
+              "floor_lamp_collision_31.obj",
+              "floor_lamp_collision_32.obj",
+              "floor_lamp_collision_33.obj",
+              "floor_lamp_collision_34.obj",
+              "floor_lamp_collision_35.obj",
+              "floor_lamp_collision_36.obj",
+              "floor_lamp_collision_37.obj",
+              "floor_lamp_collision_38.obj",
+              "floor_lamp_collision_39.obj",
+              "floor_lamp_collision_40.obj",
+              "floor_lamp_collision_41.obj",
+              "floor_lamp_collision_42.obj",
+              "floor_lamp_collision_43.obj",
+              "floor_lamp_collision_44.obj",
+              "floor_lamp_collision_45.obj",
+              "floor_lamp_collision_46.obj",
+              "floor_lamp_collision_47.obj",
+              "floor_lamp_collision_48.obj",
+              "floor_lamp_collision_49.obj",
+              "floor_lamp_collision_50.obj",
+              "floor_lamp_collision_51.obj",
+              "floor_lamp_collision_52.obj",
+              "floor_lamp_collision_53.obj",
+              "floor_lamp_collision_54.obj",
+              "floor_lamp_collision_55.obj",
+              "floor_lamp_collision_56.obj",
+              "floor_lamp_collision_57.obj",
+              "floor_lamp_collision_58.obj",
+              "floor_lamp_collision_59.obj",
+              "floor_lamp_collision_60.obj",
+              "floor_lamp_collision_61.obj",
+              "floor_lamp_collision_62.obj",
+              "floor_lamp_collision_63.obj",
+              "floor_lamp_collision_64.obj",
+              "floor_lamp_collision_65.obj",
+              "floor_lamp_collision_66.obj",
+              "floor_lamp_collision_67.obj",
+              "floor_lamp_collision_68.obj",
+              "floor_lamp_collision_69.obj",
+              "floor_lamp_collision_70.obj",
+              "floor_lamp_collision_71.obj",
+              "floor_lamp_collision_72.obj",
+              "floor_lamp_collision_73.obj",
+              "floor_lamp_collision_74.obj",
+              "floor_lamp_collision_75.obj",
+              "floor_lamp_collision_76.obj",
+              "floor_lamp_collision_77.obj",
+              "floor_lamp_collision_78.obj",
+              "floor_lamp_collision_79.obj",
+              "floor_lamp_collision_80.obj",
+              "floor_lamp_collision_81.obj",
+              "floor_lamp_collision_82.obj",
+              "floor_lamp_collision_83.obj",
+              "floor_lamp_collision_84.obj",
+              "floor_lamp_collision_85.obj",
+              "floor_lamp_collision_86.obj",
+              "floor_lamp_collision_87.obj",
+              "floor_lamp_collision_88.obj",
+              "floor_lamp_collision_89.obj",
+              "floor_lamp_collision_90.obj",
+              "floor_lamp_collision_91.obj",
+              "floor_lamp_collision_92.obj",
+              "floor_lamp_collision_93.obj",
+              "floor_lamp_collision_94.obj",
+              "floor_lamp_collision_95.obj",
+              "floor_lamp_collision_96.obj",
+              "floor_lamp_collision_97.obj",
+              "floor_lamp_collision_98.obj",
+              "floor_lamp_collision_99.obj",
+              "floor_lamp_collision_100.obj",
+              "floor_lamp_collision_101.obj",
+              "floor_lamp_collision_102.obj",
+              "floor_lamp_collision_103.obj",
+              "floor_lamp_collision_104.obj",
+              "floor_lamp_collision_105.obj",
+              "floor_lamp_collision_106.obj",
+              "floor_lamp_collision_107.obj",
+              "floor_lamp_collision_108.obj",
+              "floor_lamp_collision_109.obj",
+              "floor_lamp_collision_110.obj",
+              "floor_lamp_collision_111.obj",
+              "floor_lamp_collision_112.obj",
+              "floor_lamp_collision_113.obj",
+              "floor_lamp_collision_114.obj",
+              "floor_lamp_collision_115.obj",
+              "floor_lamp_collision_116.obj",
+              "floor_lamp_collision_117.obj",
+              "floor_lamp_collision_118.obj",
+              "floor_lamp_collision_119.obj",
+              "floor_lamp_collision_120.obj",
+              "floor_lamp_collision_121.obj",
+              "floor_lamp_collision_122.obj",
+              "floor_lamp_collision_123.obj",
+              "floor_lamp_collision_124.obj",
+              "floor_lamp_collision_125.obj",
+              "floor_lamp_collision_126.obj",
+              "floor_lamp_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "floor_lamp.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "nightstand_0",
+      "name": "nightstand",
+      "description": "Tall bedside nightstand about 0.55m high with drawer and open shelf, simple modern",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          1.2538281435136818,
+          0.26544462079123443,
+          -0.0007323709995763959
+        ],
+        "rotation_wxyz": [
+          0.9999999055353344,
+          0.0001376730730049552,
+          0.0003111890541947787,
+          -0.000270438199714042
+        ]
+      },
+      "bbox_min": [
+        -0.25,
+        -0.20442084968090057,
+        0.0
+      ],
+      "bbox_max": [
+        0.25,
+        0.20442084968090057,
+        0.6858738660812378
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/nightstand_1767845002/nightstand.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/nightstand_1767845002/nightstand.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/furniture/sdf/nightstand_1767845002/nightstand.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 12.0,
+            "inertia_pose": [
+              1.9e-05,
+              -0.015924,
+              0.462262,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.5799452,
+              "ixy": 0.000112167,
+              "ixz": 0.0009296726,
+              "iyy": 0.7471268,
+              "iyz": -0.01429862,
+              "izz": 0.4671505
+            },
+            "collision_meshes": [
+              "nightstand_collision_0.obj",
+              "nightstand_collision_1.obj",
+              "nightstand_collision_2.obj",
+              "nightstand_collision_3.obj",
+              "nightstand_collision_4.obj",
+              "nightstand_collision_5.obj",
+              "nightstand_collision_6.obj",
+              "nightstand_collision_7.obj",
+              "nightstand_collision_8.obj",
+              "nightstand_collision_9.obj",
+              "nightstand_collision_10.obj",
+              "nightstand_collision_11.obj",
+              "nightstand_collision_12.obj",
+              "nightstand_collision_13.obj",
+              "nightstand_collision_14.obj",
+              "nightstand_collision_15.obj",
+              "nightstand_collision_16.obj",
+              "nightstand_collision_17.obj",
+              "nightstand_collision_18.obj",
+              "nightstand_collision_19.obj",
+              "nightstand_collision_20.obj",
+              "nightstand_collision_21.obj",
+              "nightstand_collision_22.obj",
+              "nightstand_collision_23.obj",
+              "nightstand_collision_24.obj",
+              "nightstand_collision_25.obj",
+              "nightstand_collision_26.obj",
+              "nightstand_collision_27.obj",
+              "nightstand_collision_28.obj",
+              "nightstand_collision_29.obj",
+              "nightstand_collision_30.obj",
+              "nightstand_collision_31.obj",
+              "nightstand_collision_32.obj",
+              "nightstand_collision_33.obj",
+              "nightstand_collision_34.obj",
+              "nightstand_collision_35.obj",
+              "nightstand_collision_36.obj",
+              "nightstand_collision_37.obj",
+              "nightstand_collision_38.obj",
+              "nightstand_collision_39.obj",
+              "nightstand_collision_40.obj",
+              "nightstand_collision_41.obj",
+              "nightstand_collision_42.obj",
+              "nightstand_collision_43.obj",
+              "nightstand_collision_44.obj",
+              "nightstand_collision_45.obj",
+              "nightstand_collision_46.obj",
+              "nightstand_collision_47.obj",
+              "nightstand_collision_48.obj",
+              "nightstand_collision_49.obj",
+              "nightstand_collision_50.obj",
+              "nightstand_collision_51.obj",
+              "nightstand_collision_52.obj",
+              "nightstand_collision_53.obj",
+              "nightstand_collision_54.obj",
+              "nightstand_collision_55.obj",
+              "nightstand_collision_56.obj",
+              "nightstand_collision_57.obj",
+              "nightstand_collision_58.obj",
+              "nightstand_collision_59.obj",
+              "nightstand_collision_60.obj",
+              "nightstand_collision_61.obj",
+              "nightstand_collision_62.obj",
+              "nightstand_collision_63.obj",
+              "nightstand_collision_64.obj",
+              "nightstand_collision_65.obj",
+              "nightstand_collision_66.obj",
+              "nightstand_collision_67.obj",
+              "nightstand_collision_68.obj",
+              "nightstand_collision_69.obj",
+              "nightstand_collision_70.obj",
+              "nightstand_collision_71.obj",
+              "nightstand_collision_72.obj",
+              "nightstand_collision_73.obj",
+              "nightstand_collision_74.obj",
+              "nightstand_collision_75.obj",
+              "nightstand_collision_76.obj",
+              "nightstand_collision_77.obj",
+              "nightstand_collision_78.obj",
+              "nightstand_collision_79.obj",
+              "nightstand_collision_80.obj",
+              "nightstand_collision_81.obj",
+              "nightstand_collision_82.obj",
+              "nightstand_collision_83.obj",
+              "nightstand_collision_84.obj",
+              "nightstand_collision_85.obj",
+              "nightstand_collision_86.obj",
+              "nightstand_collision_87.obj",
+              "nightstand_collision_88.obj",
+              "nightstand_collision_89.obj",
+              "nightstand_collision_90.obj",
+              "nightstand_collision_91.obj",
+              "nightstand_collision_92.obj",
+              "nightstand_collision_93.obj",
+              "nightstand_collision_94.obj",
+              "nightstand_collision_95.obj",
+              "nightstand_collision_96.obj",
+              "nightstand_collision_97.obj",
+              "nightstand_collision_98.obj",
+              "nightstand_collision_99.obj",
+              "nightstand_collision_100.obj",
+              "nightstand_collision_101.obj",
+              "nightstand_collision_102.obj",
+              "nightstand_collision_103.obj",
+              "nightstand_collision_104.obj",
+              "nightstand_collision_105.obj",
+              "nightstand_collision_106.obj",
+              "nightstand_collision_107.obj",
+              "nightstand_collision_108.obj",
+              "nightstand_collision_109.obj",
+              "nightstand_collision_110.obj",
+              "nightstand_collision_111.obj",
+              "nightstand_collision_112.obj",
+              "nightstand_collision_113.obj",
+              "nightstand_collision_114.obj",
+              "nightstand_collision_115.obj",
+              "nightstand_collision_116.obj",
+              "nightstand_collision_117.obj",
+              "nightstand_collision_118.obj",
+              "nightstand_collision_119.obj",
+              "nightstand_collision_120.obj",
+              "nightstand_collision_121.obj",
+              "nightstand_collision_122.obj",
+              "nightstand_collision_123.obj",
+              "nightstand_collision_124.obj",
+              "nightstand_collision_125.obj",
+              "nightstand_collision_126.obj",
+              "nightstand_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "nightstand.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "support_surfaces": [
+        {
+          "surface_id": "S_0",
+          "bounding_box_min": [
+            -0.2485604113049284,
+            -0.191391268033274,
+            0.01
+          ],
+          "bounding_box_max": [
+            0.2485604113049284,
+            0.191391268033274,
+            0.5
+          ],
+          "transform": {
+            "translation": [
+              -0.9954662143675692,
+              -1.7464043504072253,
+              0.6950885839966913
+            ],
+            "rotation_wxyz": [
+              0.9999989614631495,
+              0.0012615530635466039,
+              0.0006422279110602926,
+              -0.0002703697479711192
+            ]
+          }
+        },
+        {
+          "surface_id": "S_1",
+          "bounding_box_min": [
+            -0.20900188212710272,
+            -0.17667565345572941,
+            0.01
+          ],
+          "bounding_box_max": [
+            0.20900188212710272,
+            0.17667565345572941,
+            0.14295021080064538
+          ],
+          "transform": {
+            "translation": [
+              -0.9963642090484479,
+              -1.7352968373219557,
+              0.13492049027947375
+            ],
+            "rotation_wxyz": [
+              0.9999998960206036,
+              0.0003566814082923441,
+              -8.652564113941688e-05,
+              -0.00027064823741906007
+            ]
+          }
+        },
+        {
+          "surface_id": "S_2",
+          "bounding_box_min": [
+            -0.2105812146712852,
+            -0.1622594809495648,
+            0.01
+          ],
+          "bounding_box_max": [
+            0.2105812146712852,
+            0.1622594809495648,
+            0.2207868585117384
+          ],
+          "transform": {
+            "translation": [
+              -0.9960851288134904,
+              -1.7479108495627318,
+              0.30350628333958796
+            ],
+            "rotation_wxyz": [
+              0.9999920093856774,
+              0.003979987693304392,
+              0.0002587813052145684,
+              -0.00027183633381585003
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "object_id": "nightstand_1",
+      "name": "nightstand",
+      "description": "Tall bedside nightstand about 0.55m high with drawer and open shelf, simple modern",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          3.2451873163817533,
+          0.26511730877476336,
+          -0.0007323709995763958
+        ],
+        "rotation_wxyz": [
+          0.9999995427191302,
+          0.00013731070059608917,
+          0.000311349119130085,
+          0.0008937387919128501
+        ]
+      },
+      "bbox_min": [
+        -0.25,
+        -0.20442084968090057,
+        0.0
+      ],
+      "bbox_max": [
+        0.25,
+        0.20442084968090057,
+        0.6858738660812378
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/nightstand_1767845002/nightstand.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/nightstand_1767845002/nightstand.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/furniture/sdf/nightstand_1767845002/nightstand.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 12.0,
+            "inertia_pose": [
+              1.9e-05,
+              -0.015924,
+              0.462262,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.5799452,
+              "ixy": 0.000112167,
+              "ixz": 0.0009296726,
+              "iyy": 0.7471268,
+              "iyz": -0.01429862,
+              "izz": 0.4671505
+            },
+            "collision_meshes": [
+              "nightstand_collision_0.obj",
+              "nightstand_collision_1.obj",
+              "nightstand_collision_2.obj",
+              "nightstand_collision_3.obj",
+              "nightstand_collision_4.obj",
+              "nightstand_collision_5.obj",
+              "nightstand_collision_6.obj",
+              "nightstand_collision_7.obj",
+              "nightstand_collision_8.obj",
+              "nightstand_collision_9.obj",
+              "nightstand_collision_10.obj",
+              "nightstand_collision_11.obj",
+              "nightstand_collision_12.obj",
+              "nightstand_collision_13.obj",
+              "nightstand_collision_14.obj",
+              "nightstand_collision_15.obj",
+              "nightstand_collision_16.obj",
+              "nightstand_collision_17.obj",
+              "nightstand_collision_18.obj",
+              "nightstand_collision_19.obj",
+              "nightstand_collision_20.obj",
+              "nightstand_collision_21.obj",
+              "nightstand_collision_22.obj",
+              "nightstand_collision_23.obj",
+              "nightstand_collision_24.obj",
+              "nightstand_collision_25.obj",
+              "nightstand_collision_26.obj",
+              "nightstand_collision_27.obj",
+              "nightstand_collision_28.obj",
+              "nightstand_collision_29.obj",
+              "nightstand_collision_30.obj",
+              "nightstand_collision_31.obj",
+              "nightstand_collision_32.obj",
+              "nightstand_collision_33.obj",
+              "nightstand_collision_34.obj",
+              "nightstand_collision_35.obj",
+              "nightstand_collision_36.obj",
+              "nightstand_collision_37.obj",
+              "nightstand_collision_38.obj",
+              "nightstand_collision_39.obj",
+              "nightstand_collision_40.obj",
+              "nightstand_collision_41.obj",
+              "nightstand_collision_42.obj",
+              "nightstand_collision_43.obj",
+              "nightstand_collision_44.obj",
+              "nightstand_collision_45.obj",
+              "nightstand_collision_46.obj",
+              "nightstand_collision_47.obj",
+              "nightstand_collision_48.obj",
+              "nightstand_collision_49.obj",
+              "nightstand_collision_50.obj",
+              "nightstand_collision_51.obj",
+              "nightstand_collision_52.obj",
+              "nightstand_collision_53.obj",
+              "nightstand_collision_54.obj",
+              "nightstand_collision_55.obj",
+              "nightstand_collision_56.obj",
+              "nightstand_collision_57.obj",
+              "nightstand_collision_58.obj",
+              "nightstand_collision_59.obj",
+              "nightstand_collision_60.obj",
+              "nightstand_collision_61.obj",
+              "nightstand_collision_62.obj",
+              "nightstand_collision_63.obj",
+              "nightstand_collision_64.obj",
+              "nightstand_collision_65.obj",
+              "nightstand_collision_66.obj",
+              "nightstand_collision_67.obj",
+              "nightstand_collision_68.obj",
+              "nightstand_collision_69.obj",
+              "nightstand_collision_70.obj",
+              "nightstand_collision_71.obj",
+              "nightstand_collision_72.obj",
+              "nightstand_collision_73.obj",
+              "nightstand_collision_74.obj",
+              "nightstand_collision_75.obj",
+              "nightstand_collision_76.obj",
+              "nightstand_collision_77.obj",
+              "nightstand_collision_78.obj",
+              "nightstand_collision_79.obj",
+              "nightstand_collision_80.obj",
+              "nightstand_collision_81.obj",
+              "nightstand_collision_82.obj",
+              "nightstand_collision_83.obj",
+              "nightstand_collision_84.obj",
+              "nightstand_collision_85.obj",
+              "nightstand_collision_86.obj",
+              "nightstand_collision_87.obj",
+              "nightstand_collision_88.obj",
+              "nightstand_collision_89.obj",
+              "nightstand_collision_90.obj",
+              "nightstand_collision_91.obj",
+              "nightstand_collision_92.obj",
+              "nightstand_collision_93.obj",
+              "nightstand_collision_94.obj",
+              "nightstand_collision_95.obj",
+              "nightstand_collision_96.obj",
+              "nightstand_collision_97.obj",
+              "nightstand_collision_98.obj",
+              "nightstand_collision_99.obj",
+              "nightstand_collision_100.obj",
+              "nightstand_collision_101.obj",
+              "nightstand_collision_102.obj",
+              "nightstand_collision_103.obj",
+              "nightstand_collision_104.obj",
+              "nightstand_collision_105.obj",
+              "nightstand_collision_106.obj",
+              "nightstand_collision_107.obj",
+              "nightstand_collision_108.obj",
+              "nightstand_collision_109.obj",
+              "nightstand_collision_110.obj",
+              "nightstand_collision_111.obj",
+              "nightstand_collision_112.obj",
+              "nightstand_collision_113.obj",
+              "nightstand_collision_114.obj",
+              "nightstand_collision_115.obj",
+              "nightstand_collision_116.obj",
+              "nightstand_collision_117.obj",
+              "nightstand_collision_118.obj",
+              "nightstand_collision_119.obj",
+              "nightstand_collision_120.obj",
+              "nightstand_collision_121.obj",
+              "nightstand_collision_122.obj",
+              "nightstand_collision_123.obj",
+              "nightstand_collision_124.obj",
+              "nightstand_collision_125.obj",
+              "nightstand_collision_126.obj",
+              "nightstand_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "nightstand.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "support_surfaces": [
+        {
+          "surface_id": "S_3",
+          "bounding_box_min": [
+            -0.2485604113049284,
+            -0.191391268033274,
+            0.01
+          ],
+          "bounding_box_max": [
+            0.2485604113049284,
+            0.191391268033274,
+            0.5
+          ],
+          "transform": {
+            "translation": [
+              0.9959205451666326,
+              -1.7467299873222666,
+              0.6950885839966913
+            ],
+            "rotation_wxyz": [
+              0.9999985985678951,
+              0.001260804541739531,
+              0.0006436961468097039,
+              0.0008938061445423395
+            ]
+          }
+        },
+        {
+          "surface_id": "S_4",
+          "bounding_box_min": [
+            -0.20900188212710272,
+            -0.17667565345572941,
+            0.01
+          ],
+          "bounding_box_max": [
+            0.20900188212710272,
+            0.17667565345572941,
+            0.14295021080064538
+          ],
+          "transform": {
+            "translation": [
+              0.9949966907166901,
+              -1.735624595193141,
+              0.13492049027947375
+            ],
+            "rotation_wxyz": [
+              0.9999995334489268,
+              0.00035678189773995586,
+              -8.611034224222062e-05,
+              0.0008935287432733348
+            ]
+          }
+        },
+        {
+          "surface_id": "S_5",
+          "bounding_box_min": [
+            -0.2105812146712852,
+            -0.1622594809495648,
+            0.01
+          ],
+          "bounding_box_max": [
+            0.2105812146712852,
+            0.1622594809495648,
+            0.2207868585117384
+          ],
+          "transform": {
+            "translation": [
+              0.9953051400590622,
+              -1.748237923445081,
+              0.30350628333958796
+            ],
+            "rotation_wxyz": [
+              0.9999916482024995,
+              0.003979683729026675,
+              0.00026341453965814576,
+              0.0008923314662433192
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "object_id": "wardrobe_0",
+      "name": "wardrobe",
+      "description": "Large modern wardrobe with sliding doors (light oak and white), sized to span most of the wall",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          2.2482487318661684,
+          3.6180926509233746,
+          0.010813384125424506
+        ],
+        "rotation_wxyz": [
+          1.1082985775115476e-07,
+          -4.279831530133884e-06,
+          0.00030599781845851593,
+          0.9999999531735018
+        ]
+      },
+      "bbox_min": [
+        -1.149999976158142,
+        -0.3091014623641968,
+        0.0
+      ],
+      "bbox_max": [
+        1.149999976158142,
+        0.3091014623641968,
+        2.4000000953674316
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/geometry/wardrobe_1767845087/wardrobe_combined.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/wardrobe_1767845087/model_open_wardrobe_10.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/furniture/sdf/wardrobe_1767845087/model_open_wardrobe_10.sdf",
+      "is_articulated": true,
+      "physics": {
+        "links": {
+          "E_body_1": {
+            "mass": 85.0,
+            "inertia_pose": [
+              0.01525,
+              -0.10536,
+              1.21427,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 56.301960694067915,
+              "ixy": -0.24261945527324394,
+              "ixz": -0.36560544436117987,
+              "iyy": 100.73013362584578,
+              "iyz": 0.39165101954573694,
+              "izz": 50.14915789958463
+            },
+            "collision_meshes": [
+              "P_1475bb54bce7585f_coacd/convex_piece_000.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_001.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_002.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_003.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_004.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_005.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_006.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_007.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_008.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_009.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_010.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_011.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_012.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_013.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_014.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_015.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_016.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_017.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_018.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_019.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_020.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_021.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_022.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_023.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_024.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_025.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_026.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_027.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_028.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_029.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_030.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_031.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_032.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_033.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_034.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_035.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_036.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_037.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_038.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_039.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_040.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_041.obj",
+              "P_1475bb54bce7585f_coacd/convex_piece_042.obj"
+            ],
+            "visual_meshes": [
+              "model_open_wardrobe_10_meshes/P_1475bb54bce7585f.gltf"
+            ]
+          },
+          "E_door_1_2": {
+            "mass": 6.0,
+            "inertia_pose": [
+              0.78433,
+              0.23615,
+              1.34399,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 1.4881159908486505,
+              "ixy": -0.05752498703107617,
+              "ixz": -0.2823370204894752,
+              "iyy": 1.7172137279766841,
+              "iyz": -0.07746757310346261,
+              "izz": 0.26315862155221686
+            },
+            "collision_meshes": [
+              "E_door_1_2_combined_coacd/convex_piece_000.obj",
+              "E_door_1_2_combined_coacd/convex_piece_001.obj"
+            ],
+            "visual_meshes": [
+              "E_door_1_2_combined.gltf"
+            ]
+          },
+          "E_door_2_3": {
+            "mass": 6.0,
+            "inertia_pose": [
+              0.4964,
+              0.24053,
+              1.39483,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 3.6284705279665324,
+              "ixy": -0.07003378323508806,
+              "ixz": -0.31726073552419937,
+              "iyy": 3.8302356241978615,
+              "iyz": -0.1498258773025193,
+              "izz": 0.27391897950157157
+            },
+            "collision_meshes": [
+              "E_door_2_3_combined_coacd/convex_piece_000.obj",
+              "E_door_2_3_combined_coacd/convex_piece_001.obj"
+            ],
+            "visual_meshes": [
+              "E_door_2_3_combined.gltf"
+            ]
+          },
+          "E_door_3_4": {
+            "mass": 6.0,
+            "inertia_pose": [
+              0.16467,
+              0.24049,
+              1.39772,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 3.507975115393257,
+              "ixy": -0.022863657244595447,
+              "ixz": -0.10451933115497111,
+              "iyy": 3.5872415785551217,
+              "iyz": -0.14563569821534436,
+              "izz": 0.14973385176906973
+            },
+            "collision_meshes": [
+              "E_door_3_4_combined_coacd/convex_piece_000.obj",
+              "E_door_3_4_combined_coacd/convex_piece_001.obj"
+            ],
+            "visual_meshes": [
+              "E_door_3_4_combined.gltf"
+            ]
+          },
+          "E_door_4_5": {
+            "mass": 6.0,
+            "inertia_pose": [
+              -0.16012,
+              0.24093,
+              1.3924,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 3.8631145021648625,
+              "ixy": 0.02589442428891052,
+              "ixz": 0.12073316261833003,
+              "iyy": 3.950169083266732,
+              "iyz": -0.15810772729846445,
+              "izz": 0.16327081917090633
+            },
+            "collision_meshes": [
+              "E_door_4_5_combined_coacd/convex_piece_000.obj",
+              "E_door_4_5_combined_coacd/convex_piece_001.obj"
+            ],
+            "visual_meshes": [
+              "E_door_4_5_combined.gltf"
+            ]
+          },
+          "E_door_5_6": {
+            "mass": 6.0,
+            "inertia_pose": [
+              -0.48129,
+              0.24038,
+              1.39267,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 3.363785264424138,
+              "ixy": 0.06911365959381144,
+              "ixz": 0.30581531468897305,
+              "iyy": 3.5668850357068633,
+              "iyz": -0.14181671394360088,
+              "izz": 0.27104883803194696
+            },
+            "collision_meshes": [
+              "E_door_5_6_combined_coacd/convex_piece_000.obj",
+              "E_door_5_6_combined_coacd/convex_piece_001.obj"
+            ],
+            "visual_meshes": [
+              "E_door_5_6_combined.gltf"
+            ]
+          },
+          "E_door_6_7": {
+            "mass": 6.0,
+            "inertia_pose": [
+              -0.79858,
+              0.23966,
+              1.38549,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 3.0668814019086996,
+              "ixy": 0.1052408783155853,
+              "ixz": 0.4745271346910329,
+              "iyy": 3.4817580724909822,
+              "iyz": -0.13188908656937348,
+              "izz": 0.47699593968220766
+            },
+            "collision_meshes": [
+              "E_door_6_7_combined_coacd/convex_piece_000.obj",
+              "E_door_6_7_combined_coacd/convex_piece_001.obj"
+            ],
+            "visual_meshes": [
+              "E_door_6_7_combined.gltf"
+            ]
+          }
+        },
+        "joints": {
+          "RevoluteJoint_open_wardrobe_10_left_1_joint": {
+            "type": "revolute",
+            "parent_link": "E_body_1",
+            "child_link": "E_door_1_2",
+            "pose": [
+              1.1291,
+              0.28889054,
+              1.23,
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "pose_relative_to": "E_body_1",
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "limits": {
+              "lower": -1.5707963267948966,
+              "upper": 0.0,
+              "stiffness": 100000000.0
+            },
+            "dynamics": {
+              "friction": 23.788530349731445,
+              "damping": 10.0,
+              "spring_stiffness": 10.0,
+              "spring_reference": 0.0
+            }
+          },
+          "RevoluteJoint_open_wardrobe_10_left_2_joint": {
+            "type": "revolute",
+            "parent_link": "E_body_1",
+            "child_link": "E_door_2_3",
+            "pose": [
+              0.37667899,
+              0.28889054,
+              1.415,
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "pose_relative_to": "E_body_1",
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "limits": {
+              "lower": 0.0,
+              "upper": 1.2217304763960306,
+              "stiffness": 100000000.0
+            },
+            "dynamics": {
+              "friction": 23.788530349731445,
+              "damping": 10.0,
+              "spring_stiffness": 10.0,
+              "spring_reference": 0.0
+            }
+          },
+          "RevoluteJoint_open_wardrobe_10_left_3_joint": {
+            "type": "revolute",
+            "parent_link": "E_body_1",
+            "child_link": "E_door_3_4",
+            "pose": [
+              0.37645699,
+              0.29000154,
+              0.979175,
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "pose_relative_to": "E_body_1",
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "limits": {
+              "lower": -1.2217304763960306,
+              "upper": 0.0,
+              "stiffness": 100000000.0
+            },
+            "dynamics": {
+              "friction": 23.788530349731445,
+              "damping": 10.0,
+              "spring_stiffness": 10.0,
+              "spring_reference": 0.0
+            }
+          },
+          "RevoluteJoint_open_wardrobe_10_right_1_joint": {
+            "type": "revolute",
+            "parent_link": "E_body_1",
+            "child_link": "E_door_4_5",
+            "pose": [
+              -0.37665401,
+              0.28889054,
+              1.359,
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "pose_relative_to": "E_body_1",
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "limits": {
+              "lower": 0.0,
+              "upper": 1.2217304763960306,
+              "stiffness": 100000000.0
+            },
+            "dynamics": {
+              "friction": 23.788530349731445,
+              "damping": 10.0,
+              "spring_stiffness": 10.0,
+              "spring_reference": 0.0
+            }
+          },
+          "RevoluteJoint_open_wardrobe_10_right_2_joint": {
+            "type": "revolute",
+            "parent_link": "E_body_1",
+            "child_link": "E_door_5_6",
+            "pose": [
+              -0.37670901,
+              0.28950154,
+              0.832205,
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "pose_relative_to": "E_body_1",
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "limits": {
+              "lower": -1.2217304763960306,
+              "upper": 0.0,
+              "stiffness": 100000000.0
+            },
+            "dynamics": {
+              "friction": 23.788530349731445,
+              "damping": 10.0,
+              "spring_stiffness": 10.0,
+              "spring_reference": 0.0
+            }
+          },
+          "RevoluteJoint_open_wardrobe_10_right_3_joint": {
+            "type": "revolute",
+            "parent_link": "E_body_1",
+            "child_link": "E_door_6_7",
+            "pose": [
+              -1.1299,
+              0.28889054,
+              1.273,
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "pose_relative_to": "E_body_1",
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "limits": {
+              "lower": 0.0,
+              "upper": 1.5707963267948966,
+              "stiffness": 100000000.0
+            },
+            "dynamics": {
+              "friction": 23.788530349731445,
+              "damping": 10.0,
+              "spring_stiffness": 10.0,
+              "spring_reference": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "bedside_table_lamp_0",
+      "name": "bedside_table_lamp",
+      "description": "Compact modern bedside table lamp with matte white cylindrical shade and slim brushed-brass base",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          1.3643568476777288,
+          0.24843689789792145,
+          0.6842424081017014
+        ],
+        "rotation_wxyz": [
+          0.9994307587910021,
+          0.00055218382752819,
+          0.0003775334072727869,
+          0.03372997100486463
+        ]
+      },
+      "bbox_min": [
+        -0.07999999821186066,
+        -0.08175534009933472,
+        0.0
+      ],
+      "bbox_max": [
+        0.07999999821186066,
+        0.08175534009933472,
+        0.2986217737197876
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/bedside_table_lamp_1767851625/bedside_table_lamp.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/bedside_table_lamp_1767851625/bedside_table_lamp.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/manipuland/sdf/bedside_table_lamp_1767851625/bedside_table_lamp.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.6,
+            "inertia_pose": [
+              0.000162,
+              0.000151,
+              0.148638,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.02372294,
+              "ixy": 2.438638e-06,
+              "ixz": 1.965593e-05,
+              "iyy": 0.02359535,
+              "iyz": -2.098134e-05,
+              "izz": 0.006084598
+            },
+            "collision_meshes": [
+              "bedside_table_lamp_collision_0.obj",
+              "bedside_table_lamp_collision_1.obj",
+              "bedside_table_lamp_collision_2.obj",
+              "bedside_table_lamp_collision_3.obj",
+              "bedside_table_lamp_collision_4.obj",
+              "bedside_table_lamp_collision_5.obj",
+              "bedside_table_lamp_collision_6.obj",
+              "bedside_table_lamp_collision_7.obj",
+              "bedside_table_lamp_collision_8.obj",
+              "bedside_table_lamp_collision_9.obj",
+              "bedside_table_lamp_collision_10.obj",
+              "bedside_table_lamp_collision_11.obj",
+              "bedside_table_lamp_collision_12.obj",
+              "bedside_table_lamp_collision_13.obj",
+              "bedside_table_lamp_collision_14.obj",
+              "bedside_table_lamp_collision_15.obj",
+              "bedside_table_lamp_collision_16.obj",
+              "bedside_table_lamp_collision_17.obj",
+              "bedside_table_lamp_collision_18.obj",
+              "bedside_table_lamp_collision_19.obj",
+              "bedside_table_lamp_collision_20.obj",
+              "bedside_table_lamp_collision_21.obj",
+              "bedside_table_lamp_collision_22.obj",
+              "bedside_table_lamp_collision_23.obj",
+              "bedside_table_lamp_collision_24.obj",
+              "bedside_table_lamp_collision_25.obj",
+              "bedside_table_lamp_collision_26.obj",
+              "bedside_table_lamp_collision_27.obj",
+              "bedside_table_lamp_collision_28.obj",
+              "bedside_table_lamp_collision_29.obj",
+              "bedside_table_lamp_collision_30.obj",
+              "bedside_table_lamp_collision_31.obj",
+              "bedside_table_lamp_collision_32.obj",
+              "bedside_table_lamp_collision_33.obj",
+              "bedside_table_lamp_collision_34.obj",
+              "bedside_table_lamp_collision_35.obj",
+              "bedside_table_lamp_collision_36.obj",
+              "bedside_table_lamp_collision_37.obj",
+              "bedside_table_lamp_collision_38.obj",
+              "bedside_table_lamp_collision_39.obj",
+              "bedside_table_lamp_collision_40.obj",
+              "bedside_table_lamp_collision_41.obj",
+              "bedside_table_lamp_collision_42.obj",
+              "bedside_table_lamp_collision_43.obj",
+              "bedside_table_lamp_collision_44.obj",
+              "bedside_table_lamp_collision_45.obj",
+              "bedside_table_lamp_collision_46.obj",
+              "bedside_table_lamp_collision_47.obj",
+              "bedside_table_lamp_collision_48.obj",
+              "bedside_table_lamp_collision_49.obj",
+              "bedside_table_lamp_collision_50.obj",
+              "bedside_table_lamp_collision_51.obj",
+              "bedside_table_lamp_collision_52.obj",
+              "bedside_table_lamp_collision_53.obj",
+              "bedside_table_lamp_collision_54.obj",
+              "bedside_table_lamp_collision_55.obj",
+              "bedside_table_lamp_collision_56.obj",
+              "bedside_table_lamp_collision_57.obj",
+              "bedside_table_lamp_collision_58.obj",
+              "bedside_table_lamp_collision_59.obj",
+              "bedside_table_lamp_collision_60.obj",
+              "bedside_table_lamp_collision_61.obj",
+              "bedside_table_lamp_collision_62.obj",
+              "bedside_table_lamp_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "bedside_table_lamp.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_0",
+        "position_2d": [
+          0.12,
+          0.0
+        ],
+        "rotation_2d": 0.0,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "bedside_table_lamp_1",
+      "name": "bedside_table_lamp",
+      "description": "Compact modern bedside table lamp with matte white cylindrical shade and slim brushed-brass base",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          3.3591473900797877,
+          0.261280414675066,
+          0.6842546789854304
+        ],
+        "rotation_wxyz": [
+          0.9999860576847602,
+          0.0004934129308237929,
+          0.00039701129071689675,
+          -0.0052424576112810005
+        ]
+      },
+      "bbox_min": [
+        -0.07999999821186066,
+        -0.08175534009933472,
+        0.0
+      ],
+      "bbox_max": [
+        0.07999999821186066,
+        0.08175534009933472,
+        0.2986217737197876
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/bedside_table_lamp_1767851625/bedside_table_lamp.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/bedside_table_lamp_1767851625/bedside_table_lamp.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/manipuland/sdf/bedside_table_lamp_1767851625/bedside_table_lamp.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.6,
+            "inertia_pose": [
+              0.000162,
+              0.000151,
+              0.148638,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.02372294,
+              "ixy": 2.438638e-06,
+              "ixz": 1.965593e-05,
+              "iyy": 0.02359535,
+              "iyz": -2.098134e-05,
+              "izz": 0.006084598
+            },
+            "collision_meshes": [
+              "bedside_table_lamp_collision_0.obj",
+              "bedside_table_lamp_collision_1.obj",
+              "bedside_table_lamp_collision_2.obj",
+              "bedside_table_lamp_collision_3.obj",
+              "bedside_table_lamp_collision_4.obj",
+              "bedside_table_lamp_collision_5.obj",
+              "bedside_table_lamp_collision_6.obj",
+              "bedside_table_lamp_collision_7.obj",
+              "bedside_table_lamp_collision_8.obj",
+              "bedside_table_lamp_collision_9.obj",
+              "bedside_table_lamp_collision_10.obj",
+              "bedside_table_lamp_collision_11.obj",
+              "bedside_table_lamp_collision_12.obj",
+              "bedside_table_lamp_collision_13.obj",
+              "bedside_table_lamp_collision_14.obj",
+              "bedside_table_lamp_collision_15.obj",
+              "bedside_table_lamp_collision_16.obj",
+              "bedside_table_lamp_collision_17.obj",
+              "bedside_table_lamp_collision_18.obj",
+              "bedside_table_lamp_collision_19.obj",
+              "bedside_table_lamp_collision_20.obj",
+              "bedside_table_lamp_collision_21.obj",
+              "bedside_table_lamp_collision_22.obj",
+              "bedside_table_lamp_collision_23.obj",
+              "bedside_table_lamp_collision_24.obj",
+              "bedside_table_lamp_collision_25.obj",
+              "bedside_table_lamp_collision_26.obj",
+              "bedside_table_lamp_collision_27.obj",
+              "bedside_table_lamp_collision_28.obj",
+              "bedside_table_lamp_collision_29.obj",
+              "bedside_table_lamp_collision_30.obj",
+              "bedside_table_lamp_collision_31.obj",
+              "bedside_table_lamp_collision_32.obj",
+              "bedside_table_lamp_collision_33.obj",
+              "bedside_table_lamp_collision_34.obj",
+              "bedside_table_lamp_collision_35.obj",
+              "bedside_table_lamp_collision_36.obj",
+              "bedside_table_lamp_collision_37.obj",
+              "bedside_table_lamp_collision_38.obj",
+              "bedside_table_lamp_collision_39.obj",
+              "bedside_table_lamp_collision_40.obj",
+              "bedside_table_lamp_collision_41.obj",
+              "bedside_table_lamp_collision_42.obj",
+              "bedside_table_lamp_collision_43.obj",
+              "bedside_table_lamp_collision_44.obj",
+              "bedside_table_lamp_collision_45.obj",
+              "bedside_table_lamp_collision_46.obj",
+              "bedside_table_lamp_collision_47.obj",
+              "bedside_table_lamp_collision_48.obj",
+              "bedside_table_lamp_collision_49.obj",
+              "bedside_table_lamp_collision_50.obj",
+              "bedside_table_lamp_collision_51.obj",
+              "bedside_table_lamp_collision_52.obj",
+              "bedside_table_lamp_collision_53.obj",
+              "bedside_table_lamp_collision_54.obj",
+              "bedside_table_lamp_collision_55.obj",
+              "bedside_table_lamp_collision_56.obj",
+              "bedside_table_lamp_collision_57.obj",
+              "bedside_table_lamp_collision_58.obj",
+              "bedside_table_lamp_collision_59.obj",
+              "bedside_table_lamp_collision_60.obj",
+              "bedside_table_lamp_collision_61.obj",
+              "bedside_table_lamp_collision_62.obj",
+              "bedside_table_lamp_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "bedside_table_lamp.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_3",
+        "position_2d": [
+          0.1,
+          0.0
+        ],
+        "rotation_2d": 0.0,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "digital_alarm_clock_0",
+      "name": "digital_alarm_clock",
+      "description": "Small black digital alarm clock with LED display, rectangular body",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          1.3617731133167492,
+          0.38744962919899173,
+          0.684533927372886
+        ],
+        "rotation_wxyz": [
+          0.7510531065937309,
+          -0.005058582551767027,
+          -0.0015160411141431364,
+          -0.660220677832657
+        ]
+      },
+      "bbox_min": [
+        -0.0620930939912796,
+        -0.01974736712872982,
+        0.0
+      ],
+      "bbox_max": [
+        0.0620930939912796,
+        0.01974736712872982,
+        0.05000000074505806
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/digital_alarm_clock_1767851625/digital_alarm_clock.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/digital_alarm_clock_1767851625/digital_alarm_clock.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/manipuland/sdf/digital_alarm_clock_1767851625/digital_alarm_clock.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.25,
+            "inertia_pose": [
+              -0.000547,
+              0.000226,
+              0.024511,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 7.865616e-05,
+              "ixy": -3.278162e-06,
+              "ixz": -2.481726e-07,
+              "iyy": 0.0003652941,
+              "iyz": 8.710219e-08,
+              "izz": 0.0003453055
+            },
+            "collision_meshes": [
+              "digital_alarm_clock_collision_0.obj",
+              "digital_alarm_clock_collision_1.obj",
+              "digital_alarm_clock_collision_2.obj",
+              "digital_alarm_clock_collision_3.obj",
+              "digital_alarm_clock_collision_4.obj",
+              "digital_alarm_clock_collision_5.obj",
+              "digital_alarm_clock_collision_6.obj",
+              "digital_alarm_clock_collision_7.obj",
+              "digital_alarm_clock_collision_8.obj",
+              "digital_alarm_clock_collision_9.obj",
+              "digital_alarm_clock_collision_10.obj",
+              "digital_alarm_clock_collision_11.obj",
+              "digital_alarm_clock_collision_12.obj",
+              "digital_alarm_clock_collision_13.obj",
+              "digital_alarm_clock_collision_14.obj",
+              "digital_alarm_clock_collision_15.obj",
+              "digital_alarm_clock_collision_16.obj",
+              "digital_alarm_clock_collision_17.obj",
+              "digital_alarm_clock_collision_18.obj",
+              "digital_alarm_clock_collision_19.obj",
+              "digital_alarm_clock_collision_20.obj",
+              "digital_alarm_clock_collision_21.obj",
+              "digital_alarm_clock_collision_22.obj",
+              "digital_alarm_clock_collision_23.obj",
+              "digital_alarm_clock_collision_24.obj",
+              "digital_alarm_clock_collision_25.obj",
+              "digital_alarm_clock_collision_26.obj",
+              "digital_alarm_clock_collision_27.obj",
+              "digital_alarm_clock_collision_28.obj",
+              "digital_alarm_clock_collision_29.obj",
+              "digital_alarm_clock_collision_30.obj",
+              "digital_alarm_clock_collision_31.obj",
+              "digital_alarm_clock_collision_32.obj",
+              "digital_alarm_clock_collision_33.obj",
+              "digital_alarm_clock_collision_34.obj",
+              "digital_alarm_clock_collision_35.obj",
+              "digital_alarm_clock_collision_36.obj",
+              "digital_alarm_clock_collision_37.obj",
+              "digital_alarm_clock_collision_38.obj",
+              "digital_alarm_clock_collision_39.obj",
+              "digital_alarm_clock_collision_40.obj",
+              "digital_alarm_clock_collision_41.obj",
+              "digital_alarm_clock_collision_42.obj",
+              "digital_alarm_clock_collision_43.obj",
+              "digital_alarm_clock_collision_44.obj",
+              "digital_alarm_clock_collision_45.obj",
+              "digital_alarm_clock_collision_46.obj",
+              "digital_alarm_clock_collision_47.obj",
+              "digital_alarm_clock_collision_48.obj",
+              "digital_alarm_clock_collision_49.obj",
+              "digital_alarm_clock_collision_50.obj",
+              "digital_alarm_clock_collision_51.obj",
+              "digital_alarm_clock_collision_52.obj",
+              "digital_alarm_clock_collision_53.obj",
+              "digital_alarm_clock_collision_54.obj",
+              "digital_alarm_clock_collision_55.obj",
+              "digital_alarm_clock_collision_56.obj",
+              "digital_alarm_clock_collision_57.obj",
+              "digital_alarm_clock_collision_58.obj",
+              "digital_alarm_clock_collision_59.obj",
+              "digital_alarm_clock_collision_60.obj",
+              "digital_alarm_clock_collision_61.obj",
+              "digital_alarm_clock_collision_62.obj",
+              "digital_alarm_clock_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "digital_alarm_clock.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_0",
+        "position_2d": [
+          0.11,
+          0.115
+        ],
+        "rotation_2d": 4.799655442984406,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "digital_alarm_clock_1",
+      "name": "digital_alarm_clock",
+      "description": "Small black digital alarm clock with LED display, rectangular body",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          3.129693749338166,
+          0.3603153116088844,
+          0.6849926088695908
+        ],
+        "rotation_wxyz": [
+          0.9950261241019167,
+          -0.0036913015663938963,
+          -0.0009293709847508755,
+          0.09954156376627679
+        ]
+      },
+      "bbox_min": [
+        -0.0620930939912796,
+        -0.01974736712872982,
+        0.0
+      ],
+      "bbox_max": [
+        0.0620930939912796,
+        0.01974736712872982,
+        0.05000000074505806
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/digital_alarm_clock_1767851625/digital_alarm_clock.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/digital_alarm_clock_1767851625/digital_alarm_clock.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/manipuland/sdf/digital_alarm_clock_1767851625/digital_alarm_clock.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.25,
+            "inertia_pose": [
+              -0.000547,
+              0.000226,
+              0.024511,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 7.865616e-05,
+              "ixy": -3.278162e-06,
+              "ixz": -2.481726e-07,
+              "iyy": 0.0003652941,
+              "iyz": 8.710219e-08,
+              "izz": 0.0003453055
+            },
+            "collision_meshes": [
+              "digital_alarm_clock_collision_0.obj",
+              "digital_alarm_clock_collision_1.obj",
+              "digital_alarm_clock_collision_2.obj",
+              "digital_alarm_clock_collision_3.obj",
+              "digital_alarm_clock_collision_4.obj",
+              "digital_alarm_clock_collision_5.obj",
+              "digital_alarm_clock_collision_6.obj",
+              "digital_alarm_clock_collision_7.obj",
+              "digital_alarm_clock_collision_8.obj",
+              "digital_alarm_clock_collision_9.obj",
+              "digital_alarm_clock_collision_10.obj",
+              "digital_alarm_clock_collision_11.obj",
+              "digital_alarm_clock_collision_12.obj",
+              "digital_alarm_clock_collision_13.obj",
+              "digital_alarm_clock_collision_14.obj",
+              "digital_alarm_clock_collision_15.obj",
+              "digital_alarm_clock_collision_16.obj",
+              "digital_alarm_clock_collision_17.obj",
+              "digital_alarm_clock_collision_18.obj",
+              "digital_alarm_clock_collision_19.obj",
+              "digital_alarm_clock_collision_20.obj",
+              "digital_alarm_clock_collision_21.obj",
+              "digital_alarm_clock_collision_22.obj",
+              "digital_alarm_clock_collision_23.obj",
+              "digital_alarm_clock_collision_24.obj",
+              "digital_alarm_clock_collision_25.obj",
+              "digital_alarm_clock_collision_26.obj",
+              "digital_alarm_clock_collision_27.obj",
+              "digital_alarm_clock_collision_28.obj",
+              "digital_alarm_clock_collision_29.obj",
+              "digital_alarm_clock_collision_30.obj",
+              "digital_alarm_clock_collision_31.obj",
+              "digital_alarm_clock_collision_32.obj",
+              "digital_alarm_clock_collision_33.obj",
+              "digital_alarm_clock_collision_34.obj",
+              "digital_alarm_clock_collision_35.obj",
+              "digital_alarm_clock_collision_36.obj",
+              "digital_alarm_clock_collision_37.obj",
+              "digital_alarm_clock_collision_38.obj",
+              "digital_alarm_clock_collision_39.obj",
+              "digital_alarm_clock_collision_40.obj",
+              "digital_alarm_clock_collision_41.obj",
+              "digital_alarm_clock_collision_42.obj",
+              "digital_alarm_clock_collision_43.obj",
+              "digital_alarm_clock_collision_44.obj",
+              "digital_alarm_clock_collision_45.obj",
+              "digital_alarm_clock_collision_46.obj",
+              "digital_alarm_clock_collision_47.obj",
+              "digital_alarm_clock_collision_48.obj",
+              "digital_alarm_clock_collision_49.obj",
+              "digital_alarm_clock_collision_50.obj",
+              "digital_alarm_clock_collision_51.obj",
+              "digital_alarm_clock_collision_52.obj",
+              "digital_alarm_clock_collision_53.obj",
+              "digital_alarm_clock_collision_54.obj",
+              "digital_alarm_clock_collision_55.obj",
+              "digital_alarm_clock_collision_56.obj",
+              "digital_alarm_clock_collision_57.obj",
+              "digital_alarm_clock_collision_58.obj",
+              "digital_alarm_clock_collision_59.obj",
+              "digital_alarm_clock_collision_60.obj",
+              "digital_alarm_clock_collision_61.obj",
+              "digital_alarm_clock_collision_62.obj",
+              "digital_alarm_clock_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "digital_alarm_clock.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_3",
+        "position_2d": [
+          -0.12,
+          0.1
+        ],
+        "rotation_2d": 0.13962634015954636,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "paperback_book_0",
+      "name": "paperback_book",
+      "description": "Thin paperback book with light gray cover, lying flat",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          1.261462849158035,
+          0.2553847424054614,
+          0.2929031037410259
+        ],
+        "rotation_wxyz": [
+          0.9999593682191029,
+          -8.17635148070104e-05,
+          -0.006751334899850026,
+          -0.005972830371794238
+        ]
+      },
+      "bbox_min": [
+        -0.07000000029802322,
+        -0.09270758926868439,
+        0.0
+      ],
+      "bbox_max": [
+        0.07000000029802322,
+        0.09270758926868439,
+        0.018512800335884094
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/paperback_book_1767851716/paperback_book.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/paperback_book_1767851716/paperback_book.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/manipuland/sdf/paperback_book_1767851716/paperback_book.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.35,
+            "inertia_pose": [
+              -4.2e-05,
+              -2.8e-05,
+              0.00925,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.000992152,
+              "ixy": -7.246391e-08,
+              "ixz": 1.645193e-07,
+              "iyy": 0.0005680315,
+              "iyz": -3.602138e-07,
+              "izz": 0.001540746
+            },
+            "collision_meshes": [
+              "paperback_book_collision_0.obj",
+              "paperback_book_collision_1.obj",
+              "paperback_book_collision_2.obj",
+              "paperback_book_collision_3.obj",
+              "paperback_book_collision_4.obj",
+              "paperback_book_collision_5.obj",
+              "paperback_book_collision_6.obj",
+              "paperback_book_collision_7.obj",
+              "paperback_book_collision_8.obj",
+              "paperback_book_collision_9.obj",
+              "paperback_book_collision_10.obj",
+              "paperback_book_collision_11.obj",
+              "paperback_book_collision_12.obj",
+              "paperback_book_collision_13.obj",
+              "paperback_book_collision_14.obj",
+              "paperback_book_collision_15.obj",
+              "paperback_book_collision_16.obj",
+              "paperback_book_collision_17.obj",
+              "paperback_book_collision_18.obj",
+              "paperback_book_collision_19.obj",
+              "paperback_book_collision_20.obj",
+              "paperback_book_collision_21.obj",
+              "paperback_book_collision_22.obj",
+              "paperback_book_collision_23.obj",
+              "paperback_book_collision_24.obj",
+              "paperback_book_collision_25.obj",
+              "paperback_book_collision_26.obj",
+              "paperback_book_collision_27.obj",
+              "paperback_book_collision_28.obj",
+              "paperback_book_collision_29.obj",
+              "paperback_book_collision_30.obj",
+              "paperback_book_collision_31.obj",
+              "paperback_book_collision_32.obj",
+              "paperback_book_collision_33.obj",
+              "paperback_book_collision_34.obj",
+              "paperback_book_collision_35.obj",
+              "paperback_book_collision_36.obj",
+              "paperback_book_collision_37.obj",
+              "paperback_book_collision_38.obj",
+              "paperback_book_collision_39.obj",
+              "paperback_book_collision_40.obj",
+              "paperback_book_collision_41.obj",
+              "paperback_book_collision_42.obj",
+              "paperback_book_collision_43.obj",
+              "paperback_book_collision_44.obj",
+              "paperback_book_collision_45.obj",
+              "paperback_book_collision_46.obj",
+              "paperback_book_collision_47.obj",
+              "paperback_book_collision_48.obj",
+              "paperback_book_collision_49.obj",
+              "paperback_book_collision_50.obj",
+              "paperback_book_collision_51.obj",
+              "paperback_book_collision_52.obj",
+              "paperback_book_collision_53.obj",
+              "paperback_book_collision_54.obj",
+              "paperback_book_collision_55.obj",
+              "paperback_book_collision_56.obj",
+              "paperback_book_collision_57.obj",
+              "paperback_book_collision_58.obj",
+              "paperback_book_collision_59.obj",
+              "paperback_book_collision_60.obj",
+              "paperback_book_collision_61.obj",
+              "paperback_book_collision_62.obj",
+              "paperback_book_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "paperback_book.gltf"
+            ],
+            "friction": {
+              "mu": 0.32,
+              "mu2": 0.32
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_2",
+        "position_2d": [
+          0.02,
+          0.0
+        ],
+        "rotation_2d": 0.06981317007977318,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "paperback_book_1",
+      "name": "paperback_book",
+      "description": "Thin paperback book with light gray cover, lying flat",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          3.1966725689212807,
+          0.2751810550982856,
+          0.292936934362387
+        ],
+        "rotation_wxyz": [
+          0.9912290702746023,
+          0.0007146431988537417,
+          -0.006094196939299831,
+          0.1320124247611221
+        ]
+      },
+      "bbox_min": [
+        -0.07000000029802322,
+        -0.09270758926868439,
+        0.0
+      ],
+      "bbox_max": [
+        0.07000000029802322,
+        0.09270758926868439,
+        0.018512800335884094
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/paperback_book_1767851716/paperback_book.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/paperback_book_1767851716/paperback_book.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/manipuland/sdf/paperback_book_1767851716/paperback_book.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.35,
+            "inertia_pose": [
+              -4.2e-05,
+              -2.8e-05,
+              0.00925,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.000992152,
+              "ixy": -7.246391e-08,
+              "ixz": 1.645193e-07,
+              "iyy": 0.0005680315,
+              "iyz": -3.602138e-07,
+              "izz": 0.001540746
+            },
+            "collision_meshes": [
+              "paperback_book_collision_0.obj",
+              "paperback_book_collision_1.obj",
+              "paperback_book_collision_2.obj",
+              "paperback_book_collision_3.obj",
+              "paperback_book_collision_4.obj",
+              "paperback_book_collision_5.obj",
+              "paperback_book_collision_6.obj",
+              "paperback_book_collision_7.obj",
+              "paperback_book_collision_8.obj",
+              "paperback_book_collision_9.obj",
+              "paperback_book_collision_10.obj",
+              "paperback_book_collision_11.obj",
+              "paperback_book_collision_12.obj",
+              "paperback_book_collision_13.obj",
+              "paperback_book_collision_14.obj",
+              "paperback_book_collision_15.obj",
+              "paperback_book_collision_16.obj",
+              "paperback_book_collision_17.obj",
+              "paperback_book_collision_18.obj",
+              "paperback_book_collision_19.obj",
+              "paperback_book_collision_20.obj",
+              "paperback_book_collision_21.obj",
+              "paperback_book_collision_22.obj",
+              "paperback_book_collision_23.obj",
+              "paperback_book_collision_24.obj",
+              "paperback_book_collision_25.obj",
+              "paperback_book_collision_26.obj",
+              "paperback_book_collision_27.obj",
+              "paperback_book_collision_28.obj",
+              "paperback_book_collision_29.obj",
+              "paperback_book_collision_30.obj",
+              "paperback_book_collision_31.obj",
+              "paperback_book_collision_32.obj",
+              "paperback_book_collision_33.obj",
+              "paperback_book_collision_34.obj",
+              "paperback_book_collision_35.obj",
+              "paperback_book_collision_36.obj",
+              "paperback_book_collision_37.obj",
+              "paperback_book_collision_38.obj",
+              "paperback_book_collision_39.obj",
+              "paperback_book_collision_40.obj",
+              "paperback_book_collision_41.obj",
+              "paperback_book_collision_42.obj",
+              "paperback_book_collision_43.obj",
+              "paperback_book_collision_44.obj",
+              "paperback_book_collision_45.obj",
+              "paperback_book_collision_46.obj",
+              "paperback_book_collision_47.obj",
+              "paperback_book_collision_48.obj",
+              "paperback_book_collision_49.obj",
+              "paperback_book_collision_50.obj",
+              "paperback_book_collision_51.obj",
+              "paperback_book_collision_52.obj",
+              "paperback_book_collision_53.obj",
+              "paperback_book_collision_54.obj",
+              "paperback_book_collision_55.obj",
+              "paperback_book_collision_56.obj",
+              "paperback_book_collision_57.obj",
+              "paperback_book_collision_58.obj",
+              "paperback_book_collision_59.obj",
+              "paperback_book_collision_60.obj",
+              "paperback_book_collision_61.obj",
+              "paperback_book_collision_62.obj",
+              "paperback_book_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "paperback_book.gltf"
+            ],
+            "friction": {
+              "mu": 0.32,
+              "mu2": 0.32
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_5",
+        "position_2d": [
+          -0.03,
+          0.02
+        ],
+        "rotation_2d": 0.24434609527920614,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "east_wall",
+      "name": "east_wall",
+      "description": "Room east_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          4.475,
+          2.0,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -0.025,
+        -2.0,
+        -1.35
+      ],
+      "bbox_max": [
+        0.025,
+        2.0,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "east_wall",
+      "name": "east_wall",
+      "description": "Room east_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          4.475,
+          2.0,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -0.025,
+        -2.0,
+        -1.35
+      ],
+      "bbox_max": [
+        0.025,
+        2.0,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "north_wall",
+      "name": "north_wall",
+      "description": "Room north_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          2.25,
+          3.975,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -2.25,
+        -0.025,
+        -1.35
+      ],
+      "bbox_max": [
+        2.25,
+        0.025,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "north_wall",
+      "name": "north_wall",
+      "description": "Room north_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          2.25,
+          3.975,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -2.25,
+        -0.025,
+        -1.35
+      ],
+      "bbox_max": [
+        2.25,
+        0.025,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "south_wall",
+      "name": "south_wall",
+      "description": "Room south_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          2.25,
+          0.02499999999999991,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -2.25,
+        -0.025,
+        -1.35
+      ],
+      "bbox_max": [
+        2.25,
+        0.025,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "south_wall",
+      "name": "south_wall",
+      "description": "Room south_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          2.25,
+          0.02499999999999991,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -2.25,
+        -0.025,
+        -1.35
+      ],
+      "bbox_max": [
+        2.25,
+        0.025,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "west_wall",
+      "name": "west_wall",
+      "description": "Room west_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          0.02499999999999991,
+          2.0,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -0.025,
+        -2.0,
+        -1.35
+      ],
+      "bbox_max": [
+        0.025,
+        2.0,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "west_wall",
+      "name": "west_wall",
+      "description": "Room west_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          0.02499999999999991,
+          2.0,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -0.025,
+        -2.0,
+        -1.35
+      ],
+      "bbox_max": [
+        0.025,
+        2.0,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "art_print_0",
+      "name": "art_print",
+      "description": "medium framed art print of delicate botanical line drawing on off-white paper, approx 80cm wide x 60cm tall, thin matte black frame",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          4.45,
+          3.6,
+          1.55
+        ],
+        "rotation_wxyz": [
+          0.7071067667864268,
+          -0.00014270545140593685,
+          0.00014270545140593682,
+          0.7071067667864267
+        ]
+      },
+      "bbox_min": [
+        -0.3428349569439888,
+        -3.5649528118886805e-18,
+        -0.2550000101327896
+      ],
+      "bbox_max": [
+        0.3428349569439888,
+        0.015654176753014327,
+        0.2550000101327896
+      ],
+      "scale_factor": 0.85,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/art_print_1767849559/art_print.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/art_print_1767849559/art_print.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/wall_mounted/sdf/art_print_1767849559/art_print.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.6,
+            "inertia_pose": [
+              0.0053244,
+              0.0076364,
+              0.00109055,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.03484801,
+              "ixy": -4.857196e-05,
+              "ixz": -0.0004428091,
+              "iyy": 0.09795308,
+              "iyz": 4.83888e-05,
+              "izz": 0.06314895
+            },
+            "collision_meshes": [
+              "art_print_collision_0.obj"
+            ],
+            "visual_meshes": [
+              "art_print.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "bedroom_east",
+        "position_2d": [
+          0.4,
+          1.55
+        ],
+        "rotation_2d": 0.0004036319723456687,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "art_print_1",
+      "name": "art_print",
+      "description": "medium framed art print (minimal line art, warm neutral) approx 80cm wide x 60cm tall, thin black frame",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          0.04999999999999982,
+          3.1380844874999054,
+          1.5139913913571328
+        ],
+        "rotation_wxyz": [
+          0.7070995197226642,
+          -0.0032045604968025136,
+          -0.0032045604968025145,
+          -0.7070995197226642
+        ]
+      },
+      "bbox_min": [
+        -0.4000000059604645,
+        -0.0,
+        -0.3865068852901459
+      ],
+      "bbox_max": [
+        0.4000000059604645,
+        0.01864037849009037,
+        0.3865068852901459
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/art_print_1767849329/art_print.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/art_print_1767849329/art_print.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/wall_mounted/sdf/art_print_1767849329/art_print.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.2,
+            "inertia_pose": [
+              -0.004821,
+              0.009402,
+              0.012387,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.06258325,
+              "ixy": -1.171047e-05,
+              "ixz": -0.0003903384,
+              "iyy": 0.12909,
+              "iyz": 1.065265e-05,
+              "izz": 0.06653831
+            },
+            "collision_meshes": [
+              "art_print_collision_0.obj",
+              "art_print_collision_1.obj",
+              "art_print_collision_2.obj",
+              "art_print_collision_3.obj",
+              "art_print_collision_4.obj",
+              "art_print_collision_5.obj",
+              "art_print_collision_6.obj",
+              "art_print_collision_7.obj",
+              "art_print_collision_8.obj",
+              "art_print_collision_9.obj",
+              "art_print_collision_10.obj",
+              "art_print_collision_11.obj",
+              "art_print_collision_12.obj",
+              "art_print_collision_13.obj",
+              "art_print_collision_14.obj",
+              "art_print_collision_15.obj",
+              "art_print_collision_16.obj",
+              "art_print_collision_17.obj",
+              "art_print_collision_18.obj",
+              "art_print_collision_19.obj",
+              "art_print_collision_20.obj",
+              "art_print_collision_21.obj",
+              "art_print_collision_22.obj",
+              "art_print_collision_23.obj",
+              "art_print_collision_24.obj",
+              "art_print_collision_25.obj",
+              "art_print_collision_26.obj",
+              "art_print_collision_27.obj",
+              "art_print_collision_28.obj",
+              "art_print_collision_29.obj",
+              "art_print_collision_30.obj",
+              "art_print_collision_31.obj",
+              "art_print_collision_32.obj",
+              "art_print_collision_33.obj",
+              "art_print_collision_34.obj",
+              "art_print_collision_35.obj",
+              "art_print_collision_36.obj",
+              "art_print_collision_37.obj",
+              "art_print_collision_38.obj",
+              "art_print_collision_39.obj",
+              "art_print_collision_40.obj",
+              "art_print_collision_41.obj",
+              "art_print_collision_42.obj",
+              "art_print_collision_43.obj",
+              "art_print_collision_44.obj",
+              "art_print_collision_45.obj",
+              "art_print_collision_46.obj",
+              "art_print_collision_47.obj",
+              "art_print_collision_48.obj",
+              "art_print_collision_49.obj",
+              "art_print_collision_50.obj",
+              "art_print_collision_51.obj",
+              "art_print_collision_52.obj",
+              "art_print_collision_53.obj",
+              "art_print_collision_54.obj",
+              "art_print_collision_55.obj",
+              "art_print_collision_56.obj",
+              "art_print_collision_57.obj",
+              "art_print_collision_58.obj",
+              "art_print_collision_59.obj",
+              "art_print_collision_60.obj",
+              "art_print_collision_61.obj",
+              "art_print_collision_62.obj",
+              "art_print_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "art_print.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "bedroom_west",
+        "position_2d": [
+          3.1380844874999054,
+          1.5139913913571328
+        ],
+        "rotation_2d": -0.009063896858574217,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "art_print_2",
+      "name": "art_print",
+      "description": "narrow vertical framed art print (muted geometric shapes) approx 55cm wide x 85cm tall, thin black frame",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          0.04999999999999982,
+          0.6281149382220779,
+          1.5387057988173773
+        ],
+        "rotation_wxyz": [
+          0.7071006039000434,
+          -0.0029556664551225104,
+          -0.0029556664551225113,
+          -0.7071006039000434
+        ]
+      },
+      "bbox_min": [
+        -0.43983691930770874,
+        -0.0,
+        -0.42500001192092896
+      ],
+      "bbox_max": [
+        0.43983691930770874,
+        0.02049681730568409,
+        0.42500001192092896
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/art_print_1767849329/art_print.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/art_print_1767849329/art_print.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/wall_mounted/sdf/art_print_1767849329/art_print.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.2,
+            "inertia_pose": [
+              -0.004821,
+              0.009402,
+              0.012387,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.06258325,
+              "ixy": -1.171047e-05,
+              "ixz": -0.0003903384,
+              "iyy": 0.12909,
+              "iyz": 1.065265e-05,
+              "izz": 0.06653831
+            },
+            "collision_meshes": [
+              "art_print_collision_0.obj",
+              "art_print_collision_1.obj",
+              "art_print_collision_2.obj",
+              "art_print_collision_3.obj",
+              "art_print_collision_4.obj",
+              "art_print_collision_5.obj",
+              "art_print_collision_6.obj",
+              "art_print_collision_7.obj",
+              "art_print_collision_8.obj",
+              "art_print_collision_9.obj",
+              "art_print_collision_10.obj",
+              "art_print_collision_11.obj",
+              "art_print_collision_12.obj",
+              "art_print_collision_13.obj",
+              "art_print_collision_14.obj",
+              "art_print_collision_15.obj",
+              "art_print_collision_16.obj",
+              "art_print_collision_17.obj",
+              "art_print_collision_18.obj",
+              "art_print_collision_19.obj",
+              "art_print_collision_20.obj",
+              "art_print_collision_21.obj",
+              "art_print_collision_22.obj",
+              "art_print_collision_23.obj",
+              "art_print_collision_24.obj",
+              "art_print_collision_25.obj",
+              "art_print_collision_26.obj",
+              "art_print_collision_27.obj",
+              "art_print_collision_28.obj",
+              "art_print_collision_29.obj",
+              "art_print_collision_30.obj",
+              "art_print_collision_31.obj",
+              "art_print_collision_32.obj",
+              "art_print_collision_33.obj",
+              "art_print_collision_34.obj",
+              "art_print_collision_35.obj",
+              "art_print_collision_36.obj",
+              "art_print_collision_37.obj",
+              "art_print_collision_38.obj",
+              "art_print_collision_39.obj",
+              "art_print_collision_40.obj",
+              "art_print_collision_41.obj",
+              "art_print_collision_42.obj",
+              "art_print_collision_43.obj",
+              "art_print_collision_44.obj",
+              "art_print_collision_45.obj",
+              "art_print_collision_46.obj",
+              "art_print_collision_47.obj",
+              "art_print_collision_48.obj",
+              "art_print_collision_49.obj",
+              "art_print_collision_50.obj",
+              "art_print_collision_51.obj",
+              "art_print_collision_52.obj",
+              "art_print_collision_53.obj",
+              "art_print_collision_54.obj",
+              "art_print_collision_55.obj",
+              "art_print_collision_56.obj",
+              "art_print_collision_57.obj",
+              "art_print_collision_58.obj",
+              "art_print_collision_59.obj",
+              "art_print_collision_60.obj",
+              "art_print_collision_61.obj",
+              "art_print_collision_62.obj",
+              "art_print_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "art_print.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "bedroom_west",
+        "position_2d": [
+          0.628114938222078,
+          1.5387057988173773
+        ],
+        "rotation_2d": -0.008359911517454001,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "art_print_3",
+      "name": "art_print",
+      "description": "small framed art print (soft abstract shapes in beige/charcoal) approx 45cm wide x 60cm tall, thin matte black frame",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          0.3841878527436968,
+          3.95,
+          1.5639623824895486
+        ],
+        "rotation_wxyz": [
+          6.123228144431627e-17,
+          -0.0013824544773503899,
+          -8.46509225327041e-20,
+          0.9999990444093523
+        ]
+      },
+      "bbox_min": [
+        -0.22499999403953552,
+        -0.0,
+        -0.30703529715538025
+      ],
+      "bbox_max": [
+        0.22499999403953552,
+        0.020836442708969116,
+        0.30703529715538025
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/art_print_1767850190/art_print.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/art_print_1767850190/art_print.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/wall_mounted/sdf/art_print_1767850190/art_print.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.5,
+            "inertia_pose": [
+              -0.001814,
+              0.010582,
+              0.013791,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.05051094,
+              "ixy": 3.98896e-06,
+              "ixz": 7.531713e-05,
+              "iyy": 0.07730336,
+              "iyz": 8.428977e-06,
+              "izz": 0.02683284
+            },
+            "collision_meshes": [
+              "art_print_collision_0.obj",
+              "art_print_collision_1.obj",
+              "art_print_collision_2.obj",
+              "art_print_collision_3.obj",
+              "art_print_collision_4.obj",
+              "art_print_collision_5.obj",
+              "art_print_collision_6.obj",
+              "art_print_collision_7.obj",
+              "art_print_collision_8.obj",
+              "art_print_collision_9.obj",
+              "art_print_collision_10.obj",
+              "art_print_collision_11.obj",
+              "art_print_collision_12.obj",
+              "art_print_collision_13.obj",
+              "art_print_collision_14.obj",
+              "art_print_collision_15.obj",
+              "art_print_collision_16.obj",
+              "art_print_collision_17.obj",
+              "art_print_collision_18.obj",
+              "art_print_collision_19.obj",
+              "art_print_collision_20.obj",
+              "art_print_collision_21.obj",
+              "art_print_collision_22.obj",
+              "art_print_collision_23.obj",
+              "art_print_collision_24.obj",
+              "art_print_collision_25.obj",
+              "art_print_collision_26.obj",
+              "art_print_collision_27.obj",
+              "art_print_collision_28.obj",
+              "art_print_collision_29.obj",
+              "art_print_collision_30.obj",
+              "art_print_collision_31.obj",
+              "art_print_collision_32.obj",
+              "art_print_collision_33.obj",
+              "art_print_collision_34.obj",
+              "art_print_collision_35.obj",
+              "art_print_collision_36.obj",
+              "art_print_collision_37.obj",
+              "art_print_collision_38.obj",
+              "art_print_collision_39.obj",
+              "art_print_collision_40.obj",
+              "art_print_collision_41.obj",
+              "art_print_collision_42.obj",
+              "art_print_collision_43.obj",
+              "art_print_collision_44.obj",
+              "art_print_collision_45.obj",
+              "art_print_collision_46.obj",
+              "art_print_collision_47.obj",
+              "art_print_collision_48.obj",
+              "art_print_collision_49.obj",
+              "art_print_collision_50.obj",
+              "art_print_collision_51.obj",
+              "art_print_collision_52.obj",
+              "art_print_collision_53.obj",
+              "art_print_collision_54.obj",
+              "art_print_collision_55.obj",
+              "art_print_collision_56.obj",
+              "art_print_collision_57.obj",
+              "art_print_collision_58.obj",
+              "art_print_collision_59.obj",
+              "art_print_collision_60.obj",
+              "art_print_collision_61.obj",
+              "art_print_collision_62.obj",
+              "art_print_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "art_print.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "bedroom_north",
+        "position_2d": [
+          0.3841878527436967,
+          1.5639623824895486
+        ],
+        "rotation_2d": 0.0027649098354081626,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "art_print_4",
+      "name": "art_print",
+      "description": "small framed art print (soft abstract shapes in beige/charcoal) approx 45cm wide x 60cm tall, thin matte black frame",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          4.148127180261105,
+          3.95,
+          1.5706973093151966
+        ],
+        "rotation_wxyz": [
+          6.123098300133424e-17,
+          0.00665740613508943,
+          4.0764855569806118e-19,
+          0.9999778392262263
+        ]
+      },
+      "bbox_min": [
+        -0.22499999403953552,
+        -0.0,
+        -0.30703529715538025
+      ],
+      "bbox_max": [
+        0.22499999403953552,
+        0.020836442708969116,
+        0.30703529715538025
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/art_print_1767850190/art_print.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/art_print_1767850190/art_print.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/wall_mounted/sdf/art_print_1767850190/art_print.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.5,
+            "inertia_pose": [
+              -0.001814,
+              0.010582,
+              0.013791,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.05051094,
+              "ixy": 3.98896e-06,
+              "ixz": 7.531713e-05,
+              "iyy": 0.07730336,
+              "iyz": 8.428977e-06,
+              "izz": 0.02683284
+            },
+            "collision_meshes": [
+              "art_print_collision_0.obj",
+              "art_print_collision_1.obj",
+              "art_print_collision_2.obj",
+              "art_print_collision_3.obj",
+              "art_print_collision_4.obj",
+              "art_print_collision_5.obj",
+              "art_print_collision_6.obj",
+              "art_print_collision_7.obj",
+              "art_print_collision_8.obj",
+              "art_print_collision_9.obj",
+              "art_print_collision_10.obj",
+              "art_print_collision_11.obj",
+              "art_print_collision_12.obj",
+              "art_print_collision_13.obj",
+              "art_print_collision_14.obj",
+              "art_print_collision_15.obj",
+              "art_print_collision_16.obj",
+              "art_print_collision_17.obj",
+              "art_print_collision_18.obj",
+              "art_print_collision_19.obj",
+              "art_print_collision_20.obj",
+              "art_print_collision_21.obj",
+              "art_print_collision_22.obj",
+              "art_print_collision_23.obj",
+              "art_print_collision_24.obj",
+              "art_print_collision_25.obj",
+              "art_print_collision_26.obj",
+              "art_print_collision_27.obj",
+              "art_print_collision_28.obj",
+              "art_print_collision_29.obj",
+              "art_print_collision_30.obj",
+              "art_print_collision_31.obj",
+              "art_print_collision_32.obj",
+              "art_print_collision_33.obj",
+              "art_print_collision_34.obj",
+              "art_print_collision_35.obj",
+              "art_print_collision_36.obj",
+              "art_print_collision_37.obj",
+              "art_print_collision_38.obj",
+              "art_print_collision_39.obj",
+              "art_print_collision_40.obj",
+              "art_print_collision_41.obj",
+              "art_print_collision_42.obj",
+              "art_print_collision_43.obj",
+              "art_print_collision_44.obj",
+              "art_print_collision_45.obj",
+              "art_print_collision_46.obj",
+              "art_print_collision_47.obj",
+              "art_print_collision_48.obj",
+              "art_print_collision_49.obj",
+              "art_print_collision_50.obj",
+              "art_print_collision_51.obj",
+              "art_print_collision_52.obj",
+              "art_print_collision_53.obj",
+              "art_print_collision_54.obj",
+              "art_print_collision_55.obj",
+              "art_print_collision_56.obj",
+              "art_print_collision_57.obj",
+              "art_print_collision_58.obj",
+              "art_print_collision_59.obj",
+              "art_print_collision_60.obj",
+              "art_print_collision_61.obj",
+              "art_print_collision_62.obj",
+              "art_print_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "art_print.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "bedroom_north",
+        "position_2d": [
+          4.148127180261105,
+          1.5706973093151966
+        ],
+        "rotation_2d": -0.013314910626564909,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "canvas_print_0",
+      "name": "canvas_print",
+      "description": "large framed abstract canvas print in warm neutral tones (beige/charcoal), approx 200cm wide x 100cm tall, thin matte black frame",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          2.2371548744719276,
+          0.050000000000000044,
+          1.7440215754342694
+        ],
+        "rotation_wxyz": [
+          0.999989570429245,
+          -2.7965844524959843e-19,
+          0.004567169006513674,
+          -6.123170133034557e-17
+        ]
+      },
+      "bbox_min": [
+        -1.0858573913574219,
+        -0.0,
+        -0.5
+      ],
+      "bbox_max": [
+        1.0858573913574219,
+        0.021291693672537804,
+        0.5
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/canvas_print_1767849329/canvas_print.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/canvas_print_1767849329/canvas_print.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/wall_mounted/sdf/canvas_print_1767849329/canvas_print.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.7,
+            "inertia_pose": [
+              0.025543,
+              0.010446,
+              0.001374,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.05832499,
+              "ixy": 3.978073e-05,
+              "ixz": -0.0002218458,
+              "iyy": 0.3419641,
+              "iyz": -3.131497e-05,
+              "izz": 0.2836643
+            },
+            "collision_meshes": [
+              "canvas_print_collision_0.obj"
+            ],
+            "visual_meshes": [
+              "canvas_print.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "bedroom_south",
+        "position_2d": [
+          2.2628451255280724,
+          1.7440215754342694
+        ],
+        "rotation_2d": 0.009134369768901366,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "clock_0",
+      "name": "clock",
+      "description": "minimalist round wall clock with white face, black hands and markers, approx 40cm diameter",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          0.04999999999999982,
+          1.7507677897187612,
+          2.35
+        ],
+        "rotation_wxyz": [
+          0.7071047138381341,
+          -0.0017098736475006642,
+          -0.0017098736475006644,
+          -0.7071047138381343
+        ]
+      },
+      "bbox_min": [
+        -0.20005135238170624,
+        5.966118266087506e-09,
+        -0.20000000298023224
+      ],
+      "bbox_max": [
+        0.20005135238170624,
+        0.04072148725390434,
+        0.20000000298023224
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/clock_1767849329/clock.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/clock_1767849329/clock.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/wall_mounted/sdf/clock_1767849329/clock.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.8,
+            "inertia_pose": [
+              -0.002503,
+              0.017936,
+              0.001487,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.008325381,
+              "ixy": 5.444714e-06,
+              "ixz": -1.429985e-05,
+              "iyy": 0.01653943,
+              "iyz": 2.249473e-06,
+              "izz": 0.008242371
+            },
+            "collision_meshes": [
+              "clock_collision_0.obj",
+              "clock_collision_1.obj",
+              "clock_collision_2.obj",
+              "clock_collision_3.obj",
+              "clock_collision_4.obj",
+              "clock_collision_5.obj",
+              "clock_collision_6.obj",
+              "clock_collision_7.obj",
+              "clock_collision_8.obj",
+              "clock_collision_9.obj",
+              "clock_collision_10.obj",
+              "clock_collision_11.obj",
+              "clock_collision_12.obj",
+              "clock_collision_13.obj",
+              "clock_collision_14.obj",
+              "clock_collision_15.obj",
+              "clock_collision_16.obj",
+              "clock_collision_17.obj",
+              "clock_collision_18.obj",
+              "clock_collision_19.obj",
+              "clock_collision_20.obj",
+              "clock_collision_21.obj",
+              "clock_collision_22.obj",
+              "clock_collision_23.obj",
+              "clock_collision_24.obj",
+              "clock_collision_25.obj",
+              "clock_collision_26.obj",
+              "clock_collision_27.obj",
+              "clock_collision_28.obj",
+              "clock_collision_29.obj",
+              "clock_collision_30.obj",
+              "clock_collision_31.obj",
+              "clock_collision_32.obj",
+              "clock_collision_33.obj",
+              "clock_collision_34.obj",
+              "clock_collision_35.obj",
+              "clock_collision_36.obj",
+              "clock_collision_37.obj",
+              "clock_collision_38.obj",
+              "clock_collision_39.obj",
+              "clock_collision_40.obj",
+              "clock_collision_41.obj",
+              "clock_collision_42.obj",
+              "clock_collision_43.obj",
+              "clock_collision_44.obj",
+              "clock_collision_45.obj",
+              "clock_collision_46.obj",
+              "clock_collision_47.obj",
+              "clock_collision_48.obj",
+              "clock_collision_49.obj",
+              "clock_collision_50.obj",
+              "clock_collision_51.obj",
+              "clock_collision_52.obj",
+              "clock_collision_53.obj",
+              "clock_collision_54.obj",
+              "clock_collision_55.obj",
+              "clock_collision_56.obj",
+              "clock_collision_57.obj",
+              "clock_collision_58.obj",
+              "clock_collision_59.obj",
+              "clock_collision_60.obj",
+              "clock_collision_61.obj",
+              "clock_collision_62.obj",
+              "clock_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "clock.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "bedroom_west",
+        "position_2d": [
+          1.7507677897187612,
+          2.35
+        ],
+        "rotation_2d": -0.004836257717691192,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "mirror_0",
+      "name": "mirror",
+      "description": "oval wall mirror with thin matte black metal frame, approx 70cm wide x 120cm tall",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          4.45,
+          0.6670772755986181,
+          1.546093424438536
+        ],
+        "rotation_wxyz": [
+          0.7071065542271562,
+          -0.0005665412586662188,
+          0.0005665412586662187,
+          0.7071065542271562
+        ]
+      },
+      "bbox_min": [
+        -0.3499999940395355,
+        4.461365676888818e-08,
+        -0.6224824786186218
+      ],
+      "bbox_max": [
+        0.3499999940395355,
+        0.0089835524559021,
+        0.6224824786186218
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/mirror_1767849768/mirror.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/mirror_1767849768/mirror.sdf",
+      "sdf_path_resolved": "room_bedroom/generated_assets/wall_mounted/sdf/mirror_1767849768/mirror.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 2.7,
+            "inertia_pose": [
+              -0.009281,
+              0.004949,
+              0.005465,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.2758774,
+              "ixy": -3.534583e-05,
+              "ixz": 0.001568296,
+              "iyy": 0.3676044,
+              "iyz": 3.851795e-05,
+              "izz": 0.0917512
+            },
+            "collision_meshes": [
+              "mirror_collision_0.obj",
+              "mirror_collision_1.obj",
+              "mirror_collision_2.obj",
+              "mirror_collision_3.obj",
+              "mirror_collision_4.obj",
+              "mirror_collision_5.obj",
+              "mirror_collision_6.obj",
+              "mirror_collision_7.obj",
+              "mirror_collision_8.obj",
+              "mirror_collision_9.obj",
+              "mirror_collision_10.obj",
+              "mirror_collision_11.obj",
+              "mirror_collision_12.obj",
+              "mirror_collision_13.obj",
+              "mirror_collision_14.obj",
+              "mirror_collision_15.obj",
+              "mirror_collision_16.obj",
+              "mirror_collision_17.obj",
+              "mirror_collision_18.obj",
+              "mirror_collision_19.obj",
+              "mirror_collision_20.obj",
+              "mirror_collision_21.obj",
+              "mirror_collision_22.obj",
+              "mirror_collision_23.obj",
+              "mirror_collision_24.obj",
+              "mirror_collision_25.obj",
+              "mirror_collision_26.obj",
+              "mirror_collision_27.obj",
+              "mirror_collision_28.obj",
+              "mirror_collision_29.obj",
+              "mirror_collision_30.obj",
+              "mirror_collision_31.obj",
+              "mirror_collision_32.obj",
+              "mirror_collision_33.obj",
+              "mirror_collision_34.obj",
+              "mirror_collision_35.obj",
+              "mirror_collision_36.obj",
+              "mirror_collision_37.obj",
+              "mirror_collision_38.obj",
+              "mirror_collision_39.obj",
+              "mirror_collision_40.obj",
+              "mirror_collision_41.obj",
+              "mirror_collision_42.obj",
+              "mirror_collision_43.obj",
+              "mirror_collision_44.obj",
+              "mirror_collision_45.obj",
+              "mirror_collision_46.obj",
+              "mirror_collision_47.obj",
+              "mirror_collision_48.obj",
+              "mirror_collision_49.obj",
+              "mirror_collision_50.obj",
+              "mirror_collision_51.obj",
+              "mirror_collision_52.obj",
+              "mirror_collision_53.obj",
+              "mirror_collision_54.obj",
+              "mirror_collision_55.obj",
+              "mirror_collision_56.obj",
+              "mirror_collision_57.obj",
+              "mirror_collision_58.obj",
+              "mirror_collision_59.obj",
+              "mirror_collision_60.obj",
+              "mirror_collision_61.obj",
+              "mirror_collision_62.obj",
+              "mirror_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "mirror.gltf"
+            ],
+            "friction": {
+              "mu": 0.9,
+              "mu2": 0.9
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "bedroom_east",
+        "position_2d": [
+          3.332922724401382,
+          1.546093424438536
+        ],
+        "rotation_2d": 0.0016024208347418818,
+        "placement_method": "wall_placement"
+      }
+    }
+  ]
+}

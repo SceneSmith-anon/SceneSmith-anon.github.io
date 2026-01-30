@@ -3,8 +3,7 @@
 /* Viewer container */
 .viewer-box {
   position: relative;
-  aspect-ratio: 16/9;
-  min-height: 400px;
+  height: 600px;
   background: #f5f5f5;
   border-radius: 6px;
   overflow: hidden;
@@ -79,11 +78,15 @@
 }
 
 /* Isolated viewer */
+.isolated-viewer-wrapper {
+  position: relative;
+  margin-top: 1rem;
+}
+
 .isolated-viewer {
   aspect-ratio: 1;
   background: #f5f5f5;
   border-radius: 6px;
-  margin-top: 1rem;
   overflow: hidden;
 }
 
@@ -91,6 +94,93 @@
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.isolated-fullscreen-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.isolated-fullscreen-btn:hover {
+  background: #fff !important;
+  border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Isolated viewer fullscreen modal */
+#isolated-fullscreen-modal .modal-background {
+  background-color: rgba(0, 0, 0, 0.86);
+  cursor: pointer;
+}
+
+#isolated-fullscreen-modal .modal-content {
+  width: 90vh !important;
+  max-width: 90vw !important;
+  height: 90vh !important;
+  max-height: none !important;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+#isolated-fullscreen-modal .modal-content > * {
+  pointer-events: auto;
+}
+
+#isolated-fullscreen-modal .isolated-fullscreen-name {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+#isolated-fullscreen-modal .fullscreen-isolated-canvas {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+#isolated-fullscreen-modal .fullscreen-isolated-canvas canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#isolated-fullscreen-modal .viewer-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+}
+
+#isolated-fullscreen-modal .viewer-controls .button {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#isolated-fullscreen-modal .viewer-controls .button:hover {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+#isolated-fullscreen-modal .viewer-controls .button.is-active {
+  background: #3273dc;
+  color: #fff;
+  border-color: #3273dc;
+}
+
+#isolated-fullscreen-modal .modal-close {
+  z-index: 100;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 /* Scene selector */
@@ -255,7 +345,7 @@
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .viewer-box {
-    min-height: 300px;
+    height: 400px;
   }
 
   .viewer-controls {
@@ -282,6 +372,118 @@
 .viewer-section .quality-note {
   font-size: 0.8rem;
   margin-top: 0.5rem;
+}
+
+/* Metadata display */
+.meta-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+  word-break: break-word;
+}
+
+.meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta-tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.meta-tag.type-tag {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+.meta-tag.articulated-tag {
+  background: #fce8e6;
+  color: #d93025;
+}
+
+.meta-mass {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Overlay controls */
+.overlay-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay-controls .button.is-active {
+  background: #3273dc;
+  color: #fff;
+  border-color: #3273dc;
+}
+
+/* Joint controls */
+.joint-controls {
+  margin-top: 0.75rem;
+}
+
+.joint-controls-title {
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.joint-slider-group {
+  margin-bottom: 0.5rem;
+}
+
+.joint-slider-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  margin-bottom: 0.15rem;
+}
+
+.joint-slider-label .joint-name {
+  font-weight: 600;
+}
+
+.joint-slider-label .joint-type-badge {
+  display: inline-block;
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.joint-type-badge.revolute {
+  background: #f39c12;
+}
+
+.joint-type-badge.prismatic {
+  background: #9b59b6;
+}
+
+.joint-slider-value {
+  font-size: 0.7rem;
+  color: #888;
+  text-align: right;
+}
+
+.joint-slider-group input[type="range"] {
+  width: 100%;
+  margin: 0;
+  height: 18px;
+  cursor: pointer;
+  touch-action: none;   /* prevent scroll/pan from stealing the drag */
 }
 
 /* Keyboard hint */

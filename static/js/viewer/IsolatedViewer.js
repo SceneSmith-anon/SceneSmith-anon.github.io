@@ -21,6 +21,9 @@ export class IsolatedViewer {
     this.currentObject = null;
     this.animationId = null;
     this.isInitialized = false;
+    this.objectTransform = null; // Stored centering/scaling transform for overlays
+    this.originalTransforms = new Map(); // For joint animation reset
+    this._nodeCache = new Map(); // Cache child node lookups by name
   }
 
   /**
@@ -157,6 +160,13 @@ export class IsolatedViewer {
       this.currentObject.scale.multiplyScalar(scale);
     }
 
+    // Store the transform so overlays can match it
+    this.objectTransform = {
+      position: this.currentObject.position.clone(),
+      scale: this.currentObject.scale.clone(),
+      quaternion: this.currentObject.quaternion.clone(),
+    };
+
     this.scene.add(this.currentObject);
 
     // Frame the camera
@@ -204,6 +214,9 @@ export class IsolatedViewer {
       this.currentObject = null;
     }
 
+    this.objectTransform = null;
+    this.originalTransforms.clear();
+    this._nodeCache.clear();
     this.stopAnimation();
   }
 
@@ -229,6 +242,148 @@ export class IsolatedViewer {
     if (this.animationId) {
       cancelAnimationFrame(this.animationId);
       this.animationId = null;
+    }
+  }
+
+  /**
+   * Show or hide the visual mesh
+   */
+  setVisualVisible(visible) {
+    if (!this.currentObject) return;
+    this.currentObject.visible = visible;
+  }
+
+  /**
+   * Find all child nodes belonging to a given link name.
+   *
+   * THREE.js GLTFLoader sanitizes node names by stripping "/" and "." characters.
+   * GLB names like "credenza_1/E_door_1_1.001" become "credenza_1E_door_1_1001".
+   * A single link may span multiple mesh nodes that all need to be transformed together.
+   *
+   * Results are cached in _nodeCache.
+   * @param {string} childName - The expected child link name (e.g. "E_door_1_1")
+   * @returns {THREE.Object3D[]|null} - Array of matching nodes, or null if none found
+   */
+  _findChildNodes(childName) {
+    if (this._nodeCache.has(childName)) {
+      return this._nodeCache.get(childName);
+    }
+
+    if (!this.currentObject) return null;
+
+    // Build the sanitized prefix that GLTFLoader produces:
+    // "credenza_1" + "E_door_1_1" = "credenza_1E_door_1_1"
+    const objectId = this.currentObject.name || '';
+    const sanitizedPrefix = objectId + childName;
+
+    const matched = [];
+    const allNames = [];
+
+    this.currentObject.traverse((node) => {
+      if (node === this.currentObject) return;
+      if (node.name) allNames.push(node.name);
+
+      // Exact match on sanitized name, or sanitized name followed by
+      // a Blender numeric suffix (digits only, since "." is also stripped)
+      if (node.name === sanitizedPrefix || node.name === childName) {
+        matched.push(node);
+      } else if (node.name.length > sanitizedPrefix.length &&
+                 node.name.startsWith(sanitizedPrefix) &&
+                 /^\d+$/.test(node.name.slice(sanitizedPrefix.length))) {
+        matched.push(node);
+      }
+    });
+
+    if (matched.length === 0) {
+      console.warn(
+        `[IsolatedViewer] Could not find child nodes for link "${childName}" (prefix "${sanitizedPrefix}"). Available:`,
+        allNames.filter(n => n.length > 0)
+      );
+      this._nodeCache.set(childName, null);
+      return null;
+    }
+
+    this._nodeCache.set(childName, matched);
+    return matched;
+  }
+
+  /**
+   * Apply a joint transform to the child link in the current object.
+   * A single link may consist of multiple mesh nodes (Blender .NNN suffixes),
+   * so all matching nodes are transformed together.
+   * @param {Object} jointData - Joint metadata { type, child_link, axis, pose }
+   * @param {number} value - The joint value (radians for revolute, meters for prismatic)
+   */
+  applyJointTransform(jointData, value) {
+    if (!this.currentObject) return;
+
+    const childName = jointData.child_link;
+    const childNodes = this._findChildNodes(childName);
+    if (!childNodes) return;
+
+    // Metadata uses Z-up (SDF/URDF convention), GLTF/THREE.js uses Y-up.
+    // Convert: (x, y, z)_zup → (x, z, -y)_yup
+    const axis = new THREE.Vector3(
+      jointData.axis[0],
+      jointData.axis[2],
+      -jointData.axis[1]
+    ).normalize();
+
+    const pivot = new THREE.Vector3(
+      jointData.pose[0],
+      jointData.pose[2],
+      -jointData.pose[1]
+    );
+
+    // If pose has non-zero orientation (roll/pitch/yaw), rotate the axis accordingly
+    if (jointData.pose.length >= 6) {
+      const roll = jointData.pose[3];
+      const pitch = jointData.pose[4];
+      const yaw = jointData.pose[5];
+      if (roll !== 0 || pitch !== 0 || yaw !== 0) {
+        // Convert Euler angles from Z-up to Y-up as well
+        const poseQuat = new THREE.Quaternion().setFromEuler(
+          new THREE.Euler(roll, yaw, -pitch, 'XYZ')
+        );
+        axis.applyQuaternion(poseQuat).normalize();
+      }
+    }
+
+    for (const childNode of childNodes) {
+      const cacheKey = childNode.name;
+
+      // Store original transform on first use
+      if (!this.originalTransforms.has(cacheKey)) {
+        this.originalTransforms.set(cacheKey, {
+          position: childNode.position.clone(),
+          quaternion: childNode.quaternion.clone(),
+        });
+      }
+
+      const original = this.originalTransforms.get(cacheKey);
+
+      if (jointData.type === 'revolute') {
+        // Reset to original
+        childNode.position.copy(original.position);
+        childNode.quaternion.copy(original.quaternion);
+
+        // Rotate around joint axis at the pivot point
+        const rotQuat = new THREE.Quaternion().setFromAxisAngle(axis, value);
+
+        // Offset from pivot, rotate, translate back
+        const offset = new THREE.Vector3().copy(childNode.position).sub(pivot);
+        offset.applyQuaternion(rotQuat);
+
+        childNode.position.copy(pivot).add(offset);
+        childNode.quaternion.premultiply(rotQuat);
+
+      } else if (jointData.type === 'prismatic') {
+        childNode.position.copy(original.position);
+        childNode.quaternion.copy(original.quaternion);
+
+        const translation = axis.clone().multiplyScalar(value);
+        childNode.position.add(translation);
+      }
     }
   }
 

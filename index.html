@@ -156,11 +156,10 @@
   </section>
 
   <!-- Teaser Video Section -->
-  <section class="section" style="padding-top: 0;">
+  <!-- <section class="section" style="padding-top: 0;">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <!-- Placeholder for teaser video -->
           <div class="content has-text-centered"
             style="background-color: #f5f5f5; border-radius: 8px; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center;">
             <p style="color: #888;">
@@ -171,11 +170,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section">
+  <!-- <section class="section">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
@@ -198,10 +196,8 @@
           </div>
         </div>
       </div>
-      <!--/ Abstract. -->
-
     </div>
-  </section>
+  </section> -->
 
 
   <!-- Example Scene Section -->
@@ -321,7 +317,26 @@
             <h4 class="title is-5">Selected Object</h4>
             <p id="room-no-selection" class="no-selection">Click an object in the scene to select it</p>
             <div id="room-selection-info" class="is-hidden">
-              <div class="isolated-viewer" id="room-isolated-viewer"></div>
+              <div id="room-meta-name" class="meta-name"></div>
+              <div id="room-meta-tags" class="meta-tags"></div>
+              <div id="room-meta-mass" class="meta-mass"></div>
+              <div class="overlay-controls">
+                <button class="button is-small is-outlined" id="room-collision-btn" style="display:none;">
+                  <span class="icon"><i class="fas fa-cubes"></i></span>
+                  <span>Collision</span>
+                </button>
+                <button class="button is-small is-outlined" id="room-inertia-btn" style="display:none;">
+                  <span class="icon"><i class="fas fa-atom"></i></span>
+                  <span>Inertia</span>
+                </button>
+              </div>
+              <div class="isolated-viewer-wrapper" id="room-isolated-wrapper">
+                <div class="isolated-viewer" id="room-isolated-viewer"></div>
+                <button class="button is-small isolated-fullscreen-btn" id="room-isolated-fullscreen-btn" title="Fullscreen">
+                  <span class="icon"><i class="fas fa-expand"></i></span>
+                </button>
+              </div>
+              <div id="room-joint-controls" class="joint-controls"></div>
             </div>
           </div>
         </div>
@@ -422,7 +437,26 @@
             <h4 class="title is-5">Selected Object</h4>
             <p id="house-no-selection" class="no-selection">Click an object in the scene to select it</p>
             <div id="house-selection-info" class="is-hidden">
-              <div class="isolated-viewer" id="house-isolated-viewer"></div>
+              <div id="house-meta-name" class="meta-name"></div>
+              <div id="house-meta-tags" class="meta-tags"></div>
+              <div id="house-meta-mass" class="meta-mass"></div>
+              <div class="overlay-controls">
+                <button class="button is-small is-outlined" id="house-collision-btn" style="display:none;">
+                  <span class="icon"><i class="fas fa-cubes"></i></span>
+                  <span>Collision</span>
+                </button>
+                <button class="button is-small is-outlined" id="house-inertia-btn" style="display:none;">
+                  <span class="icon"><i class="fas fa-atom"></i></span>
+                  <span>Inertia</span>
+                </button>
+              </div>
+              <div class="isolated-viewer-wrapper" id="house-isolated-wrapper">
+                <div class="isolated-viewer" id="house-isolated-viewer"></div>
+                <button class="button is-small isolated-fullscreen-btn" id="house-isolated-fullscreen-btn" title="Fullscreen">
+                  <span class="icon"><i class="fas fa-expand"></i></span>
+                </button>
+              </div>
+              <div id="house-joint-controls" class="joint-controls"></div>
             </div>
           </div>
         </div>
@@ -475,6 +509,27 @@
     <button class="modal-close is-large" aria-label="close" id="fullscreen-close-btn"></button>
   </div>
 
+  <!-- Isolated Viewer Fullscreen Modal -->
+  <div class="modal" id="isolated-fullscreen-modal">
+    <div class="modal-background" id="isolated-fullscreen-backdrop"></div>
+    <div class="modal-content">
+      <div class="isolated-fullscreen-name" id="isolated-fullscreen-name"></div>
+      <div class="fullscreen-isolated-canvas" id="isolated-fullscreen-canvas">
+        <div class="viewer-controls" id="isolated-fullscreen-controls">
+          <button class="button is-small is-outlined" id="isolated-fs-collision-btn" style="display:none;">
+            <span class="icon"><i class="fas fa-cubes"></i></span>
+            <span>Collision</span>
+          </button>
+          <button class="button is-small is-outlined" id="isolated-fs-inertia-btn" style="display:none;">
+            <span class="icon"><i class="fas fa-atom"></i></span>
+            <span>Inertia</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close" id="isolated-fullscreen-close-btn"></button>
+  </div>
+
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
@@ -494,6 +549,7 @@
   <!-- 3D Viewer Initialization -->
   <script type="module">
     import { SceneSmithViewer } from './static/js/viewer/SceneSmithViewer.js';
+    import { MetadataManager } from './static/js/viewer/MetadataManager.js';
     import { SCENES, getSceneById, searchScenes } from './static/js/viewer/scene-data.js';
 
     // Helper to truncate prompt for dropdown display
@@ -577,6 +633,135 @@
       }
     }
 
+    // Helper: format object name for display
+    function formatObjectName(name) {
+      return name
+        .replace(/_\d+$/, '') // Remove trailing _N
+        .replace(/_/g, ' ')
+        .replace(/\b\w/g, c => c.toUpperCase());
+    }
+
+    // Helper: populate metadata UI
+    function populateMetadata(prefix, meta) {
+      const nameEl = document.getElementById(`${prefix}-meta-name`);
+      const tagsEl = document.getElementById(`${prefix}-meta-tags`);
+      const massEl = document.getElementById(`${prefix}-meta-mass`);
+      const collisionBtn = document.getElementById(`${prefix}-collision-btn`);
+      const inertiaBtn = document.getElementById(`${prefix}-inertia-btn`);
+      const jointControls = document.getElementById(`${prefix}-joint-controls`);
+
+      if (!meta) {
+        nameEl.textContent = '';
+        tagsEl.innerHTML = '';
+        massEl.textContent = '';
+        collisionBtn.style.display = 'none';
+        inertiaBtn.style.display = 'none';
+        jointControls.innerHTML = '';
+        return;
+      }
+
+      nameEl.textContent = formatObjectName(meta.name || meta.object_id);
+
+      // Tags
+      let tagsHtml = '';
+      if (meta.object_type) {
+        tagsHtml += `<span class="meta-tag type-tag">${meta.object_type}</span>`;
+      }
+      if (meta.is_articulated) {
+        tagsHtml += `<span class="meta-tag articulated-tag">Articulated</span>`;
+      }
+      tagsEl.innerHTML = tagsHtml;
+
+      // Mass
+      const totalMass = MetadataManager.getTotalMass(meta);
+      massEl.textContent = totalMass > 0 ? `Mass: ${totalMass.toFixed(2)} kg` : '';
+
+      // Show overlay buttons (hide for floor and wall objects)
+      // Don't reset is-active class here — that's managed by applyOverlayMode
+      const hideOverlays = meta.object_type === 'floor' || meta.object_type === 'wall';
+      collisionBtn.style.display = hideOverlays ? 'none' : 'inline-flex';
+      inertiaBtn.style.display = (hideOverlays || !meta.physics) ? 'none' : 'inline-flex';
+    }
+
+    // Helper: create joint sliders
+    function createJointControls(prefix, meta, viewer) {
+      const container = document.getElementById(`${prefix}-joint-controls`);
+      container.innerHTML = '';
+
+      if (!meta || !meta.is_articulated || !meta.physics || !meta.physics.joints) return;
+
+      const joints = meta.physics.joints;
+      const jointEntries = Object.entries(joints);
+      if (jointEntries.length === 0) return;
+
+      const title = document.createElement('div');
+      title.className = 'joint-controls-title';
+      title.textContent = 'Joint Controls';
+      container.appendChild(title);
+
+      for (const [jointName, joint] of jointEntries) {
+        const group = document.createElement('div');
+        group.className = 'joint-slider-group';
+
+        const isRevolute = joint.type === 'revolute';
+        const lower = joint.limits ? joint.limits.lower : 0;
+        const upper = joint.limits ? joint.limits.upper : 0;
+        const range = upper - lower;
+        const step = range !== 0 ? range / 100 : 0.01;
+
+        // Label row
+        const label = document.createElement('div');
+        label.className = 'joint-slider-label';
+        const typeBadge = isRevolute ? 'R' : 'P';
+        const badgeClass = isRevolute ? 'revolute' : 'prismatic';
+        label.innerHTML = `
+          <span class="joint-name">${joint.child_link}</span>
+          <span class="joint-type-badge ${badgeClass}">${typeBadge}</span>
+        `;
+        group.appendChild(label);
+
+        // Slider
+        const slider = document.createElement('input');
+        slider.type = 'range';
+        slider.min = lower;
+        slider.max = upper;
+        slider.step = step;
+        slider.value = 0;
+        // Prevent pointer events from bubbling to OrbitControls
+        slider.addEventListener('pointerdown', (e) => e.stopPropagation());
+        slider.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: true });
+        group.appendChild(slider);
+
+        // Value display
+        const valueDisplay = document.createElement('div');
+        valueDisplay.className = 'joint-slider-value';
+        valueDisplay.textContent = isRevolute ? '0.0°' : '0.000 m';
+        group.appendChild(valueDisplay);
+
+        slider.addEventListener('input', () => {
+          const val = parseFloat(slider.value);
+          if (isRevolute) {
+            valueDisplay.textContent = (val * 180 / Math.PI).toFixed(1) + '°';
+          } else {
+            valueDisplay.textContent = val.toFixed(3) + ' m';
+          }
+          viewer.applyJointTransform(joint, val);
+        });
+
+        container.appendChild(group);
+      }
+    }
+
+    // Helper: clear metadata display
+    function clearMetadata(prefix) {
+      document.getElementById(`${prefix}-meta-name`).textContent = '';
+      document.getElementById(`${prefix}-meta-tags`).innerHTML = '';
+      document.getElementById(`${prefix}-meta-mass`).textContent = '';
+      document.getElementById(`${prefix}-collision-btn`).style.display = 'none';
+      document.getElementById(`${prefix}-inertia-btn`).style.display = 'none';
+      document.getElementById(`${prefix}-joint-controls`).innerHTML = '';
+    }
+
     // Setup a viewer section
     function setupViewer(prefix, scenes) {
       const viewer = new SceneSmithViewer(
@@ -589,12 +774,26 @@
               setTimeout(() => setProgress(`${prefix}-progress`, 100, false), 300);
             }
           },
-          onSelect: (object, name) => {
+          onSelect: (object, name, meta) => {
             document.getElementById(`${prefix}-no-selection`).classList.add('is-hidden');
             document.getElementById(`${prefix}-selection-info`).classList.remove('is-hidden');
             // Show frame and hide buttons
             document.getElementById(`${prefix}-frame-btn`).style.display = 'inline-flex';
             document.getElementById(`${prefix}-hide-btn`).style.display = 'inline-flex';
+
+            // Populate metadata
+            populateMetadata(prefix, meta);
+            createJointControls(prefix, meta, viewer);
+
+            // Store current object id and meta for overlay toggling
+            viewer._currentSelectedObjectId = object.name;
+            viewer._currentSelectedMeta = meta;
+
+            // Re-apply active overlay mode to the newly selected object
+            if (viewer._applyOverlayMode) {
+              viewer._applyOverlayMode();
+            }
+
             // Also update fullscreen controls if in fullscreen mode
             if (document.getElementById('viewer-fullscreen-modal').classList.contains('is-active')) {
               document.getElementById('fullscreen-frame-btn').style.display = 'inline-flex';
@@ -607,6 +806,12 @@
             // Hide frame and hide buttons
             document.getElementById(`${prefix}-frame-btn`).style.display = 'none';
             document.getElementById(`${prefix}-hide-btn`).style.display = 'none';
+
+            // Clear metadata
+            clearMetadata(prefix);
+            viewer._currentSelectedObjectId = null;
+            viewer._currentSelectedMeta = null;
+
             // Also update fullscreen controls if in fullscreen mode
             if (document.getElementById('viewer-fullscreen-modal').classList.contains('is-active')) {
               document.getElementById('fullscreen-frame-btn').style.display = 'none';
@@ -692,6 +897,80 @@
         const help = document.getElementById(`${prefix}-help`);
         help.classList.toggle('is-visible');
       });
+
+      // Track which overlay mode is active: 'none', 'collision', or 'inertia'
+      let activeOverlayMode = 'none';
+
+      // Helper to apply the current overlay mode to the selected object
+      async function applyOverlayMode() {
+        const collisionBtn = document.getElementById(`${prefix}-collision-btn`);
+        const inertiaBtn = document.getElementById(`${prefix}-inertia-btn`);
+        const fsCollisionBtn = document.getElementById('isolated-fs-collision-btn');
+        const fsInertiaBtn = document.getElementById('isolated-fs-inertia-btn');
+
+        // Clear existing overlays first
+        if (viewer.overlayManager.collisionVisible) {
+          viewer.overlayManager.hideCollision(viewer.isolatedViewer.scene);
+          viewer.isolatedViewer.setVisualVisible(true);
+        }
+        if (viewer.overlayManager.inertiaVisible) {
+          viewer.overlayManager.hideInertia();
+        }
+
+        collisionBtn.classList.remove('is-active');
+        inertiaBtn.classList.remove('is-active');
+        fsCollisionBtn.classList.remove('is-active');
+        fsInertiaBtn.classList.remove('is-active');
+
+        // Hide joint sliders when collision mesh replaces the visual
+        const jointControls = document.getElementById(`${prefix}-joint-controls`);
+        if (jointControls) {
+          jointControls.style.display = activeOverlayMode === 'collision' ? 'none' : '';
+        }
+
+        if (activeOverlayMode === 'collision' && viewer._currentSelectedObjectId) {
+          const collisionPath = viewer.metadataManager.getCollisionPath(viewer._currentSelectedObjectId);
+          if (collisionPath) {
+            await viewer.overlayManager.showCollision(collisionPath, viewer.isolatedViewer.scene, viewer.isolatedViewer.objectTransform);
+            viewer.isolatedViewer.setVisualVisible(false);
+            collisionBtn.classList.add('is-active');
+            fsCollisionBtn.classList.add('is-active');
+          }
+        } else if (activeOverlayMode === 'inertia' && viewer._currentSelectedMeta && viewer._currentSelectedMeta.physics) {
+          viewer.overlayManager.showInertia(
+            viewer._currentSelectedMeta.physics,
+            viewer.isolatedViewer.currentObject
+          );
+          inertiaBtn.classList.add('is-active');
+          fsInertiaBtn.classList.add('is-active');
+        }
+      }
+
+      // Store applyOverlayMode on the viewer so onSelect can call it
+      viewer._applyOverlayMode = applyOverlayMode;
+
+      // Shared toggle functions
+      async function toggleCollision() {
+        if (!viewer._currentSelectedObjectId) return;
+        activeOverlayMode = activeOverlayMode === 'collision' ? 'none' : 'collision';
+        await applyOverlayMode();
+      }
+
+      async function toggleInertia() {
+        if (!viewer._currentSelectedMeta || !viewer._currentSelectedMeta.physics) return;
+        activeOverlayMode = activeOverlayMode === 'inertia' ? 'none' : 'inertia';
+        await applyOverlayMode();
+      }
+
+      // Store toggles on viewer for fullscreen modal access
+      viewer._toggleCollision = toggleCollision;
+      viewer._toggleInertia = toggleInertia;
+
+      // Collision toggle button
+      document.getElementById(`${prefix}-collision-btn`).addEventListener('click', toggleCollision);
+
+      // Inertia toggle button
+      document.getElementById(`${prefix}-inertia-btn`).addEventListener('click', toggleInertia);
 
       // Fullscreen button - opens modal overlay
       const fullscreenBtn = document.getElementById(`${prefix}-fullscreen-btn`);
@@ -864,17 +1143,111 @@
       }
     }
 
+    // Isolated viewer fullscreen modal state
+    let isolatedFullscreenViewer = null;
+    let isolatedOriginalContainer = null;
+
+    function openIsolatedFullscreen(viewer, objectName) {
+      const modal = document.getElementById('isolated-fullscreen-modal');
+      const canvas = document.getElementById('isolated-fullscreen-canvas');
+      const nameEl = document.getElementById('isolated-fullscreen-name');
+
+      nameEl.textContent = objectName || '';
+
+      // Sync fullscreen overlay button visibility with panel buttons
+      const meta = viewer._currentSelectedMeta;
+      const fsCollisionBtn = document.getElementById('isolated-fs-collision-btn');
+      const fsInertiaBtn = document.getElementById('isolated-fs-inertia-btn');
+      const hideOverlays = !meta || meta.object_type === 'floor' || meta.object_type === 'wall';
+      fsCollisionBtn.style.display = hideOverlays ? 'none' : 'inline-flex';
+      fsInertiaBtn.style.display = (hideOverlays || !meta || !meta.physics) ? 'none' : 'inline-flex';
+
+      // Sync active state
+      fsCollisionBtn.classList.toggle('is-active', viewer.overlayManager.collisionVisible);
+      fsInertiaBtn.classList.toggle('is-active', viewer.overlayManager.inertiaVisible);
+
+      // Store original container and move renderer
+      isolatedOriginalContainer = viewer.isolatedViewer.container;
+      if (viewer.isolatedViewer.renderer && viewer.isolatedViewer.renderer.domElement) {
+        canvas.appendChild(viewer.isolatedViewer.renderer.domElement);
+        viewer.isolatedViewer.container = canvas;
+
+        viewer.isolatedViewer.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        requestAnimationFrame(() => {
+          viewer.isolatedViewer.handleResize();
+        });
+      }
+
+      isolatedFullscreenViewer = viewer;
+      modal.classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeIsolatedFullscreen() {
+      const modal = document.getElementById('isolated-fullscreen-modal');
+
+      if (isolatedFullscreenViewer && isolatedOriginalContainer) {
+        isolatedOriginalContainer.appendChild(isolatedFullscreenViewer.isolatedViewer.renderer.domElement);
+        isolatedFullscreenViewer.isolatedViewer.container = isolatedOriginalContainer;
+        isolatedFullscreenViewer.isolatedViewer.handleResize();
+      }
+
+      modal.classList.remove('is-active');
+      document.body.style.overflow = '';
+      isolatedFullscreenViewer = null;
+      isolatedOriginalContainer = null;
+    }
+
+    function setupIsolatedFullscreenModal() {
+      document.getElementById('isolated-fullscreen-backdrop').addEventListener('click', closeIsolatedFullscreen);
+      document.getElementById('isolated-fullscreen-close-btn').addEventListener('click', closeIsolatedFullscreen);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && document.getElementById('isolated-fullscreen-modal').classList.contains('is-active')) {
+          closeIsolatedFullscreen();
+        }
+      });
+
+      // Fullscreen overlay toggle buttons delegate to the active viewer's toggles
+      document.getElementById('isolated-fs-collision-btn').addEventListener('click', () => {
+        if (isolatedFullscreenViewer && isolatedFullscreenViewer._toggleCollision) {
+          isolatedFullscreenViewer._toggleCollision();
+        }
+      });
+      document.getElementById('isolated-fs-inertia-btn').addEventListener('click', () => {
+        if (isolatedFullscreenViewer && isolatedFullscreenViewer._toggleInertia) {
+          isolatedFullscreenViewer._toggleInertia();
+        }
+      });
+    }
+
+    // Setup isolated viewer fullscreen buttons
+    function setupIsolatedFullscreen(prefix, viewer) {
+      const btn = document.getElementById(`${prefix}-isolated-fullscreen-btn`);
+      if (!btn) return;
+
+      btn.addEventListener('click', () => {
+        const meta = viewer._currentSelectedMeta;
+        const name = meta ? (meta.name || meta.object_id) : '';
+        openIsolatedFullscreen(viewer, name);
+      });
+    }
+
     // Initialize when DOM is ready
     document.addEventListener('DOMContentLoaded', async () => {
       // Setup fullscreen modal handlers
       setupFullscreenModal();
 
+      // Setup isolated viewer fullscreen modal
+      setupIsolatedFullscreenModal();
+
       // Setup room viewer and preload first scene
       const { viewer: roomViewer, scenes: roomScenes } = setupViewer('room', SCENES.rooms);
+      setupIsolatedFullscreen('room', roomViewer);
       await loadFirstScene('room', roomScenes, roomViewer);
 
       // Setup house viewer and preload first scene (massage parlor)
       const { viewer: houseViewer, scenes: houseScenes } = setupViewer('house', SCENES.houses);
+      setupIsolatedFullscreen('house', houseViewer);
       await loadFirstScene('house', houseScenes, houseViewer);
     });
   </script>

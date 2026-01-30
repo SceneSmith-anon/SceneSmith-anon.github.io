@@ -1,0 +1,4599 @@
+{
+  "scene_dir": "/mnt/fs1/efs/nicholas/scene-agent-eval-scenes/SceneAgent_Cleaned/SceneAgent_Ours_Room/scene_019",
+  "layout": {
+    "wall_height": 2.7,
+    "house_prompt": "A dining room with a ceiling light hanging above the table and two chairs on the long side of the table."
+  },
+  "rooms": {
+    "dining_room": {
+      "room_id": "dining_room",
+      "text_description": "A dining room with a ceiling light hanging above the table and two chairs on the long side of the table.",
+      "width": 4.2,
+      "length": 4.8,
+      "wall_height": 2.7,
+      "offset": [
+        2.4,
+        2.1
+      ]
+    }
+  },
+  "objects": [
+    {
+      "object_id": "pendant_light_0",
+      "name": "pendant_light",
+      "description": "Warm-modern linear dining pendant: matte-black rectangular canopy with aged-brass bar and 4 opal glass globes evenly spaced; hangs on two thin cables.",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          2.4,
+          2.1,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.999994900378006,
+          0.0,
+          0.0,
+          -0.003193621452515382
+        ]
+      },
+      "bbox_min": [
+        -0.6000000238418579,
+        -0.10048441588878632,
+        -1.0354454517364502
+      ],
+      "bbox_max": [
+        0.6000000238418579,
+        0.10048441588878632,
+        0.0
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/pendant_light_1767834065/pendant_light.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/pendant_light_1767834065/pendant_light.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/ceiling_mounted/sdf/pendant_light_1767834065/pendant_light.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 4.8,
+            "inertia_pose": [
+              0.000308,
+              -3.4e-05,
+              -0.672015,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.8334011,
+              "ixy": 0.0002412861,
+              "ixz": 0.0007940481,
+              "iyy": 1.364641,
+              "iyz": 9.561757e-05,
+              "izz": 0.5470257
+            },
+            "collision_meshes": [
+              "pendant_light_collision_0.obj",
+              "pendant_light_collision_1.obj",
+              "pendant_light_collision_2.obj",
+              "pendant_light_collision_3.obj",
+              "pendant_light_collision_4.obj",
+              "pendant_light_collision_5.obj",
+              "pendant_light_collision_6.obj",
+              "pendant_light_collision_7.obj",
+              "pendant_light_collision_8.obj",
+              "pendant_light_collision_9.obj",
+              "pendant_light_collision_10.obj",
+              "pendant_light_collision_11.obj",
+              "pendant_light_collision_12.obj",
+              "pendant_light_collision_13.obj",
+              "pendant_light_collision_14.obj",
+              "pendant_light_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "pendant_light.gltf"
+            ],
+            "friction": {
+              "mu": 0.9,
+              "mu2": 0.9
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "recessed_light_0",
+      "name": "recessed_light",
+      "description": "Minimal round recessed LED downlight trim, matte white, slightly beveled (flush-to-ceiling look).",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          0.7999999999999998,
+          0.8,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.9999802036381802,
+          0.0,
+          0.0,
+          -0.006292243776535524
+        ]
+      },
+      "bbox_min": [
+        -0.07000000029802322,
+        -0.057328175753355026,
+        -0.011851033195853233
+      ],
+      "bbox_max": [
+        0.07000000029802322,
+        0.057328175753355026,
+        2.911471856165663e-18
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.4,
+            "inertia_pose": [
+              -0.000304,
+              -5.2e-05,
+              -0.005468,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0003801242,
+              "ixy": 1.75249e-06,
+              "ixz": -3.928179e-07,
+              "iyy": 0.0005535253,
+              "iyz": 1.1571e-07,
+              "izz": 0.0009244469
+            },
+            "collision_meshes": [
+              "recessed_light_collision_0.obj",
+              "recessed_light_collision_1.obj",
+              "recessed_light_collision_2.obj",
+              "recessed_light_collision_3.obj",
+              "recessed_light_collision_4.obj",
+              "recessed_light_collision_5.obj",
+              "recessed_light_collision_6.obj",
+              "recessed_light_collision_7.obj",
+              "recessed_light_collision_8.obj",
+              "recessed_light_collision_9.obj",
+              "recessed_light_collision_10.obj",
+              "recessed_light_collision_11.obj",
+              "recessed_light_collision_12.obj",
+              "recessed_light_collision_13.obj",
+              "recessed_light_collision_14.obj",
+              "recessed_light_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "recessed_light.gltf"
+            ],
+            "friction": {
+              "mu": 1.1,
+              "mu2": 1.1
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "recessed_light_1",
+      "name": "recessed_light",
+      "description": "Minimal round recessed LED downlight trim, matte white, slightly beveled (flush-to-ceiling look).",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          4.0,
+          0.8,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.9999891975054085,
+          0.0,
+          0.0,
+          -0.0046481041822495775
+        ]
+      },
+      "bbox_min": [
+        -0.07000000029802322,
+        -0.057328175753355026,
+        -0.011851033195853233
+      ],
+      "bbox_max": [
+        0.07000000029802322,
+        0.057328175753355026,
+        2.911471856165663e-18
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.4,
+            "inertia_pose": [
+              -0.000304,
+              -5.2e-05,
+              -0.005468,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0003801242,
+              "ixy": 1.75249e-06,
+              "ixz": -3.928179e-07,
+              "iyy": 0.0005535253,
+              "iyz": 1.1571e-07,
+              "izz": 0.0009244469
+            },
+            "collision_meshes": [
+              "recessed_light_collision_0.obj",
+              "recessed_light_collision_1.obj",
+              "recessed_light_collision_2.obj",
+              "recessed_light_collision_3.obj",
+              "recessed_light_collision_4.obj",
+              "recessed_light_collision_5.obj",
+              "recessed_light_collision_6.obj",
+              "recessed_light_collision_7.obj",
+              "recessed_light_collision_8.obj",
+              "recessed_light_collision_9.obj",
+              "recessed_light_collision_10.obj",
+              "recessed_light_collision_11.obj",
+              "recessed_light_collision_12.obj",
+              "recessed_light_collision_13.obj",
+              "recessed_light_collision_14.obj",
+              "recessed_light_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "recessed_light.gltf"
+            ],
+            "friction": {
+              "mu": 1.1,
+              "mu2": 1.1
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "recessed_light_2",
+      "name": "recessed_light",
+      "description": "Minimal round recessed LED downlight trim, matte white, slightly beveled (flush-to-ceiling look).",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          0.7999999999999998,
+          3.4000000000000004,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.9999995652342021,
+          0.0,
+          0.0,
+          -0.000932486679196797
+        ]
+      },
+      "bbox_min": [
+        -0.07000000029802322,
+        -0.057328175753355026,
+        -0.011851033195853233
+      ],
+      "bbox_max": [
+        0.07000000029802322,
+        0.057328175753355026,
+        2.911471856165663e-18
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.4,
+            "inertia_pose": [
+              -0.000304,
+              -5.2e-05,
+              -0.005468,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0003801242,
+              "ixy": 1.75249e-06,
+              "ixz": -3.928179e-07,
+              "iyy": 0.0005535253,
+              "iyz": 1.1571e-07,
+              "izz": 0.0009244469
+            },
+            "collision_meshes": [
+              "recessed_light_collision_0.obj",
+              "recessed_light_collision_1.obj",
+              "recessed_light_collision_2.obj",
+              "recessed_light_collision_3.obj",
+              "recessed_light_collision_4.obj",
+              "recessed_light_collision_5.obj",
+              "recessed_light_collision_6.obj",
+              "recessed_light_collision_7.obj",
+              "recessed_light_collision_8.obj",
+              "recessed_light_collision_9.obj",
+              "recessed_light_collision_10.obj",
+              "recessed_light_collision_11.obj",
+              "recessed_light_collision_12.obj",
+              "recessed_light_collision_13.obj",
+              "recessed_light_collision_14.obj",
+              "recessed_light_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "recessed_light.gltf"
+            ],
+            "friction": {
+              "mu": 1.1,
+              "mu2": 1.1
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "recessed_light_3",
+      "name": "recessed_light",
+      "description": "Minimal round recessed LED downlight trim, matte white, slightly beveled (flush-to-ceiling look).",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          4.0,
+          3.4000000000000004,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.9999994422092968,
+          0.0,
+          0.0,
+          -0.0010562107249022074
+        ]
+      },
+      "bbox_min": [
+        -0.07000000029802322,
+        -0.057328175753355026,
+        -0.011851033195853233
+      ],
+      "bbox_max": [
+        0.07000000029802322,
+        0.057328175753355026,
+        2.911471856165663e-18
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/ceiling_mounted/sdf/recessed_light_1767834065/recessed_light.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.4,
+            "inertia_pose": [
+              -0.000304,
+              -5.2e-05,
+              -0.005468,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0003801242,
+              "ixy": 1.75249e-06,
+              "ixz": -3.928179e-07,
+              "iyy": 0.0005535253,
+              "iyz": 1.1571e-07,
+              "izz": 0.0009244469
+            },
+            "collision_meshes": [
+              "recessed_light_collision_0.obj",
+              "recessed_light_collision_1.obj",
+              "recessed_light_collision_2.obj",
+              "recessed_light_collision_3.obj",
+              "recessed_light_collision_4.obj",
+              "recessed_light_collision_5.obj",
+              "recessed_light_collision_6.obj",
+              "recessed_light_collision_7.obj",
+              "recessed_light_collision_8.obj",
+              "recessed_light_collision_9.obj",
+              "recessed_light_collision_10.obj",
+              "recessed_light_collision_11.obj",
+              "recessed_light_collision_12.obj",
+              "recessed_light_collision_13.obj",
+              "recessed_light_collision_14.obj",
+              "recessed_light_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "recessed_light.gltf"
+            ],
+            "friction": {
+              "mu": 1.1,
+              "mu2": 1.1
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "smoke_detector_0",
+      "name": "smoke_detector",
+      "description": "Simple ceiling-mounted smoke detector: small round white puck with subtle vents and indicator LED.",
+      "object_type": "ceiling_mounted",
+      "transform": {
+        "translation": [
+          0.5999999999999999,
+          0.55,
+          2.7
+        ],
+        "rotation_wxyz": [
+          0.999998579306592,
+          0.0,
+          0.0,
+          0.0016856407676840003
+        ]
+      },
+      "bbox_min": [
+        -0.06999984383583069,
+        -0.06998645514249802,
+        -0.0404975488781929
+      ],
+      "bbox_max": [
+        0.07000015676021576,
+        0.06998645514249802,
+        7.770916004585529e-18
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/ceiling_mounted/sdf/smoke_detector_1767834169/smoke_detector.gltf",
+      "sdf_path": "generated_assets/ceiling_mounted/sdf/smoke_detector_1767834169/smoke_detector.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/ceiling_mounted/sdf/smoke_detector_1767834169/smoke_detector.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.18,
+            "inertia_pose": [
+              -0.000214,
+              0.000116,
+              -0.020215,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0002394571,
+              "ixy": -6.759622e-07,
+              "ixz": 5.402318e-08,
+              "iyy": 0.0002431828,
+              "iyz": -4.938004e-08,
+              "izz": 0.0004337744
+            },
+            "collision_meshes": [
+              "smoke_detector_collision_0.obj",
+              "smoke_detector_collision_1.obj",
+              "smoke_detector_collision_2.obj",
+              "smoke_detector_collision_3.obj",
+              "smoke_detector_collision_4.obj",
+              "smoke_detector_collision_5.obj",
+              "smoke_detector_collision_6.obj",
+              "smoke_detector_collision_7.obj",
+              "smoke_detector_collision_8.obj",
+              "smoke_detector_collision_9.obj",
+              "smoke_detector_collision_10.obj",
+              "smoke_detector_collision_11.obj",
+              "smoke_detector_collision_12.obj",
+              "smoke_detector_collision_13.obj",
+              "smoke_detector_collision_14.obj",
+              "smoke_detector_collision_15.obj"
+            ],
+            "visual_meshes": [
+              "smoke_detector.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "floor_dining_room",
+      "name": "Floor",
+      "description": "Floor surface",
+      "object_type": "floor",
+      "transform": {
+        "translation": [
+          2.4,
+          2.1,
+          0.0
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -2.4,
+        -2.1,
+        -0.1
+      ],
+      "bbox_max": [
+        2.4,
+        2.1,
+        0.0
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/floor_plans/dining_room/floors/floor.gltf",
+      "is_articulated": false
+    },
+    {
+      "object_id": "credenza_0",
+      "name": "credenza",
+      "description": "Extra-long low credenza/sideboard (approx 2.0m wide x 0.45m deep x 0.90m tall), oak veneer with black base, doors and drawers, minimalist",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          0.385660307877961,
+          2.2991636885361166,
+          -0.0012150788342946935
+        ],
+        "rotation_wxyz": [
+          0.7071272646206497,
+          -0.00029530578244147987,
+          -0.00015910671956143686,
+          -0.7070862175927802
+        ]
+      },
+      "bbox_min": [
+        -1.2,
+        -0.2715153694152832,
+        0.0
+      ],
+      "bbox_max": [
+        1.2,
+        0.2715153694152832,
+        0.7078871011734008
+      ],
+      "scale_factor": 1.2,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/credenza_1767832685/credenza.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/credenza_1767832685/credenza.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/furniture/sdf/credenza_1767832685/credenza.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 55.0,
+            "inertia_pose": [
+              0.0005076,
+              -0.0011208,
+              0.3980604,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 3.113453,
+              "ixy": -0.008920545,
+              "ixz": 0.003629161,
+              "iyy": 28.19449,
+              "iyz": -0.002232294,
+              "izz": 27.75606
+            },
+            "collision_meshes": [
+              "credenza_collision_0.obj",
+              "credenza_collision_1.obj",
+              "credenza_collision_2.obj",
+              "credenza_collision_3.obj",
+              "credenza_collision_4.obj",
+              "credenza_collision_5.obj",
+              "credenza_collision_6.obj",
+              "credenza_collision_7.obj",
+              "credenza_collision_8.obj",
+              "credenza_collision_9.obj",
+              "credenza_collision_10.obj",
+              "credenza_collision_11.obj",
+              "credenza_collision_12.obj",
+              "credenza_collision_13.obj",
+              "credenza_collision_14.obj",
+              "credenza_collision_15.obj",
+              "credenza_collision_16.obj",
+              "credenza_collision_17.obj",
+              "credenza_collision_18.obj",
+              "credenza_collision_19.obj",
+              "credenza_collision_20.obj",
+              "credenza_collision_21.obj",
+              "credenza_collision_22.obj",
+              "credenza_collision_23.obj",
+              "credenza_collision_24.obj",
+              "credenza_collision_25.obj",
+              "credenza_collision_26.obj",
+              "credenza_collision_27.obj",
+              "credenza_collision_28.obj",
+              "credenza_collision_29.obj",
+              "credenza_collision_30.obj",
+              "credenza_collision_31.obj",
+              "credenza_collision_32.obj",
+              "credenza_collision_33.obj",
+              "credenza_collision_34.obj",
+              "credenza_collision_35.obj",
+              "credenza_collision_36.obj",
+              "credenza_collision_37.obj",
+              "credenza_collision_38.obj",
+              "credenza_collision_39.obj",
+              "credenza_collision_40.obj",
+              "credenza_collision_41.obj",
+              "credenza_collision_42.obj",
+              "credenza_collision_43.obj",
+              "credenza_collision_44.obj",
+              "credenza_collision_45.obj",
+              "credenza_collision_46.obj",
+              "credenza_collision_47.obj",
+              "credenza_collision_48.obj",
+              "credenza_collision_49.obj",
+              "credenza_collision_50.obj",
+              "credenza_collision_51.obj",
+              "credenza_collision_52.obj",
+              "credenza_collision_53.obj",
+              "credenza_collision_54.obj",
+              "credenza_collision_55.obj",
+              "credenza_collision_56.obj",
+              "credenza_collision_57.obj",
+              "credenza_collision_58.obj",
+              "credenza_collision_59.obj",
+              "credenza_collision_60.obj",
+              "credenza_collision_61.obj",
+              "credenza_collision_62.obj",
+              "credenza_collision_63.obj",
+              "credenza_collision_64.obj",
+              "credenza_collision_65.obj",
+              "credenza_collision_66.obj",
+              "credenza_collision_67.obj",
+              "credenza_collision_68.obj",
+              "credenza_collision_69.obj",
+              "credenza_collision_70.obj",
+              "credenza_collision_71.obj",
+              "credenza_collision_72.obj",
+              "credenza_collision_73.obj",
+              "credenza_collision_74.obj",
+              "credenza_collision_75.obj",
+              "credenza_collision_76.obj",
+              "credenza_collision_77.obj",
+              "credenza_collision_78.obj",
+              "credenza_collision_79.obj",
+              "credenza_collision_80.obj",
+              "credenza_collision_81.obj",
+              "credenza_collision_82.obj",
+              "credenza_collision_83.obj",
+              "credenza_collision_84.obj",
+              "credenza_collision_85.obj",
+              "credenza_collision_86.obj",
+              "credenza_collision_87.obj",
+              "credenza_collision_88.obj",
+              "credenza_collision_89.obj",
+              "credenza_collision_90.obj",
+              "credenza_collision_91.obj",
+              "credenza_collision_92.obj",
+              "credenza_collision_93.obj",
+              "credenza_collision_94.obj",
+              "credenza_collision_95.obj",
+              "credenza_collision_96.obj",
+              "credenza_collision_97.obj",
+              "credenza_collision_98.obj",
+              "credenza_collision_99.obj",
+              "credenza_collision_100.obj",
+              "credenza_collision_101.obj",
+              "credenza_collision_102.obj",
+              "credenza_collision_103.obj",
+              "credenza_collision_104.obj",
+              "credenza_collision_105.obj",
+              "credenza_collision_106.obj",
+              "credenza_collision_107.obj",
+              "credenza_collision_108.obj",
+              "credenza_collision_109.obj",
+              "credenza_collision_110.obj",
+              "credenza_collision_111.obj",
+              "credenza_collision_112.obj",
+              "credenza_collision_113.obj",
+              "credenza_collision_114.obj",
+              "credenza_collision_115.obj",
+              "credenza_collision_116.obj",
+              "credenza_collision_117.obj",
+              "credenza_collision_118.obj",
+              "credenza_collision_119.obj",
+              "credenza_collision_120.obj",
+              "credenza_collision_121.obj",
+              "credenza_collision_122.obj",
+              "credenza_collision_123.obj",
+              "credenza_collision_124.obj",
+              "credenza_collision_125.obj",
+              "credenza_collision_126.obj",
+              "credenza_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "credenza.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "support_surfaces": [
+        {
+          "surface_id": "S_1",
+          "bounding_box_min": [
+            -1.1969391236198372,
+            -0.2687332620356323,
+            0.012
+          ],
+          "bounding_box_max": [
+            1.1969391236198372,
+            0.2687332620356323,
+            0.6
+          ],
+          "transform": {
+            "translation": [
+              -2.015692501824399,
+              0.20056790749374204,
+              0.7184352400497662
+            ],
+            "rotation_wxyz": [
+              0.7071272868332216,
+              -0.00021271324707424562,
+              -0.0001234947440826355,
+              -0.7070862321655041
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "object_id": "dining_chair_0",
+      "name": "dining_chair",
+      "description": "Modern upholstered dining chair with oak legs (simple, comfortable)",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          2.173448100673026,
+          2.683902949951306,
+          -0.0003447286932341607
+        ],
+        "rotation_wxyz": [
+          0.009719557767633032,
+          -0.0015967522765168675,
+          0.0014618695242622963,
+          0.9999504205291696
+        ]
+      },
+      "bbox_min": [
+        -0.25,
+        -0.26843780279159546,
+        0.0
+      ],
+      "bbox_max": [
+        0.25,
+        0.26843780279159546,
+        0.8096731901168823
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 7.5,
+            "inertia_pose": [
+              0.00099,
+              -0.028581,
+              0.464055,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.3091158,
+              "ixy": 0.001023061,
+              "ixz": -0.003333794,
+              "iyy": 0.2759342,
+              "iyz": 0.08991797,
+              "izz": 0.2901575
+            },
+            "collision_meshes": [
+              "dining_chair_collision_0.obj",
+              "dining_chair_collision_1.obj",
+              "dining_chair_collision_2.obj",
+              "dining_chair_collision_3.obj",
+              "dining_chair_collision_4.obj",
+              "dining_chair_collision_5.obj",
+              "dining_chair_collision_6.obj",
+              "dining_chair_collision_7.obj",
+              "dining_chair_collision_8.obj",
+              "dining_chair_collision_9.obj",
+              "dining_chair_collision_10.obj",
+              "dining_chair_collision_11.obj",
+              "dining_chair_collision_12.obj",
+              "dining_chair_collision_13.obj",
+              "dining_chair_collision_14.obj",
+              "dining_chair_collision_15.obj",
+              "dining_chair_collision_16.obj",
+              "dining_chair_collision_17.obj",
+              "dining_chair_collision_18.obj",
+              "dining_chair_collision_19.obj",
+              "dining_chair_collision_20.obj",
+              "dining_chair_collision_21.obj",
+              "dining_chair_collision_22.obj",
+              "dining_chair_collision_23.obj",
+              "dining_chair_collision_24.obj",
+              "dining_chair_collision_25.obj",
+              "dining_chair_collision_26.obj",
+              "dining_chair_collision_27.obj",
+              "dining_chair_collision_28.obj",
+              "dining_chair_collision_29.obj",
+              "dining_chair_collision_30.obj",
+              "dining_chair_collision_31.obj",
+              "dining_chair_collision_32.obj",
+              "dining_chair_collision_33.obj",
+              "dining_chair_collision_34.obj",
+              "dining_chair_collision_35.obj",
+              "dining_chair_collision_36.obj",
+              "dining_chair_collision_37.obj",
+              "dining_chair_collision_38.obj",
+              "dining_chair_collision_39.obj",
+              "dining_chair_collision_40.obj",
+              "dining_chair_collision_41.obj",
+              "dining_chair_collision_42.obj",
+              "dining_chair_collision_43.obj",
+              "dining_chair_collision_44.obj",
+              "dining_chair_collision_45.obj",
+              "dining_chair_collision_46.obj",
+              "dining_chair_collision_47.obj",
+              "dining_chair_collision_48.obj",
+              "dining_chair_collision_49.obj",
+              "dining_chair_collision_50.obj",
+              "dining_chair_collision_51.obj",
+              "dining_chair_collision_52.obj",
+              "dining_chair_collision_53.obj",
+              "dining_chair_collision_54.obj",
+              "dining_chair_collision_55.obj",
+              "dining_chair_collision_56.obj",
+              "dining_chair_collision_57.obj",
+              "dining_chair_collision_58.obj",
+              "dining_chair_collision_59.obj",
+              "dining_chair_collision_60.obj",
+              "dining_chair_collision_61.obj",
+              "dining_chair_collision_62.obj",
+              "dining_chair_collision_63.obj",
+              "dining_chair_collision_64.obj",
+              "dining_chair_collision_65.obj",
+              "dining_chair_collision_66.obj",
+              "dining_chair_collision_67.obj",
+              "dining_chair_collision_68.obj",
+              "dining_chair_collision_69.obj",
+              "dining_chair_collision_70.obj",
+              "dining_chair_collision_71.obj",
+              "dining_chair_collision_72.obj",
+              "dining_chair_collision_73.obj",
+              "dining_chair_collision_74.obj",
+              "dining_chair_collision_75.obj",
+              "dining_chair_collision_76.obj",
+              "dining_chair_collision_77.obj",
+              "dining_chair_collision_78.obj",
+              "dining_chair_collision_79.obj",
+              "dining_chair_collision_80.obj",
+              "dining_chair_collision_81.obj",
+              "dining_chair_collision_82.obj",
+              "dining_chair_collision_83.obj",
+              "dining_chair_collision_84.obj",
+              "dining_chair_collision_85.obj",
+              "dining_chair_collision_86.obj",
+              "dining_chair_collision_87.obj",
+              "dining_chair_collision_88.obj",
+              "dining_chair_collision_89.obj",
+              "dining_chair_collision_90.obj",
+              "dining_chair_collision_91.obj",
+              "dining_chair_collision_92.obj",
+              "dining_chair_collision_93.obj",
+              "dining_chair_collision_94.obj",
+              "dining_chair_collision_95.obj",
+              "dining_chair_collision_96.obj",
+              "dining_chair_collision_97.obj",
+              "dining_chair_collision_98.obj",
+              "dining_chair_collision_99.obj",
+              "dining_chair_collision_100.obj",
+              "dining_chair_collision_101.obj",
+              "dining_chair_collision_102.obj",
+              "dining_chair_collision_103.obj",
+              "dining_chair_collision_104.obj",
+              "dining_chair_collision_105.obj",
+              "dining_chair_collision_106.obj",
+              "dining_chair_collision_107.obj",
+              "dining_chair_collision_108.obj",
+              "dining_chair_collision_109.obj",
+              "dining_chair_collision_110.obj",
+              "dining_chair_collision_111.obj",
+              "dining_chair_collision_112.obj",
+              "dining_chair_collision_113.obj",
+              "dining_chair_collision_114.obj",
+              "dining_chair_collision_115.obj",
+              "dining_chair_collision_116.obj",
+              "dining_chair_collision_117.obj",
+              "dining_chair_collision_118.obj",
+              "dining_chair_collision_119.obj",
+              "dining_chair_collision_120.obj",
+              "dining_chair_collision_121.obj",
+              "dining_chair_collision_122.obj",
+              "dining_chair_collision_123.obj",
+              "dining_chair_collision_124.obj",
+              "dining_chair_collision_125.obj",
+              "dining_chair_collision_126.obj",
+              "dining_chair_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "dining_chair.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "dining_chair_1",
+      "name": "dining_chair",
+      "description": "Modern upholstered dining chair with oak legs (simple, comfortable)",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          2.8301105356881555,
+          2.764517113265141,
+          -0.00034472869323448705
+        ],
+        "rotation_wxyz": [
+          0.016285460737863678,
+          -0.001587118575967993,
+          0.0014723229823466184,
+          0.9998650394369316
+        ]
+      },
+      "bbox_min": [
+        -0.25,
+        -0.26843780279159546,
+        0.0
+      ],
+      "bbox_max": [
+        0.25,
+        0.26843780279159546,
+        0.8096731901168823
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 7.5,
+            "inertia_pose": [
+              0.00099,
+              -0.028581,
+              0.464055,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.3091158,
+              "ixy": 0.001023061,
+              "ixz": -0.003333794,
+              "iyy": 0.2759342,
+              "iyz": 0.08991797,
+              "izz": 0.2901575
+            },
+            "collision_meshes": [
+              "dining_chair_collision_0.obj",
+              "dining_chair_collision_1.obj",
+              "dining_chair_collision_2.obj",
+              "dining_chair_collision_3.obj",
+              "dining_chair_collision_4.obj",
+              "dining_chair_collision_5.obj",
+              "dining_chair_collision_6.obj",
+              "dining_chair_collision_7.obj",
+              "dining_chair_collision_8.obj",
+              "dining_chair_collision_9.obj",
+              "dining_chair_collision_10.obj",
+              "dining_chair_collision_11.obj",
+              "dining_chair_collision_12.obj",
+              "dining_chair_collision_13.obj",
+              "dining_chair_collision_14.obj",
+              "dining_chair_collision_15.obj",
+              "dining_chair_collision_16.obj",
+              "dining_chair_collision_17.obj",
+              "dining_chair_collision_18.obj",
+              "dining_chair_collision_19.obj",
+              "dining_chair_collision_20.obj",
+              "dining_chair_collision_21.obj",
+              "dining_chair_collision_22.obj",
+              "dining_chair_collision_23.obj",
+              "dining_chair_collision_24.obj",
+              "dining_chair_collision_25.obj",
+              "dining_chair_collision_26.obj",
+              "dining_chair_collision_27.obj",
+              "dining_chair_collision_28.obj",
+              "dining_chair_collision_29.obj",
+              "dining_chair_collision_30.obj",
+              "dining_chair_collision_31.obj",
+              "dining_chair_collision_32.obj",
+              "dining_chair_collision_33.obj",
+              "dining_chair_collision_34.obj",
+              "dining_chair_collision_35.obj",
+              "dining_chair_collision_36.obj",
+              "dining_chair_collision_37.obj",
+              "dining_chair_collision_38.obj",
+              "dining_chair_collision_39.obj",
+              "dining_chair_collision_40.obj",
+              "dining_chair_collision_41.obj",
+              "dining_chair_collision_42.obj",
+              "dining_chair_collision_43.obj",
+              "dining_chair_collision_44.obj",
+              "dining_chair_collision_45.obj",
+              "dining_chair_collision_46.obj",
+              "dining_chair_collision_47.obj",
+              "dining_chair_collision_48.obj",
+              "dining_chair_collision_49.obj",
+              "dining_chair_collision_50.obj",
+              "dining_chair_collision_51.obj",
+              "dining_chair_collision_52.obj",
+              "dining_chair_collision_53.obj",
+              "dining_chair_collision_54.obj",
+              "dining_chair_collision_55.obj",
+              "dining_chair_collision_56.obj",
+              "dining_chair_collision_57.obj",
+              "dining_chair_collision_58.obj",
+              "dining_chair_collision_59.obj",
+              "dining_chair_collision_60.obj",
+              "dining_chair_collision_61.obj",
+              "dining_chair_collision_62.obj",
+              "dining_chair_collision_63.obj",
+              "dining_chair_collision_64.obj",
+              "dining_chair_collision_65.obj",
+              "dining_chair_collision_66.obj",
+              "dining_chair_collision_67.obj",
+              "dining_chair_collision_68.obj",
+              "dining_chair_collision_69.obj",
+              "dining_chair_collision_70.obj",
+              "dining_chair_collision_71.obj",
+              "dining_chair_collision_72.obj",
+              "dining_chair_collision_73.obj",
+              "dining_chair_collision_74.obj",
+              "dining_chair_collision_75.obj",
+              "dining_chair_collision_76.obj",
+              "dining_chair_collision_77.obj",
+              "dining_chair_collision_78.obj",
+              "dining_chair_collision_79.obj",
+              "dining_chair_collision_80.obj",
+              "dining_chair_collision_81.obj",
+              "dining_chair_collision_82.obj",
+              "dining_chair_collision_83.obj",
+              "dining_chair_collision_84.obj",
+              "dining_chair_collision_85.obj",
+              "dining_chair_collision_86.obj",
+              "dining_chair_collision_87.obj",
+              "dining_chair_collision_88.obj",
+              "dining_chair_collision_89.obj",
+              "dining_chair_collision_90.obj",
+              "dining_chair_collision_91.obj",
+              "dining_chair_collision_92.obj",
+              "dining_chair_collision_93.obj",
+              "dining_chair_collision_94.obj",
+              "dining_chair_collision_95.obj",
+              "dining_chair_collision_96.obj",
+              "dining_chair_collision_97.obj",
+              "dining_chair_collision_98.obj",
+              "dining_chair_collision_99.obj",
+              "dining_chair_collision_100.obj",
+              "dining_chair_collision_101.obj",
+              "dining_chair_collision_102.obj",
+              "dining_chair_collision_103.obj",
+              "dining_chair_collision_104.obj",
+              "dining_chair_collision_105.obj",
+              "dining_chair_collision_106.obj",
+              "dining_chair_collision_107.obj",
+              "dining_chair_collision_108.obj",
+              "dining_chair_collision_109.obj",
+              "dining_chair_collision_110.obj",
+              "dining_chair_collision_111.obj",
+              "dining_chair_collision_112.obj",
+              "dining_chair_collision_113.obj",
+              "dining_chair_collision_114.obj",
+              "dining_chair_collision_115.obj",
+              "dining_chair_collision_116.obj",
+              "dining_chair_collision_117.obj",
+              "dining_chair_collision_118.obj",
+              "dining_chair_collision_119.obj",
+              "dining_chair_collision_120.obj",
+              "dining_chair_collision_121.obj",
+              "dining_chair_collision_122.obj",
+              "dining_chair_collision_123.obj",
+              "dining_chair_collision_124.obj",
+              "dining_chair_collision_125.obj",
+              "dining_chair_collision_126.obj",
+              "dining_chair_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "dining_chair.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "dining_chair_2",
+      "name": "dining_chair",
+      "description": "Modern upholstered dining chair with oak legs (simple, comfortable)",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          2.1098861155835005,
+          1.4464597257857776,
+          -0.00034472869323405933
+        ],
+        "rotation_wxyz": [
+          0.9999701732403236,
+          0.001434297983111989,
+          0.0016215639469875694,
+          0.007413902439260777
+        ]
+      },
+      "bbox_min": [
+        -0.25,
+        -0.26843780279159546,
+        0.0
+      ],
+      "bbox_max": [
+        0.25,
+        0.26843780279159546,
+        0.8096731901168823
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 7.5,
+            "inertia_pose": [
+              0.00099,
+              -0.028581,
+              0.464055,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.3091158,
+              "ixy": 0.001023061,
+              "ixz": -0.003333794,
+              "iyy": 0.2759342,
+              "iyz": 0.08991797,
+              "izz": 0.2901575
+            },
+            "collision_meshes": [
+              "dining_chair_collision_0.obj",
+              "dining_chair_collision_1.obj",
+              "dining_chair_collision_2.obj",
+              "dining_chair_collision_3.obj",
+              "dining_chair_collision_4.obj",
+              "dining_chair_collision_5.obj",
+              "dining_chair_collision_6.obj",
+              "dining_chair_collision_7.obj",
+              "dining_chair_collision_8.obj",
+              "dining_chair_collision_9.obj",
+              "dining_chair_collision_10.obj",
+              "dining_chair_collision_11.obj",
+              "dining_chair_collision_12.obj",
+              "dining_chair_collision_13.obj",
+              "dining_chair_collision_14.obj",
+              "dining_chair_collision_15.obj",
+              "dining_chair_collision_16.obj",
+              "dining_chair_collision_17.obj",
+              "dining_chair_collision_18.obj",
+              "dining_chair_collision_19.obj",
+              "dining_chair_collision_20.obj",
+              "dining_chair_collision_21.obj",
+              "dining_chair_collision_22.obj",
+              "dining_chair_collision_23.obj",
+              "dining_chair_collision_24.obj",
+              "dining_chair_collision_25.obj",
+              "dining_chair_collision_26.obj",
+              "dining_chair_collision_27.obj",
+              "dining_chair_collision_28.obj",
+              "dining_chair_collision_29.obj",
+              "dining_chair_collision_30.obj",
+              "dining_chair_collision_31.obj",
+              "dining_chair_collision_32.obj",
+              "dining_chair_collision_33.obj",
+              "dining_chair_collision_34.obj",
+              "dining_chair_collision_35.obj",
+              "dining_chair_collision_36.obj",
+              "dining_chair_collision_37.obj",
+              "dining_chair_collision_38.obj",
+              "dining_chair_collision_39.obj",
+              "dining_chair_collision_40.obj",
+              "dining_chair_collision_41.obj",
+              "dining_chair_collision_42.obj",
+              "dining_chair_collision_43.obj",
+              "dining_chair_collision_44.obj",
+              "dining_chair_collision_45.obj",
+              "dining_chair_collision_46.obj",
+              "dining_chair_collision_47.obj",
+              "dining_chair_collision_48.obj",
+              "dining_chair_collision_49.obj",
+              "dining_chair_collision_50.obj",
+              "dining_chair_collision_51.obj",
+              "dining_chair_collision_52.obj",
+              "dining_chair_collision_53.obj",
+              "dining_chair_collision_54.obj",
+              "dining_chair_collision_55.obj",
+              "dining_chair_collision_56.obj",
+              "dining_chair_collision_57.obj",
+              "dining_chair_collision_58.obj",
+              "dining_chair_collision_59.obj",
+              "dining_chair_collision_60.obj",
+              "dining_chair_collision_61.obj",
+              "dining_chair_collision_62.obj",
+              "dining_chair_collision_63.obj",
+              "dining_chair_collision_64.obj",
+              "dining_chair_collision_65.obj",
+              "dining_chair_collision_66.obj",
+              "dining_chair_collision_67.obj",
+              "dining_chair_collision_68.obj",
+              "dining_chair_collision_69.obj",
+              "dining_chair_collision_70.obj",
+              "dining_chair_collision_71.obj",
+              "dining_chair_collision_72.obj",
+              "dining_chair_collision_73.obj",
+              "dining_chair_collision_74.obj",
+              "dining_chair_collision_75.obj",
+              "dining_chair_collision_76.obj",
+              "dining_chair_collision_77.obj",
+              "dining_chair_collision_78.obj",
+              "dining_chair_collision_79.obj",
+              "dining_chair_collision_80.obj",
+              "dining_chair_collision_81.obj",
+              "dining_chair_collision_82.obj",
+              "dining_chair_collision_83.obj",
+              "dining_chair_collision_84.obj",
+              "dining_chair_collision_85.obj",
+              "dining_chair_collision_86.obj",
+              "dining_chair_collision_87.obj",
+              "dining_chair_collision_88.obj",
+              "dining_chair_collision_89.obj",
+              "dining_chair_collision_90.obj",
+              "dining_chair_collision_91.obj",
+              "dining_chair_collision_92.obj",
+              "dining_chair_collision_93.obj",
+              "dining_chair_collision_94.obj",
+              "dining_chair_collision_95.obj",
+              "dining_chair_collision_96.obj",
+              "dining_chair_collision_97.obj",
+              "dining_chair_collision_98.obj",
+              "dining_chair_collision_99.obj",
+              "dining_chair_collision_100.obj",
+              "dining_chair_collision_101.obj",
+              "dining_chair_collision_102.obj",
+              "dining_chair_collision_103.obj",
+              "dining_chair_collision_104.obj",
+              "dining_chair_collision_105.obj",
+              "dining_chair_collision_106.obj",
+              "dining_chair_collision_107.obj",
+              "dining_chair_collision_108.obj",
+              "dining_chair_collision_109.obj",
+              "dining_chair_collision_110.obj",
+              "dining_chair_collision_111.obj",
+              "dining_chair_collision_112.obj",
+              "dining_chair_collision_113.obj",
+              "dining_chair_collision_114.obj",
+              "dining_chair_collision_115.obj",
+              "dining_chair_collision_116.obj",
+              "dining_chair_collision_117.obj",
+              "dining_chair_collision_118.obj",
+              "dining_chair_collision_119.obj",
+              "dining_chair_collision_120.obj",
+              "dining_chair_collision_121.obj",
+              "dining_chair_collision_122.obj",
+              "dining_chair_collision_123.obj",
+              "dining_chair_collision_124.obj",
+              "dining_chair_collision_125.obj",
+              "dining_chair_collision_126.obj",
+              "dining_chair_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "dining_chair.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "dining_chair_3",
+      "name": "dining_chair",
+      "description": "Modern upholstered dining chair with oak legs (simple, comfortable)",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          2.849037437029841,
+          1.4836434253166797,
+          -0.00034472869323404014
+        ],
+        "rotation_wxyz": [
+          0.9999975420446908,
+          0.001445509291480285,
+          0.001611577868665731,
+          0.0004787736817771665
+        ]
+      },
+      "bbox_min": [
+        -0.25,
+        -0.26843780279159546,
+        0.0
+      ],
+      "bbox_max": [
+        0.25,
+        0.26843780279159546,
+        0.8096731901168823
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/furniture/sdf/dining_chair_1767831366/dining_chair.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 7.5,
+            "inertia_pose": [
+              0.00099,
+              -0.028581,
+              0.464055,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.3091158,
+              "ixy": 0.001023061,
+              "ixz": -0.003333794,
+              "iyy": 0.2759342,
+              "iyz": 0.08991797,
+              "izz": 0.2901575
+            },
+            "collision_meshes": [
+              "dining_chair_collision_0.obj",
+              "dining_chair_collision_1.obj",
+              "dining_chair_collision_2.obj",
+              "dining_chair_collision_3.obj",
+              "dining_chair_collision_4.obj",
+              "dining_chair_collision_5.obj",
+              "dining_chair_collision_6.obj",
+              "dining_chair_collision_7.obj",
+              "dining_chair_collision_8.obj",
+              "dining_chair_collision_9.obj",
+              "dining_chair_collision_10.obj",
+              "dining_chair_collision_11.obj",
+              "dining_chair_collision_12.obj",
+              "dining_chair_collision_13.obj",
+              "dining_chair_collision_14.obj",
+              "dining_chair_collision_15.obj",
+              "dining_chair_collision_16.obj",
+              "dining_chair_collision_17.obj",
+              "dining_chair_collision_18.obj",
+              "dining_chair_collision_19.obj",
+              "dining_chair_collision_20.obj",
+              "dining_chair_collision_21.obj",
+              "dining_chair_collision_22.obj",
+              "dining_chair_collision_23.obj",
+              "dining_chair_collision_24.obj",
+              "dining_chair_collision_25.obj",
+              "dining_chair_collision_26.obj",
+              "dining_chair_collision_27.obj",
+              "dining_chair_collision_28.obj",
+              "dining_chair_collision_29.obj",
+              "dining_chair_collision_30.obj",
+              "dining_chair_collision_31.obj",
+              "dining_chair_collision_32.obj",
+              "dining_chair_collision_33.obj",
+              "dining_chair_collision_34.obj",
+              "dining_chair_collision_35.obj",
+              "dining_chair_collision_36.obj",
+              "dining_chair_collision_37.obj",
+              "dining_chair_collision_38.obj",
+              "dining_chair_collision_39.obj",
+              "dining_chair_collision_40.obj",
+              "dining_chair_collision_41.obj",
+              "dining_chair_collision_42.obj",
+              "dining_chair_collision_43.obj",
+              "dining_chair_collision_44.obj",
+              "dining_chair_collision_45.obj",
+              "dining_chair_collision_46.obj",
+              "dining_chair_collision_47.obj",
+              "dining_chair_collision_48.obj",
+              "dining_chair_collision_49.obj",
+              "dining_chair_collision_50.obj",
+              "dining_chair_collision_51.obj",
+              "dining_chair_collision_52.obj",
+              "dining_chair_collision_53.obj",
+              "dining_chair_collision_54.obj",
+              "dining_chair_collision_55.obj",
+              "dining_chair_collision_56.obj",
+              "dining_chair_collision_57.obj",
+              "dining_chair_collision_58.obj",
+              "dining_chair_collision_59.obj",
+              "dining_chair_collision_60.obj",
+              "dining_chair_collision_61.obj",
+              "dining_chair_collision_62.obj",
+              "dining_chair_collision_63.obj",
+              "dining_chair_collision_64.obj",
+              "dining_chair_collision_65.obj",
+              "dining_chair_collision_66.obj",
+              "dining_chair_collision_67.obj",
+              "dining_chair_collision_68.obj",
+              "dining_chair_collision_69.obj",
+              "dining_chair_collision_70.obj",
+              "dining_chair_collision_71.obj",
+              "dining_chair_collision_72.obj",
+              "dining_chair_collision_73.obj",
+              "dining_chair_collision_74.obj",
+              "dining_chair_collision_75.obj",
+              "dining_chair_collision_76.obj",
+              "dining_chair_collision_77.obj",
+              "dining_chair_collision_78.obj",
+              "dining_chair_collision_79.obj",
+              "dining_chair_collision_80.obj",
+              "dining_chair_collision_81.obj",
+              "dining_chair_collision_82.obj",
+              "dining_chair_collision_83.obj",
+              "dining_chair_collision_84.obj",
+              "dining_chair_collision_85.obj",
+              "dining_chair_collision_86.obj",
+              "dining_chair_collision_87.obj",
+              "dining_chair_collision_88.obj",
+              "dining_chair_collision_89.obj",
+              "dining_chair_collision_90.obj",
+              "dining_chair_collision_91.obj",
+              "dining_chair_collision_92.obj",
+              "dining_chair_collision_93.obj",
+              "dining_chair_collision_94.obj",
+              "dining_chair_collision_95.obj",
+              "dining_chair_collision_96.obj",
+              "dining_chair_collision_97.obj",
+              "dining_chair_collision_98.obj",
+              "dining_chair_collision_99.obj",
+              "dining_chair_collision_100.obj",
+              "dining_chair_collision_101.obj",
+              "dining_chair_collision_102.obj",
+              "dining_chair_collision_103.obj",
+              "dining_chair_collision_104.obj",
+              "dining_chair_collision_105.obj",
+              "dining_chair_collision_106.obj",
+              "dining_chair_collision_107.obj",
+              "dining_chair_collision_108.obj",
+              "dining_chair_collision_109.obj",
+              "dining_chair_collision_110.obj",
+              "dining_chair_collision_111.obj",
+              "dining_chair_collision_112.obj",
+              "dining_chair_collision_113.obj",
+              "dining_chair_collision_114.obj",
+              "dining_chair_collision_115.obj",
+              "dining_chair_collision_116.obj",
+              "dining_chair_collision_117.obj",
+              "dining_chair_collision_118.obj",
+              "dining_chair_collision_119.obj",
+              "dining_chair_collision_120.obj",
+              "dining_chair_collision_121.obj",
+              "dining_chair_collision_122.obj",
+              "dining_chair_collision_123.obj",
+              "dining_chair_collision_124.obj",
+              "dining_chair_collision_125.obj",
+              "dining_chair_collision_126.obj",
+              "dining_chair_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "dining_chair.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "object_id": "dining_table_0",
+      "name": "dining_table",
+      "description": "Modern Scandinavian rectangular oak dining table with slim black metal legs",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          2.4074604384458267,
+          2.0974304810186273,
+          -0.0021389540628072106
+        ],
+        "rotation_wxyz": [
+          0.9999032273036648,
+          -9.870766796574835e-05,
+          0.00011615266881671166,
+          0.013910887573025476
+        ]
+      },
+      "bbox_min": [
+        -0.7829999792575836,
+        -0.386645330786705,
+        0.0
+      ],
+      "bbox_max": [
+        0.7829999792575836,
+        0.386645330786705,
+        0.7500093734264374
+      ],
+      "scale_factor": 0.87,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/dining_table_1767831366/dining_table.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/dining_table_1767831366/dining_table.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/furniture/sdf/dining_table_1767831366/dining_table.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 25.0,
+            "inertia_pose": [
+              -0.00041499,
+              0.00124758,
+              0.69592605,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 1.608711,
+              "ixy": -0.01658611,
+              "ixz": 0.0007259759,
+              "iyy": 6.253252,
+              "iyz": -0.004568484,
+              "izz": 7.163591
+            },
+            "collision_meshes": [
+              "dining_table_collision_0.obj",
+              "dining_table_collision_1.obj",
+              "dining_table_collision_2.obj",
+              "dining_table_collision_3.obj",
+              "dining_table_collision_4.obj",
+              "dining_table_collision_5.obj",
+              "dining_table_collision_6.obj",
+              "dining_table_collision_7.obj",
+              "dining_table_collision_8.obj",
+              "dining_table_collision_9.obj",
+              "dining_table_collision_10.obj",
+              "dining_table_collision_11.obj",
+              "dining_table_collision_12.obj",
+              "dining_table_collision_13.obj",
+              "dining_table_collision_14.obj",
+              "dining_table_collision_15.obj",
+              "dining_table_collision_16.obj",
+              "dining_table_collision_17.obj",
+              "dining_table_collision_18.obj",
+              "dining_table_collision_19.obj",
+              "dining_table_collision_20.obj",
+              "dining_table_collision_21.obj",
+              "dining_table_collision_22.obj",
+              "dining_table_collision_23.obj",
+              "dining_table_collision_24.obj",
+              "dining_table_collision_25.obj",
+              "dining_table_collision_26.obj",
+              "dining_table_collision_27.obj",
+              "dining_table_collision_28.obj",
+              "dining_table_collision_29.obj",
+              "dining_table_collision_30.obj",
+              "dining_table_collision_31.obj",
+              "dining_table_collision_32.obj",
+              "dining_table_collision_33.obj",
+              "dining_table_collision_34.obj",
+              "dining_table_collision_35.obj",
+              "dining_table_collision_36.obj",
+              "dining_table_collision_37.obj",
+              "dining_table_collision_38.obj",
+              "dining_table_collision_39.obj",
+              "dining_table_collision_40.obj",
+              "dining_table_collision_41.obj",
+              "dining_table_collision_42.obj",
+              "dining_table_collision_43.obj",
+              "dining_table_collision_44.obj",
+              "dining_table_collision_45.obj",
+              "dining_table_collision_46.obj",
+              "dining_table_collision_47.obj",
+              "dining_table_collision_48.obj",
+              "dining_table_collision_49.obj",
+              "dining_table_collision_50.obj",
+              "dining_table_collision_51.obj",
+              "dining_table_collision_52.obj",
+              "dining_table_collision_53.obj",
+              "dining_table_collision_54.obj",
+              "dining_table_collision_55.obj",
+              "dining_table_collision_56.obj",
+              "dining_table_collision_57.obj",
+              "dining_table_collision_58.obj",
+              "dining_table_collision_59.obj",
+              "dining_table_collision_60.obj",
+              "dining_table_collision_61.obj",
+              "dining_table_collision_62.obj",
+              "dining_table_collision_63.obj",
+              "dining_table_collision_64.obj",
+              "dining_table_collision_65.obj",
+              "dining_table_collision_66.obj",
+              "dining_table_collision_67.obj",
+              "dining_table_collision_68.obj",
+              "dining_table_collision_69.obj",
+              "dining_table_collision_70.obj",
+              "dining_table_collision_71.obj",
+              "dining_table_collision_72.obj",
+              "dining_table_collision_73.obj",
+              "dining_table_collision_74.obj",
+              "dining_table_collision_75.obj",
+              "dining_table_collision_76.obj",
+              "dining_table_collision_77.obj",
+              "dining_table_collision_78.obj",
+              "dining_table_collision_79.obj",
+              "dining_table_collision_80.obj",
+              "dining_table_collision_81.obj",
+              "dining_table_collision_82.obj",
+              "dining_table_collision_83.obj",
+              "dining_table_collision_84.obj",
+              "dining_table_collision_85.obj",
+              "dining_table_collision_86.obj",
+              "dining_table_collision_87.obj",
+              "dining_table_collision_88.obj",
+              "dining_table_collision_89.obj",
+              "dining_table_collision_90.obj",
+              "dining_table_collision_91.obj",
+              "dining_table_collision_92.obj",
+              "dining_table_collision_93.obj",
+              "dining_table_collision_94.obj",
+              "dining_table_collision_95.obj",
+              "dining_table_collision_96.obj",
+              "dining_table_collision_97.obj",
+              "dining_table_collision_98.obj",
+              "dining_table_collision_99.obj",
+              "dining_table_collision_100.obj",
+              "dining_table_collision_101.obj",
+              "dining_table_collision_102.obj",
+              "dining_table_collision_103.obj",
+              "dining_table_collision_104.obj",
+              "dining_table_collision_105.obj",
+              "dining_table_collision_106.obj",
+              "dining_table_collision_107.obj",
+              "dining_table_collision_108.obj",
+              "dining_table_collision_109.obj",
+              "dining_table_collision_110.obj",
+              "dining_table_collision_111.obj",
+              "dining_table_collision_112.obj",
+              "dining_table_collision_113.obj",
+              "dining_table_collision_114.obj",
+              "dining_table_collision_115.obj",
+              "dining_table_collision_116.obj",
+              "dining_table_collision_117.obj",
+              "dining_table_collision_118.obj",
+              "dining_table_collision_119.obj",
+              "dining_table_collision_120.obj",
+              "dining_table_collision_121.obj",
+              "dining_table_collision_122.obj",
+              "dining_table_collision_123.obj",
+              "dining_table_collision_124.obj",
+              "dining_table_collision_125.obj",
+              "dining_table_collision_126.obj",
+              "dining_table_collision_127.obj"
+            ],
+            "visual_meshes": [
+              "dining_table.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "support_surfaces": [
+        {
+          "surface_id": "S_0",
+          "bounding_box_min": [
+            -0.7820027116931169,
+            -0.3501596584398847,
+            0.0087
+          ],
+          "bounding_box_max": [
+            0.7820027116931169,
+            0.3501596584398847,
+            0.435
+          ],
+          "transform": {
+            "translation": [
+              0.00692480077274985,
+              -0.0022858144402077146,
+              0.7563791389211701
+            ],
+            "rotation_wxyz": [
+              0.9999032010098818,
+              0.0002706069444339952,
+              -7.246531457441965e-05,
+              0.013910791884428137
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "object_id": "rug_0",
+      "name": "rug",
+      "description": "Minimalist flatweave rectangular dining rug in light beige, subtle woven texture (low pile)",
+      "object_type": "furniture",
+      "transform": {
+        "translation": [
+          2.4074927754155535,
+          2.0973946190275026,
+          0.0
+        ],
+        "rotation_wxyz": [
+          0.9999032970554693,
+          0.0,
+          0.0,
+          0.01390670836688185
+        ]
+      },
+      "bbox_min": [
+        -1.399999976158142,
+        -1.0,
+        0.0
+      ],
+      "bbox_max": [
+        1.399999976158142,
+        1.0,
+        0.003000000026077032
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/furniture/sdf/rug_1767832606/rug.gltf",
+      "sdf_path": "generated_assets/furniture/sdf/rug_1767832606/rug.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/furniture/sdf/rug_1767832606/rug.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "visual_meshes": [
+              "rug.gltf"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "object_id": "bowl_0",
+      "name": "bowl",
+      "description": "Shallow matte gray ceramic bowl, minimal, round",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          0.2892347826939683,
+          1.5888476082292902,
+          0.705604590768083
+        ],
+        "rotation_wxyz": [
+          0.7400564099376662,
+          -0.0001438995298697165,
+          -8.61317236913102e-06,
+          -0.6725447861138404
+        ]
+      },
+      "bbox_min": [
+        -0.10999999940395355,
+        -0.10987494885921478,
+        0.0
+      ],
+      "bbox_max": [
+        0.10999999940395355,
+        0.10987494885921478,
+        0.03799240291118622
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/bowl_1767835908/bowl.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/bowl_1767835908/bowl.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/bowl_1767835908/bowl.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.55,
+            "inertia_pose": [
+              -4.1e-05,
+              0.000322,
+              0.011245,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.002259889,
+              "ixy": 1.206365e-06,
+              "ixz": -2.053646e-06,
+              "iyy": 0.002267096,
+              "iyz": -1.602784e-07,
+              "izz": 0.004393889
+            },
+            "collision_meshes": [
+              "bowl_collision_0.obj",
+              "bowl_collision_1.obj",
+              "bowl_collision_2.obj",
+              "bowl_collision_3.obj",
+              "bowl_collision_4.obj",
+              "bowl_collision_5.obj",
+              "bowl_collision_6.obj",
+              "bowl_collision_7.obj",
+              "bowl_collision_8.obj",
+              "bowl_collision_9.obj",
+              "bowl_collision_10.obj",
+              "bowl_collision_11.obj",
+              "bowl_collision_12.obj",
+              "bowl_collision_13.obj",
+              "bowl_collision_14.obj",
+              "bowl_collision_15.obj",
+              "bowl_collision_16.obj",
+              "bowl_collision_17.obj",
+              "bowl_collision_18.obj",
+              "bowl_collision_19.obj",
+              "bowl_collision_20.obj",
+              "bowl_collision_21.obj",
+              "bowl_collision_22.obj",
+              "bowl_collision_23.obj",
+              "bowl_collision_24.obj",
+              "bowl_collision_25.obj",
+              "bowl_collision_26.obj",
+              "bowl_collision_27.obj",
+              "bowl_collision_28.obj",
+              "bowl_collision_29.obj",
+              "bowl_collision_30.obj",
+              "bowl_collision_31.obj",
+              "bowl_collision_32.obj",
+              "bowl_collision_33.obj",
+              "bowl_collision_34.obj",
+              "bowl_collision_35.obj",
+              "bowl_collision_36.obj",
+              "bowl_collision_37.obj",
+              "bowl_collision_38.obj",
+              "bowl_collision_39.obj",
+              "bowl_collision_40.obj",
+              "bowl_collision_41.obj",
+              "bowl_collision_42.obj",
+              "bowl_collision_43.obj",
+              "bowl_collision_44.obj",
+              "bowl_collision_45.obj",
+              "bowl_collision_46.obj",
+              "bowl_collision_47.obj",
+              "bowl_collision_48.obj",
+              "bowl_collision_49.obj",
+              "bowl_collision_50.obj",
+              "bowl_collision_51.obj",
+              "bowl_collision_52.obj",
+              "bowl_collision_53.obj",
+              "bowl_collision_54.obj",
+              "bowl_collision_55.obj",
+              "bowl_collision_56.obj",
+              "bowl_collision_57.obj",
+              "bowl_collision_58.obj",
+              "bowl_collision_59.obj",
+              "bowl_collision_60.obj",
+              "bowl_collision_61.obj",
+              "bowl_collision_62.obj",
+              "bowl_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "bowl.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_1",
+        "position_2d": [
+          0.7,
+          -0.08
+        ],
+        "rotation_2d": 0.08726646259971647,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "dinner_plate_0",
+      "name": "dinner_plate",
+      "description": "Simple matte white ceramic dinner plate, round",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          2.0100207943158943,
+          1.89267634091489,
+          0.7465350204918771
+        ],
+        "rotation_wxyz": [
+          0.9999087589905388,
+          0.001414034316505193,
+          0.00104558841228457,
+          -0.013393317207638604
+        ]
+      },
+      "bbox_min": [
+        -0.13500000536441803,
+        -0.1349283903837204,
+        0.0
+      ],
+      "bbox_max": [
+        0.13500000536441803,
+        0.1349283903837204,
+        0.028129899874329567
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/dinner_plate_1767834693/dinner_plate.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/dinner_plate_1767834693/dinner_plate.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/dinner_plate_1767834693/dinner_plate.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.75,
+            "inertia_pose": [
+              0.000577,
+              -5.7e-05,
+              0.013882,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.002990977,
+              "ixy": 3.713551e-06,
+              "ixz": -1.244381e-06,
+              "iyy": 0.003009516,
+              "iyz": 1.613888e-06,
+              "izz": 0.005960201
+            },
+            "collision_meshes": [
+              "dinner_plate_collision_0.obj",
+              "dinner_plate_collision_1.obj",
+              "dinner_plate_collision_2.obj",
+              "dinner_plate_collision_3.obj",
+              "dinner_plate_collision_4.obj",
+              "dinner_plate_collision_5.obj",
+              "dinner_plate_collision_6.obj",
+              "dinner_plate_collision_7.obj",
+              "dinner_plate_collision_8.obj",
+              "dinner_plate_collision_9.obj",
+              "dinner_plate_collision_10.obj",
+              "dinner_plate_collision_11.obj",
+              "dinner_plate_collision_12.obj",
+              "dinner_plate_collision_13.obj",
+              "dinner_plate_collision_14.obj",
+              "dinner_plate_collision_15.obj",
+              "dinner_plate_collision_16.obj",
+              "dinner_plate_collision_17.obj",
+              "dinner_plate_collision_18.obj",
+              "dinner_plate_collision_19.obj",
+              "dinner_plate_collision_20.obj",
+              "dinner_plate_collision_21.obj",
+              "dinner_plate_collision_22.obj",
+              "dinner_plate_collision_23.obj",
+              "dinner_plate_collision_24.obj",
+              "dinner_plate_collision_25.obj",
+              "dinner_plate_collision_26.obj",
+              "dinner_plate_collision_27.obj",
+              "dinner_plate_collision_28.obj",
+              "dinner_plate_collision_29.obj",
+              "dinner_plate_collision_30.obj",
+              "dinner_plate_collision_31.obj",
+              "dinner_plate_collision_32.obj",
+              "dinner_plate_collision_33.obj",
+              "dinner_plate_collision_34.obj",
+              "dinner_plate_collision_35.obj",
+              "dinner_plate_collision_36.obj",
+              "dinner_plate_collision_37.obj",
+              "dinner_plate_collision_38.obj",
+              "dinner_plate_collision_39.obj",
+              "dinner_plate_collision_40.obj",
+              "dinner_plate_collision_41.obj",
+              "dinner_plate_collision_42.obj",
+              "dinner_plate_collision_43.obj",
+              "dinner_plate_collision_44.obj",
+              "dinner_plate_collision_45.obj",
+              "dinner_plate_collision_46.obj",
+              "dinner_plate_collision_47.obj",
+              "dinner_plate_collision_48.obj",
+              "dinner_plate_collision_49.obj",
+              "dinner_plate_collision_50.obj",
+              "dinner_plate_collision_51.obj",
+              "dinner_plate_collision_52.obj",
+              "dinner_plate_collision_53.obj",
+              "dinner_plate_collision_54.obj",
+              "dinner_plate_collision_55.obj",
+              "dinner_plate_collision_56.obj",
+              "dinner_plate_collision_57.obj",
+              "dinner_plate_collision_58.obj",
+              "dinner_plate_collision_59.obj",
+              "dinner_plate_collision_60.obj",
+              "dinner_plate_collision_61.obj",
+              "dinner_plate_collision_62.obj",
+              "dinner_plate_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "dinner_plate.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_0",
+        "position_2d": [
+          -0.39,
+          -0.2
+        ],
+        "rotation_2d": -0.10471975511965978,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "dinner_plate_1",
+      "name": "dinner_plate",
+      "description": "Simple matte white ceramic dinner plate, round",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          2.8024247647080927,
+          1.918996915001621,
+          0.7460751167687975
+        ],
+        "rotation_wxyz": [
+          0.9985899863619967,
+          0.001994170546756169,
+          0.0009875566265021213,
+          0.05303854403438302
+        ]
+      },
+      "bbox_min": [
+        -0.13500000536441803,
+        -0.1349283903837204,
+        0.0
+      ],
+      "bbox_max": [
+        0.13500000536441803,
+        0.1349283903837204,
+        0.028129899874329567
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/dinner_plate_1767834693/dinner_plate.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/dinner_plate_1767834693/dinner_plate.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/dinner_plate_1767834693/dinner_plate.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.75,
+            "inertia_pose": [
+              0.000577,
+              -5.7e-05,
+              0.013882,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.002990977,
+              "ixy": 3.713551e-06,
+              "ixz": -1.244381e-06,
+              "iyy": 0.003009516,
+              "iyz": 1.613888e-06,
+              "izz": 0.005960201
+            },
+            "collision_meshes": [
+              "dinner_plate_collision_0.obj",
+              "dinner_plate_collision_1.obj",
+              "dinner_plate_collision_2.obj",
+              "dinner_plate_collision_3.obj",
+              "dinner_plate_collision_4.obj",
+              "dinner_plate_collision_5.obj",
+              "dinner_plate_collision_6.obj",
+              "dinner_plate_collision_7.obj",
+              "dinner_plate_collision_8.obj",
+              "dinner_plate_collision_9.obj",
+              "dinner_plate_collision_10.obj",
+              "dinner_plate_collision_11.obj",
+              "dinner_plate_collision_12.obj",
+              "dinner_plate_collision_13.obj",
+              "dinner_plate_collision_14.obj",
+              "dinner_plate_collision_15.obj",
+              "dinner_plate_collision_16.obj",
+              "dinner_plate_collision_17.obj",
+              "dinner_plate_collision_18.obj",
+              "dinner_plate_collision_19.obj",
+              "dinner_plate_collision_20.obj",
+              "dinner_plate_collision_21.obj",
+              "dinner_plate_collision_22.obj",
+              "dinner_plate_collision_23.obj",
+              "dinner_plate_collision_24.obj",
+              "dinner_plate_collision_25.obj",
+              "dinner_plate_collision_26.obj",
+              "dinner_plate_collision_27.obj",
+              "dinner_plate_collision_28.obj",
+              "dinner_plate_collision_29.obj",
+              "dinner_plate_collision_30.obj",
+              "dinner_plate_collision_31.obj",
+              "dinner_plate_collision_32.obj",
+              "dinner_plate_collision_33.obj",
+              "dinner_plate_collision_34.obj",
+              "dinner_plate_collision_35.obj",
+              "dinner_plate_collision_36.obj",
+              "dinner_plate_collision_37.obj",
+              "dinner_plate_collision_38.obj",
+              "dinner_plate_collision_39.obj",
+              "dinner_plate_collision_40.obj",
+              "dinner_plate_collision_41.obj",
+              "dinner_plate_collision_42.obj",
+              "dinner_plate_collision_43.obj",
+              "dinner_plate_collision_44.obj",
+              "dinner_plate_collision_45.obj",
+              "dinner_plate_collision_46.obj",
+              "dinner_plate_collision_47.obj",
+              "dinner_plate_collision_48.obj",
+              "dinner_plate_collision_49.obj",
+              "dinner_plate_collision_50.obj",
+              "dinner_plate_collision_51.obj",
+              "dinner_plate_collision_52.obj",
+              "dinner_plate_collision_53.obj",
+              "dinner_plate_collision_54.obj",
+              "dinner_plate_collision_55.obj",
+              "dinner_plate_collision_56.obj",
+              "dinner_plate_collision_57.obj",
+              "dinner_plate_collision_58.obj",
+              "dinner_plate_collision_59.obj",
+              "dinner_plate_collision_60.obj",
+              "dinner_plate_collision_61.obj",
+              "dinner_plate_collision_62.obj",
+              "dinner_plate_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "dinner_plate.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_0",
+        "position_2d": [
+          0.39,
+          -0.2
+        ],
+        "rotation_2d": 0.06981317007977318,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "drinking_glass_tumbler_0",
+      "name": "drinking_glass_tumbler",
+      "description": "Clear cylindrical drinking glass tumbler, transparent, minimal",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          2.181590065518373,
+          2.057223729758235,
+          0.7469933105433543
+        ],
+        "rotation_wxyz": [
+          0.9937243522811073,
+          0.00030104712513502976,
+          -0.0001455898147100272,
+          0.11185615699516925
+        ]
+      },
+      "bbox_min": [
+        -0.03750000149011612,
+        -0.03782264515757561,
+        0.0
+      ],
+      "bbox_max": [
+        0.03750000149011612,
+        0.03782264515757561,
+        0.12780529260635376
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/drinking_glass_tumbler_1767834808/drinking_glass_tumbler.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/drinking_glass_tumbler_1767834808/drinking_glass_tumbler.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/drinking_glass_tumbler_1767834808/drinking_glass_tumbler.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.33,
+            "inertia_pose": [
+              0.000216,
+              6.1e-05,
+              0.035242,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0006654298,
+              "ixy": 8.481773e-08,
+              "ixz": -4.202e-07,
+              "iyy": 0.0006650539,
+              "iyz": -3.089776e-06,
+              "izz": 0.0003189833
+            },
+            "collision_meshes": [
+              "drinking_glass_tumbler_collision_0.obj",
+              "drinking_glass_tumbler_collision_1.obj",
+              "drinking_glass_tumbler_collision_2.obj",
+              "drinking_glass_tumbler_collision_3.obj",
+              "drinking_glass_tumbler_collision_4.obj",
+              "drinking_glass_tumbler_collision_5.obj",
+              "drinking_glass_tumbler_collision_6.obj",
+              "drinking_glass_tumbler_collision_7.obj",
+              "drinking_glass_tumbler_collision_8.obj",
+              "drinking_glass_tumbler_collision_9.obj",
+              "drinking_glass_tumbler_collision_10.obj",
+              "drinking_glass_tumbler_collision_11.obj",
+              "drinking_glass_tumbler_collision_12.obj",
+              "drinking_glass_tumbler_collision_13.obj",
+              "drinking_glass_tumbler_collision_14.obj",
+              "drinking_glass_tumbler_collision_15.obj",
+              "drinking_glass_tumbler_collision_16.obj",
+              "drinking_glass_tumbler_collision_17.obj",
+              "drinking_glass_tumbler_collision_18.obj",
+              "drinking_glass_tumbler_collision_19.obj",
+              "drinking_glass_tumbler_collision_20.obj",
+              "drinking_glass_tumbler_collision_21.obj",
+              "drinking_glass_tumbler_collision_22.obj",
+              "drinking_glass_tumbler_collision_23.obj",
+              "drinking_glass_tumbler_collision_24.obj",
+              "drinking_glass_tumbler_collision_25.obj",
+              "drinking_glass_tumbler_collision_26.obj",
+              "drinking_glass_tumbler_collision_27.obj",
+              "drinking_glass_tumbler_collision_28.obj",
+              "drinking_glass_tumbler_collision_29.obj",
+              "drinking_glass_tumbler_collision_30.obj",
+              "drinking_glass_tumbler_collision_31.obj",
+              "drinking_glass_tumbler_collision_32.obj",
+              "drinking_glass_tumbler_collision_33.obj",
+              "drinking_glass_tumbler_collision_34.obj",
+              "drinking_glass_tumbler_collision_35.obj",
+              "drinking_glass_tumbler_collision_36.obj",
+              "drinking_glass_tumbler_collision_37.obj",
+              "drinking_glass_tumbler_collision_38.obj",
+              "drinking_glass_tumbler_collision_39.obj",
+              "drinking_glass_tumbler_collision_40.obj",
+              "drinking_glass_tumbler_collision_41.obj",
+              "drinking_glass_tumbler_collision_42.obj",
+              "drinking_glass_tumbler_collision_43.obj",
+              "drinking_glass_tumbler_collision_44.obj",
+              "drinking_glass_tumbler_collision_45.obj",
+              "drinking_glass_tumbler_collision_46.obj",
+              "drinking_glass_tumbler_collision_47.obj",
+              "drinking_glass_tumbler_collision_48.obj",
+              "drinking_glass_tumbler_collision_49.obj",
+              "drinking_glass_tumbler_collision_50.obj",
+              "drinking_glass_tumbler_collision_51.obj",
+              "drinking_glass_tumbler_collision_52.obj",
+              "drinking_glass_tumbler_collision_53.obj",
+              "drinking_glass_tumbler_collision_54.obj",
+              "drinking_glass_tumbler_collision_55.obj",
+              "drinking_glass_tumbler_collision_56.obj",
+              "drinking_glass_tumbler_collision_57.obj",
+              "drinking_glass_tumbler_collision_58.obj",
+              "drinking_glass_tumbler_collision_59.obj",
+              "drinking_glass_tumbler_collision_60.obj",
+              "drinking_glass_tumbler_collision_61.obj",
+              "drinking_glass_tumbler_collision_62.obj",
+              "drinking_glass_tumbler_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "drinking_glass_tumbler.gltf"
+            ],
+            "friction": {
+              "mu": 0.9,
+              "mu2": 0.9
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_0",
+        "position_2d": [
+          -0.23,
+          -0.03
+        ],
+        "rotation_2d": 0.20943951023931956,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "drinking_glass_tumbler_1",
+      "name": "drinking_glass_tumbler",
+      "description": "Clear cylindrical drinking glass tumbler, transparent, minimal",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          2.9580326422461654,
+          2.032738159305243,
+          0.746559502845751
+        ],
+        "rotation_wxyz": [
+          0.9996607849327861,
+          0.0008674843114373732,
+          0.0001465292893712652,
+          -0.026029619046444505
+        ]
+      },
+      "bbox_min": [
+        -0.03750000149011612,
+        -0.03782264515757561,
+        0.0
+      ],
+      "bbox_max": [
+        0.03750000149011612,
+        0.03782264515757561,
+        0.12780529260635376
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/drinking_glass_tumbler_1767834808/drinking_glass_tumbler.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/drinking_glass_tumbler_1767834808/drinking_glass_tumbler.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/drinking_glass_tumbler_1767834808/drinking_glass_tumbler.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.33,
+            "inertia_pose": [
+              0.000216,
+              6.1e-05,
+              0.035242,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0006654298,
+              "ixy": 8.481773e-08,
+              "ixz": -4.202e-07,
+              "iyy": 0.0006650539,
+              "iyz": -3.089776e-06,
+              "izz": 0.0003189833
+            },
+            "collision_meshes": [
+              "drinking_glass_tumbler_collision_0.obj",
+              "drinking_glass_tumbler_collision_1.obj",
+              "drinking_glass_tumbler_collision_2.obj",
+              "drinking_glass_tumbler_collision_3.obj",
+              "drinking_glass_tumbler_collision_4.obj",
+              "drinking_glass_tumbler_collision_5.obj",
+              "drinking_glass_tumbler_collision_6.obj",
+              "drinking_glass_tumbler_collision_7.obj",
+              "drinking_glass_tumbler_collision_8.obj",
+              "drinking_glass_tumbler_collision_9.obj",
+              "drinking_glass_tumbler_collision_10.obj",
+              "drinking_glass_tumbler_collision_11.obj",
+              "drinking_glass_tumbler_collision_12.obj",
+              "drinking_glass_tumbler_collision_13.obj",
+              "drinking_glass_tumbler_collision_14.obj",
+              "drinking_glass_tumbler_collision_15.obj",
+              "drinking_glass_tumbler_collision_16.obj",
+              "drinking_glass_tumbler_collision_17.obj",
+              "drinking_glass_tumbler_collision_18.obj",
+              "drinking_glass_tumbler_collision_19.obj",
+              "drinking_glass_tumbler_collision_20.obj",
+              "drinking_glass_tumbler_collision_21.obj",
+              "drinking_glass_tumbler_collision_22.obj",
+              "drinking_glass_tumbler_collision_23.obj",
+              "drinking_glass_tumbler_collision_24.obj",
+              "drinking_glass_tumbler_collision_25.obj",
+              "drinking_glass_tumbler_collision_26.obj",
+              "drinking_glass_tumbler_collision_27.obj",
+              "drinking_glass_tumbler_collision_28.obj",
+              "drinking_glass_tumbler_collision_29.obj",
+              "drinking_glass_tumbler_collision_30.obj",
+              "drinking_glass_tumbler_collision_31.obj",
+              "drinking_glass_tumbler_collision_32.obj",
+              "drinking_glass_tumbler_collision_33.obj",
+              "drinking_glass_tumbler_collision_34.obj",
+              "drinking_glass_tumbler_collision_35.obj",
+              "drinking_glass_tumbler_collision_36.obj",
+              "drinking_glass_tumbler_collision_37.obj",
+              "drinking_glass_tumbler_collision_38.obj",
+              "drinking_glass_tumbler_collision_39.obj",
+              "drinking_glass_tumbler_collision_40.obj",
+              "drinking_glass_tumbler_collision_41.obj",
+              "drinking_glass_tumbler_collision_42.obj",
+              "drinking_glass_tumbler_collision_43.obj",
+              "drinking_glass_tumbler_collision_44.obj",
+              "drinking_glass_tumbler_collision_45.obj",
+              "drinking_glass_tumbler_collision_46.obj",
+              "drinking_glass_tumbler_collision_47.obj",
+              "drinking_glass_tumbler_collision_48.obj",
+              "drinking_glass_tumbler_collision_49.obj",
+              "drinking_glass_tumbler_collision_50.obj",
+              "drinking_glass_tumbler_collision_51.obj",
+              "drinking_glass_tumbler_collision_52.obj",
+              "drinking_glass_tumbler_collision_53.obj",
+              "drinking_glass_tumbler_collision_54.obj",
+              "drinking_glass_tumbler_collision_55.obj",
+              "drinking_glass_tumbler_collision_56.obj",
+              "drinking_glass_tumbler_collision_57.obj",
+              "drinking_glass_tumbler_collision_58.obj",
+              "drinking_glass_tumbler_collision_59.obj",
+              "drinking_glass_tumbler_collision_60.obj",
+              "drinking_glass_tumbler_collision_61.obj",
+              "drinking_glass_tumbler_collision_62.obj",
+              "drinking_glass_tumbler_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "drinking_glass_tumbler.gltf"
+            ],
+            "friction": {
+              "mu": 0.9,
+              "mu2": 0.9
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_0",
+        "position_2d": [
+          0.55,
+          -0.09
+        ],
+        "rotation_2d": -0.13962634015954636,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "filled_container_0_c_bud_vase_0",
+      "name": "bud_vase",
+      "description": "bud_vase filled with greenery_sprig_stem",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          2.3452825457921014,
+          2.1560150579895843,
+          0.7467992907179796
+        ],
+        "rotation_wxyz": [
+          0.9964780766921698,
+          -0.002572520016881531,
+          0.000968698676238057,
+          0.08380862983912472
+        ]
+      },
+      "bbox_min": [
+        -0.07759258868903848,
+        -0.10591137596899892,
+        -8.244840382165552e-05
+      ],
+      "bbox_max": [
+        0.07187133025768366,
+        0.07201134758410904,
+        0.15409590796394135
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/bud_vase_1767835132/bud_vase.gltf",
+      "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/bud_vase_1767835132/bud_vase.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/bud_vase_1767835132/bud_vase.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.6,
+            "inertia_pose": [
+              0.000108,
+              0.000128,
+              0.036076,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0009360559,
+              "ixy": 1.113193e-06,
+              "ixz": -2.334538e-06,
+              "iyy": 0.000930632,
+              "iyz": -1.979394e-06,
+              "izz": 0.001083463
+            },
+            "collision_meshes": [
+              "bud_vase_collision_0.obj",
+              "bud_vase_collision_1.obj",
+              "bud_vase_collision_2.obj",
+              "bud_vase_collision_3.obj",
+              "bud_vase_collision_4.obj",
+              "bud_vase_collision_5.obj",
+              "bud_vase_collision_6.obj",
+              "bud_vase_collision_7.obj",
+              "bud_vase_collision_8.obj",
+              "bud_vase_collision_9.obj",
+              "bud_vase_collision_10.obj",
+              "bud_vase_collision_11.obj",
+              "bud_vase_collision_12.obj",
+              "bud_vase_collision_13.obj",
+              "bud_vase_collision_14.obj",
+              "bud_vase_collision_15.obj",
+              "bud_vase_collision_16.obj",
+              "bud_vase_collision_17.obj",
+              "bud_vase_collision_18.obj",
+              "bud_vase_collision_19.obj",
+              "bud_vase_collision_20.obj",
+              "bud_vase_collision_21.obj",
+              "bud_vase_collision_22.obj",
+              "bud_vase_collision_23.obj",
+              "bud_vase_collision_24.obj",
+              "bud_vase_collision_25.obj",
+              "bud_vase_collision_26.obj",
+              "bud_vase_collision_27.obj",
+              "bud_vase_collision_28.obj",
+              "bud_vase_collision_29.obj",
+              "bud_vase_collision_30.obj",
+              "bud_vase_collision_31.obj",
+              "bud_vase_collision_32.obj",
+              "bud_vase_collision_33.obj",
+              "bud_vase_collision_34.obj",
+              "bud_vase_collision_35.obj",
+              "bud_vase_collision_36.obj",
+              "bud_vase_collision_37.obj",
+              "bud_vase_collision_38.obj",
+              "bud_vase_collision_39.obj",
+              "bud_vase_collision_40.obj",
+              "bud_vase_collision_41.obj",
+              "bud_vase_collision_42.obj",
+              "bud_vase_collision_43.obj",
+              "bud_vase_collision_44.obj",
+              "bud_vase_collision_45.obj",
+              "bud_vase_collision_46.obj",
+              "bud_vase_collision_47.obj",
+              "bud_vase_collision_48.obj",
+              "bud_vase_collision_49.obj",
+              "bud_vase_collision_50.obj",
+              "bud_vase_collision_51.obj",
+              "bud_vase_collision_52.obj",
+              "bud_vase_collision_53.obj",
+              "bud_vase_collision_54.obj",
+              "bud_vase_collision_55.obj",
+              "bud_vase_collision_56.obj",
+              "bud_vase_collision_57.obj",
+              "bud_vase_collision_58.obj",
+              "bud_vase_collision_59.obj",
+              "bud_vase_collision_60.obj",
+              "bud_vase_collision_61.obj",
+              "bud_vase_collision_62.obj",
+              "bud_vase_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "bud_vase.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_0",
+        "position_2d": [
+          -0.06,
+          0.06
+        ],
+        "rotation_2d": 0.13962634015954636,
+        "placement_method": "fill_container"
+      }
+    },
+    {
+      "object_id": "filled_container_0_f0_greenery_sprig_stem_0",
+      "name": "greenery_sprig_stem",
+      "description": "bud_vase filled with greenery_sprig_stem",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          2.3511608720015396,
+          2.1858195549132957,
+          0.8065853900625091
+        ],
+        "rotation_wxyz": [
+          0.10416629108524601,
+          0.057029846434908917,
+          0.45538059660595726,
+          -0.8823409163424061
+        ]
+      },
+      "bbox_min": [
+        -0.07759258868903848,
+        -0.10591137596899892,
+        -8.244840382165552e-05
+      ],
+      "bbox_max": [
+        0.07187133025768366,
+        0.07201134758410904,
+        0.15409590796394135
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/greenery_sprig_stem_1767835132/greenery_sprig_stem.gltf",
+      "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/greenery_sprig_stem_1767835132/greenery_sprig_stem.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/greenery_sprig_stem_1767835132/greenery_sprig_stem.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.015,
+            "inertia_pose": [
+              0.000899,
+              0.00106,
+              0.097702,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 1.964621e-05,
+              "ixy": -3.975776e-08,
+              "ixz": -7.375916e-07,
+              "iyy": 2.155349e-05,
+              "iyz": -1.634818e-07,
+              "izz": 1.972357e-06
+            },
+            "collision_meshes": [
+              "greenery_sprig_stem_collision_0.obj",
+              "greenery_sprig_stem_collision_1.obj",
+              "greenery_sprig_stem_collision_2.obj",
+              "greenery_sprig_stem_collision_3.obj",
+              "greenery_sprig_stem_collision_4.obj",
+              "greenery_sprig_stem_collision_5.obj",
+              "greenery_sprig_stem_collision_6.obj",
+              "greenery_sprig_stem_collision_7.obj",
+              "greenery_sprig_stem_collision_8.obj",
+              "greenery_sprig_stem_collision_9.obj",
+              "greenery_sprig_stem_collision_10.obj",
+              "greenery_sprig_stem_collision_11.obj",
+              "greenery_sprig_stem_collision_12.obj",
+              "greenery_sprig_stem_collision_13.obj",
+              "greenery_sprig_stem_collision_14.obj",
+              "greenery_sprig_stem_collision_15.obj",
+              "greenery_sprig_stem_collision_16.obj",
+              "greenery_sprig_stem_collision_17.obj",
+              "greenery_sprig_stem_collision_18.obj",
+              "greenery_sprig_stem_collision_19.obj",
+              "greenery_sprig_stem_collision_20.obj",
+              "greenery_sprig_stem_collision_21.obj",
+              "greenery_sprig_stem_collision_22.obj",
+              "greenery_sprig_stem_collision_23.obj",
+              "greenery_sprig_stem_collision_24.obj",
+              "greenery_sprig_stem_collision_25.obj",
+              "greenery_sprig_stem_collision_26.obj",
+              "greenery_sprig_stem_collision_27.obj",
+              "greenery_sprig_stem_collision_28.obj",
+              "greenery_sprig_stem_collision_29.obj",
+              "greenery_sprig_stem_collision_30.obj",
+              "greenery_sprig_stem_collision_31.obj",
+              "greenery_sprig_stem_collision_32.obj",
+              "greenery_sprig_stem_collision_33.obj",
+              "greenery_sprig_stem_collision_34.obj",
+              "greenery_sprig_stem_collision_35.obj",
+              "greenery_sprig_stem_collision_36.obj",
+              "greenery_sprig_stem_collision_37.obj",
+              "greenery_sprig_stem_collision_38.obj",
+              "greenery_sprig_stem_collision_39.obj",
+              "greenery_sprig_stem_collision_40.obj",
+              "greenery_sprig_stem_collision_41.obj",
+              "greenery_sprig_stem_collision_42.obj",
+              "greenery_sprig_stem_collision_43.obj",
+              "greenery_sprig_stem_collision_44.obj",
+              "greenery_sprig_stem_collision_45.obj",
+              "greenery_sprig_stem_collision_46.obj",
+              "greenery_sprig_stem_collision_47.obj",
+              "greenery_sprig_stem_collision_48.obj",
+              "greenery_sprig_stem_collision_49.obj",
+              "greenery_sprig_stem_collision_50.obj",
+              "greenery_sprig_stem_collision_51.obj",
+              "greenery_sprig_stem_collision_52.obj",
+              "greenery_sprig_stem_collision_53.obj",
+              "greenery_sprig_stem_collision_54.obj",
+              "greenery_sprig_stem_collision_55.obj",
+              "greenery_sprig_stem_collision_56.obj",
+              "greenery_sprig_stem_collision_57.obj",
+              "greenery_sprig_stem_collision_58.obj",
+              "greenery_sprig_stem_collision_59.obj",
+              "greenery_sprig_stem_collision_60.obj",
+              "greenery_sprig_stem_collision_61.obj",
+              "greenery_sprig_stem_collision_62.obj",
+              "greenery_sprig_stem_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "greenery_sprig_stem.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_0",
+        "position_2d": [
+          -0.06,
+          0.06
+        ],
+        "rotation_2d": 0.13962634015954636,
+        "placement_method": "fill_container"
+      }
+    },
+    {
+      "object_id": "filled_container_1_c_bud_vase_0",
+      "name": "bud_vase",
+      "description": "bud_vase filled with greenery_sprig_stem",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          0.5269467884925527,
+          1.4378359099946545,
+          0.7052528114451373
+        ],
+        "rotation_wxyz": [
+          0.6432950524351506,
+          -0.0025290618615191615,
+          0.003859362269983001,
+          -0.7656044570673726
+        ]
+      },
+      "bbox_min": [
+        -0.10421650474519684,
+        -0.07823277050762667,
+        -6.642901299092063e-05
+      ],
+      "bbox_max": [
+        0.0726285140591979,
+        0.07265681523422707,
+        0.1527667257737546
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/bud_vase_1767835132/bud_vase.gltf",
+      "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/bud_vase_1767835132/bud_vase.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/bud_vase_1767835132/bud_vase.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.6,
+            "inertia_pose": [
+              0.000108,
+              0.000128,
+              0.036076,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0009360559,
+              "ixy": 1.113193e-06,
+              "ixz": -2.334538e-06,
+              "iyy": 0.000930632,
+              "iyz": -1.979394e-06,
+              "izz": 0.001083463
+            },
+            "collision_meshes": [
+              "bud_vase_collision_0.obj",
+              "bud_vase_collision_1.obj",
+              "bud_vase_collision_2.obj",
+              "bud_vase_collision_3.obj",
+              "bud_vase_collision_4.obj",
+              "bud_vase_collision_5.obj",
+              "bud_vase_collision_6.obj",
+              "bud_vase_collision_7.obj",
+              "bud_vase_collision_8.obj",
+              "bud_vase_collision_9.obj",
+              "bud_vase_collision_10.obj",
+              "bud_vase_collision_11.obj",
+              "bud_vase_collision_12.obj",
+              "bud_vase_collision_13.obj",
+              "bud_vase_collision_14.obj",
+              "bud_vase_collision_15.obj",
+              "bud_vase_collision_16.obj",
+              "bud_vase_collision_17.obj",
+              "bud_vase_collision_18.obj",
+              "bud_vase_collision_19.obj",
+              "bud_vase_collision_20.obj",
+              "bud_vase_collision_21.obj",
+              "bud_vase_collision_22.obj",
+              "bud_vase_collision_23.obj",
+              "bud_vase_collision_24.obj",
+              "bud_vase_collision_25.obj",
+              "bud_vase_collision_26.obj",
+              "bud_vase_collision_27.obj",
+              "bud_vase_collision_28.obj",
+              "bud_vase_collision_29.obj",
+              "bud_vase_collision_30.obj",
+              "bud_vase_collision_31.obj",
+              "bud_vase_collision_32.obj",
+              "bud_vase_collision_33.obj",
+              "bud_vase_collision_34.obj",
+              "bud_vase_collision_35.obj",
+              "bud_vase_collision_36.obj",
+              "bud_vase_collision_37.obj",
+              "bud_vase_collision_38.obj",
+              "bud_vase_collision_39.obj",
+              "bud_vase_collision_40.obj",
+              "bud_vase_collision_41.obj",
+              "bud_vase_collision_42.obj",
+              "bud_vase_collision_43.obj",
+              "bud_vase_collision_44.obj",
+              "bud_vase_collision_45.obj",
+              "bud_vase_collision_46.obj",
+              "bud_vase_collision_47.obj",
+              "bud_vase_collision_48.obj",
+              "bud_vase_collision_49.obj",
+              "bud_vase_collision_50.obj",
+              "bud_vase_collision_51.obj",
+              "bud_vase_collision_52.obj",
+              "bud_vase_collision_53.obj",
+              "bud_vase_collision_54.obj",
+              "bud_vase_collision_55.obj",
+              "bud_vase_collision_56.obj",
+              "bud_vase_collision_57.obj",
+              "bud_vase_collision_58.obj",
+              "bud_vase_collision_59.obj",
+              "bud_vase_collision_60.obj",
+              "bud_vase_collision_61.obj",
+              "bud_vase_collision_62.obj",
+              "bud_vase_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "bud_vase.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_1",
+        "position_2d": [
+          0.85,
+          0.14
+        ],
+        "rotation_2d": -0.17453292519943295,
+        "placement_method": "fill_container"
+      }
+    },
+    {
+      "object_id": "filled_container_1_f0_greenery_sprig_stem_0",
+      "name": "greenery_sprig_stem",
+      "description": "bud_vase filled with greenery_sprig_stem",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          0.5284462174719791,
+          1.4063241370720396,
+          0.7647103168531385
+        ],
+        "rotation_wxyz": [
+          0.8844942583701277,
+          -0.45401168343842124,
+          0.01577051911764379,
+          0.10627600358711621
+        ]
+      },
+      "bbox_min": [
+        -0.10421650474519684,
+        -0.07823277050762667,
+        -6.642901299092063e-05
+      ],
+      "bbox_max": [
+        0.0726285140591979,
+        0.07265681523422707,
+        0.1527667257737546
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/greenery_sprig_stem_1767835132/greenery_sprig_stem.gltf",
+      "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/greenery_sprig_stem_1767835132/greenery_sprig_stem.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/greenery_sprig_stem_1767835132/greenery_sprig_stem.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.015,
+            "inertia_pose": [
+              0.000899,
+              0.00106,
+              0.097702,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 1.964621e-05,
+              "ixy": -3.975776e-08,
+              "ixz": -7.375916e-07,
+              "iyy": 2.155349e-05,
+              "iyz": -1.634818e-07,
+              "izz": 1.972357e-06
+            },
+            "collision_meshes": [
+              "greenery_sprig_stem_collision_0.obj",
+              "greenery_sprig_stem_collision_1.obj",
+              "greenery_sprig_stem_collision_2.obj",
+              "greenery_sprig_stem_collision_3.obj",
+              "greenery_sprig_stem_collision_4.obj",
+              "greenery_sprig_stem_collision_5.obj",
+              "greenery_sprig_stem_collision_6.obj",
+              "greenery_sprig_stem_collision_7.obj",
+              "greenery_sprig_stem_collision_8.obj",
+              "greenery_sprig_stem_collision_9.obj",
+              "greenery_sprig_stem_collision_10.obj",
+              "greenery_sprig_stem_collision_11.obj",
+              "greenery_sprig_stem_collision_12.obj",
+              "greenery_sprig_stem_collision_13.obj",
+              "greenery_sprig_stem_collision_14.obj",
+              "greenery_sprig_stem_collision_15.obj",
+              "greenery_sprig_stem_collision_16.obj",
+              "greenery_sprig_stem_collision_17.obj",
+              "greenery_sprig_stem_collision_18.obj",
+              "greenery_sprig_stem_collision_19.obj",
+              "greenery_sprig_stem_collision_20.obj",
+              "greenery_sprig_stem_collision_21.obj",
+              "greenery_sprig_stem_collision_22.obj",
+              "greenery_sprig_stem_collision_23.obj",
+              "greenery_sprig_stem_collision_24.obj",
+              "greenery_sprig_stem_collision_25.obj",
+              "greenery_sprig_stem_collision_26.obj",
+              "greenery_sprig_stem_collision_27.obj",
+              "greenery_sprig_stem_collision_28.obj",
+              "greenery_sprig_stem_collision_29.obj",
+              "greenery_sprig_stem_collision_30.obj",
+              "greenery_sprig_stem_collision_31.obj",
+              "greenery_sprig_stem_collision_32.obj",
+              "greenery_sprig_stem_collision_33.obj",
+              "greenery_sprig_stem_collision_34.obj",
+              "greenery_sprig_stem_collision_35.obj",
+              "greenery_sprig_stem_collision_36.obj",
+              "greenery_sprig_stem_collision_37.obj",
+              "greenery_sprig_stem_collision_38.obj",
+              "greenery_sprig_stem_collision_39.obj",
+              "greenery_sprig_stem_collision_40.obj",
+              "greenery_sprig_stem_collision_41.obj",
+              "greenery_sprig_stem_collision_42.obj",
+              "greenery_sprig_stem_collision_43.obj",
+              "greenery_sprig_stem_collision_44.obj",
+              "greenery_sprig_stem_collision_45.obj",
+              "greenery_sprig_stem_collision_46.obj",
+              "greenery_sprig_stem_collision_47.obj",
+              "greenery_sprig_stem_collision_48.obj",
+              "greenery_sprig_stem_collision_49.obj",
+              "greenery_sprig_stem_collision_50.obj",
+              "greenery_sprig_stem_collision_51.obj",
+              "greenery_sprig_stem_collision_52.obj",
+              "greenery_sprig_stem_collision_53.obj",
+              "greenery_sprig_stem_collision_54.obj",
+              "greenery_sprig_stem_collision_55.obj",
+              "greenery_sprig_stem_collision_56.obj",
+              "greenery_sprig_stem_collision_57.obj",
+              "greenery_sprig_stem_collision_58.obj",
+              "greenery_sprig_stem_collision_59.obj",
+              "greenery_sprig_stem_collision_60.obj",
+              "greenery_sprig_stem_collision_61.obj",
+              "greenery_sprig_stem_collision_62.obj",
+              "greenery_sprig_stem_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "greenery_sprig_stem.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_1",
+        "position_2d": [
+          0.85,
+          0.14
+        ],
+        "rotation_2d": -0.17453292519943295,
+        "placement_method": "fill_container"
+      }
+    },
+    {
+      "object_id": "pepper_grinder_0",
+      "name": "pepper_grinder",
+      "description": "Light oak wood pepper grinder, modern cylindrical",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          2.5515948955711196,
+          2.1950212552571995,
+          0.7470364094194392
+        ],
+        "rotation_wxyz": [
+          0.9975293808646846,
+          0.00015344259695763553,
+          0.00017697080589109903,
+          -0.07025012062923847
+        ]
+      },
+      "bbox_min": [
+        -0.027499999850988388,
+        -0.028124235570430756,
+        0.0
+      ],
+      "bbox_max": [
+        0.027499999850988388,
+        0.028124235570430756,
+        0.1701013296842575
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/pepper_grinder_1767834693/pepper_grinder.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/pepper_grinder_1767834693/pepper_grinder.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/pepper_grinder_1767834693/pepper_grinder.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.32,
+            "inertia_pose": [
+              3.4e-05,
+              -4.7e-05,
+              0.080618,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0007585088,
+              "ixy": 6.764833e-08,
+              "ixz": -6.82125e-08,
+              "iyy": 0.0007559513,
+              "iyz": -1.219023e-07,
+              "izz": 0.0001221066
+            },
+            "collision_meshes": [
+              "pepper_grinder_collision_0.obj",
+              "pepper_grinder_collision_1.obj",
+              "pepper_grinder_collision_2.obj",
+              "pepper_grinder_collision_3.obj",
+              "pepper_grinder_collision_4.obj",
+              "pepper_grinder_collision_5.obj",
+              "pepper_grinder_collision_6.obj",
+              "pepper_grinder_collision_7.obj",
+              "pepper_grinder_collision_8.obj",
+              "pepper_grinder_collision_9.obj",
+              "pepper_grinder_collision_10.obj",
+              "pepper_grinder_collision_11.obj",
+              "pepper_grinder_collision_12.obj",
+              "pepper_grinder_collision_13.obj",
+              "pepper_grinder_collision_14.obj",
+              "pepper_grinder_collision_15.obj",
+              "pepper_grinder_collision_16.obj",
+              "pepper_grinder_collision_17.obj",
+              "pepper_grinder_collision_18.obj",
+              "pepper_grinder_collision_19.obj",
+              "pepper_grinder_collision_20.obj",
+              "pepper_grinder_collision_21.obj",
+              "pepper_grinder_collision_22.obj",
+              "pepper_grinder_collision_23.obj",
+              "pepper_grinder_collision_24.obj",
+              "pepper_grinder_collision_25.obj",
+              "pepper_grinder_collision_26.obj",
+              "pepper_grinder_collision_27.obj",
+              "pepper_grinder_collision_28.obj",
+              "pepper_grinder_collision_29.obj",
+              "pepper_grinder_collision_30.obj",
+              "pepper_grinder_collision_31.obj",
+              "pepper_grinder_collision_32.obj",
+              "pepper_grinder_collision_33.obj",
+              "pepper_grinder_collision_34.obj",
+              "pepper_grinder_collision_35.obj",
+              "pepper_grinder_collision_36.obj",
+              "pepper_grinder_collision_37.obj",
+              "pepper_grinder_collision_38.obj",
+              "pepper_grinder_collision_39.obj",
+              "pepper_grinder_collision_40.obj",
+              "pepper_grinder_collision_41.obj",
+              "pepper_grinder_collision_42.obj",
+              "pepper_grinder_collision_43.obj",
+              "pepper_grinder_collision_44.obj",
+              "pepper_grinder_collision_45.obj",
+              "pepper_grinder_collision_46.obj",
+              "pepper_grinder_collision_47.obj",
+              "pepper_grinder_collision_48.obj",
+              "pepper_grinder_collision_49.obj",
+              "pepper_grinder_collision_50.obj",
+              "pepper_grinder_collision_51.obj",
+              "pepper_grinder_collision_52.obj",
+              "pepper_grinder_collision_53.obj",
+              "pepper_grinder_collision_54.obj",
+              "pepper_grinder_collision_55.obj",
+              "pepper_grinder_collision_56.obj",
+              "pepper_grinder_collision_57.obj",
+              "pepper_grinder_collision_58.obj",
+              "pepper_grinder_collision_59.obj",
+              "pepper_grinder_collision_60.obj",
+              "pepper_grinder_collision_61.obj",
+              "pepper_grinder_collision_62.obj",
+              "pepper_grinder_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "pepper_grinder.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_0",
+        "position_2d": [
+          0.16,
+          0.1
+        ],
+        "rotation_2d": -0.17453292519943295,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "salt_grinder_0",
+      "name": "salt_grinder",
+      "description": "Matte black metal salt grinder, modern cylindrical",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          2.4979750870086064,
+          2.2160957797974565,
+          0.7470581016344854
+        ],
+        "rotation_wxyz": [
+          0.9939344915996585,
+          8.930987197342898e-05,
+          5.3430350365106334e-05,
+          0.10997370402724764
+        ]
+      },
+      "bbox_min": [
+        -0.027499999850988388,
+        -0.02974860928952694,
+        0.0
+      ],
+      "bbox_max": [
+        0.027499999850988388,
+        0.02974860928952694,
+        0.1880509853363037
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/manipuland/sdf/salt_grinder_1767834729/salt_grinder.gltf",
+      "sdf_path": "generated_assets/manipuland/sdf/salt_grinder_1767834729/salt_grinder.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/salt_grinder_1767834729/salt_grinder.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.35,
+            "inertia_pose": [
+              4.7e-05,
+              -1.4e-05,
+              0.090989,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.001043167,
+              "ixy": -1.53326e-08,
+              "ixz": -5.652648e-08,
+              "iyy": 0.001032092,
+              "iyz": 2.588023e-07,
+              "izz": 0.0001405051
+            },
+            "collision_meshes": [
+              "salt_grinder_collision_0.obj",
+              "salt_grinder_collision_1.obj",
+              "salt_grinder_collision_2.obj",
+              "salt_grinder_collision_3.obj",
+              "salt_grinder_collision_4.obj",
+              "salt_grinder_collision_5.obj",
+              "salt_grinder_collision_6.obj",
+              "salt_grinder_collision_7.obj",
+              "salt_grinder_collision_8.obj",
+              "salt_grinder_collision_9.obj",
+              "salt_grinder_collision_10.obj",
+              "salt_grinder_collision_11.obj",
+              "salt_grinder_collision_12.obj",
+              "salt_grinder_collision_13.obj",
+              "salt_grinder_collision_14.obj",
+              "salt_grinder_collision_15.obj",
+              "salt_grinder_collision_16.obj",
+              "salt_grinder_collision_17.obj",
+              "salt_grinder_collision_18.obj",
+              "salt_grinder_collision_19.obj",
+              "salt_grinder_collision_20.obj",
+              "salt_grinder_collision_21.obj",
+              "salt_grinder_collision_22.obj",
+              "salt_grinder_collision_23.obj",
+              "salt_grinder_collision_24.obj",
+              "salt_grinder_collision_25.obj",
+              "salt_grinder_collision_26.obj",
+              "salt_grinder_collision_27.obj",
+              "salt_grinder_collision_28.obj",
+              "salt_grinder_collision_29.obj",
+              "salt_grinder_collision_30.obj",
+              "salt_grinder_collision_31.obj",
+              "salt_grinder_collision_32.obj",
+              "salt_grinder_collision_33.obj",
+              "salt_grinder_collision_34.obj",
+              "salt_grinder_collision_35.obj",
+              "salt_grinder_collision_36.obj",
+              "salt_grinder_collision_37.obj",
+              "salt_grinder_collision_38.obj",
+              "salt_grinder_collision_39.obj",
+              "salt_grinder_collision_40.obj",
+              "salt_grinder_collision_41.obj",
+              "salt_grinder_collision_42.obj",
+              "salt_grinder_collision_43.obj",
+              "salt_grinder_collision_44.obj",
+              "salt_grinder_collision_45.obj",
+              "salt_grinder_collision_46.obj",
+              "salt_grinder_collision_47.obj",
+              "salt_grinder_collision_48.obj",
+              "salt_grinder_collision_49.obj",
+              "salt_grinder_collision_50.obj",
+              "salt_grinder_collision_51.obj",
+              "salt_grinder_collision_52.obj",
+              "salt_grinder_collision_53.obj",
+              "salt_grinder_collision_54.obj",
+              "salt_grinder_collision_55.obj",
+              "salt_grinder_collision_56.obj",
+              "salt_grinder_collision_57.obj",
+              "salt_grinder_collision_58.obj",
+              "salt_grinder_collision_59.obj",
+              "salt_grinder_collision_60.obj",
+              "salt_grinder_collision_61.obj",
+              "salt_grinder_collision_62.obj",
+              "salt_grinder_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "salt_grinder.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_0",
+        "position_2d": [
+          0.1,
+          0.1
+        ],
+        "rotation_2d": 0.2617993877991494,
+        "placement_method": "surface_placement"
+      }
+    },
+    {
+      "object_id": "stack_0_m0_coffee_table_book_0",
+      "name": "coffee_table_book",
+      "description": "Stack of 2 objects: coffee_table_book, hardcover_design_book",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          0.34396167986534554,
+          1.2725683739952007,
+          0.7057194815481426
+        ],
+        "rotation_wxyz": [
+          0.7304994971024614,
+          -0.0006672965850251265,
+          0.00034366654676545156,
+          -0.682912821187026
+        ]
+      },
+      "bbox_min": [
+        -0.12003254304009525,
+        -0.15218709566548982,
+        -0.0006087852350611378
+      ],
+      "bbox_max": [
+        0.1200676528786988,
+        0.1522564960489976,
+        0.08057590416995519
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/coffee_table_book_1767835696/coffee_table_book.gltf",
+      "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/coffee_table_book_1767835696/coffee_table_book.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/coffee_table_book_1767835696/coffee_table_book.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 2.0,
+            "inertia_pose": [
+              -0.001386,
+              0.000865,
+              0.01563,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.01498336,
+              "ixy": 5.774524e-07,
+              "ixz": -4.292582e-06,
+              "iyy": 0.00957641,
+              "iyz": 6.094776e-06,
+              "izz": 0.02424892
+            },
+            "collision_meshes": [
+              "coffee_table_book_collision_0.obj",
+              "coffee_table_book_collision_1.obj",
+              "coffee_table_book_collision_2.obj",
+              "coffee_table_book_collision_3.obj",
+              "coffee_table_book_collision_4.obj",
+              "coffee_table_book_collision_5.obj",
+              "coffee_table_book_collision_6.obj",
+              "coffee_table_book_collision_7.obj",
+              "coffee_table_book_collision_8.obj",
+              "coffee_table_book_collision_9.obj",
+              "coffee_table_book_collision_10.obj",
+              "coffee_table_book_collision_11.obj",
+              "coffee_table_book_collision_12.obj",
+              "coffee_table_book_collision_13.obj",
+              "coffee_table_book_collision_14.obj",
+              "coffee_table_book_collision_15.obj",
+              "coffee_table_book_collision_16.obj",
+              "coffee_table_book_collision_17.obj",
+              "coffee_table_book_collision_18.obj",
+              "coffee_table_book_collision_19.obj",
+              "coffee_table_book_collision_20.obj",
+              "coffee_table_book_collision_21.obj",
+              "coffee_table_book_collision_22.obj",
+              "coffee_table_book_collision_23.obj",
+              "coffee_table_book_collision_24.obj",
+              "coffee_table_book_collision_25.obj",
+              "coffee_table_book_collision_26.obj",
+              "coffee_table_book_collision_27.obj",
+              "coffee_table_book_collision_28.obj",
+              "coffee_table_book_collision_29.obj",
+              "coffee_table_book_collision_30.obj",
+              "coffee_table_book_collision_31.obj",
+              "coffee_table_book_collision_32.obj",
+              "coffee_table_book_collision_33.obj",
+              "coffee_table_book_collision_34.obj",
+              "coffee_table_book_collision_35.obj",
+              "coffee_table_book_collision_36.obj",
+              "coffee_table_book_collision_37.obj",
+              "coffee_table_book_collision_38.obj",
+              "coffee_table_book_collision_39.obj",
+              "coffee_table_book_collision_40.obj",
+              "coffee_table_book_collision_41.obj",
+              "coffee_table_book_collision_42.obj",
+              "coffee_table_book_collision_43.obj",
+              "coffee_table_book_collision_44.obj",
+              "coffee_table_book_collision_45.obj",
+              "coffee_table_book_collision_46.obj",
+              "coffee_table_book_collision_47.obj",
+              "coffee_table_book_collision_48.obj",
+              "coffee_table_book_collision_49.obj",
+              "coffee_table_book_collision_50.obj",
+              "coffee_table_book_collision_51.obj",
+              "coffee_table_book_collision_52.obj",
+              "coffee_table_book_collision_53.obj",
+              "coffee_table_book_collision_54.obj",
+              "coffee_table_book_collision_55.obj",
+              "coffee_table_book_collision_56.obj",
+              "coffee_table_book_collision_57.obj",
+              "coffee_table_book_collision_58.obj",
+              "coffee_table_book_collision_59.obj",
+              "coffee_table_book_collision_60.obj",
+              "coffee_table_book_collision_61.obj",
+              "coffee_table_book_collision_62.obj",
+              "coffee_table_book_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "coffee_table_book.gltf"
+            ],
+            "friction": {
+              "mu": 0.32,
+              "mu2": 0.32
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_1",
+        "position_2d": [
+          1.02,
+          -0.03
+        ],
+        "rotation_2d": 0.10471975511965978,
+        "placement_method": "stack_placement"
+      }
+    },
+    {
+      "object_id": "stack_0_m1_hardcover_design_book_0",
+      "name": "hardcover_design_book",
+      "description": "Stack of 2 objects: coffee_table_book, hardcover_design_book",
+      "object_type": "manipuland",
+      "transform": {
+        "translation": [
+          0.3441010114693084,
+          1.2727419925836672,
+          0.7344202780713011
+        ],
+        "rotation_wxyz": [
+          0.7302599845463639,
+          0.0037811980320730837,
+          0.005413696322732057,
+          -0.6831374308321218
+        ]
+      },
+      "bbox_min": [
+        -0.12003254304009525,
+        -0.15218709566548982,
+        -0.0006087852350611378
+      ],
+      "bbox_max": [
+        0.1200676528786988,
+        0.1522564960489976,
+        0.08057590416995519
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/hardcover_design_book_1767835696/hardcover_design_book.gltf",
+      "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_019/room_dining_room/generated_assets/manipuland/sdf/hardcover_design_book_1767835696/hardcover_design_book.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/manipuland/sdf/hardcover_design_book_1767835696/hardcover_design_book.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.3,
+            "inertia_pose": [
+              -0.002319,
+              0.00081,
+              0.024662,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.009626511,
+              "ixy": -6.713763e-06,
+              "ixz": -5.9895e-06,
+              "iyy": 0.005417223,
+              "iyz": -8.358153e-08,
+              "izz": 0.01463202
+            },
+            "collision_meshes": [
+              "hardcover_design_book_collision_0.obj",
+              "hardcover_design_book_collision_1.obj",
+              "hardcover_design_book_collision_2.obj",
+              "hardcover_design_book_collision_3.obj",
+              "hardcover_design_book_collision_4.obj",
+              "hardcover_design_book_collision_5.obj",
+              "hardcover_design_book_collision_6.obj",
+              "hardcover_design_book_collision_7.obj",
+              "hardcover_design_book_collision_8.obj",
+              "hardcover_design_book_collision_9.obj",
+              "hardcover_design_book_collision_10.obj",
+              "hardcover_design_book_collision_11.obj",
+              "hardcover_design_book_collision_12.obj",
+              "hardcover_design_book_collision_13.obj",
+              "hardcover_design_book_collision_14.obj",
+              "hardcover_design_book_collision_15.obj",
+              "hardcover_design_book_collision_16.obj",
+              "hardcover_design_book_collision_17.obj",
+              "hardcover_design_book_collision_18.obj",
+              "hardcover_design_book_collision_19.obj",
+              "hardcover_design_book_collision_20.obj",
+              "hardcover_design_book_collision_21.obj",
+              "hardcover_design_book_collision_22.obj",
+              "hardcover_design_book_collision_23.obj",
+              "hardcover_design_book_collision_24.obj",
+              "hardcover_design_book_collision_25.obj",
+              "hardcover_design_book_collision_26.obj",
+              "hardcover_design_book_collision_27.obj",
+              "hardcover_design_book_collision_28.obj",
+              "hardcover_design_book_collision_29.obj",
+              "hardcover_design_book_collision_30.obj",
+              "hardcover_design_book_collision_31.obj",
+              "hardcover_design_book_collision_32.obj",
+              "hardcover_design_book_collision_33.obj",
+              "hardcover_design_book_collision_34.obj",
+              "hardcover_design_book_collision_35.obj",
+              "hardcover_design_book_collision_36.obj",
+              "hardcover_design_book_collision_37.obj",
+              "hardcover_design_book_collision_38.obj",
+              "hardcover_design_book_collision_39.obj",
+              "hardcover_design_book_collision_40.obj",
+              "hardcover_design_book_collision_41.obj",
+              "hardcover_design_book_collision_42.obj",
+              "hardcover_design_book_collision_43.obj",
+              "hardcover_design_book_collision_44.obj",
+              "hardcover_design_book_collision_45.obj",
+              "hardcover_design_book_collision_46.obj",
+              "hardcover_design_book_collision_47.obj",
+              "hardcover_design_book_collision_48.obj",
+              "hardcover_design_book_collision_49.obj",
+              "hardcover_design_book_collision_50.obj",
+              "hardcover_design_book_collision_51.obj",
+              "hardcover_design_book_collision_52.obj",
+              "hardcover_design_book_collision_53.obj",
+              "hardcover_design_book_collision_54.obj",
+              "hardcover_design_book_collision_55.obj",
+              "hardcover_design_book_collision_56.obj",
+              "hardcover_design_book_collision_57.obj",
+              "hardcover_design_book_collision_58.obj",
+              "hardcover_design_book_collision_59.obj",
+              "hardcover_design_book_collision_60.obj",
+              "hardcover_design_book_collision_61.obj",
+              "hardcover_design_book_collision_62.obj",
+              "hardcover_design_book_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "hardcover_design_book.gltf"
+            ],
+            "friction": {
+              "mu": 0.32,
+              "mu2": 0.32
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "S_1",
+        "position_2d": [
+          1.02,
+          -0.03
+        ],
+        "rotation_2d": 0.10471975511965978,
+        "placement_method": "stack_placement"
+      }
+    },
+    {
+      "object_id": "east_wall",
+      "name": "east_wall",
+      "description": "Room east_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          4.775,
+          2.1,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -0.025,
+        -2.1,
+        -1.35
+      ],
+      "bbox_max": [
+        0.025,
+        2.1,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "east_wall",
+      "name": "east_wall",
+      "description": "Room east_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          4.775,
+          2.1,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -0.025,
+        -2.1,
+        -1.35
+      ],
+      "bbox_max": [
+        0.025,
+        2.1,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "north_wall",
+      "name": "north_wall",
+      "description": "Room north_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          2.4,
+          4.175000000000001,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -2.4,
+        -0.025,
+        -1.35
+      ],
+      "bbox_max": [
+        2.4,
+        0.025,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "north_wall",
+      "name": "north_wall",
+      "description": "Room north_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          2.4,
+          4.175000000000001,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -2.4,
+        -0.025,
+        -1.35
+      ],
+      "bbox_max": [
+        2.4,
+        0.025,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "south_wall",
+      "name": "south_wall",
+      "description": "Room south_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          2.4,
+          0.02499999999999991,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -2.4,
+        -0.025,
+        -1.35
+      ],
+      "bbox_max": [
+        2.4,
+        0.025,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "south_wall",
+      "name": "south_wall",
+      "description": "Room south_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          2.4,
+          0.02499999999999991,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -2.4,
+        -0.025,
+        -1.35
+      ],
+      "bbox_max": [
+        2.4,
+        0.025,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "west_wall",
+      "name": "west_wall",
+      "description": "Room west_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          0.02499999999999991,
+          2.1,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -0.025,
+        -2.1,
+        -1.35
+      ],
+      "bbox_max": [
+        0.025,
+        2.1,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "west_wall",
+      "name": "west_wall",
+      "description": "Room west_wall",
+      "object_type": "wall",
+      "transform": {
+        "translation": [
+          0.02499999999999991,
+          2.1,
+          1.35
+        ],
+        "rotation_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bbox_min": [
+        -0.025,
+        -2.1,
+        -1.35
+      ],
+      "bbox_max": [
+        0.025,
+        2.1,
+        1.35
+      ],
+      "scale_factor": 1.0,
+      "immutable": true,
+      "is_articulated": false
+    },
+    {
+      "object_id": "art_print_0",
+      "name": "art_print",
+      "description": "Vertical framed abstract art print in warm neutral tones, approximately 60cm wide",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          2.1800134786719094,
+          4.15,
+          1.5061359902886213
+        ],
+        "rotation_wxyz": [
+          6.123226532714953e-17,
+          0.0015612835826653614,
+          9.560104710362234e-20,
+          0.9999987811960446
+        ]
+      },
+      "bbox_min": [
+        -0.31513461470603943,
+        -0.0,
+        -0.44982847571372986
+      ],
+      "bbox_max": [
+        0.31513461470603943,
+        0.029999999329447746,
+        0.44982847571372986
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/art_print_1767833204/art_print.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/art_print_1767833204/art_print.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/wall_mounted/sdf/art_print_1767833204/art_print.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 2.2,
+            "inertia_pose": [
+              -0.000712,
+              0.014975,
+              0.027508,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.1562129,
+              "ixy": -2.346668e-06,
+              "ixz": 0.0002544877,
+              "iyy": 0.2342117,
+              "iyz": 2.07002e-05,
+              "izz": 0.07811939
+            },
+            "collision_meshes": [
+              "art_print_collision_0.obj",
+              "art_print_collision_1.obj",
+              "art_print_collision_2.obj",
+              "art_print_collision_3.obj",
+              "art_print_collision_4.obj",
+              "art_print_collision_5.obj",
+              "art_print_collision_6.obj",
+              "art_print_collision_7.obj",
+              "art_print_collision_8.obj",
+              "art_print_collision_9.obj",
+              "art_print_collision_10.obj",
+              "art_print_collision_11.obj",
+              "art_print_collision_12.obj",
+              "art_print_collision_13.obj",
+              "art_print_collision_14.obj",
+              "art_print_collision_15.obj",
+              "art_print_collision_16.obj",
+              "art_print_collision_17.obj",
+              "art_print_collision_18.obj",
+              "art_print_collision_19.obj",
+              "art_print_collision_20.obj",
+              "art_print_collision_21.obj",
+              "art_print_collision_22.obj",
+              "art_print_collision_23.obj",
+              "art_print_collision_24.obj",
+              "art_print_collision_25.obj",
+              "art_print_collision_26.obj",
+              "art_print_collision_27.obj",
+              "art_print_collision_28.obj",
+              "art_print_collision_29.obj",
+              "art_print_collision_30.obj",
+              "art_print_collision_31.obj",
+              "art_print_collision_32.obj",
+              "art_print_collision_33.obj",
+              "art_print_collision_34.obj",
+              "art_print_collision_35.obj",
+              "art_print_collision_36.obj",
+              "art_print_collision_37.obj",
+              "art_print_collision_38.obj",
+              "art_print_collision_39.obj",
+              "art_print_collision_40.obj",
+              "art_print_collision_41.obj",
+              "art_print_collision_42.obj",
+              "art_print_collision_43.obj",
+              "art_print_collision_44.obj",
+              "art_print_collision_45.obj",
+              "art_print_collision_46.obj",
+              "art_print_collision_47.obj",
+              "art_print_collision_48.obj",
+              "art_print_collision_49.obj",
+              "art_print_collision_50.obj",
+              "art_print_collision_51.obj",
+              "art_print_collision_52.obj",
+              "art_print_collision_53.obj",
+              "art_print_collision_54.obj",
+              "art_print_collision_55.obj",
+              "art_print_collision_56.obj",
+              "art_print_collision_57.obj",
+              "art_print_collision_58.obj",
+              "art_print_collision_59.obj",
+              "art_print_collision_60.obj",
+              "art_print_collision_61.obj",
+              "art_print_collision_62.obj",
+              "art_print_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "art_print.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "dining_room_north",
+        "position_2d": [
+          2.1800134786719094,
+          1.5061359902886213
+        ],
+        "rotation_2d": -0.003122568433930412,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "artwork_0",
+      "name": "artwork",
+      "description": "Large framed landscape artwork in soft neutral tones",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          0.04999999999999982,
+          2.13175419902456,
+          1.65
+        ],
+        "rotation_wxyz": [
+          0.7071006797433074,
+          -0.0029374660087685203,
+          -0.002937466008768521,
+          -0.7071006797433074
+        ]
+      },
+      "bbox_min": [
+        -0.8205735683441162,
+        -8.539571107258592e-18,
+        -0.5778138041496277
+      ],
+      "bbox_max": [
+        0.8205735683441162,
+        0.03999999910593033,
+        0.5778138041496277
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/artwork_1767833425/artwork.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/artwork_1767833425/artwork.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/wall_mounted/sdf/artwork_1767833425/artwork.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.2,
+            "inertia_pose": [
+              -0.000225,
+              0.020113,
+              0.029218,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.1353887,
+              "ixy": 5.368705e-05,
+              "ixz": -0.0003482427,
+              "iyy": 0.4111482,
+              "iyz": 0.0001597402,
+              "izz": 0.2759744
+            },
+            "collision_meshes": [
+              "artwork_collision_0.obj",
+              "artwork_collision_1.obj",
+              "artwork_collision_2.obj",
+              "artwork_collision_3.obj",
+              "artwork_collision_4.obj",
+              "artwork_collision_5.obj",
+              "artwork_collision_6.obj",
+              "artwork_collision_7.obj",
+              "artwork_collision_8.obj",
+              "artwork_collision_9.obj",
+              "artwork_collision_10.obj",
+              "artwork_collision_11.obj",
+              "artwork_collision_12.obj",
+              "artwork_collision_13.obj",
+              "artwork_collision_14.obj",
+              "artwork_collision_15.obj",
+              "artwork_collision_16.obj",
+              "artwork_collision_17.obj",
+              "artwork_collision_18.obj",
+              "artwork_collision_19.obj",
+              "artwork_collision_20.obj",
+              "artwork_collision_21.obj",
+              "artwork_collision_22.obj",
+              "artwork_collision_23.obj",
+              "artwork_collision_24.obj",
+              "artwork_collision_25.obj",
+              "artwork_collision_26.obj",
+              "artwork_collision_27.obj",
+              "artwork_collision_28.obj",
+              "artwork_collision_29.obj",
+              "artwork_collision_30.obj",
+              "artwork_collision_31.obj",
+              "artwork_collision_32.obj",
+              "artwork_collision_33.obj",
+              "artwork_collision_34.obj",
+              "artwork_collision_35.obj",
+              "artwork_collision_36.obj",
+              "artwork_collision_37.obj",
+              "artwork_collision_38.obj",
+              "artwork_collision_39.obj",
+              "artwork_collision_40.obj",
+              "artwork_collision_41.obj",
+              "artwork_collision_42.obj",
+              "artwork_collision_43.obj",
+              "artwork_collision_44.obj",
+              "artwork_collision_45.obj",
+              "artwork_collision_46.obj",
+              "artwork_collision_47.obj",
+              "artwork_collision_48.obj",
+              "artwork_collision_49.obj",
+              "artwork_collision_50.obj",
+              "artwork_collision_51.obj",
+              "artwork_collision_52.obj",
+              "artwork_collision_53.obj",
+              "artwork_collision_54.obj",
+              "artwork_collision_55.obj",
+              "artwork_collision_56.obj",
+              "artwork_collision_57.obj",
+              "artwork_collision_58.obj",
+              "artwork_collision_59.obj",
+              "artwork_collision_60.obj",
+              "artwork_collision_61.obj",
+              "artwork_collision_62.obj",
+              "artwork_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "artwork.gltf"
+            ],
+            "friction": {
+              "mu": 0.4,
+              "mu2": 0.4
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "dining_room_west",
+        "position_2d": [
+          2.13175419902456,
+          1.65
+        ],
+        "rotation_2d": -0.008308432434346124,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "clock_0",
+      "name": "clock",
+      "description": "Minimalist round wall clock with white face and black hands, approximately 45cm diameter",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          4.75,
+          1.0143560864333852,
+          1.6471562232020855
+        ],
+        "rotation_wxyz": [
+          0.7071014186616689,
+          0.002753856687486494,
+          -0.0027538566874864934,
+          0.7071014186616689
+        ]
+      },
+      "bbox_min": [
+        -0.22499999403953552,
+        3.3512392860757245e-09,
+        -0.22415731847286224
+      ],
+      "bbox_max": [
+        0.22499999403953552,
+        0.03187044337391853,
+        0.22415731847286224
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/clock_1767833204/clock.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/clock_1767833204/clock.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/wall_mounted/sdf/clock_1767833204/clock.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 0.75,
+            "inertia_pose": [
+              0.000825,
+              0.015045,
+              0.002706,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.01438692,
+              "ixy": 4.799979e-06,
+              "ixz": 3.53295e-05,
+              "iyy": 0.02833079,
+              "iyz": -4.91795e-06,
+              "izz": 0.01396415
+            },
+            "collision_meshes": [
+              "clock_collision_0.obj",
+              "clock_collision_1.obj",
+              "clock_collision_2.obj",
+              "clock_collision_3.obj",
+              "clock_collision_4.obj",
+              "clock_collision_5.obj",
+              "clock_collision_6.obj",
+              "clock_collision_7.obj",
+              "clock_collision_8.obj",
+              "clock_collision_9.obj",
+              "clock_collision_10.obj",
+              "clock_collision_11.obj",
+              "clock_collision_12.obj",
+              "clock_collision_13.obj",
+              "clock_collision_14.obj",
+              "clock_collision_15.obj",
+              "clock_collision_16.obj",
+              "clock_collision_17.obj",
+              "clock_collision_18.obj",
+              "clock_collision_19.obj",
+              "clock_collision_20.obj",
+              "clock_collision_21.obj",
+              "clock_collision_22.obj",
+              "clock_collision_23.obj",
+              "clock_collision_24.obj",
+              "clock_collision_25.obj",
+              "clock_collision_26.obj",
+              "clock_collision_27.obj",
+              "clock_collision_28.obj",
+              "clock_collision_29.obj",
+              "clock_collision_30.obj",
+              "clock_collision_31.obj",
+              "clock_collision_32.obj",
+              "clock_collision_33.obj",
+              "clock_collision_34.obj",
+              "clock_collision_35.obj",
+              "clock_collision_36.obj",
+              "clock_collision_37.obj",
+              "clock_collision_38.obj",
+              "clock_collision_39.obj",
+              "clock_collision_40.obj",
+              "clock_collision_41.obj",
+              "clock_collision_42.obj",
+              "clock_collision_43.obj",
+              "clock_collision_44.obj",
+              "clock_collision_45.obj",
+              "clock_collision_46.obj",
+              "clock_collision_47.obj",
+              "clock_collision_48.obj",
+              "clock_collision_49.obj",
+              "clock_collision_50.obj",
+              "clock_collision_51.obj",
+              "clock_collision_52.obj",
+              "clock_collision_53.obj",
+              "clock_collision_54.obj",
+              "clock_collision_55.obj",
+              "clock_collision_56.obj",
+              "clock_collision_57.obj",
+              "clock_collision_58.obj",
+              "clock_collision_59.obj",
+              "clock_collision_60.obj",
+              "clock_collision_61.obj",
+              "clock_collision_62.obj",
+              "clock_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "clock.gltf"
+            ],
+            "friction": {
+              "mu": 0.35,
+              "mu2": 0.35
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "dining_room_east",
+        "position_2d": [
+          3.185643913566615,
+          1.6471562232020855
+        ],
+        "rotation_2d": -0.007789102642776886,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "wall_sconce_0",
+      "name": "wall_sconce",
+      "description": "Vertical modern wall sconce, matte black metal with frosted glass cylinder, 50cm tall x 20cm wide",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          3.0672957884188534,
+          0.04999999999999982,
+          1.6519123299844618
+        ],
+        "rotation_wxyz": [
+          0.9999998789948237,
+          3.0122971776811283e-20,
+          -0.0004919454621166538,
+          -6.123233254793757e-17
+        ]
+      },
+      "bbox_min": [
+        -0.10000000149011612,
+        -2.2484034635528498e-17,
+        -0.2702178657054901
+      ],
+      "bbox_max": [
+        0.10000000149011612,
+        0.10350603610277176,
+        0.2702178657054901
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/wall_sconce_1767833324/wall_sconce.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/wall_sconce_1767833324/wall_sconce.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/wall_mounted/sdf/wall_sconce_1767833324/wall_sconce.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.2,
+            "inertia_pose": [
+              3.1e-05,
+              0.039342,
+              -0.003534,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0299216,
+              "ixy": -2.754501e-06,
+              "ixz": 7.162743e-06,
+              "iyy": 0.0314514,
+              "iyz": -0.0001109495,
+              "izz": 0.003301131
+            },
+            "collision_meshes": [
+              "wall_sconce_collision_0.obj",
+              "wall_sconce_collision_1.obj",
+              "wall_sconce_collision_2.obj",
+              "wall_sconce_collision_3.obj",
+              "wall_sconce_collision_4.obj",
+              "wall_sconce_collision_5.obj",
+              "wall_sconce_collision_6.obj",
+              "wall_sconce_collision_7.obj",
+              "wall_sconce_collision_8.obj",
+              "wall_sconce_collision_9.obj",
+              "wall_sconce_collision_10.obj",
+              "wall_sconce_collision_11.obj",
+              "wall_sconce_collision_12.obj",
+              "wall_sconce_collision_13.obj",
+              "wall_sconce_collision_14.obj",
+              "wall_sconce_collision_15.obj",
+              "wall_sconce_collision_16.obj",
+              "wall_sconce_collision_17.obj",
+              "wall_sconce_collision_18.obj",
+              "wall_sconce_collision_19.obj",
+              "wall_sconce_collision_20.obj",
+              "wall_sconce_collision_21.obj",
+              "wall_sconce_collision_22.obj",
+              "wall_sconce_collision_23.obj",
+              "wall_sconce_collision_24.obj",
+              "wall_sconce_collision_25.obj",
+              "wall_sconce_collision_26.obj",
+              "wall_sconce_collision_27.obj",
+              "wall_sconce_collision_28.obj",
+              "wall_sconce_collision_29.obj",
+              "wall_sconce_collision_30.obj",
+              "wall_sconce_collision_31.obj",
+              "wall_sconce_collision_32.obj",
+              "wall_sconce_collision_33.obj",
+              "wall_sconce_collision_34.obj",
+              "wall_sconce_collision_35.obj",
+              "wall_sconce_collision_36.obj",
+              "wall_sconce_collision_37.obj",
+              "wall_sconce_collision_38.obj",
+              "wall_sconce_collision_39.obj",
+              "wall_sconce_collision_40.obj",
+              "wall_sconce_collision_41.obj",
+              "wall_sconce_collision_42.obj",
+              "wall_sconce_collision_43.obj",
+              "wall_sconce_collision_44.obj",
+              "wall_sconce_collision_45.obj",
+              "wall_sconce_collision_46.obj",
+              "wall_sconce_collision_47.obj",
+              "wall_sconce_collision_48.obj",
+              "wall_sconce_collision_49.obj",
+              "wall_sconce_collision_50.obj",
+              "wall_sconce_collision_51.obj",
+              "wall_sconce_collision_52.obj",
+              "wall_sconce_collision_53.obj",
+              "wall_sconce_collision_54.obj",
+              "wall_sconce_collision_55.obj",
+              "wall_sconce_collision_56.obj",
+              "wall_sconce_collision_57.obj",
+              "wall_sconce_collision_58.obj",
+              "wall_sconce_collision_59.obj",
+              "wall_sconce_collision_60.obj",
+              "wall_sconce_collision_61.obj",
+              "wall_sconce_collision_62.obj",
+              "wall_sconce_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "wall_sconce.gltf"
+            ],
+            "friction": {
+              "mu": 0.74,
+              "mu2": 0.74
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "dining_room_south",
+        "position_2d": [
+          1.7327042115811462,
+          1.6519123299844618
+        ],
+        "rotation_2d": -0.0009838909639186078,
+        "placement_method": "wall_placement"
+      }
+    },
+    {
+      "object_id": "wall_sconce_1",
+      "name": "wall_sconce",
+      "description": "Vertical modern wall sconce, matte black metal with frosted glass cylinder, 50cm tall x 20cm wide",
+      "object_type": "wall_mounted",
+      "transform": {
+        "translation": [
+          1.6522531864676733,
+          0.04999999999999982,
+          1.6538188998354202
+        ],
+        "rotation_wxyz": [
+          0.9999954582621927,
+          -1.8454674528064143e-19,
+          0.0030138770690313326,
+          -6.123206185613425e-17
+        ]
+      },
+      "bbox_min": [
+        -0.10000000149011612,
+        -2.2484034635528498e-17,
+        -0.2702178657054901
+      ],
+      "bbox_max": [
+        0.10000000149011612,
+        0.10350603610277176,
+        0.2702178657054901
+      ],
+      "scale_factor": 1.0,
+      "immutable": false,
+      "geometry_path": "generated_assets/wall_mounted/sdf/wall_sconce_1767833324/wall_sconce.gltf",
+      "sdf_path": "generated_assets/wall_mounted/sdf/wall_sconce_1767833324/wall_sconce.sdf",
+      "sdf_path_resolved": "room_dining_room/generated_assets/wall_mounted/sdf/wall_sconce_1767833324/wall_sconce.sdf",
+      "is_articulated": false,
+      "physics": {
+        "links": {
+          "base_link": {
+            "mass": 1.2,
+            "inertia_pose": [
+              3.1e-05,
+              0.039342,
+              -0.003534,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "inertia": {
+              "ixx": 0.0299216,
+              "ixy": -2.754501e-06,
+              "ixz": 7.162743e-06,
+              "iyy": 0.0314514,
+              "iyz": -0.0001109495,
+              "izz": 0.003301131
+            },
+            "collision_meshes": [
+              "wall_sconce_collision_0.obj",
+              "wall_sconce_collision_1.obj",
+              "wall_sconce_collision_2.obj",
+              "wall_sconce_collision_3.obj",
+              "wall_sconce_collision_4.obj",
+              "wall_sconce_collision_5.obj",
+              "wall_sconce_collision_6.obj",
+              "wall_sconce_collision_7.obj",
+              "wall_sconce_collision_8.obj",
+              "wall_sconce_collision_9.obj",
+              "wall_sconce_collision_10.obj",
+              "wall_sconce_collision_11.obj",
+              "wall_sconce_collision_12.obj",
+              "wall_sconce_collision_13.obj",
+              "wall_sconce_collision_14.obj",
+              "wall_sconce_collision_15.obj",
+              "wall_sconce_collision_16.obj",
+              "wall_sconce_collision_17.obj",
+              "wall_sconce_collision_18.obj",
+              "wall_sconce_collision_19.obj",
+              "wall_sconce_collision_20.obj",
+              "wall_sconce_collision_21.obj",
+              "wall_sconce_collision_22.obj",
+              "wall_sconce_collision_23.obj",
+              "wall_sconce_collision_24.obj",
+              "wall_sconce_collision_25.obj",
+              "wall_sconce_collision_26.obj",
+              "wall_sconce_collision_27.obj",
+              "wall_sconce_collision_28.obj",
+              "wall_sconce_collision_29.obj",
+              "wall_sconce_collision_30.obj",
+              "wall_sconce_collision_31.obj",
+              "wall_sconce_collision_32.obj",
+              "wall_sconce_collision_33.obj",
+              "wall_sconce_collision_34.obj",
+              "wall_sconce_collision_35.obj",
+              "wall_sconce_collision_36.obj",
+              "wall_sconce_collision_37.obj",
+              "wall_sconce_collision_38.obj",
+              "wall_sconce_collision_39.obj",
+              "wall_sconce_collision_40.obj",
+              "wall_sconce_collision_41.obj",
+              "wall_sconce_collision_42.obj",
+              "wall_sconce_collision_43.obj",
+              "wall_sconce_collision_44.obj",
+              "wall_sconce_collision_45.obj",
+              "wall_sconce_collision_46.obj",
+              "wall_sconce_collision_47.obj",
+              "wall_sconce_collision_48.obj",
+              "wall_sconce_collision_49.obj",
+              "wall_sconce_collision_50.obj",
+              "wall_sconce_collision_51.obj",
+              "wall_sconce_collision_52.obj",
+              "wall_sconce_collision_53.obj",
+              "wall_sconce_collision_54.obj",
+              "wall_sconce_collision_55.obj",
+              "wall_sconce_collision_56.obj",
+              "wall_sconce_collision_57.obj",
+              "wall_sconce_collision_58.obj",
+              "wall_sconce_collision_59.obj",
+              "wall_sconce_collision_60.obj",
+              "wall_sconce_collision_61.obj",
+              "wall_sconce_collision_62.obj",
+              "wall_sconce_collision_63.obj"
+            ],
+            "visual_meshes": [
+              "wall_sconce.gltf"
+            ],
+            "friction": {
+              "mu": 0.74,
+              "mu2": 0.74
+            }
+          }
+        }
+      },
+      "placement_info": {
+        "parent_surface_id": "dining_room_south",
+        "position_2d": [
+          3.1477468135323265,
+          1.6538188998354202
+        ],
+        "rotation_2d": 0.006027763263572197,
+        "placement_method": "wall_placement"
+      }
+    }
+  ]
+}

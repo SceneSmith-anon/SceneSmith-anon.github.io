@@ -131,7 +131,7 @@ function buildRoomScenes() {
       scenes.push({
         id,
         prompt: PROMPTS[id],
-        path: `room/scene_${id}/scene_web.glb`,
+        path: `room/scene_${id}/scene_named.glb`,
         featured: true
       });
     }
@@ -146,7 +146,7 @@ function buildRoomScenes() {
     scenes.push({
       id,
       prompt: PROMPTS[id],
-      path: `room/scene_${id}/scene_web.glb`,
+      path: `room/scene_${id}/scene_named.glb`,
       featured: false
     });
   }
@@ -164,7 +164,7 @@ function buildHouseScenes() {
       scenes.push({
         id,
         prompt: PROMPTS[id],
-        path: `house/scene_${id}/scene_web.glb`,
+        path: `house/scene_${id}/scene_named.glb`,
         featured: true
       });
     }
@@ -179,7 +179,7 @@ function buildHouseScenes() {
     scenes.push({
       id,
       prompt: PROMPTS[id],
-      path: `house/scene_${id}/scene_web.glb`,
+      path: `house/scene_${id}/scene_named.glb`,
       featured: false
     });
   }

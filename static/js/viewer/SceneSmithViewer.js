@@ -13,6 +13,8 @@ import { OutlineEffect } from './OutlineEffect.js';
 import { ObjectPicker } from './ObjectPicker.js';
 import { IsolatedViewer } from './IsolatedViewer.js';
 import { SceneCache } from './SceneCache.js';
+import { MetadataManager } from './MetadataManager.js';
+import { OverlayManager } from './OverlayManager.js';
 
 export class SceneSmithViewer {
   constructor(container, options = {}) {
@@ -43,6 +45,8 @@ export class SceneSmithViewer {
     this.isolatedViewer = null;
     this.cache = new SceneCache(10);
     this.loader = null;
+    this.metadataManager = new MetadataManager(this.options.basePath);
+    this.overlayManager = new OverlayManager();
 
     // Hidden objects tracking
     this.hiddenObjects = new Set();
@@ -51,6 +55,12 @@ export class SceneSmithViewer {
     // Load ID counter and abort controller to guard against concurrent loads
     this._loadId = 0;
     this._abortController = null;
+
+    // Drag detection: suppress click after orbit/pan
+    this._pointerDownPos = null;
+    this._isPointerDown = false;
+    this._wasDragged = false;
+    this._controlsEndTime = 0;
 
     // Bind methods
     this.handleClick = this.handleClick.bind(this);
@@ -116,6 +126,30 @@ export class SceneSmithViewer {
     dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/');
     this.loader.setDRACOLoader(dracoLoader);
     this.loader.setMeshoptDecoder(MeshoptDecoder);
+
+    // Drag detection: track pointer movement to distinguish clicks from drags
+    this.renderer.domElement.addEventListener('pointerdown', (e) => {
+      this._pointerDownPos = { x: e.clientX, y: e.clientY };
+      this._isPointerDown = true;
+      this._wasDragged = false;
+    });
+    this.renderer.domElement.addEventListener('pointermove', (e) => {
+      if (this._isPointerDown && !this._wasDragged && this._pointerDownPos) {
+        const dx = e.clientX - this._pointerDownPos.x;
+        const dy = e.clientY - this._pointerDownPos.y;
+        if (dx * dx + dy * dy > 25) {
+          this._wasDragged = true;
+        }
+      }
+    });
+    window.addEventListener('pointerup', () => {
+      this._isPointerDown = false;
+    });
+    this.controls.addEventListener('end', () => {
+      if (this._wasDragged) {
+        this._controlsEndTime = performance.now();
+      }
+    });
 
     // Event listeners
     this.renderer.domElement.addEventListener('click', this.handleClick);
@@ -240,6 +274,13 @@ export class SceneSmithViewer {
 
       this.scene.add(this.loadedScene);
 
+      // Load metadata (non-blocking for rendering, but awaited for selection)
+      await this.metadataManager.load(path);
+      const objectIds = this.metadataManager.getObjectIds();
+      if (objectIds.size > 0) {
+        this.picker.setKnownObjectIds(objectIds);
+      }
+
       // Frame the scene
       this.resetCamera();
 
@@ -327,6 +368,13 @@ export class SceneSmithViewer {
     if (this.options.onShowAll) {
       this.options.onShowAll();
     }
+
+    // Clear metadata and overlays
+    this.metadataManager.clear();
+    this.picker.setKnownObjectIds(null);
+    if (this.isolatedViewer && this.isolatedViewer.scene) {
+      this.overlayManager.clearAll(this.isolatedViewer.scene);
+    }
   }
 
   /**
@@ -334,6 +382,10 @@ export class SceneSmithViewer {
    */
   handleClick(event) {
     if (!this.loadedScene) return;
+
+    // Ignore clicks that followed a drag (camera orbit/pan)
+    if (this._wasDragged) return;
+    if (performance.now() - this._controlsEndTime < 100) return;
 
     const result = this.picker.pick(event, this.loadedScene);
 
@@ -365,15 +417,21 @@ export class SceneSmithViewer {
     // Update outline effect
     this.outlineEffect.setSelection(object);
 
+    // Clear overlays before showing new object
+    if (this.isolatedViewer && this.isolatedViewer.scene) {
+      this.overlayManager.clearAll(this.isolatedViewer.scene);
+    }
+
     // Show in isolated viewer
     if (this.isolatedViewer) {
       this.isolatedViewer.showObject(object);
     }
 
-    // Callback
+    // Callback with metadata
     if (this.options.onSelect) {
       const name = this.picker.getObjectName(object);
-      this.options.onSelect(object, name);
+      const meta = this.metadataManager.getObjectMetadata(object.name);
+      this.options.onSelect(object, name, meta);
     }
   }
 
@@ -385,6 +443,11 @@ export class SceneSmithViewer {
 
     if (this.outlineEffect) {
       this.outlineEffect.clearSelection();
+    }
+
+    // Clear overlays before clearing isolated viewer
+    if (this.isolatedViewer && this.isolatedViewer.scene) {
+      this.overlayManager.clearAll(this.isolatedViewer.scene);
     }
 
     if (this.isolatedViewer) {
@@ -435,6 +498,65 @@ export class SceneSmithViewer {
    */
   getHiddenCount() {
     return this.hiddenObjects.size;
+  }
+
+  /**
+   * Toggle collision overlay in the isolated viewer
+   * @param {string} objectId - Object ID for collision file lookup
+   * @returns {Promise<boolean>} - Whether collision is now visible
+   */
+  async toggleCollision(objectId) {
+    if (!this.isolatedViewer || !this.isolatedViewer.scene) return false;
+
+    if (this.overlayManager.collisionVisible) {
+      this.overlayManager.hideCollision(this.isolatedViewer.scene);
+      this.isolatedViewer.setVisualVisible(true);
+      return false;
+    }
+
+    const collisionPath = this.metadataManager.getCollisionPath(objectId);
+    if (!collisionPath) return false;
+
+    await this.overlayManager.showCollision(
+      collisionPath,
+      this.isolatedViewer.scene,
+      this.isolatedViewer.objectTransform
+    );
+    this.isolatedViewer.setVisualVisible(false);
+    return true;
+  }
+
+  /**
+   * Toggle inertia overlay in the isolated viewer
+   * @param {Object} physics - Physics metadata with links
+   * @returns {boolean} - Whether inertia is now visible
+   */
+  toggleInertia(physics) {
+    if (!this.isolatedViewer || !this.isolatedViewer.currentObject) return false;
+
+    if (this.overlayManager.inertiaVisible) {
+      this.overlayManager.hideInertia();
+      return false;
+    }
+
+    if (!physics) return false;
+
+    this.overlayManager.showInertia(
+      physics,
+      this.isolatedViewer.currentObject
+    );
+    return true;
+  }
+
+  /**
+   * Apply joint transform in the isolated viewer
+   * @param {Object} jointData
+   * @param {number} value
+   */
+  applyJointTransform(jointData, value) {
+    if (this.isolatedViewer) {
+      this.isolatedViewer.applyJointTransform(jointData, value);
+    }
   }
 
   /**

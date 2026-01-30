@@ -10,6 +10,15 @@ export class ObjectPicker {
     this.domElement = domElement;
     this.raycaster = new THREE.Raycaster();
     this.pointer = new THREE.Vector2();
+    this.knownObjectIds = null; // Set<string> of valid object IDs from metadata
+  }
+
+  /**
+   * Set known object IDs from metadata for multi-part selection
+   * @param {Set<string>} idSet - Set of valid object_id names
+   */
+  setKnownObjectIds(idSet) {
+    this.knownObjectIds = idSet && idSet.size > 0 ? idSet : null;
   }
 
   /**
@@ -69,6 +78,21 @@ export class ObjectPicker {
    * @returns {THREE.Object3D} - The selectable root
    */
   getSelectableRoot(object) {
+    // If we have metadata-based object IDs, use them for precise multi-part selection
+    if (this.knownObjectIds) {
+      let current = object;
+      while (current) {
+        if (current.name && this.knownObjectIds.has(current.name)) {
+          return current;
+        }
+        if (!current.parent || current.parent.type === 'Scene') {
+          break;
+        }
+        current = current.parent;
+      }
+    }
+
+    // Fallback: original heuristic when metadata is unavailable
     let current = object;
 
     // Names to skip (these are typically scene roots or generic containers)
