@@ -520,7 +520,8 @@ export class SceneSmithViewer {
     await this.overlayManager.showCollision(
       collisionPath,
       this.isolatedViewer.scene,
-      this.isolatedViewer.objectTransform
+      this.isolatedViewer.objectTransform,
+      this.isolatedViewer.currentObject
     );
     this.isolatedViewer.setVisualVisible(false);
     return true;

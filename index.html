@@ -931,7 +931,7 @@
         if (activeOverlayMode === 'collision' && viewer._currentSelectedObjectId) {
           const collisionPath = viewer.metadataManager.getCollisionPath(viewer._currentSelectedObjectId);
           if (collisionPath) {
-            await viewer.overlayManager.showCollision(collisionPath, viewer.isolatedViewer.scene, viewer.isolatedViewer.objectTransform);
+            await viewer.overlayManager.showCollision(collisionPath, viewer.isolatedViewer.scene, viewer.isolatedViewer.objectTransform, viewer.isolatedViewer.currentObject);
             viewer.isolatedViewer.setVisualVisible(false);
             collisionBtn.classList.add('is-active');
             fsCollisionBtn.classList.add('is-active');

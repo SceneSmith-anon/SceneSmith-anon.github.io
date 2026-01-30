@@ -23,13 +23,20 @@ export class OverlayManager {
   }
 
   /**
-   * Load and display collision overlay
+   * Load and display collision overlay.
+   * If the collision GLB cannot be loaded (e.g. 404), falls back to using
+   * the visual mesh with collision coloring (for objects whose visual mesh
+   * is already convex).
    * @param {string} collisionPath - URL to collision GLB
    * @param {THREE.Scene} scene - The isolated viewer scene
+   * @param {Object} objectTransform - The visual object's centering/scaling transform
+   * @param {THREE.Object3D} [fallbackObject] - Visual object to use if collision GLB is missing
    * @returns {Promise<void>}
    */
-  async showCollision(collisionPath, scene, objectTransform) {
+  async showCollision(collisionPath, scene, objectTransform, fallbackObject) {
     this.hideCollision(scene);
+
+    let usedFallback = false;
 
     try {
       const gltf = await this._loadGLTF(collisionPath);
@@ -58,19 +65,45 @@ export class OverlayManager {
       }
       innerGroup.rotation.x = Math.PI;
       this.collisionGroup.add(innerGroup);
-
-      // Apply the same centering/scaling as the visual object
-      if (objectTransform) {
-        this.collisionGroup.position.copy(objectTransform.position);
-        this.collisionGroup.scale.copy(objectTransform.scale);
-        this.collisionGroup.quaternion.copy(objectTransform.quaternion);
-      }
-
-      scene.add(this.collisionGroup);
-      this.collisionVisible = true;
     } catch (err) {
-      console.warn('Failed to load collision mesh:', err);
+      // Collision GLB not available — fall back to the visual mesh
+      if (fallbackObject) {
+        console.info('Collision GLB not found, using visual mesh as collision:', collisionPath);
+        this.collisionGroup = new THREE.Group();
+        this.collisionGroup.userData.isOverlay = true;
+        usedFallback = true;
+
+        let pieceIndex = 0;
+        fallbackObject.traverse((child) => {
+          if (child.isMesh) {
+            const material = new THREE.MeshBasicMaterial({
+              color: COLLISION_COLORS[pieceIndex % COLLISION_COLORS.length],
+              side: THREE.DoubleSide,
+            });
+            const mesh = new THREE.Mesh(child.geometry.clone(), material);
+            // Use the child's local-to-root matrix (excluding the root's transform)
+            mesh.applyMatrix4(child.matrixWorld);
+            this.collisionGroup.add(mesh);
+            pieceIndex++;
+          }
+        });
+      } else {
+        console.warn('Failed to load collision mesh:', err);
+        return;
+      }
     }
+
+    // Apply the same centering/scaling as the visual object.
+    // For the fallback case (visual mesh), matrixWorld already includes the
+    // root object's transform, so we skip re-applying objectTransform.
+    if (!usedFallback && objectTransform) {
+      this.collisionGroup.position.copy(objectTransform.position);
+      this.collisionGroup.scale.copy(objectTransform.scale);
+      this.collisionGroup.quaternion.copy(objectTransform.quaternion);
+    }
+
+    scene.add(this.collisionGroup);
+    this.collisionVisible = true;
   }
 
   /**
