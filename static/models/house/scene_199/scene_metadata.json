@@ -14491,7 +14491,7 @@
         0.01387250078469515,
         0.07758800265192986
       ],
-      "scale_factor": 0.5060000000000001,
+      "scale_factor": 0.506,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/hand_sanitizer_bottle_1767939027/hand_sanitizer_bottle.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/hand_sanitizer_bottle_1767939027/hand_sanitizer_bottle.sdf",
@@ -17011,7 +17011,7 @@
         0.08964396195698887,
         0.1293010874247793
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.45,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_199/room_bathroom/generated_assets/manipuland/sdf/bath_towel_1767952867/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_199/room_bathroom/generated_assets/manipuland/sdf/bath_towel_1767952867/bath_towel.sdf",

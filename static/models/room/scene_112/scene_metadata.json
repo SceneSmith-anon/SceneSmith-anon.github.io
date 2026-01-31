@@ -27101,7 +27101,7 @@
         0.0675055606728645,
         0.11941176839145706
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.93,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_112/room_bar/generated_assets/manipuland/sdf/wine_glass_1767876135/wine_glass.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_112/room_bar/generated_assets/manipuland/sdf/wine_glass_1767876135/wine_glass.sdf",
@@ -27661,7 +27661,7 @@
         0.07418992929805746,
         0.1194344181453253
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.93,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_112/room_bar/generated_assets/manipuland/sdf/wine_glass_1767876135/wine_glass.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_112/room_bar/generated_assets/manipuland/sdf/wine_glass_1767876135/wine_glass.sdf",
@@ -28221,7 +28221,7 @@
         0.1054590947504166,
         0.18379237494922407
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.93,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_112/room_bar/generated_assets/manipuland/sdf/wine_glass_1767876135/wine_glass.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_112/room_bar/generated_assets/manipuland/sdf/wine_glass_1767876135/wine_glass.sdf",

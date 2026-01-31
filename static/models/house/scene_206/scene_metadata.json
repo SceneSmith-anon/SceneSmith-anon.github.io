@@ -5626,7 +5626,7 @@
         0.17275391116738317,
         0.8650831884145735
       ],
-      "scale_factor": 0.6649999999999999,
+      "scale_factor": 0.665,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/geometry/base_cabinet_1767960747/base_cabinet_combined.gltf",
       "sdf_path": "generated_assets/furniture/sdf/base_cabinet_1767960747/model_sliding_door_1.sdf",
@@ -12484,7 +12484,7 @@
         0.3438286796212196,
         0.7439582794904709
       ],
-      "scale_factor": 0.85,
+      "scale_factor": 0.765,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/medical_cart_1767990235/medical_cart.gltf",
       "sdf_path": "generated_assets/furniture/sdf/medical_cart_1767990235/medical_cart.sdf",
@@ -13758,7 +13758,7 @@
         0.19459865987300873,
         0.6681350469589233
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.25,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/medical_supply_cart_1767960740/medical_supply_cart.gltf",
       "sdf_path": "generated_assets/furniture/sdf/medical_supply_cart_1767960740/medical_supply_cart.sdf",
@@ -16837,7 +16837,7 @@
         0.22499999403931054,
         0.5788732767099314
       ],
-      "scale_factor": 0.999999999999,
+      "scale_factor": 1.0,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/side_table_1767942220/side_table.gltf",
       "sdf_path": "generated_assets/furniture/sdf/side_table_1767942220/side_table.sdf",
@@ -18975,7 +18975,7 @@
         0.3268381857872009,
         0.7248969447612762
       ],
-      "scale_factor": 0.83,
+      "scale_factor": 0.58070253,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/waiting_bench_1767948815/waiting_bench.gltf",
       "sdf_path": "generated_assets/furniture/sdf/waiting_bench_1767948815/waiting_bench.sdf",
@@ -26029,7 +26029,7 @@
         0.233333329353857,
         0.00266666679325987
       ],
-      "scale_factor": 1.3333333333,
+      "scale_factor": 1.33333333,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/exam_table_paper_runner_1767988829/exam_table_paper_runner.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/exam_table_paper_runner_1767988829/exam_table_paper_runner.sdf",
@@ -39523,7 +39523,7 @@
         0.0959999978542328,
         0.001600000075995922
       ],
-      "scale_factor": 0.8,
+      "scale_factor": 0.48,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/headrest_paper_cover_1767977092/headrest_paper_cover.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/headrest_paper_cover_1767977092/headrest_paper_cover.sdf",
@@ -41938,7 +41938,7 @@
         0.11514588445425034,
         0.2199999988079071
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.41,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/laptop_1767972534/laptop.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/laptop_1767972534/laptop.sdf",
@@ -53257,7 +53257,7 @@
         0.1543005748459233,
         0.03824584950781096
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.82,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_206/room_reception/generated_assets/manipuland/sdf/magazine_1767936554/magazine.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_206/room_reception/generated_assets/manipuland/sdf/magazine_1767936554/magazine.sdf",
@@ -53551,7 +53551,7 @@
         0.1543005748459233,
         0.03824584950781096
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.82,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_206/room_reception/generated_assets/manipuland/sdf/waiting_room_magazine_1767936435/waiting_room_magazine.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_206/room_reception/generated_assets/manipuland/sdf/waiting_room_magazine_1767936435/waiting_room_magazine.sdf",
@@ -53691,7 +53691,7 @@
         0.1543005748459233,
         0.03824584950781096
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.82,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_206/room_reception/generated_assets/manipuland/sdf/brochure_booklet_1767936435/brochure_booklet.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_206/room_reception/generated_assets/manipuland/sdf/brochure_booklet_1767936435/brochure_booklet.sdf",
@@ -64582,7 +64582,7 @@
         0.029999999329207747,
         0.43810811638481606
       ],
-      "scale_factor": 0.9999999999920001,
+      "scale_factor": 1.0,
       "immutable": false,
       "geometry_path": "generated_assets/wall_mounted/sdf/poster_1767993580/poster.gltf",
       "sdf_path": "generated_assets/wall_mounted/sdf/poster_1767993580/poster.sdf",
@@ -65266,7 +65266,7 @@
         0.01590748690055996,
         0.23867687582778727
       ],
-      "scale_factor": 0.9999999999920001,
+      "scale_factor": 1.0,
       "immutable": false,
       "geometry_path": "generated_assets/wall_mounted/sdf/poster_1767993580/poster.gltf",
       "sdf_path": "generated_assets/wall_mounted/sdf/poster_1767993580/poster.sdf",

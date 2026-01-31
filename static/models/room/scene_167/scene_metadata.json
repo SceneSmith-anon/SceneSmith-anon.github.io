@@ -2736,7 +2736,7 @@
         0.19123841242974426,
         0.11977479711752492
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/fruit_bowl_1767909923/fruit_bowl.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/fruit_bowl_1767909923/fruit_bowl.sdf",
@@ -2876,7 +2876,7 @@
         0.19123841242974426,
         0.11977479711752492
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/apple_1767909971/apple.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/apple_1767909971/apple.sdf",
@@ -3016,7 +3016,7 @@
         0.19123841242974426,
         0.11977479711752492
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/apple_1767909971/apple.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/apple_1767909971/apple.sdf",
@@ -3156,7 +3156,7 @@
         0.19123841242974426,
         0.11977479711752492
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/apple_1767909971/apple.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/apple_1767909971/apple.sdf",
@@ -3296,7 +3296,7 @@
         0.19123841242974426,
         0.11977479711752492
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/citrus_fruit_1767910089/citrus_fruit.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/citrus_fruit_1767910089/citrus_fruit.sdf",
@@ -3436,7 +3436,7 @@
         0.19123841242974426,
         0.11977479711752492
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/citrus_fruit_1767910089/citrus_fruit.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_167/room_kitchen/generated_assets/manipuland/sdf/citrus_fruit_1767910089/citrus_fruit.sdf",

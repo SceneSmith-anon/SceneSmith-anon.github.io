@@ -1327,7 +1327,7 @@
         0.21060757040977476,
         1.5922482490539551
       ],
-      "scale_factor": 1.2,
+      "scale_factor": 1.5,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/floor_lamp_1767831418/floor_lamp.gltf",
       "sdf_path": "generated_assets/furniture/sdf/floor_lamp_1767831418/floor_lamp.sdf",
@@ -4384,7 +4384,7 @@
         0.12529969488142756,
         0.07825109739753172
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.78,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_013/room_living_room/generated_assets/manipuland/sdf/round_cork_coaster_1767836611/round_cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_013/room_living_room/generated_assets/manipuland/sdf/round_cork_coaster_1767836611/round_cork_coaster.sdf",
@@ -4524,7 +4524,7 @@
         0.12529969488142756,
         0.07825109739753172
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_013/room_living_room/generated_assets/manipuland/sdf/coffee_mug_1767836460/coffee_mug.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_013/room_living_room/generated_assets/manipuland/sdf/coffee_mug_1767836460/coffee_mug.sdf",
@@ -4664,7 +4664,7 @@
         0.06345120512998959,
         0.011387322065300576
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.78,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_013/room_living_room/generated_assets/manipuland/sdf/round_cork_coaster_1767836611/round_cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_013/room_living_room/generated_assets/manipuland/sdf/round_cork_coaster_1767836611/round_cork_coaster.sdf",
@@ -4804,7 +4804,7 @@
         0.06345120512998959,
         0.011387322065300576
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.78,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_013/room_living_room/generated_assets/manipuland/sdf/round_cork_coaster_1767836611/round_cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_013/room_living_room/generated_assets/manipuland/sdf/round_cork_coaster_1767836611/round_cork_coaster.sdf",
@@ -4944,7 +4944,7 @@
         0.06345120512998959,
         0.011387322065300576
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.78,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_013/room_living_room/generated_assets/manipuland/sdf/round_cork_coaster_1767836611/round_cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_013/room_living_room/generated_assets/manipuland/sdf/round_cork_coaster_1767836611/round_cork_coaster.sdf",

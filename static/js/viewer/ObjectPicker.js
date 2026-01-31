@@ -60,6 +60,9 @@ export class ObjectPicker {
       // Get the root selectable object (highest parent that's not the scene)
       const selectableObject = this.getSelectableRoot(object);
 
+      // Skip if the selectable root is hidden
+      if (!selectableObject.visible) continue;
+
       return {
         object: selectableObject,
         point: intersect.point.clone(),

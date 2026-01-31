@@ -9150,7 +9150,7 @@
         0.1358230797564981,
         0.10195739034703633
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_118/room_classroom/generated_assets/manipuland/sdf/math_textbook_1767886315/math_textbook.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_118/room_classroom/generated_assets/manipuland/sdf/math_textbook_1767886315/math_textbook.sdf",
@@ -9290,7 +9290,7 @@
         0.1358230797564981,
         0.10195739034703633
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_118/room_classroom/generated_assets/manipuland/sdf/student_notebook_1767882409/student_notebook.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_118/room_classroom/generated_assets/manipuland/sdf/student_notebook_1767882409/student_notebook.sdf",
@@ -9430,7 +9430,7 @@
         0.1358230797564981,
         0.10195739034703633
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_118/room_classroom/generated_assets/manipuland/sdf/spiral_bound_teacher_notebook_1767881612/spiral_bound_teacher_notebook.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_118/room_classroom/generated_assets/manipuland/sdf/spiral_bound_teacher_notebook_1767881612/spiral_bound_teacher_notebook.sdf",
@@ -9570,7 +9570,7 @@
         0.10743367370080525,
         0.07366858112164358
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_118/room_classroom/generated_assets/manipuland/sdf/student_notebook_1767882409/student_notebook.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_118/room_classroom/generated_assets/manipuland/sdf/student_notebook_1767882409/student_notebook.sdf",
@@ -9710,7 +9710,7 @@
         0.10743367370080525,
         0.07366858112164358
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_118/room_classroom/generated_assets/manipuland/sdf/math_textbook_1767886315/math_textbook.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_118/room_classroom/generated_assets/manipuland/sdf/math_textbook_1767886315/math_textbook.sdf",

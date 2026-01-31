@@ -10494,7 +10494,7 @@
         0.16049653110802176,
         0.11488500456511974
       ],
-      "scale_factor": 0.7659000000000001,
+      "scale_factor": 0.7659,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/folded_quilted_blanket_1767947389/folded_quilted_blanket.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/folded_quilted_blanket_1767947389/folded_quilted_blanket.sdf",
@@ -15359,7 +15359,7 @@
         0.12506517713946597,
         0.09631081973081956
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.95,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767960726/hardcover_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767960726/hardcover_book.sdf",
@@ -15499,7 +15499,7 @@
         0.13723046891013413,
         0.032318513754274636
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_living_room/generated_assets/manipuland/sdf/lifestyle_magazine_1767941971/lifestyle_magazine.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_living_room/generated_assets/manipuland/sdf/lifestyle_magazine_1767941971/lifestyle_magazine.sdf",
@@ -15639,7 +15639,7 @@
         0.12506517713946597,
         0.09631081973081956
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.95,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767960726/hardcover_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767960726/hardcover_book.sdf",
@@ -15779,7 +15779,7 @@
         0.13723046891013413,
         0.032318513754274636
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_living_room/generated_assets/manipuland/sdf/home_decor_magazine_1767941971/home_decor_magazine.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_living_room/generated_assets/manipuland/sdf/home_decor_magazine_1767941971/home_decor_magazine.sdf",
@@ -17179,7 +17179,7 @@
         0.05928694399398293,
         0.08347256325112301
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_living_room/generated_assets/manipuland/sdf/cork_drink_coaster_1767941971/cork_drink_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_living_room/generated_assets/manipuland/sdf/cork_drink_coaster_1767941971/cork_drink_coaster.sdf",
@@ -17319,7 +17319,7 @@
         0.05928694399398293,
         0.08347256325112301
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_living_room/generated_assets/manipuland/sdf/coffee_mug_1767946604/coffee_mug.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_098/room_living_room/generated_assets/manipuland/sdf/coffee_mug_1767946604/coffee_mug.sdf",

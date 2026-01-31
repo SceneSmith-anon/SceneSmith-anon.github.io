@@ -7089,7 +7089,7 @@
         0.1195243737201257,
         0.04287223562539677
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.6,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_097/room_bedroom/generated_assets/manipuland/sdf/hardcover_novel_1767936709/hardcover_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_097/room_bedroom/generated_assets/manipuland/sdf/hardcover_novel_1767936709/hardcover_novel.sdf",

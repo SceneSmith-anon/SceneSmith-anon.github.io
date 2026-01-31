@@ -4805,7 +4805,7 @@
         0.06442275719485391,
         0.030268023853019077
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.5,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_176/room_playroom/generated_assets/manipuland/sdf/art_book_1767915185/art_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_176/room_playroom/generated_assets/manipuland/sdf/art_book_1767915185/art_book.sdf",

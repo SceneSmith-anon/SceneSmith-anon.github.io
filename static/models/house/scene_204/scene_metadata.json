@@ -9586,7 +9586,7 @@
         0.20125712545216082,
         1.7073074525594711
       ],
-      "scale_factor": 0.8454999999999999,
+      "scale_factor": 0.8455,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/geometry/locker_cabinet_1767969423/locker_cabinet_combined.gltf",
       "sdf_path": "generated_assets/furniture/sdf/locker_cabinet_1767969423/model_double_door_1.sdf",
@@ -18452,7 +18452,7 @@
         0.1514954284694081,
         0.06957870640940167
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_204/room_exam_room_1/generated_assets/manipuland/sdf/instrument_tray_1767956401/instrument_tray.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_204/room_exam_room_1/generated_assets/manipuland/sdf/instrument_tray_1767956401/instrument_tray.sdf",
@@ -18592,7 +18592,7 @@
         0.07037851300062592,
         0.06702597418504208
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_204/room_surgery_room/generated_assets/manipuland/sdf/instrument_tray_1767982994/instrument_tray.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_204/room_surgery_room/generated_assets/manipuland/sdf/instrument_tray_1767982994/instrument_tray.sdf",
@@ -19432,7 +19432,7 @@
         0.07037851300062592,
         0.06702597418504208
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.39,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_204/room_surgery_room/generated_assets/manipuland/sdf/hemostat_1767982994/hemostat.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_204/room_surgery_room/generated_assets/manipuland/sdf/hemostat_1767982994/hemostat.sdf",
@@ -19852,7 +19852,7 @@
         0.07037851300062592,
         0.06702597418504208
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.31,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_204/room_surgery_room/generated_assets/manipuland/sdf/surgical_scissors_1767983036/surgical_scissors.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_204/room_surgery_room/generated_assets/manipuland/sdf/surgical_scissors_1767983036/surgical_scissors.sdf",
@@ -21952,7 +21952,7 @@
         0.08918168954551219,
         0.017747211176902054
       ],
-      "scale_factor": 0.5249999999999999,
+      "scale_factor": 0.525,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/magazine_1767936831/magazine.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/magazine_1767936831/magazine.sdf",
@@ -22092,7 +22092,7 @@
         0.08918168954551219,
         0.017747211176902054
       ],
-      "scale_factor": 0.5249999999999999,
+      "scale_factor": 0.525,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/magazine_1767936831/magazine.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/magazine_1767936831/magazine.sdf",
@@ -24332,7 +24332,7 @@
         0.098252853611146,
         0.05148297591928852
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_204/room_surgery_room/generated_assets/manipuland/sdf/instrument_tray_1767982994/instrument_tray.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_204/room_surgery_room/generated_assets/manipuland/sdf/instrument_tray_1767982994/instrument_tray.sdf",
@@ -33536,7 +33536,7 @@
         0.053605165332555764,
         0.3721143007278442
       ],
-      "scale_factor": 0.9999999999999999,
+      "scale_factor": 1.0,
       "immutable": false,
       "geometry_path": "generated_assets/wall_mounted/sdf/poster_1767953821/poster.gltf",
       "sdf_path": "generated_assets/wall_mounted/sdf/poster_1767953821/poster.sdf",

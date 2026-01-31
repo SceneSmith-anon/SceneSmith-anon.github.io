@@ -2747,7 +2747,7 @@
         0.07239260303881019,
         0.0141918258128548
       ],
-      "scale_factor": 0.6437474999999999,
+      "scale_factor": 0.6437475,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/magazine_1767859108/magazine.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/magazine_1767859108/magazine.sdf",
@@ -4924,7 +4924,7 @@
         0.09130529618561267,
         0.06160159211447463
       ],
-      "scale_factor": 0.6437474999999999,
+      "scale_factor": 0.6437475,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/throw_blanket_1767859000/throw_blanket.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/throw_blanket_1767859000/throw_blanket.sdf",

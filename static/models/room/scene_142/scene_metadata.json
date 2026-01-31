@@ -6553,7 +6553,7 @@
         0.1490696073029265,
         0.17057045752556968
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.5,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.sdf",
@@ -6693,7 +6693,7 @@
         0.1490696073029265,
         0.17057045752556968
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.5,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.sdf",
@@ -6833,7 +6833,7 @@
         0.1490696073029265,
         0.17057045752556968
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.5,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.sdf",
@@ -6973,7 +6973,7 @@
         0.1495482732295983,
         0.1755996648631477
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.5,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.sdf",
@@ -7113,7 +7113,7 @@
         0.1495482732295983,
         0.1755996648631477
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.5,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.sdf",
@@ -7253,7 +7253,7 @@
         0.1495482732295983,
         0.1755996648631477
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.5,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_142/room_grooming_salon/generated_assets/manipuland/sdf/terry_cloth_towel_1767897263/terry_cloth_towel.sdf",

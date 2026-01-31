@@ -4951,7 +4951,7 @@
         0.12936637374367144,
         0.0930767630596675
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.5,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_041/room_bedroom/generated_assets/manipuland/sdf/paperback_book_1767849851/paperback_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_041/room_bedroom/generated_assets/manipuland/sdf/paperback_book_1767849851/paperback_book.sdf",
@@ -5091,7 +5091,7 @@
         0.15372260028050122,
         0.19564992711343576
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_041/room_bedroom/generated_assets/manipuland/sdf/folded_denim_jeans_1767854117/folded_denim_jeans.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_041/room_bedroom/generated_assets/manipuland/sdf/folded_denim_jeans_1767854117/folded_denim_jeans.sdf",
@@ -5371,7 +5371,7 @@
         0.15372260028050122,
         0.19564992711343576
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_041/room_bedroom/generated_assets/manipuland/sdf/t_shirt_1767853345/t_shirt.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_041/room_bedroom/generated_assets/manipuland/sdf/t_shirt_1767853345/t_shirt.sdf",

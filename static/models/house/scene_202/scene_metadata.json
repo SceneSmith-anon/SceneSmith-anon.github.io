@@ -25878,7 +25878,7 @@
         0.07861669017985062,
         0.1562555186873409
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/mesh_cup_1767983632/mesh_cup.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/mesh_cup_1767983632/mesh_cup.sdf",
@@ -26298,7 +26298,7 @@
         0.07861669017985062,
         0.1562555186873409
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/makeup_brush_1767983478/makeup_brush.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/makeup_brush_1767983478/makeup_brush.sdf",
@@ -26578,7 +26578,7 @@
         0.07861669017985062,
         0.1562555186873409
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/makeup_brush_1767983478/makeup_brush.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/makeup_brush_1767983478/makeup_brush.sdf",
@@ -26858,7 +26858,7 @@
         0.07861669017985062,
         0.1562555186873409
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/makeup_brush_1767983478/makeup_brush.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/makeup_brush_1767983478/makeup_brush.sdf",
@@ -27558,7 +27558,7 @@
         0.23299923239335504,
         0.2783000569486686
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.95,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_props_storage/generated_assets/manipuland/sdf/baseball_cap_1768001631/baseball_cap.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_props_storage/generated_assets/manipuland/sdf/baseball_cap_1768001631/baseball_cap.sdf",
@@ -31618,7 +31618,7 @@
         0.14230908232927325,
         0.14760995131731033
       ],
-      "scale_factor": 0.8280000000000001,
+      "scale_factor": 0.828,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/office_document_box_1767971862/office_document_box.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/office_document_box_1767971862/office_document_box.sdf",
@@ -35055,7 +35055,7 @@
         0.15862953323979578,
         0.10158152459670755
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8075,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/knit_scarf_1767986561/knit_scarf.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/knit_scarf_1767986561/knit_scarf.sdf",
@@ -35755,7 +35755,7 @@
         0.15862953323979578,
         0.10158152459670755
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/folded_wool_scarf_1767986485/folded_wool_scarf.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_202/room_dressing_room/generated_assets/manipuland/sdf/folded_wool_scarf_1767986485/folded_wool_scarf.sdf",

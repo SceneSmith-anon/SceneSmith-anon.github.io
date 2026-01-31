@@ -4801,7 +4801,7 @@
         0.1197700992461157,
         0.06962919364744374
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_020/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767836499/hardcover_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_020/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767836499/hardcover_book.sdf",
@@ -4941,7 +4941,7 @@
         0.1197700992461157,
         0.06962919364744374
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_020/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767836499/hardcover_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_020/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767836499/hardcover_book.sdf",

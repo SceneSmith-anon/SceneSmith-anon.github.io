@@ -4967,7 +4967,7 @@
         0.11163838035631368,
         0.21018858448571454
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_134/room_garage/generated_assets/manipuland/sdf/organizer_bin_1767891228/organizer_bin.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_134/room_garage/generated_assets/manipuland/sdf/organizer_bin_1767891228/organizer_bin.sdf",

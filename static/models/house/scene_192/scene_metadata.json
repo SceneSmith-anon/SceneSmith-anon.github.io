@@ -16324,7 +16324,7 @@
         0.07571704972897031,
         0.022606282738355965
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.35,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_192/room_salon_floor/generated_assets/manipuland/sdf/organizer_tray_1767951815/organizer_tray.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_192/room_salon_floor/generated_assets/manipuland/sdf/organizer_tray_1767951815/organizer_tray.sdf",
@@ -16884,7 +16884,7 @@
         0.07825941932638991,
         0.0345139825677393
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.35,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_192/room_salon_floor/generated_assets/manipuland/sdf/organizer_tray_1767951815/organizer_tray.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_192/room_salon_floor/generated_assets/manipuland/sdf/organizer_tray_1767951815/organizer_tray.sdf",

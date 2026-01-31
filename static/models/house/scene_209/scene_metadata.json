@@ -20068,7 +20068,7 @@
         0.20914467573165893,
         1.5197274684906006
       ],
-      "scale_factor": 1.2,
+      "scale_factor": 1.44,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/floor_lamp_1767990559/floor_lamp.gltf",
       "sdf_path": "generated_assets/furniture/sdf/floor_lamp_1767990559/floor_lamp.sdf",
@@ -29927,7 +29927,7 @@
         0.21876977384090424,
         0.48279136419296265
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.42,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/side_table_1767990559/side_table.gltf",
       "sdf_path": "generated_assets/furniture/sdf/side_table_1767990559/side_table.sdf",
@@ -32911,7 +32911,7 @@
         0.3400588780641556,
         0.8745075017213821
       ],
-      "scale_factor": 1.25,
+      "scale_factor": 1.5625,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/task_chair_1767990559/task_chair.gltf",
       "sdf_path": "generated_assets/furniture/sdf/task_chair_1767990559/task_chair.sdf",
@@ -43877,7 +43877,7 @@
         0.09637071937322617,
         0.2815569447899757
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767960440/water_tumbler.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767960440/water_tumbler.sdf",
@@ -44157,7 +44157,7 @@
         0.09637071937322617,
         0.2815569447899757
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767961060/water_tumbler.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767961060/water_tumbler.sdf",
@@ -48357,7 +48357,7 @@
         0.023282168886065484,
         0.08012092756390571
       ],
-      "scale_factor": 0.9310400000000001,
+      "scale_factor": 0.93104,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/hand_lotion_bottle_1768054414/hand_lotion_bottle.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/hand_lotion_bottle_1768054414/hand_lotion_bottle.sdf",
@@ -48777,7 +48777,7 @@
         0.08241227343305944,
         0.029010191667824984
       ],
-      "scale_factor": 0.7054999999999999,
+      "scale_factor": 0.7055,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/hardcover_book_1767997325/hardcover_book.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/hardcover_book_1767997325/hardcover_book.sdf",
@@ -50910,7 +50910,7 @@
         0.08152953766286375,
         0.021768808197230104
       ],
-      "scale_factor": 0.5850000000000001,
+      "scale_factor": 0.585,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/magazine_style_book_1767952249/magazine_style_book.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/magazine_style_book_1767952249/magazine_style_book.sdf",
@@ -51050,7 +51050,7 @@
         0.08152953766286375,
         0.021768808197230104
       ],
-      "scale_factor": 0.5850000000000001,
+      "scale_factor": 0.585,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/magazine_style_book_1767952249/magazine_style_book.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/magazine_style_book_1767952249/magazine_style_book.sdf",
@@ -54704,7 +54704,7 @@
         0.018211919432207943,
         0.0806585000061989
       ],
-      "scale_factor": 0.6588400000000001,
+      "scale_factor": 0.65884,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/soap_pump_dispenser_1768054414/soap_pump_dispenser.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/soap_pump_dispenser_1768054414/soap_pump_dispenser.sdf",
@@ -55684,7 +55684,7 @@
         0.07358448921716065,
         0.07564842657764848
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.35,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_bathroom_2/generated_assets/manipuland/sdf/bath_towel_1768026449/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_bathroom_2/generated_assets/manipuland/sdf/bath_towel_1768026449/bath_towel.sdf",
@@ -55964,7 +55964,7 @@
         0.06017573668902587,
         0.1113981831731623
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767961060/cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767961060/cork_coaster.sdf",
@@ -56244,7 +56244,7 @@
         0.1989978105163639,
         0.06622459441808815
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_living_room_2/generated_assets/manipuland/sdf/hardcover_design_book_1767952249/hardcover_design_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_living_room_2/generated_assets/manipuland/sdf/hardcover_design_book_1767952249/hardcover_design_book.sdf",
@@ -56524,7 +56524,7 @@
         0.08009047409522652,
         0.030927527432329738
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.75,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_bathroom_3/generated_assets/manipuland/sdf/soap_dish_1768041054/soap_dish.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_bathroom_3/generated_assets/manipuland/sdf/soap_dish_1768041054/soap_dish.sdf",
@@ -57224,7 +57224,7 @@
         0.08009047409522652,
         0.030927527432329738
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.75,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_bathroom_3/generated_assets/manipuland/sdf/bar_soap_1768041054/bar_soap.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_bathroom_3/generated_assets/manipuland/sdf/bar_soap_1768041054/bar_soap.sdf",
@@ -57364,7 +57364,7 @@
         0.07358448921716065,
         0.07564842657764848
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_bathroom_2/generated_assets/manipuland/sdf/bath_towel_1768026752/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_bathroom_2/generated_assets/manipuland/sdf/bath_towel_1768026752/bath_towel.sdf",
@@ -57644,7 +57644,7 @@
         0.1989978105163639,
         0.06622459441808815
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.585,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_living_room_2/generated_assets/manipuland/sdf/magazine_style_book_1767952249/magazine_style_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_living_room_2/generated_assets/manipuland/sdf/magazine_style_book_1767952249/magazine_style_book.sdf",
@@ -58204,7 +58204,7 @@
         0.06017573668902587,
         0.1113981831731623
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767961060/water_tumbler.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767961060/water_tumbler.sdf",
@@ -58484,7 +58484,7 @@
         0.058840654798562264,
         0.11102582938917371
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767960481/cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767960481/cork_coaster.sdf",
@@ -60381,7 +60381,7 @@
         0.058840654798562264,
         0.11102582938917371
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767960440/water_tumbler.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767960440/water_tumbler.sdf",
@@ -60801,7 +60801,7 @@
         0.06511595928283298,
         0.11103321323944715
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767960481/cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767960481/cork_coaster.sdf",
@@ -62138,7 +62138,7 @@
         0.06511595928283298,
         0.11103321323944715
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767960440/water_tumbler.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767960440/water_tumbler.sdf",
@@ -62558,7 +62558,7 @@
         0.05303269288351298,
         0.11139085927878811
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767961060/cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767961060/cork_coaster.sdf",
@@ -63118,7 +63118,7 @@
         0.0486038008423233,
         0.07108974776653393
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_bedroom_3/generated_assets/manipuland/sdf/coffee_mug_1768034436/coffee_mug.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_bedroom_3/generated_assets/manipuland/sdf/coffee_mug_1768034436/coffee_mug.sdf",
@@ -63538,7 +63538,7 @@
         0.05303269288351298,
         0.11139085927878811
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767961060/water_tumbler.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767961060/water_tumbler.sdf",
@@ -63678,7 +63678,7 @@
         0.03999133180771386,
         0.08869843596631344
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767960481/cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767960481/cork_coaster.sdf",
@@ -63818,7 +63818,7 @@
         0.03999133180771386,
         0.08869843596631344
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767960440/water_tumbler.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767960440/water_tumbler.sdf",
@@ -63958,7 +63958,7 @@
         0.03688596019958723,
         0.08911593636229398
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767961060/cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/cork_coaster_1767961060/cork_coaster.sdf",
@@ -64098,7 +64098,7 @@
         0.03688596019958723,
         0.08911593636229398
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767961060/water_tumbler.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_209/room_dining_room/generated_assets/manipuland/sdf/water_tumbler_1767961060/water_tumbler.sdf",

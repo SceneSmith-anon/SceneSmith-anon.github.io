@@ -2931,7 +2931,7 @@
         0.1076909139713927,
         0.9621245741500561
       ],
-      "scale_factor": 0.699999999975,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/geometry/storage_cabinet_1767940011/storage_cabinet_combined.gltf",
       "sdf_path": "generated_assets/furniture/sdf/storage_cabinet_1767940011/model_double_door_4.sdf",
@@ -4493,7 +4493,7 @@
         0.015634634971618655,
         0.0804816057085991
       ],
-      "scale_factor": 0.6120000000000001,
+      "scale_factor": 0.612,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/hand_lotion_bottle_1767943447/hand_lotion_bottle.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/hand_lotion_bottle_1767943447/hand_lotion_bottle.sdf",

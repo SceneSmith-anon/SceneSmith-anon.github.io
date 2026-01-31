@@ -2014,7 +2014,7 @@
         0.26916482676420406,
         0.08195516691695998
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_045/room_living_room/generated_assets/manipuland/sdf/serving_tray_1767848336/serving_tray.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_045/room_living_room/generated_assets/manipuland/sdf/serving_tray_1767848336/serving_tray.sdf",

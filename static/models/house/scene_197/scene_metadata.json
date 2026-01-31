@@ -18193,7 +18193,7 @@
         0.2763514626173136,
         0.07149910345950516
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.87,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/cutting_board_1767948547/cutting_board.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/cutting_board_1767948547/cutting_board.sdf",
@@ -20230,7 +20230,7 @@
         0.10023486089644695,
         0.1617392544751325
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_bar/generated_assets/manipuland/sdf/jigger_1767964281/jigger.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_bar/generated_assets/manipuland/sdf/jigger_1767964281/jigger.sdf",
@@ -20510,7 +20510,7 @@
         0.10023486089644695,
         0.1617392544751325
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_bar/generated_assets/manipuland/sdf/bar_spoon_1767964281/bar_spoon.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_bar/generated_assets/manipuland/sdf/bar_spoon_1767964281/bar_spoon.sdf",
@@ -30371,7 +30371,7 @@
         0.2788973852910299,
         0.07021653932553884
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.87,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/cutting_board_1767948547/cutting_board.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/cutting_board_1767948547/cutting_board.sdf",
@@ -32828,7 +32828,7 @@
         0.17742983311001792,
         0.08869165671989232
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",
@@ -33108,7 +33108,7 @@
         0.17742983311001792,
         0.08869165671989232
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",
@@ -33528,7 +33528,7 @@
         0.17742983311001792,
         0.08869165671989232
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",
@@ -34508,7 +34508,7 @@
         0.17844501637112936,
         0.0887968312323989
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",
@@ -34928,7 +34928,7 @@
         0.17844501637112936,
         0.0887968312323989
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",
@@ -35208,7 +35208,7 @@
         0.17844501637112936,
         0.0887968312323989
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",
@@ -35768,7 +35768,7 @@
         0.14962780919704266,
         0.11570289850407206
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",
@@ -36048,7 +36048,7 @@
         0.14962780919704266,
         0.11570289850407206
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",
@@ -36468,7 +36468,7 @@
         0.14962780919704266,
         0.11570289850407206
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",
@@ -36608,7 +36608,7 @@
         0.14962780919704266,
         0.11570289850407206
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",
@@ -36748,7 +36748,7 @@
         0.14962780919704266,
         0.11570289850407206
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.83,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_197/room_kitchen/generated_assets/manipuland/sdf/half_sheet_pan_1767948473/half_sheet_pan.sdf",

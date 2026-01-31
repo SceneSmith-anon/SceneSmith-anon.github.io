@@ -2245,7 +2245,7 @@
         0.13678748905658722,
         0.1428080052137375
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.6,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/baseball_cap_1767923627/baseball_cap.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/baseball_cap_1767923627/baseball_cap.sdf",
@@ -2945,7 +2945,7 @@
         0.021279549226164818,
         0.14886175096035004
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/cologne_atomizer_spray_bottle_1767923580/cologne_atomizer_spray_bottle.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/cologne_atomizer_spray_bottle_1767923580/cologne_atomizer_spray_bottle.sdf",
@@ -4499,7 +4499,7 @@
         0.15424675331852677,
         0.10583219615628481
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -7220,7 +7220,7 @@
         0.10038064710897143,
         0.02475315740197015
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -7297,7 +7297,7 @@
         0.10038064710897143,
         0.02475315740197015
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.3125,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/comic_book_issue_1767920371/comic_book_issue.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/comic_book_issue_1767920371/comic_book_issue.sdf",
@@ -7374,7 +7374,7 @@
         0.09659834732821748,
         0.04057355074367505
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -7451,7 +7451,7 @@
         0.09659834732821748,
         0.04057355074367505
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.3125,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/comic_book_issue_1767920371/comic_book_issue.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/comic_book_issue_1767920371/comic_book_issue.sdf",
@@ -7528,7 +7528,7 @@
         0.09659834732821748,
         0.04057355074367505
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.3125,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/comic_book_issue_1767920371/comic_book_issue.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/comic_book_issue_1767920371/comic_book_issue.sdf",
@@ -7605,7 +7605,7 @@
         0.0750423366092674,
         0.0351116290168203
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -7682,7 +7682,7 @@
         0.0750423366092674,
         0.0351116290168203
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.3125,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/comic_book_issue_1767920371/comic_book_issue.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/comic_book_issue_1767920371/comic_book_issue.sdf",
@@ -7759,7 +7759,7 @@
         0.06556136567470294,
         0.06220800245569302
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -7836,7 +7836,7 @@
         0.06556136567470294,
         0.06220800245569302
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -7913,7 +7913,7 @@
         0.06556136567470294,
         0.06220800245569302
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -7990,7 +7990,7 @@
         0.06698761113486418,
         0.045928938660652396
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -8067,7 +8067,7 @@
         0.06698761113486418,
         0.045928938660652396
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -8144,7 +8144,7 @@
         0.06497278439934373,
         0.04489850734517936
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -8221,7 +8221,7 @@
         0.06497278439934373,
         0.04489850734517936
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.275,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/paperback_sci_fi_novel_1767920371/paperback_sci_fi_novel.sdf",
@@ -8718,7 +8718,7 @@
         0.06771302963716508,
         0.02639310687073726
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/x_wing_starfighter_display_model_1767925074/x_wing_starfighter_display_model.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_175/room_bedroom/generated_assets/manipuland/sdf/x_wing_starfighter_display_model_1767925074/x_wing_starfighter_display_model.sdf",

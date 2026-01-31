@@ -11822,7 +11822,7 @@
         0.16885720640420915,
         0.845570033788681
       ],
-      "scale_factor": 0.65,
+      "scale_factor": 0.4225,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/geometry/credenza_1768028548/credenza_combined.gltf",
       "sdf_path": "generated_assets/furniture/sdf/credenza_1768028548/model_sliding_door_1.sdf",
@@ -26000,7 +26000,7 @@
         0.037047374792397024,
         0.24918397299572825
       ],
-      "scale_factor": 1.49175,
+      "scale_factor": 1.4171625,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/briefcase_1768019337/briefcase.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/briefcase_1768019337/briefcase.sdf",
@@ -39797,7 +39797,7 @@
         0.13089980507214394,
         0.0416360006033627
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_207/room_office1/generated_assets/manipuland/sdf/document_tray_1768033477/document_tray.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_207/room_office1/generated_assets/manipuland/sdf/document_tray_1768033477/document_tray.sdf",
@@ -43248,7 +43248,7 @@
         0.10520962669611866,
         0.059633098655578864
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_207/room_office4/generated_assets/manipuland/sdf/letter_tray_1768058571/letter_tray.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_207/room_office4/generated_assets/manipuland/sdf/letter_tray_1768058571/letter_tray.sdf",
@@ -43388,7 +43388,7 @@
         0.10520962669611866,
         0.059633098655578864
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.6,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_207/room_office4/generated_assets/manipuland/sdf/printer_paper_stack_1768059574/printer_paper_stack.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_207/room_office4/generated_assets/manipuland/sdf/printer_paper_stack_1768059574/printer_paper_stack.sdf",
@@ -45887,7 +45887,7 @@
         0.02242423455230892,
         0.04459999900311232
       ],
-      "scale_factor": 2.23,
+      "scale_factor": 1.8955,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/tube_case_1768022035/tube_case.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/tube_case_1768022035/tube_case.sdf",

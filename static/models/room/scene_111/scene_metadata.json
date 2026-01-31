@@ -6714,7 +6714,7 @@
         0.0747609749298872,
         0.05870487819160197
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.68,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_saucer_1767875630/coffee_saucer.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_saucer_1767875630/coffee_saucer.sdf",
@@ -6854,7 +6854,7 @@
         0.0747609749298872,
         0.05870487819160197
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.68,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_cup_1767875630/coffee_cup.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_cup_1767875630/coffee_cup.sdf",
@@ -6994,7 +6994,7 @@
         0.07755380686978519,
         0.058295979393761854
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.68,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_saucer_1767875630/coffee_saucer.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_saucer_1767875630/coffee_saucer.sdf",
@@ -7134,7 +7134,7 @@
         0.07755380686978519,
         0.058295979393761854
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.68,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_cup_1767875630/coffee_cup.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_cup_1767875630/coffee_cup.sdf",
@@ -7274,7 +7274,7 @@
         0.07409753087004528,
         0.05003318853031091
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.68,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_saucer_1767875630/coffee_saucer.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_saucer_1767875630/coffee_saucer.sdf",
@@ -7414,7 +7414,7 @@
         0.07409753087004528,
         0.05003318853031091
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.68,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_cup_1767875630/coffee_cup.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_cup_1767875630/coffee_cup.sdf",
@@ -7554,7 +7554,7 @@
         0.0795900186872697,
         0.049897810805363596
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.68,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_saucer_1767875630/coffee_saucer.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_saucer_1767875630/coffee_saucer.sdf",
@@ -7694,7 +7694,7 @@
         0.0795900186872697,
         0.049897810805363596
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.68,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_cup_1767875630/coffee_cup.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_111/room_cafe/generated_assets/manipuland/sdf/coffee_cup_1767875630/coffee_cup.sdf",

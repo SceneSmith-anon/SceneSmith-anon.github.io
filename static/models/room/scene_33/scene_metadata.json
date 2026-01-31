@@ -3395,7 +3395,7 @@
         0.07278363333702664,
         0.08420475053924648
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_033/room_living_room/generated_assets/manipuland/sdf/cork_coaster_1767843915/cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_033/room_living_room/generated_assets/manipuland/sdf/cork_coaster_1767843915/cork_coaster.sdf",
@@ -3535,7 +3535,7 @@
         0.07278363333702664,
         0.08420475053924648
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.697,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_033/room_living_room/generated_assets/manipuland/sdf/coffee_mug_1767843208/coffee_mug.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_033/room_living_room/generated_assets/manipuland/sdf/coffee_mug_1767843208/coffee_mug.sdf",
@@ -3675,7 +3675,7 @@
         0.0646381843687942,
         0.07157399126601427
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_033/room_living_room/generated_assets/manipuland/sdf/cork_coaster_1767843915/cork_coaster.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_033/room_living_room/generated_assets/manipuland/sdf/cork_coaster_1767843915/cork_coaster.sdf",
@@ -3815,7 +3815,7 @@
         0.0646381843687942,
         0.07157399126601427
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.697,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_033/room_living_room/generated_assets/manipuland/sdf/coffee_mug_1767843208/coffee_mug.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_033/room_living_room/generated_assets/manipuland/sdf/coffee_mug_1767843208/coffee_mug.sdf",
@@ -3955,7 +3955,7 @@
         0.12454281321268257,
         0.07110297815259714
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.68,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_033/room_living_room/generated_assets/manipuland/sdf/coffee_table_book_1767842715/coffee_table_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_033/room_living_room/generated_assets/manipuland/sdf/coffee_table_book_1767842715/coffee_table_book.sdf",

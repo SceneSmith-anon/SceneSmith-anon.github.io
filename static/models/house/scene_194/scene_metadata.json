@@ -4845,7 +4845,7 @@
         0.19288750290870665,
         1.7327542304992676
       ],
-      "scale_factor": 0.6,
+      "scale_factor": 0.7272,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/shelving_tower_1767944187/shelving_tower.gltf",
       "sdf_path": "generated_assets/furniture/sdf/shelving_tower_1767944187/shelving_tower.sdf",
@@ -5198,7 +5198,7 @@
         0.04763163626194,
         2.0030579566955566
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/slatted_screen_1767944374/slatted_screen.gltf",
       "sdf_path": "generated_assets/furniture/sdf/slatted_screen_1767944374/slatted_screen.sdf",
@@ -11181,7 +11181,7 @@
         0.05874251381386686,
         0.04605254716291285
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.68,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_194/room_bathroom/generated_assets/manipuland/sdf/bar_soap_1767965136/bar_soap.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_194/room_bathroom/generated_assets/manipuland/sdf/bar_soap_1767965136/bar_soap.sdf",

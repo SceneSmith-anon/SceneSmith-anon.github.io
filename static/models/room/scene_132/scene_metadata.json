@@ -16488,7 +16488,7 @@
         0.10189878025379784,
         0.04350019738321165
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.6,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_132/room_lab/generated_assets/manipuland/sdf/a5_notebook_1767893645/a5_notebook.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_132/room_lab/generated_assets/manipuland/sdf/a5_notebook_1767893645/a5_notebook.sdf",

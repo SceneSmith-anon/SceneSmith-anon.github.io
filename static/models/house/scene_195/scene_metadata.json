@@ -8586,7 +8586,7 @@
         0.0500662500164375,
         0.13281690408015745
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.6,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/toothbrush_tumbler_1767961748/toothbrush_tumbler.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/toothbrush_tumbler_1767961748/toothbrush_tumbler.sdf",
@@ -8866,7 +8866,7 @@
         0.0500662500164375,
         0.13281690408015745
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.6,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/toothbrush_1_1767961748/toothbrush_1.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/toothbrush_1_1767961748/toothbrush_1.sdf",
@@ -9006,7 +9006,7 @@
         0.0500662500164375,
         0.13281690408015745
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.6,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/toothbrush_1_1767961748/toothbrush_1.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/toothbrush_1_1767961748/toothbrush_1.sdf",
@@ -9426,7 +9426,7 @@
         0.05830656139871526,
         0.3552599788856755
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 2.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bedroom/generated_assets/manipuland/sdf/eucalyptus_stems_bundle_1767950402/eucalyptus_stems_bundle.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bedroom/generated_assets/manipuland/sdf/eucalyptus_stems_bundle_1767950402/eucalyptus_stems_bundle.sdf",
@@ -9566,7 +9566,7 @@
         0.07796523496229335,
         0.08764449035311
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.4,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/washcloth_1767963202/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/washcloth_1767963202/washcloth.sdf",
@@ -9706,7 +9706,7 @@
         0.07796523496229335,
         0.08764449035311
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.4,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/washcloth_1767963202/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/washcloth_1767963202/washcloth.sdf",
@@ -9846,7 +9846,7 @@
         0.07796523496229335,
         0.08764449035311
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.4,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/washcloth_1767963202/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/washcloth_1767963202/washcloth.sdf",
@@ -9986,7 +9986,7 @@
         0.07796523496229335,
         0.08764449035311
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.4,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/washcloth_1767963202/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/washcloth_1767963202/washcloth.sdf",
@@ -11995,7 +11995,7 @@
         0.0743803105600469,
         0.020195360439950072
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_hallway/generated_assets/manipuland/sdf/off_white_envelope_1767934847/off_white_envelope.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_hallway/generated_assets/manipuland/sdf/off_white_envelope_1767934847/off_white_envelope.sdf",
@@ -12415,7 +12415,7 @@
         0.0743803105600469,
         0.020195360439950072
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_hallway/generated_assets/manipuland/sdf/off_white_envelope_1767934847/off_white_envelope.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_hallway/generated_assets/manipuland/sdf/off_white_envelope_1767934847/off_white_envelope.sdf",
@@ -12555,7 +12555,7 @@
         0.0743803105600469,
         0.020195360439950072
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_hallway/generated_assets/manipuland/sdf/off_white_envelope_1767934847/off_white_envelope.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_hallway/generated_assets/manipuland/sdf/off_white_envelope_1767934847/off_white_envelope.sdf",
@@ -12695,7 +12695,7 @@
         0.12982767349936264,
         0.21589743599239675
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/bath_towel_1767962455/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/bath_towel_1767962455/bath_towel.sdf",
@@ -12835,7 +12835,7 @@
         0.12982767349936264,
         0.21589743599239675
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/bath_towel_1767962455/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/bath_towel_1767962455/bath_towel.sdf",
@@ -12975,7 +12975,7 @@
         0.12982767349936264,
         0.21589743599239675
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/bath_towel_1767962455/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_195/room_bathroom/generated_assets/manipuland/sdf/bath_towel_1767962455/bath_towel.sdf",

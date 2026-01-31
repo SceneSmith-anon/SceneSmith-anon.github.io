@@ -24398,7 +24398,7 @@
         0.29820903180836883,
         0.739358854264249
       ],
-      "scale_factor": 1.0199999999592,
+      "scale_factor": 0.867,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/desk_1768144729/desk.gltf",
       "sdf_path": "generated_assets/furniture/sdf/desk_1768144729/desk.sdf",
@@ -53163,7 +53163,7 @@
         0.06664805182016154,
         0.118499197742303
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.27,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_office/generated_assets/manipuland/sdf/slim_black_ballpoint_pen_1768044573/slim_black_ballpoint_pen.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_office/generated_assets/manipuland/sdf/slim_black_ballpoint_pen_1768044573/slim_black_ballpoint_pen.sdf",
@@ -53723,7 +53723,7 @@
         0.06664805182016154,
         0.118499197742303
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.27,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_office/generated_assets/manipuland/sdf/slim_black_ballpoint_pen_1768044573/slim_black_ballpoint_pen.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_office/generated_assets/manipuland/sdf/slim_black_ballpoint_pen_1768044573/slim_black_ballpoint_pen.sdf",
@@ -66757,7 +66757,7 @@
         0.01982961678877473,
         0.08047656811773778
       ],
-      "scale_factor": 0.6900000000000001,
+      "scale_factor": 0.69,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/hand_soap_pump_bottle_1768056756/hand_soap_pump_bottle.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/hand_soap_pump_bottle_1768056756/hand_soap_pump_bottle.sdf",
@@ -79515,7 +79515,7 @@
         0.10971745341240546,
         0.06951036592001958
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_bathroom_2/generated_assets/manipuland/sdf/hand_towel_1768057273/hand_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_bathroom_2/generated_assets/manipuland/sdf/hand_towel_1768057273/hand_towel.sdf",
@@ -80642,7 +80642,7 @@
         0.10971745341240546,
         0.06951036592001958
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_bathroom_2/generated_assets/manipuland/sdf/hand_towel_1768057273/hand_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_bathroom_2/generated_assets/manipuland/sdf/hand_towel_1768057273/hand_towel.sdf",
@@ -84100,7 +84100,7 @@
         0.08737220873290985,
         0.017719473108268602
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.809952,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_reception/generated_assets/manipuland/sdf/document_folder_1768036677/document_folder.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_reception/generated_assets/manipuland/sdf/document_folder_1768036677/document_folder.sdf",
@@ -84597,7 +84597,7 @@
         0.08737220873290985,
         0.017719473108268602
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.809952,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_reception/generated_assets/manipuland/sdf/document_folder_1768036677/document_folder.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_reception/generated_assets/manipuland/sdf/document_folder_1768036677/document_folder.sdf",
@@ -86151,7 +86151,7 @@
         0.09758940787151826,
         0.08446358041856014
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.45,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_storage_room/generated_assets/manipuland/sdf/microfiber_cleaning_cloth_1_1768095628/microfiber_cleaning_cloth_1.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-10/00-54-17/scene_208/room_storage_room/generated_assets/manipuland/sdf/microfiber_cleaning_cloth_1_1768095628/microfiber_cleaning_cloth_1.sdf",

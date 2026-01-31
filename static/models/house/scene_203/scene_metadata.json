@@ -9220,7 +9220,7 @@
         0.22499999403953552,
         0.5122667551040649
       ],
-      "scale_factor": 0.9999999999999999,
+      "scale_factor": 1.0,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/side_table_1767928687/side_table.gltf",
       "sdf_path": "generated_assets/furniture/sdf/side_table_1767928687/side_table.sdf",
@@ -17494,7 +17494,7 @@
         0.09667402742998177,
         0.15350273591927066
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.sdf",
@@ -17711,7 +17711,7 @@
         0.09667402742998177,
         0.15350273591927066
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.sdf",
@@ -17851,7 +17851,7 @@
         0.09667402742998177,
         0.15350273591927066
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.sdf",
@@ -18551,7 +18551,7 @@
         0.13517851160177174,
         0.14358877135036008
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.sdf",
@@ -18691,7 +18691,7 @@
         0.13517851160177174,
         0.14358877135036008
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.sdf",
@@ -18831,7 +18831,7 @@
         0.1242580873351613,
         0.14314468390908197
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.sdf",
@@ -18971,7 +18971,7 @@
         0.1242580873351613,
         0.14314468390908197
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.sdf",
@@ -19111,7 +19111,7 @@
         0.13215785372487998,
         0.3031587591598699
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.sdf",
@@ -19251,7 +19251,7 @@
         0.13215785372487998,
         0.3031587591598699
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.sdf",
@@ -19391,7 +19391,7 @@
         0.13215785372487998,
         0.3031587591598699
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/hand_towel_1767973587/hand_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/hand_towel_1767973587/hand_towel.sdf",
@@ -19531,7 +19531,7 @@
         0.10204054903952287,
         0.1538576281953128
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.sdf",
@@ -19671,7 +19671,7 @@
         0.10204054903952287,
         0.1538576281953128
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.sdf",
@@ -19811,7 +19811,7 @@
         0.10204054903952287,
         0.1538576281953128
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.sdf",
@@ -19951,7 +19951,7 @@
         0.11814210963610106,
         0.14322322785978403
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.sdf",
@@ -20091,7 +20091,7 @@
         0.11814210963610106,
         0.14322322785978403
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.sdf",
@@ -20231,7 +20231,7 @@
         0.13441002706074956,
         0.1645712447659461
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.55,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/bath_towel_1767973587/bath_towel.sdf",
@@ -20511,7 +20511,7 @@
         0.13441002706074956,
         0.1645712447659461
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_203/room_storage/generated_assets/manipuland/sdf/washcloth_1767973461/washcloth.sdf",

@@ -17987,7 +17987,7 @@
         0.04075003083359907,
         0.0820963444234597
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.665,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_198/room_bathroom/generated_assets/manipuland/sdf/childrens_toothbrush_1767991097/childrens_toothbrush.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_198/room_bathroom/generated_assets/manipuland/sdf/childrens_toothbrush_1767991097/childrens_toothbrush.sdf",
@@ -23741,7 +23741,7 @@
         0.14204120233988915,
         0.036246272414737435
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_198/room_kids_room/generated_assets/manipuland/sdf/math_workbook_1767980409/math_workbook.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_198/room_kids_room/generated_assets/manipuland/sdf/math_workbook_1767980409/math_workbook.sdf",
@@ -24021,7 +24021,7 @@
         0.14204120233988915,
         0.036246272414737435
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_198/room_kids_room/generated_assets/manipuland/sdf/kids_reading_workbook_1767980409/kids_reading_workbook.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_198/room_kids_room/generated_assets/manipuland/sdf/kids_reading_workbook_1767980409/kids_reading_workbook.sdf",
@@ -24301,7 +24301,7 @@
         0.13669086941621722,
         0.036509444043731576
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_198/room_kids_room/generated_assets/manipuland/sdf/math_workbook_1767980409/math_workbook.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_198/room_kids_room/generated_assets/manipuland/sdf/math_workbook_1767980409/math_workbook.sdf",
@@ -24441,7 +24441,7 @@
         0.13669086941621722,
         0.036509444043731576
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_198/room_kids_room/generated_assets/manipuland/sdf/kids_reading_workbook_1767980409/kids_reading_workbook.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_198/room_kids_room/generated_assets/manipuland/sdf/kids_reading_workbook_1767980409/kids_reading_workbook.sdf",
@@ -25561,7 +25561,7 @@
         0.18033404892496296,
         0.10261702041030062
       ],
-      "scale_factor": 1.2923322625,
+      "scale_factor": 1.29233226,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/throw_blanket_1767948518/throw_blanket.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/throw_blanket_1767948518/throw_blanket.sdf",

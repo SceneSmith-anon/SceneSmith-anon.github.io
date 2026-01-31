@@ -5089,7 +5089,7 @@
         0.12908544961781226,
         0.24382738833170053
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 2.2,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_108/room_lobby/generated_assets/manipuland/sdf/eucalyptus_stem_1767874502/eucalyptus_stem.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_108/room_lobby/generated_assets/manipuland/sdf/eucalyptus_stem_1767874502/eucalyptus_stem.sdf",
@@ -5229,7 +5229,7 @@
         0.12908544961781226,
         0.24382738833170053
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 2.2,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_108/room_lobby/generated_assets/manipuland/sdf/eucalyptus_stem_1767874502/eucalyptus_stem.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_108/room_lobby/generated_assets/manipuland/sdf/eucalyptus_stem_1767874502/eucalyptus_stem.sdf",
@@ -5509,7 +5509,7 @@
         0.08443873196254947,
         0.2787335252707067
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 2.2,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_108/room_lobby/generated_assets/manipuland/sdf/eucalyptus_stem_1767874502/eucalyptus_stem.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_108/room_lobby/generated_assets/manipuland/sdf/eucalyptus_stem_1767874502/eucalyptus_stem.sdf",
@@ -5789,7 +5789,7 @@
         0.18185976252946046,
         0.04562487060396697
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_108/room_lobby/generated_assets/manipuland/sdf/hardcover_art_book_1767874235/hardcover_art_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_108/room_lobby/generated_assets/manipuland/sdf/hardcover_art_book_1767874235/hardcover_art_book.sdf",
@@ -5929,7 +5929,7 @@
         0.18185976252946046,
         0.04562487060396697
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.7,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_108/room_lobby/generated_assets/manipuland/sdf/contemporary_magazine_1767874235/contemporary_magazine.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_108/room_lobby/generated_assets/manipuland/sdf/contemporary_magazine_1767874235/contemporary_magazine.sdf",

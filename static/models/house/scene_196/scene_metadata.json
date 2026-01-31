@@ -5015,7 +5015,7 @@
         0.27039613291621206,
         1.907505540907383
       ],
-      "scale_factor": 0.9604999999999999,
+      "scale_factor": 0.9605,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/drawer_tower_cabinet_1767948443/drawer_tower_cabinet.gltf",
       "sdf_path": "generated_assets/furniture/sdf/drawer_tower_cabinet_1767948443/drawer_tower_cabinet.sdf",
@@ -18494,7 +18494,7 @@
         0.16066444938316027,
         0.16409734269596354
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_walk_in_closet/generated_assets/manipuland/sdf/bath_towel_1767960655/bath_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_walk_in_closet/generated_assets/manipuland/sdf/bath_towel_1767960655/bath_towel.sdf",
@@ -18634,7 +18634,7 @@
         0.18473610088605952,
         0.07080255681867076
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.75,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_living_room/generated_assets/manipuland/sdf/coffee_table_book_1767933677/coffee_table_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_living_room/generated_assets/manipuland/sdf/coffee_table_book_1767933677/coffee_table_book.sdf",
@@ -18914,7 +18914,7 @@
         0.18473610088605952,
         0.07080255681867076
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.75,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_living_room/generated_assets/manipuland/sdf/design_book_1767933677/design_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_living_room/generated_assets/manipuland/sdf/design_book_1767933677/design_book.sdf",
@@ -19054,7 +19054,7 @@
         0.16066444938316027,
         0.16409734269596354
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_walk_in_closet/generated_assets/manipuland/sdf/linen_towel_1767960655/linen_towel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_walk_in_closet/generated_assets/manipuland/sdf/linen_towel_1767960655/linen_towel.sdf",
@@ -19474,7 +19474,7 @@
         0.1362311009357584,
         0.19121921985519919
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_walk_in_closet/generated_assets/manipuland/sdf/knit_sweater_1_1767962341/knit_sweater_1.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_walk_in_closet/generated_assets/manipuland/sdf/knit_sweater_1_1767962341/knit_sweater_1.sdf",
@@ -19754,7 +19754,7 @@
         0.1362311009357584,
         0.19121921985519919
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_walk_in_closet/generated_assets/manipuland/sdf/knit_sweater_1_1767962341/knit_sweater_1.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_walk_in_closet/generated_assets/manipuland/sdf/knit_sweater_1_1767962341/knit_sweater_1.sdf",
@@ -20174,7 +20174,7 @@
         0.1362311009357584,
         0.19121921985519919
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.8,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_walk_in_closet/generated_assets/manipuland/sdf/knit_sweater_1_1767962341/knit_sweater_1.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_196/room_walk_in_closet/generated_assets/manipuland/sdf/knit_sweater_1_1767962341/knit_sweater_1.sdf",
@@ -24128,7 +24128,7 @@
         0.017277503004297614,
         0.24944730982184407
       ],
-      "scale_factor": 0.7224999999999999,
+      "scale_factor": 0.7225,
       "immutable": false,
       "geometry_path": "generated_assets/wall_mounted/sdf/line_art_print_1767957917/line_art_print.gltf",
       "sdf_path": "generated_assets/wall_mounted/sdf/line_art_print_1767957917/line_art_print.sdf",
@@ -24268,7 +24268,7 @@
         0.017277503004297614,
         0.24944730982184407
       ],
-      "scale_factor": 0.7224999999999999,
+      "scale_factor": 0.7225,
       "immutable": false,
       "geometry_path": "generated_assets/wall_mounted/sdf/line_art_print_1767957917/line_art_print.gltf",
       "sdf_path": "generated_assets/wall_mounted/sdf/line_art_print_1767957917/line_art_print.sdf",

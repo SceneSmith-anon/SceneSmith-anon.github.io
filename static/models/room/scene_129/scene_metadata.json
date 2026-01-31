@@ -5793,7 +5793,7 @@
         0.2268832340836525,
         0.14250000566244125
       ],
-      "scale_factor": 0.95,
+      "scale_factor": 0.9215,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/rolled_yoga_mat_1767885211/rolled_yoga_mat.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/rolled_yoga_mat_1767885211/rolled_yoga_mat.sdf",

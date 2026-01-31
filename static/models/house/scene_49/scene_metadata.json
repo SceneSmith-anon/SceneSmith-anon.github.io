@@ -9505,7 +9505,7 @@
         0.14583118627472125,
         0.09737486856382194
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 1.2,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/23-57-03/scene_049/room_living_room/generated_assets/manipuland/sdf/paper_napkin_1_1767922933/paper_napkin_1.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/23-57-03/scene_049/room_living_room/generated_assets/manipuland/sdf/paper_napkin_1_1767922933/paper_napkin_1.sdf",
@@ -13145,7 +13145,7 @@
         0.08096668053418399,
         0.023227286608889702
       ],
-      "scale_factor": 0.8450000000000001,
+      "scale_factor": 0.845,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/hardcover_book_1767922166/hardcover_book.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/hardcover_book_1767922166/hardcover_book.sdf",
@@ -14868,7 +14868,7 @@
         0.07176466766224743,
         0.016924502998417745
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/23-57-03/scene_049/room_living_room/generated_assets/manipuland/sdf/wireless_charging_pad_1767924248/wireless_charging_pad.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/23-57-03/scene_049/room_living_room/generated_assets/manipuland/sdf/wireless_charging_pad_1767924248/wireless_charging_pad.sdf",
@@ -14945,7 +14945,7 @@
         0.07176466766224743,
         0.016924502998417745
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/23-57-03/scene_049/room_living_room/generated_assets/manipuland/sdf/smartphone_1767924356/smartphone.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/23-57-03/scene_049/room_living_room/generated_assets/manipuland/sdf/smartphone_1767924356/smartphone.sdf",
@@ -15022,7 +15022,7 @@
         0.11012528724250448,
         0.06115415373961719
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/23-57-03/scene_049/room_living_room/generated_assets/manipuland/sdf/hardcover_book_1767925628/hardcover_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/23-57-03/scene_049/room_living_room/generated_assets/manipuland/sdf/hardcover_book_1767925628/hardcover_book.sdf",
@@ -15162,7 +15162,7 @@
         0.11012528724250448,
         0.06115415373961719
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.85,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/23-57-03/scene_049/room_living_room/generated_assets/manipuland/sdf/hardcover_book_1767925669/hardcover_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/23-57-03/scene_049/room_living_room/generated_assets/manipuland/sdf/hardcover_book_1767925669/hardcover_book.sdf",

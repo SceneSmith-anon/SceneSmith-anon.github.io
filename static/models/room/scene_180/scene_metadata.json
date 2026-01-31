@@ -3605,7 +3605,7 @@
         0.13367984633080177,
         0.05012358974603481
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.92,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_180/room_office/generated_assets/manipuland/sdf/document_folder_1767915698/document_folder.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_180/room_office/generated_assets/manipuland/sdf/document_folder_1767915698/document_folder.sdf",
@@ -3885,7 +3885,7 @@
         0.13285880051560328,
         0.056737148893002354
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.93,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_180/room_office/generated_assets/manipuland/sdf/file_folder_1767917794/file_folder.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_180/room_office/generated_assets/manipuland/sdf/file_folder_1767917794/file_folder.sdf",
@@ -4025,7 +4025,7 @@
         0.13285880051560328,
         0.056737148893002354
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.92,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_180/room_office/generated_assets/manipuland/sdf/document_folder_1767915698/document_folder.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_180/room_office/generated_assets/manipuland/sdf/document_folder_1767915698/document_folder.sdf",

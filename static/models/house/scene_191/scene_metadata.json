@@ -8390,7 +8390,7 @@
         0.10533016919413313,
         0.019583364252836855
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.286,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_191/room_living_room/generated_assets/manipuland/sdf/tv_remote_control_1767937246/tv_remote_control.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_191/room_living_room/generated_assets/manipuland/sdf/tv_remote_control_1767937246/tv_remote_control.sdf",

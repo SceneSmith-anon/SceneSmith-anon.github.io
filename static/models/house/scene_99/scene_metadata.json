@@ -3705,7 +3705,7 @@
         0.25312499329447746,
         0.42486800998449326
       ],
-      "scale_factor": 1.125,
+      "scale_factor": 1.40625,
       "immutable": false,
       "geometry_path": "generated_assets/furniture/sdf/laundry_basket_1767937445/laundry_basket.gltf",
       "sdf_path": "generated_assets/furniture/sdf/laundry_basket_1767937445/laundry_basket.sdf",
@@ -14154,7 +14154,7 @@
         0.11813119493338697,
         0.03212501630399345
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_hallway/generated_assets/manipuland/sdf/white_paper_envelope_1767932420/white_paper_envelope.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_hallway/generated_assets/manipuland/sdf/white_paper_envelope_1767932420/white_paper_envelope.sdf",
@@ -14511,7 +14511,7 @@
         0.11813119493338697,
         0.03212501630399345
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_hallway/generated_assets/manipuland/sdf/white_paper_envelope_1767932420/white_paper_envelope.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_hallway/generated_assets/manipuland/sdf/white_paper_envelope_1767932420/white_paper_envelope.sdf",
@@ -14651,7 +14651,7 @@
         0.11813119493338697,
         0.03212501630399345
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.88,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_hallway/generated_assets/manipuland/sdf/white_paper_envelope_1767932420/white_paper_envelope.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_hallway/generated_assets/manipuland/sdf/white_paper_envelope_1767932420/white_paper_envelope.sdf",
@@ -14931,7 +14931,7 @@
         0.12398364419681762,
         0.05995761607568362
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.sdf",
@@ -15148,7 +15148,7 @@
         0.12398364419681762,
         0.05995761607568362
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.sdf",
@@ -15225,7 +15225,7 @@
         0.12398364419681762,
         0.05995761607568362
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.sdf",
@@ -15302,7 +15302,7 @@
         0.10335168375887349,
         0.04689385697295256
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.sdf",
@@ -15379,7 +15379,7 @@
         0.10335168375887349,
         0.04689385697295256
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.sdf",
@@ -15456,7 +15456,7 @@
         0.12173167996926226,
         0.07313829525159912
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.sdf",
@@ -15533,7 +15533,7 @@
         0.12173167996926226,
         0.07313829525159912
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.sdf",
@@ -15610,7 +15610,7 @@
         0.12173167996926226,
         0.07313829525159912
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.sdf",
@@ -15687,7 +15687,7 @@
         0.12173167996926226,
         0.07313829525159912
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-09/03-01-24/scene_099/room_living_room/generated_assets/manipuland/sdf/paperback_book_1767962647/paperback_book.sdf",
@@ -16884,7 +16884,7 @@
         0.08412257224731444,
         0.03872884350070953
       ],
-      "scale_factor": 0.5346431999999999,
+      "scale_factor": 0.42771456,
       "immutable": false,
       "geometry_path": "generated_assets/manipuland/sdf/wool_scarf_1767934704/wool_scarf.gltf",
       "sdf_path": "generated_assets/manipuland/sdf/wool_scarf_1767934704/wool_scarf.sdf",

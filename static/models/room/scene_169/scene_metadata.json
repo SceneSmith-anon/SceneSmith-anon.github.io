@@ -4191,7 +4191,7 @@
         0.1387638556749693,
         0.21096070040946002
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.72,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/art_book_1767907683/art_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/art_book_1767907683/art_book.sdf",
@@ -4331,7 +4331,7 @@
         0.1387638556749693,
         0.21096070040946002
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.75,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/paperback_novel_1767907637/paperback_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/paperback_novel_1767907637/paperback_novel.sdf",
@@ -4471,7 +4471,7 @@
         0.1387638556749693,
         0.21096070040946002
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.75,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/paperback_novel_1767907637/paperback_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/paperback_novel_1767907637/paperback_novel.sdf",
@@ -4611,7 +4611,7 @@
         0.1387638556749693,
         0.21096070040946002
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767907910/hardcover_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767907910/hardcover_book.sdf",
@@ -4751,7 +4751,7 @@
         0.1387638556749693,
         0.21096070040946002
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.75,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/paperback_novel_1767907637/paperback_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/paperback_novel_1767907637/paperback_novel.sdf",
@@ -4891,7 +4891,7 @@
         0.1387638556749693,
         0.21096070040946002
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767907910/hardcover_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767907910/hardcover_book.sdf",
@@ -5031,7 +5031,7 @@
         0.1387638556749693,
         0.21096070040946002
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.75,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/paperback_novel_1767907637/paperback_novel.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/paperback_novel_1767907637/paperback_novel.sdf",
@@ -5171,7 +5171,7 @@
         0.1387638556749693,
         0.21096070040946002
       ],
-      "scale_factor": 1.0,
+      "scale_factor": 0.9,
       "immutable": false,
       "geometry_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767907910/hardcover_book.gltf",
       "sdf_path": "/home/ubuntu/scene-agent/outputs/2026-01-08/00-11-29/scene_169/room_bedroom/generated_assets/manipuland/sdf/hardcover_book_1767907910/hardcover_book.sdf",
