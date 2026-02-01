@@ -204,14 +204,18 @@ document.addEventListener('DOMContentLoaded', function() {
       margin: 0 auto;
       max-width: 90%;
     }
+    #buildup-carousel .results-item {
+      text-align: center;
+    }
   `;
   document.head.appendChild(style);
 });
 
 // Add function to enable video restart on click
 document.addEventListener("DOMContentLoaded", function() {
-  // Add clickable restart functionality to all videos
+  // Add clickable restart functionality to all videos (except buildup carousel)
   document.querySelectorAll('.video-wrapper').forEach(function(wrapper) {
+    if (wrapper.closest('#buildup-carousel')) return;
     const video = wrapper.querySelector('video');
     if (video) {
       // Add controls to all videos
@@ -247,5 +251,90 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     }
+  });
+});
+
+// Buildup carousel: autoplay videos when fully visible, pause when not
+document.addEventListener('DOMContentLoaded', function() {
+  const buildupCarousel = document.getElementById('buildup-carousel');
+  if (!buildupCarousel) return;
+
+  let buildupInView = false;
+
+  function getActiveSlideVideo() {
+    const activeSlide = buildupCarousel.querySelector('.slick-current .video-wrapper video.lazy-video');
+    return activeSlide || null;
+  }
+
+  function playActiveVideo() {
+    const video = getActiveSlideVideo();
+    if (!video) return;
+    // Load source if needed
+    if (video.dataset.src && !video.querySelector('source')) {
+      loadVideoForSlide(video.closest('.results-item'));
+    }
+    video.play().catch(function() {});
+  }
+
+  function pauseActiveVideo() {
+    const video = getActiveSlideVideo();
+    if (video) video.pause();
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        buildupInView = entry.isIntersecting;
+        if (buildupInView) {
+          playActiveVideo();
+        } else {
+          pauseActiveVideo();
+        }
+      });
+    }, { threshold: 1.0 });
+    observer.observe(buildupCarousel);
+  }
+
+  // On slide change, load and play new slide's video if in view
+  $(buildupCarousel).on('afterChange', function() {
+    const activeSlide = buildupCarousel.querySelector('.slick-current .results-item') ||
+                        buildupCarousel.querySelector('.slick-current');
+    if (activeSlide) {
+      loadVideoForSlide(activeSlide);
+    }
+    if (buildupInView) {
+      setTimeout(playActiveVideo, 50);
+    }
+  });
+
+  // Pause and reset previous slide's video on beforeChange
+  $(buildupCarousel).on('beforeChange', function() {
+    const video = getActiveSlideVideo();
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+  });
+
+  // When a buildup video ends, auto-advance to the next slide
+  function attachEndedHandler(video) {
+    if (!video || video._buildupEndedAttached) return;
+    video._buildupEndedAttached = true;
+    video.addEventListener('ended', function() {
+      if (!buildupInView) return;
+      // Brief pause so viewer registers the video finished, then advance
+      setTimeout(function() {
+        $(buildupCarousel).slick('slickNext');
+      }, 500);
+    });
+  }
+
+  // Attach to all buildup videos (including Slick clones) once carousel is ready
+  buildupCarousel.querySelectorAll('video.lazy-video').forEach(attachEndedHandler);
+
+  // Also attach after each slide change in case of late-loaded videos
+  $(buildupCarousel).on('afterChange', function() {
+    const video = getActiveSlideVideo();
+    attachEndedHandler(video);
   });
 });

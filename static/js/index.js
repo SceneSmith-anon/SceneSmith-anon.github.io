@@ -47,6 +47,16 @@ $(document).ready(function () {
 
   // Load the initial slide
   loadCurrentSlide(0); // Ensure we load slide 0 immediately after initialization
+
+  // Initialize buildup carousel
+  $('#buildup-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: false,
+    initialSlide: 0,
+  });
 });
 
 // Function to load the source for the current slide

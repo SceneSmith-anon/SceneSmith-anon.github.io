@@ -205,7 +205,6 @@
     <div class="container is-max-widescreen">
       <div class="columns is-centered">
         <div class="column is-10">
-          <h2 class="title is-3 has-text-centered">Example Generated Scene</h2>
           <div class="content has-text-centered">
             <img src="./static/images/teaser.webp" alt="SceneSmith teaser showing a generated community center scene" style="width: 100%;">
           </div>
@@ -220,6 +219,71 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scene Buildup Section -->
+  <section class="section" id="buildup-section">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Scene Construction</h2>
+      <div id="buildup-carousel" class="carousel">
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A dining room with a long table set for 12 people&hellip;&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/scene_buildup/158.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A bookstore with&hellip;&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/scene_buildup/174.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A cafe with a bar counter, small round tables, and a chalkboard menu&hellip;&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/scene_buildup/111.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A robotics lab with workbenches, robotic arms, and a 3D printer&hellip;&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/scene_buildup/132.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A yoga studio with yoga mats, a wall mirror, and meditation cushions&hellip;&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/scene_buildup/129.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content has-text-justified mt-4">
+        <p>
+          SceneSmith constructs scenes through five successive stages, each implemented as an interaction among three VLM agents: a <strong>designer</strong> that proposes object placements, a <strong>critic</strong> that evaluates realism and coherence, and an <strong>orchestrator</strong> that mediates between the two.
+          The stages are
+          (1)&nbsp;<strong>Layout</strong>, generating the architectural layout;
+          (2)&nbsp;<strong>Furniture</strong>, placing furniture objects;
+          (3)&nbsp;<strong>Wall-mounted objects</strong>, adding items such as shelves, mirrors, and art;
+          (4)&nbsp;<strong>Ceiling-mounted objects</strong>, adding items such as lights and fans;
+          (5)&nbsp;<strong>Manipulands</strong>, populating surfaces with small manipulable objects.
+        </p>
       </div>
     </div>
   </section>
