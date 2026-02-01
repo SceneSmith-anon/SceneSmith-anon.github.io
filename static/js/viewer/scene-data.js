@@ -3,9 +3,8 @@
  * Only includes scenes with available GLB files
  */
 
-// Featured room scene IDs from paper's qualitative comparison figure
-// Dining room (158) first, then remaining featured scenes
-const FEATURED_ROOM_IDS = [158, 114, 164, 178];
+// Featured room scene IDs displayed first in order
+const FEATURED_ROOM_IDS = [114, 164, 178, 132, 158, 33, 51, 134];
 
 // Featured house scene IDs
 // Massage parlor (190) first, then community center (208)

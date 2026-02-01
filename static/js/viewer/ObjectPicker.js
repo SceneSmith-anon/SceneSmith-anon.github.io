@@ -85,8 +85,23 @@ export class ObjectPicker {
     if (this.knownObjectIds) {
       let current = object;
       while (current) {
-        if (current.name && this.knownObjectIds.has(current.name)) {
-          return current;
+        if (current.name) {
+          if (this.knownObjectIds.has(current.name)) {
+            return current;
+          }
+          // Also check with Blender's .001/.002/etc. suffix stripped
+          // Three.js GLTFLoader removes dots from names, so .001 becomes 001
+          const stripped = current.name.replace(/\.\d+$/, '');
+          if (stripped !== current.name && this.knownObjectIds.has(stripped)) {
+            return current;
+          }
+          // Handle dot-stripped names (e.g. toilet_0.001 -> toilet_0001)
+          if (current.name.length > 3) {
+            const dotless = current.name.slice(0, -3);
+            if (this.knownObjectIds.has(dotless)) {
+              return current;
+            }
+          }
         }
         if (!current.parent || current.parent.type === 'Scene') {
           break;

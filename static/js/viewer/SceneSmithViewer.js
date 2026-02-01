@@ -244,9 +244,18 @@ export class SceneSmithViewer {
     const fullPath = this.options.basePath + path;
 
     try {
-      const gltf = await this.cache.get(sceneId, () =>
-        this.loadGLTF(fullPath, loadId, this._abortController.signal)
-      );
+      // Load GLB and metadata in parallel
+      const [gltf] = await Promise.all([
+        this.cache.get(sceneId, () =>
+          this.loadGLTF(fullPath, loadId, this._abortController.signal)
+        ),
+        this.metadataManager.load(path).then(() => {
+          const objectIds = this.metadataManager.getObjectIds();
+          if (objectIds.size > 0) {
+            this.picker.setKnownObjectIds(objectIds);
+          }
+        })
+      ]);
 
       // If another loadScene() was called while we were loading, discard this result
       if (loadId !== this._loadId) {
@@ -273,13 +282,6 @@ export class SceneSmithViewer {
       });
 
       this.scene.add(this.loadedScene);
-
-      // Load metadata (non-blocking for rendering, but awaited for selection)
-      await this.metadataManager.load(path);
-      const objectIds = this.metadataManager.getObjectIds();
-      if (objectIds.size > 0) {
-        this.picker.setKnownObjectIds(objectIds);
-      }
 
       // Frame the scene
       this.resetCamera();

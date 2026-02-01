@@ -26,7 +26,7 @@ export class MetadataManager {
     try {
       const response = await fetch(metadataUrl);
       if (!response.ok) {
-        console.warn(`Metadata not found: ${metadataUrl}`);
+        console.warn(`Metadata not found: ${metadataUrl}`, response.status);
         return null;
       }
       this.metadata = await response.json();
@@ -58,7 +58,21 @@ export class MetadataManager {
    * @returns {Object|null}
    */
   getObjectMetadata(objectId) {
-    return this.objectMap.get(objectId) || null;
+    const meta = this.objectMap.get(objectId);
+    if (meta) return meta;
+
+    // Fallback: strip Blender's .001/.002/etc. duplicate suffix and retry
+    const stripped = objectId.replace(/\.\d+$/, '');
+    if (stripped !== objectId) {
+      return this.objectMap.get(stripped) || null;
+    }
+
+    // Handle dot-stripped names (Three.js removes dots: toilet_0.001 -> toilet_0001)
+    if (objectId.length > 3) {
+      return this.objectMap.get(objectId.slice(0, -3)) || null;
+    }
+
+    return null;
   }
 
   /**
@@ -76,7 +90,26 @@ export class MetadataManager {
    */
   getCollisionPath(objectId) {
     if (!this.currentScenePath) return null;
-    return this.basePath + this.currentScenePath + '/collision/' + objectId + '.glb';
+    // Resolve to metadata object_id (handles Three.js dot-stripped names like bathtub_0001 -> bathtub_0)
+    const resolvedId = this._resolveObjectId(objectId);
+    return this.basePath + this.currentScenePath + '/collision/' + resolvedId + '.glb';
+  }
+
+  /**
+   * Resolve a Three.js object name to the metadata object_id
+   * Handles Blender duplicate suffixes (.001 -> 001) stripped by Three.js
+   * @param {string} objectId
+   * @returns {string} - The resolved metadata object_id, or the original if no match
+   */
+  _resolveObjectId(objectId) {
+    if (this.objectMap.has(objectId)) return objectId;
+    const stripped = objectId.replace(/\.\d+$/, '');
+    if (stripped !== objectId && this.objectMap.has(stripped)) return stripped;
+    if (objectId.length > 3) {
+      const dotless = objectId.slice(0, -3);
+      if (this.objectMap.has(dotless)) return dotless;
+    }
+    return objectId;
   }
 
   /**
