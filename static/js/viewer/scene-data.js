@@ -6,15 +6,14 @@
 // Featured room scene IDs displayed first in order
 const FEATURED_ROOM_IDS = [114, 164, 178, 132, 158, 33, 51, 134];
 
-// Featured house scene IDs
-// Massage parlor (190) first, then community center (208)
-const FEATURED_HOUSE_IDS = [190, 208];
+// Featured house scene IDs displayed first in order
+const FEATURED_HOUSE_IDS = [190, 208, 196, 201, 98];
 
 // Available room scene IDs (48 total)
 const ROOM_IDS = [4, 7, 13, 19, 20, 32, 33, 36, 41, 45, 51, 61, 68, 72, 77, 81, 85, 88, 100, 102, 103, 108, 109, 111, 112, 114, 118, 119, 121, 129, 132, 134, 139, 142, 144, 157, 158, 164, 167, 169, 174, 175, 176, 177, 178, 180, 183, 184];
 
 // Available house scene IDs (31 total)
-const HOUSE_IDS = [47, 48, 49, 97, 98, 99, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209];
+const HOUSE_IDS = [47, 49, 98, 99, 185, 186, 187, 188, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209];
 
 // All prompts from CSV indexed by ID
 const PROMPTS = {
@@ -169,12 +168,11 @@ function buildHouseScenes() {
     }
   }
 
-  // Get remaining house IDs and shuffle
+  // Get remaining house IDs (keep original order)
   const remainingIds = HOUSE_IDS.filter(id => !FEATURED_HOUSE_IDS.includes(id));
-  const shuffled = seededShuffle(remainingIds, 42);
 
   // Add remaining scenes
-  for (const id of shuffled) {
+  for (const id of remainingIds) {
     scenes.push({
       id,
       prompt: PROMPTS[id],
