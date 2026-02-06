@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener("DOMContentLoaded", function() {
   // Add clickable restart functionality to all videos (except buildup carousel)
   document.querySelectorAll('.video-wrapper').forEach(function(wrapper) {
-    if (wrapper.closest('#buildup-carousel') || wrapper.closest('#robot-eval-carousel')) return;
+    if (wrapper.closest('#buildup-carousel') || wrapper.closest('#robot-eval-carousel') || wrapper.closest('#earthquake-section')) return;
     const video = wrapper.querySelector('video');
     if (video) {
       // Add controls to all videos
@@ -428,4 +428,34 @@ document.addEventListener('DOMContentLoaded', function() {
     const video = getRobotEvalActiveVideo();
     attachRobotEvalEndedHandler(video);
   });
+});
+
+// Earthquake video: autoplay when visible, pause when not
+document.addEventListener('DOMContentLoaded', function() {
+  const earthquakeVideo = document.getElementById('earthquake-video');
+  if (!earthquakeVideo) return;
+
+  function loadAndPlay() {
+    if (earthquakeVideo.dataset.src && !earthquakeVideo.querySelector('source')) {
+      var source = document.createElement('source');
+      source.src = earthquakeVideo.dataset.src;
+      source.type = 'video/mp4';
+      earthquakeVideo.appendChild(source);
+      earthquakeVideo.load();
+    }
+    earthquakeVideo.play().catch(function() {});
+  }
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          loadAndPlay();
+        } else {
+          earthquakeVideo.pause();
+        }
+      });
+    }, { threshold: 0.25 });
+    observer.observe(earthquakeVideo);
+  }
 });
