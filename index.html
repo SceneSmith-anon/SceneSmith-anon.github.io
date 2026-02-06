@@ -548,6 +548,175 @@
     </div>
   </section>
 
+  <!-- Robot Manipulation Evaluation Section -->
+  <section class="section" id="robot-eval-section">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Application: Automatic Robot Policy Evaluation</h2>
+
+      <!-- Pipeline figure -->
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="content has-text-centered">
+            <img src="./static/images/robot_eval.webp"
+                 alt="Robot manipulation evaluation pipeline diagram"
+                 style="width: 100%;">
+          </div>
+          <div class="content has-text-justified" style="margin-top: 1em;">
+            <p>
+              <strong>Robot manipulation evaluation pipeline.</strong> Given a manipulation task
+              (e.g., &ldquo;Pick a fruit from the fruit bowl and place it on a plate&rdquo;), an LLM
+              generates diverse scene prompts specifying scene constraints implied by the task. SceneSmith
+              generates scenes from each prompt. A robot policy attempts the task in simulation, and an
+              evaluation agent verifies success using simulator state queries and visual observations. This enables
+              scalable policy evaluation without manual environment or success predicate design.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Robot rollout video carousel -->
+      <div id="robot-eval-carousel" class="carousel">
+        <!-- Slide 1: Overview animation (NO controls) -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&nbsp;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline
+              data-src="./static/videos/robot_eval/Robot_Eval_Animation.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 2: coke can 214 -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick a coke can from the shelf and place it on the table&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/room_coke_can_scene_214_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 3: water bottle 000 -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Bring the water bottle from the kitchen and place it on the coffee table in the living room&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/house_water_bottle_scene_000_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 4: cup 301 -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick a cup from the floor and place it in the sink&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/room_cup_scene_301_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 5: fruit bowl 016 -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick a fruit from the fruit bowl and place it on a plate on the dining table&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/room_fruit_bowl_scene_016_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 6: coke can 216 -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick a coke can from the shelf and place it on the table&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/room_coke_can_scene_216_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 7: water bottle 008 -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Bring the water bottle from the kitchen and place it on the coffee table in the living room&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/house_water_bottle_scene_008_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 8: cup 305 -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick a cup from the floor and place it in the sink&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/room_cup_scene_305_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 9: fruit bowl 019 -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick a fruit from the fruit bowl and place it on a plate on the dining table&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/room_fruit_bowl_scene_019_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 10: coke can 220 -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick a coke can from the shelf and place it on the table&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/room_coke_can_scene_220_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 11: fruit bowl 013 (trimmed) -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick a fruit from the fruit bowl and place it on a plate on the dining table&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/room_fruit_bowl_scene_013_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+        <!-- Slide 12: coke can 202 -->
+        <div class="results-item">
+          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick a coke can from the shelf and place it on the table&rdquo;</p>
+          <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video" muted playsinline controls
+              data-src="./static/videos/robot_eval/room_coke_can_scene_202_good.mp4"
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content has-text-justified mt-4">
+        <p>
+          The videos above show rollouts of a model-based pick-and-place policy
+          executing across SceneSmith-generated scenes. For each task, an LLM
+          produces diverse scene prompts and SceneSmith generates 25 unique
+          environments, yielding 100 evaluation scenes spanning four
+          manipulation tasks. A vision-language model parses each task into
+          structured goal components, and the policy plans collision-free
+          motions via RRT-Connect. These rollouts serve as inputs to our
+          <strong>automatic evaluation system</strong>: an agentic evaluator
+          that verifies task success through simulator state queries and visual
+          observations&mdash;without hand-crafted success predicates. The
+          evaluator achieves 99.7% agreement with human labels, confirming
+          that SceneSmith-generated scenes enable scalable, fully automatic
+          policy evaluation.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- BibTeX section hidden for anonymous submission -->
 
   <!-- Fullscreen Viewer Modal -->

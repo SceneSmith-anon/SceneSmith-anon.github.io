@@ -207,6 +207,9 @@ document.addEventListener('DOMContentLoaded', function() {
     #buildup-carousel .results-item {
       text-align: center;
     }
+    #robot-eval-carousel .results-item {
+      text-align: center;
+    }
   `;
   document.head.appendChild(style);
 });
@@ -215,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener("DOMContentLoaded", function() {
   // Add clickable restart functionality to all videos (except buildup carousel)
   document.querySelectorAll('.video-wrapper').forEach(function(wrapper) {
-    if (wrapper.closest('#buildup-carousel')) return;
+    if (wrapper.closest('#buildup-carousel') || wrapper.closest('#robot-eval-carousel')) return;
     const video = wrapper.querySelector('video');
     if (video) {
       // Add controls to all videos
@@ -336,5 +339,93 @@ document.addEventListener('DOMContentLoaded', function() {
   $(buildupCarousel).on('afterChange', function() {
     const video = getActiveSlideVideo();
     attachEndedHandler(video);
+  });
+});
+
+// Robot eval carousel: autoplay videos when any part is visible, pause when not
+document.addEventListener('DOMContentLoaded', function() {
+  const robotEvalCarousel = document.getElementById('robot-eval-carousel');
+  if (!robotEvalCarousel) return;
+
+  let robotEvalInView = false;
+  let robotEvalFullyInView = false;
+
+  function isFirstSlide() {
+    return $(robotEvalCarousel).slick('slickCurrentSlide') === 0;
+  }
+
+  function shouldPlay() {
+    return isFirstSlide() ? robotEvalFullyInView : robotEvalInView;
+  }
+
+  function getRobotEvalActiveVideo() {
+    return robotEvalCarousel.querySelector('.slick-current .video-wrapper video.lazy-video') || null;
+  }
+
+  function playRobotEvalActiveVideo() {
+    if (!shouldPlay()) return;
+    const video = getRobotEvalActiveVideo();
+    if (!video) return;
+    if (video.dataset.src && !video.querySelector('source')) {
+      loadVideoForSlide(video.closest('.results-item'));
+    }
+    video.play().catch(function() {});
+  }
+
+  function pauseRobotEvalActiveVideo() {
+    const video = getRobotEvalActiveVideo();
+    if (video) video.pause();
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        robotEvalInView = entry.isIntersecting;
+        robotEvalFullyInView = entry.intersectionRatio >= 0.95;
+        if (shouldPlay()) {
+          playRobotEvalActiveVideo();
+        } else if (!robotEvalInView) {
+          pauseRobotEvalActiveVideo();
+        }
+      });
+    }, { threshold: [0, 0.95] });
+    observer.observe(robotEvalCarousel);
+  }
+
+  $(robotEvalCarousel).on('afterChange', function() {
+    const activeSlide = robotEvalCarousel.querySelector('.slick-current .results-item') ||
+                        robotEvalCarousel.querySelector('.slick-current');
+    if (activeSlide) {
+      loadVideoForSlide(activeSlide);
+    }
+    if (shouldPlay()) {
+      setTimeout(playRobotEvalActiveVideo, 50);
+    }
+  });
+
+  $(robotEvalCarousel).on('beforeChange', function() {
+    const video = getRobotEvalActiveVideo();
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+  });
+
+  function attachRobotEvalEndedHandler(video) {
+    if (!video || video._robotEvalEndedAttached) return;
+    video._robotEvalEndedAttached = true;
+    video.addEventListener('ended', function() {
+      if (!robotEvalInView) return;
+      setTimeout(function() {
+        $(robotEvalCarousel).slick('slickNext');
+      }, 500);
+    });
+  }
+
+  robotEvalCarousel.querySelectorAll('video.lazy-video').forEach(attachRobotEvalEndedHandler);
+
+  $(robotEvalCarousel).on('afterChange', function() {
+    const video = getRobotEvalActiveVideo();
+    attachRobotEvalEndedHandler(video);
   });
 });

@@ -57,6 +57,16 @@ $(document).ready(function () {
     autoplay: false,
     initialSlide: 0,
   });
+
+  // Initialize robot evaluation carousel
+  $('#robot-eval-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: false,
+    initialSlide: 0,
+  });
 });
 
 // Function to load the source for the current slide
