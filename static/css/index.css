@@ -420,6 +420,7 @@ html {
 
 .slick-prev:before,
 .slick-next:before {
+  font-family: 'slick' !important;
   color: var(--primary) !important;
   font-size: 28px;
 }
@@ -460,6 +461,7 @@ html {
 
 .results-carousel .slick-prev:before,
 .results-carousel .slick-next:before {
+  font-family: 'slick' !important;
   color: var(--primary);
   font-size: 28px;
   opacity: 1;
@@ -493,11 +495,13 @@ html {
 
 /* Slick dots styling */
 .slick-dots li button:before {
+  font-family: 'slick' !important;
   color: var(--accent) !important;
   font-size: 10px;
 }
 
 .slick-dots li.slick-active button:before {
+  font-family: 'slick' !important;
   color: var(--primary) !important;
 }
 
