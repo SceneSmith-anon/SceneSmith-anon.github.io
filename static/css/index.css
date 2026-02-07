@@ -112,7 +112,7 @@ html {
   position: relative;
   background: linear-gradient(135deg, var(--surface-dark) 0%, var(--primary) 40%, #1a3a5c 100%);
   overflow: hidden;
-  padding: 7rem 0 4rem;
+  padding: 7rem 0 5rem;
   min-height: auto;
 }
 
