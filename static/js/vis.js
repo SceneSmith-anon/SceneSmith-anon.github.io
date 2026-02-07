@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener("DOMContentLoaded", function() {
   // Add clickable restart functionality to all videos (except buildup carousel)
   document.querySelectorAll('.video-wrapper').forEach(function(wrapper) {
-    if (wrapper.closest('#buildup-carousel') || wrapper.closest('#robot-eval-carousel') || wrapper.closest('#earthquake-section')) return;
+    if (wrapper.closest('#buildup-carousel') || wrapper.closest('#robot-eval-carousel') || wrapper.closest('#earthquake-section') || wrapper.closest('#text-to-scene-section')) return;
     const video = wrapper.querySelector('video');
     if (video) {
       // Add controls to all videos
@@ -457,5 +457,35 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }, { threshold: 0.25 });
     observer.observe(earthquakeVideo);
+  }
+});
+
+// Text-to-scene video: autoplay when fully visible, pause when not
+document.addEventListener('DOMContentLoaded', function() {
+  const textToSceneVideo = document.getElementById('text-to-scene-video');
+  if (!textToSceneVideo) return;
+
+  function loadAndPlay() {
+    if (textToSceneVideo.dataset.src && !textToSceneVideo.querySelector('source')) {
+      var source = document.createElement('source');
+      source.src = textToSceneVideo.dataset.src;
+      source.type = 'video/mp4';
+      textToSceneVideo.appendChild(source);
+      textToSceneVideo.load();
+    }
+    textToSceneVideo.play().catch(function() {});
+  }
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          loadAndPlay();
+        } else {
+          textToSceneVideo.pause();
+        }
+      });
+    }, { threshold: 0.9 });
+    observer.observe(textToSceneVideo);
   }
 });
