@@ -85,7 +85,7 @@
   <nav class="site-nav" id="site-nav">
     <div class="nav-inner">
       <a href="#" class="nav-brand">
-        <img src="./static/images/symbol.svg" alt=""> SceneSmith
+        <img src="./static/images/symbol_no_text.svg" alt=""> SceneSmith
       </a>
       <div class="nav-links">
         <a href="#buildup-section">Construction</a>
@@ -95,58 +95,60 @@
         <a href="#house-scenes-section">House Scenes</a>
         <a href="#robot-eval-section">Robot Eval</a>
         <a href="#earthquake-section">Simulation</a>
+        <a href="#bibtex-section">Citation</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Background Video -->
   <section class="hero-section" id="hero">
-    <div class="hero-grid"></div>
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-orb hero-orb-3"></div>
-    <div class="container is-max-desktop" style="position: relative; z-index: 2;">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">
-            <img src="./static/images/symbol.svg" alt="SceneSmith symbol" style="height: 1em; vertical-align: middle; margin-right: 0.1em;"><span class="accent-text">SceneSmith:</span><br>Agentic Generation of Simulation-Ready Indoor Scenes
-          </h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              Anonymous Authors
-            </span>
-          </div>
-
+    <!-- Background video -->
+    <div class="hero-video-bg">
+      <video muted autoplay loop playsinline poster="./static/videos/teaser_poster.jpg">
+        <source src="./static/videos/teaser_bg.mp4" type="video/mp4">
+      </video>
+    </div>
+    <!-- Dark overlay gradient -->
+    <div class="hero-overlay"></div>
+    <!-- Content -->
+    <div class="hero-content-wrapper">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded has-tooltip-top"
-                  data-tooltip="Hidden for anonymous submission">
-                  <span class="icon"><i class="ai ai-arxiv"></i></span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded has-tooltip-top"
-                  data-tooltip="Hidden for anonymous submission">
-                  <span class="icon"><i class="fab fa-youtube"></i></span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded has-tooltip-top"
-                  data-tooltip="Hidden for anonymous submission">
-                  <span class="icon"><i class="fab fa-github"></i></span>
-                  <span>Code</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded has-tooltip-top"
-                  data-tooltip="Hidden for anonymous submission">
-                  <span class="icon"><i class="fas fa-database"></i></span>
-                  <span>Scene Dataset</span>
-                </a>
-              </span>
+            <h1 class="title is-1 publication-title">
+              <img src="./static/images/symbol.svg" alt="SceneSmith symbol" style="height: 1em; vertical-align: middle; margin-right: 0.1em; position: relative; top: -0.08em;"><span class="accent-text">SceneSmith:</span><br>Agentic Generation of Simulation-Ready Indoor Scenes
+            </h1>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded has-tooltip-top"
+                    data-tooltip="Hidden for anonymous submission">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded has-tooltip-top"
+                    data-tooltip="Hidden for anonymous submission">
+                    <span class="icon"><i class="fab fa-youtube"></i></span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded has-tooltip-top"
+                    data-tooltip="Hidden for anonymous submission">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded has-tooltip-top"
+                    data-tooltip="Hidden for anonymous submission">
+                    <span class="icon"><i class="fas fa-database"></i></span>
+                    <span>Scene Dataset</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -200,20 +202,15 @@
   </section> -->
 
 
-  <!-- Example Scene Section -->
-  <section class="section teaser-section" style="padding-top: 4rem;">
+  <!-- Micro-Abstract -->
+  <section class="section" id="about-section" style="padding-top: 3.5rem; padding-bottom: 2.5rem;">
     <div class="container is-max-widescreen">
-      <div class="content has-text-centered fade-in">
-        <img src="./static/images/teaser.webp" alt="SceneSmith teaser showing a generated community center scene" style="width: 100%;">
-      </div>
-      <div class="content has-text-justified fade-in">
-        <p>
-          <strong>Fully automated text-to-scene generation.</strong> This entire community center was generated by
-          SceneSmith without any human intervention, from a single 151-word text prompt. Beyond explicitly specified elements, SceneSmith places additional
-          objects from inferred contextual information, such as ping pong paddles and balls placed near a ping pong
-          table. Objects are generated on-demand, are fully separable (non-composite), and include estimated
-          physical properties, enabling direct interaction within a simulation. The resulting scenes are immediately
-          usable in arbitrary physics simulators (robots added for demonstration).
+      <div class="info-callout fade-in" style="max-width: 900px; margin: 0 auto; border-left-width: 5px;">
+        <p style="font-size: 1.05rem; line-height: 1.7;">
+          <strong>SceneSmith</strong> is a hierarchical agentic framework that generates simulation-ready indoor environments
+          from natural language prompts. VLM agents collaborate across successive stages to construct richly furnished scenes&mdash;from
+          single rooms to entire houses. The framework tightly integrates text-to-3D asset generation, articulated object retrieval,
+          and physical property estimation to produce scenes directly usable in physics simulators for robotics research.
         </p>
       </div>
     </div>
@@ -922,7 +919,50 @@
     </div>
   </section>
 
-  <!-- BibTeX section hidden for anonymous submission -->
+  <!-- Teaser Figure (from paper) -->
+  <section class="section teaser-section" id="teaser-figure-section">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered fade-in">System Overview</h2>
+      <div class="content has-text-centered fade-in">
+        <img src="./static/images/teaser.webp" alt="SceneSmith teaser showing a generated community center scene" style="width: 100%;">
+      </div>
+      <div class="content has-text-justified fade-in">
+        <p>
+          <strong>Fully automated text-to-scene generation.</strong> This entire community center was generated by
+          SceneSmith without any human intervention, from a single 151-word text prompt. Beyond explicitly specified elements, SceneSmith places additional
+          objects from inferred contextual information, such as ping pong paddles and balls placed near a ping pong
+          table. Objects are generated on-demand, are fully separable (non-composite), and include estimated
+          physical properties, enabling direct interaction within a simulation. The resulting scenes are immediately
+          usable in arbitrary physics simulators (robots added for demonstration).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authors -->
+  <section class="section section-alt" id="authors-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-3 fade-in">Authors</h2>
+      <p class="is-size-5 fade-in" style="color: var(--text-secondary);">
+        Anonymous Authors<br>
+        <span class="is-size-6" style="color: var(--text-light);">Hidden for anonymous submission</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- BibTeX -->
+  <section class="section" id="bibtex-section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered fade-in">Citation</h2>
+      <div class="fade-in">
+        <pre style="background: var(--surface-dark); color: rgba(255,255,255,0.8); border-radius: var(--radius); padding: 1.5rem; font-size: 0.85rem; overflow-x: auto;"><code>@article{anonymous2026scenesmith,
+  title     = {SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes},
+  author    = {Anonymous},
+  year      = {2026}
+}</code></pre>
+      </div>
+    </div>
+  </section>
 
   <!-- Fullscreen Viewer Modal -->
   <div class="modal" id="viewer-fullscreen-modal">
@@ -993,7 +1033,7 @@
       <div class="columns">
         <div class="column is-6">
           <div class="footer-brand">
-            <img src="./static/images/symbol.svg" alt=""> SceneSmith
+            <img src="./static/images/symbol_no_text.svg" alt=""> SceneSmith
           </div>
           <p class="footer-tagline">
             Agentic generation of simulation-ready indoor scenes from natural language prompts.
@@ -1011,7 +1051,7 @@
       <hr class="footer-divider">
       <div class="footer-bottom">
         <p>Template adapted from <a href="https://github.com/nerfies/nerfies.github.io" style="color: rgba(255,255,255,0.5);">Nerfies</a></p>
-        <p>Anonymous submission &mdash; 2025</p>
+        <p>Anonymous submission &mdash; 2026</p>
       </div>
     </div>
   </footer>

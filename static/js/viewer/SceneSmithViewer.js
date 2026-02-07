@@ -104,6 +104,8 @@ export class SceneSmithViewer {
     this.controls.minDistance = 0.1;
     this.controls.maxDistance = 500;
     this.controls.zoomSpeed = 1.2;
+    this.controls.autoRotate = true;
+    this.controls.autoRotateSpeed = 1.0;
 
     // Add lights
     this.setupLights();
@@ -132,6 +134,11 @@ export class SceneSmithViewer {
       this._pointerDownPos = { x: e.clientX, y: e.clientY };
       this._isPointerDown = true;
       this._wasDragged = false;
+      // Stop auto-rotation and hide drag hint on first user interaction
+      if (this.controls.autoRotate) {
+        this.controls.autoRotate = false;
+        this._hideDragHint();
+      }
     });
     this.renderer.domElement.addEventListener('pointermove', (e) => {
       if (this._isPointerDown && !this._wasDragged && this._pointerDownPos) {
@@ -151,6 +158,14 @@ export class SceneSmithViewer {
       }
     });
 
+    // Stop auto-rotation on scroll/zoom too
+    this.renderer.domElement.addEventListener('wheel', () => {
+      if (this.controls.autoRotate) {
+        this.controls.autoRotate = false;
+        this._hideDragHint();
+      }
+    }, { passive: true });
+
     // Event listeners
     this.renderer.domElement.addEventListener('click', this.handleClick);
     window.addEventListener('resize', this.handleResize);
@@ -161,6 +176,12 @@ export class SceneSmithViewer {
     this.resizeObserver.observe(this.container);
 
     this.isInitialized = true;
+
+    // Create drag hint overlay
+    this._dragHint = document.createElement('div');
+    this._dragHint.className = 'drag-hint';
+    this._dragHint.innerHTML = '<span class="drag-hint-icon">&#9995;</span> Drag to rotate';
+    this.container.appendChild(this._dragHint);
 
     // Start animation loop
     this.animate();
@@ -285,6 +306,10 @@ export class SceneSmithViewer {
 
       // Frame the scene
       this.resetCamera();
+
+      // Re-enable auto-rotate for new scene and show drag hint
+      this.controls.autoRotate = true;
+      this._showDragHint();
 
       if (this.options.onProgress) {
         this.options.onProgress(100);
@@ -662,6 +687,21 @@ export class SceneSmithViewer {
         this.clearSelection();
         break;
     }
+  }
+
+  _showDragHint() {
+    if (!this._dragHint) return;
+    this._dragHint.classList.remove('is-fading');
+    // Small delay so the scene is visible first
+    setTimeout(() => {
+      if (this._dragHint) this._dragHint.classList.add('is-visible');
+    }, 800);
+  }
+
+  _hideDragHint() {
+    if (!this._dragHint || !this._dragHint.classList.contains('is-visible')) return;
+    this._dragHint.classList.add('is-fading');
+    this._dragHint.classList.remove('is-visible');
   }
 
   /**
