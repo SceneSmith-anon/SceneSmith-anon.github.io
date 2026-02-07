@@ -210,6 +210,9 @@ document.addEventListener('DOMContentLoaded', function() {
     #robot-eval-carousel .results-item {
       text-align: center;
     }
+    #rby1-carousel .results-item {
+      text-align: center;
+    }
   `;
   document.head.appendChild(style);
 });
@@ -218,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener("DOMContentLoaded", function() {
   // Add clickable restart functionality to all videos (except buildup carousel)
   document.querySelectorAll('.video-wrapper').forEach(function(wrapper) {
-    if (wrapper.closest('#buildup-carousel') || wrapper.closest('#robot-eval-carousel') || wrapper.closest('#earthquake-section') || wrapper.closest('#text-to-scene-section')) return;
+    if (wrapper.closest('#buildup-carousel') || wrapper.closest('#robot-eval-carousel') || wrapper.closest('#rby1-carousel') || wrapper.closest('#earthquake-section') || wrapper.closest('#text-to-scene-section')) return;
     const video = wrapper.querySelector('video');
     if (video) {
       // Add controls to all videos
@@ -339,6 +342,84 @@ document.addEventListener('DOMContentLoaded', function() {
   $(buildupCarousel).on('afterChange', function() {
     const video = getActiveSlideVideo();
     attachEndedHandler(video);
+  });
+});
+
+// RBY1 teleoperation carousel: autoplay videos when visible, pause when not
+document.addEventListener('DOMContentLoaded', function() {
+  const rby1Carousel = document.getElementById('rby1-carousel');
+  if (!rby1Carousel) return;
+
+  let rby1InView = false;
+
+  function getRby1ActiveVideo() {
+    return rby1Carousel.querySelector('.slick-current .video-wrapper video.lazy-video') || null;
+  }
+
+  function playRby1ActiveVideo() {
+    if (!rby1InView) return;
+    const video = getRby1ActiveVideo();
+    if (!video) return;
+    if (video.dataset.src && !video.querySelector('source')) {
+      loadVideoForSlide(video.closest('.results-item'));
+    }
+    video.play().catch(function() {});
+  }
+
+  function pauseRby1ActiveVideo() {
+    const video = getRby1ActiveVideo();
+    if (video) video.pause();
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        rby1InView = entry.isIntersecting;
+        if (rby1InView) {
+          playRby1ActiveVideo();
+        } else {
+          pauseRby1ActiveVideo();
+        }
+      });
+    }, { threshold: [0] });
+    observer.observe(rby1Carousel);
+  }
+
+  $(rby1Carousel).on('afterChange', function() {
+    const activeSlide = rby1Carousel.querySelector('.slick-current .results-item') ||
+                        rby1Carousel.querySelector('.slick-current');
+    if (activeSlide) {
+      loadVideoForSlide(activeSlide);
+    }
+    if (rby1InView) {
+      setTimeout(playRby1ActiveVideo, 50);
+    }
+  });
+
+  $(rby1Carousel).on('beforeChange', function() {
+    const video = getRby1ActiveVideo();
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+  });
+
+  function attachRby1EndedHandler(video) {
+    if (!video || video._rby1EndedAttached) return;
+    video._rby1EndedAttached = true;
+    video.addEventListener('ended', function() {
+      if (!rby1InView) return;
+      setTimeout(function() {
+        $(rby1Carousel).slick('slickNext');
+      }, 500);
+    });
+  }
+
+  rby1Carousel.querySelectorAll('video.lazy-video').forEach(attachRby1EndedHandler);
+
+  $(rby1Carousel).on('afterChange', function() {
+    const video = getRby1ActiveVideo();
+    attachRby1EndedHandler(video);
   });
 });
 

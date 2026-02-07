@@ -58,6 +58,16 @@ $(document).ready(function () {
     initialSlide: 0,
   });
 
+  // Initialize RBY1 teleoperation carousel
+  $('#rby1-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: false,
+    initialSlide: 0,
+  });
+
   // Initialize robot evaluation carousel
   $('#robot-eval-carousel').slick({
     dots: true,

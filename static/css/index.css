@@ -347,6 +347,28 @@ body {
   max-width: 100%;
 }
 
+/* RBY1 teleoperation video view labels */
+.video-view-label {
+  position: absolute;
+  top: 2%;
+  z-index: 3;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.video-view-label-left {
+  left: 10px;
+}
+
+.video-view-label-right {
+  left: calc(50% + 10px);
+}
+
 .warning-button {
   margin: 2rem 0;
 }
