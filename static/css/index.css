@@ -591,21 +591,21 @@ html {
 }
 
 .agent-role-designer {
-  background: rgba(0, 180, 216, 0.1);
-  color: #0891b2;
-  border: 1px solid rgba(0, 180, 216, 0.2);
+  background: rgba(104, 192, 164, 0.12);
+  color: #4a9e80;
+  border: 1px solid rgba(104, 192, 164, 0.3);
 }
 
 .agent-role-critic {
-  background: rgba(139, 92, 246, 0.1);
-  color: #7c3aed;
-  border: 1px solid rgba(139, 92, 246, 0.2);
+  background: rgba(140, 160, 204, 0.12);
+  color: #6b80b0;
+  border: 1px solid rgba(140, 160, 204, 0.3);
 }
 
 .agent-role-orchestrator {
-  background: rgba(247, 127, 0, 0.1);
-  color: #d97706;
-  border: 1px solid rgba(247, 127, 0, 0.2);
+  background: rgba(249, 168, 126, 0.12);
+  color: #d4845a;
+  border: 1px solid rgba(249, 168, 126, 0.3);
 }
 
 /* ---- Info callout ---- */
