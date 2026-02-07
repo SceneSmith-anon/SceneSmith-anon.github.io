@@ -145,6 +145,52 @@ html {
   pointer-events: none;
 }
 
+/* Floating orbs — hidden on desktop (video plays), shown on mobile */
+.hero-orb {
+  display: none;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.3;
+  z-index: 3;
+  pointer-events: none;
+  animation: orbFloat 8s ease-in-out infinite alternate;
+}
+
+.hero-orb-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--accent);
+  top: -80px;
+  right: 10%;
+}
+
+.hero-orb-2 {
+  width: 200px;
+  height: 200px;
+  background: var(--accent-warm);
+  bottom: -40px;
+  left: 5%;
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.hero-orb-3 {
+  width: 150px;
+  height: 150px;
+  background: #7c3aed;
+  top: 30%;
+  left: 15%;
+  animation-delay: -5s;
+  animation-duration: 12s;
+  opacity: 0.15;
+}
+
+@keyframes orbFloat {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(30px, -20px) scale(1.1); }
+}
+
 /* Content positioned at bottom of hero */
 .hero-content-wrapper {
   position: absolute;
@@ -925,12 +971,58 @@ footer.footer .footer-bottom p {
 
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
+  /* Hide video, show animated gradient hero on mobile */
+  .hero-video-bg {
+    display: none;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(135deg, var(--surface-dark) 0%, var(--primary) 40%, #1a3a5c 100%);
+  }
+
+  .hero-orb {
+    display: block;
+  }
+
+  .hero-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0, 180, 216, 0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 100%, rgba(247, 127, 0, 0.08) 0%, transparent 50%);
+  }
+
+  .hero-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0, 180, 216, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 180, 216, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 0%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 0%, transparent 70%);
+    animation: gridDrift 20s linear infinite;
+  }
+
+  @keyframes gridDrift {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(60px, 60px); }
+  }
+
   .hero-section {
-    min-height: 500px;
+    height: 60vh;
+    min-height: 400px;
   }
 
   .hero-content-wrapper {
-    padding-bottom: 2rem;
+    position: absolute;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-bottom: 0;
   }
 
   .hero-section .publication-title {
