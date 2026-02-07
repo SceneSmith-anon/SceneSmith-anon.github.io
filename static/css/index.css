@@ -427,36 +427,32 @@ html {
 
 .slick-prev,
 .slick-next {
-  opacity: 1;
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: var(--shadow-md);
+  opacity: 0.6;
+  width: 30px;
+  height: 30px;
   z-index: 100;
-  transition: all var(--transition);
+  transition: opacity var(--transition);
 }
 
 .slick-prev:hover,
 .slick-next:hover {
-  background: #fff;
-  box-shadow: var(--shadow-lg);
+  opacity: 1;
 }
 
 .results-carousel .slick-prev,
 .results-carousel .slick-next {
   z-index: 100;
-  opacity: 1;
-  width: 40px;
-  height: 40px;
+  opacity: 0.6;
+  width: 30px;
+  height: 30px;
 }
 
 .results-carousel .slick-prev {
-  left: -45px;
+  left: -35px;
 }
 
 .results-carousel .slick-next {
-  right: -45px;
+  right: -35px;
 }
 
 .results-carousel .slick-prev:before,
