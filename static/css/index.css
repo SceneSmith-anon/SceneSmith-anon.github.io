@@ -484,7 +484,7 @@ html {
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible;
   padding: 0;
   font-size: 0;
 }
@@ -512,6 +512,66 @@ html {
 .slick-dots li.slick-active button:before {
   font-family: 'slick' !important;
   color: var(--primary) !important;
+}
+
+/* ---- Prompt Tooltip (Scene Construction carousel) ---- */
+.prompt-tooltip-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  cursor: default;
+}
+
+.prompt-hover-hint {
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-style: normal;
+  opacity: 0.7;
+  transition: opacity var(--transition);
+}
+
+.prompt-tooltip-wrap:hover .prompt-hover-hint {
+  opacity: 1;
+}
+
+.prompt-tooltip-box {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  width: max(80%, 320px);
+  max-width: 540px;
+  padding: 0.75rem 1rem;
+  background: var(--primary);
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.5;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  z-index: 200;
+  pointer-events: none;
+}
+
+.prompt-tooltip-box::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-bottom-color: var(--primary);
+}
+
+.prompt-tooltip-wrap:hover .prompt-tooltip-box {
+  display: block;
+}
+
+/* Allow tooltip to overflow carousel vertically while keeping horizontal clip */
+#buildup-carousel .slick-list {
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 /* ---- Teaser Image ---- */

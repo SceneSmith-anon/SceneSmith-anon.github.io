@@ -51,6 +51,17 @@
   display: none;
 }
 
+/* Indeterminate progress bar animation (no Content-Length header) */
+.progress-wrapper progress:indeterminate {
+  animation: progress-indeterminate 1.5s ease infinite;
+}
+
+@keyframes progress-indeterminate {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
 .progress-wrapper .progress-text {
   text-align: center;
   margin-bottom: 0.5rem;

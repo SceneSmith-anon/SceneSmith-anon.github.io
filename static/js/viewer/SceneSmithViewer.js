@@ -316,9 +316,9 @@ export class SceneSmithViewer {
       }
 
     } catch (error) {
-      // Silently ignore aborted loads — they were intentionally cancelled
+      // Re-throw AbortError so callers know the load was superseded
       if (error.name === 'AbortError') {
-        return;
+        throw error;
       }
       console.error('Failed to load scene:', error);
       throw error;
@@ -350,9 +350,14 @@ export class SceneSmithViewer {
       chunks.push(value);
       loaded += value.length;
 
-      if (this.options.onProgress && total > 0 && loadId === this._loadId) {
-        const percent = Math.round((loaded / total) * 100);
-        this.options.onProgress(percent);
+      if (this.options.onProgress && loadId === this._loadId) {
+        if (total > 0) {
+          const percent = Math.round((loaded / total) * 100);
+          this.options.onProgress(percent);
+        } else {
+          // No Content-Length header — report -1 to signal indeterminate progress
+          this.options.onProgress(-1);
+        }
       }
     }
 

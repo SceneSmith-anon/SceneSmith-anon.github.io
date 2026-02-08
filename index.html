@@ -235,7 +235,10 @@
       <h2 class="title is-3 has-text-centered fade-in">Scene Construction</h2>
       <div id="buildup-carousel" class="carousel">
         <div class="results-item">
-          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A dining room with a long table set for 12 people&hellip;&rdquo;</p>
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A dining room with a long table set for 12 people&hellip;&rdquo; <span class="prompt-hover-hint">(hover for full prompt)</span></p>
+            <div class="prompt-tooltip-box">&ldquo;A dining room with a long table set for 12 people. Each setting has a small plate stacked on a large plate, a glass, a fork, and a knife.&rdquo;</div>
+          </div>
           <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
             <video class="lazy-video" muted playsinline controls
               data-src="./static/videos/scene_buildup/158.mp4"
@@ -244,7 +247,9 @@
           </div>
         </div>
         <div class="results-item">
-          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A bookstore with&hellip;&rdquo;</p>
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A bookstore with at least 50 books.&rdquo;</p>
+          </div>
           <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
             <video class="lazy-video" muted playsinline controls
               data-src="./static/videos/scene_buildup/174.mp4"
@@ -253,7 +258,10 @@
           </div>
         </div>
         <div class="results-item">
-          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A cafe with a bar counter, small round tables, and a chalkboard menu&hellip;&rdquo;</p>
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A cafe with a bar counter, small round tables, and a chalkboard menu&hellip;&rdquo; <span class="prompt-hover-hint">(hover for full prompt)</span></p>
+            <div class="prompt-tooltip-box">&ldquo;A cafe with a bar counter along one wall featuring a coffee machine, a filter coffee stand, and stacks of stone coffee cups. Three small round tables with two chairs each are arranged in the center. A chalkboard menu hangs on the wall behind the counter.&rdquo;</div>
+          </div>
           <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
             <video class="lazy-video" muted playsinline controls
               data-src="./static/videos/scene_buildup/111.mp4"
@@ -262,7 +270,10 @@
           </div>
         </div>
         <div class="results-item">
-          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A robotics lab with workbenches, robotic arms, and a 3D printer&hellip;&rdquo;</p>
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A robotics lab with workbenches, robotic arms, and a 3D printer&hellip;&rdquo; <span class="prompt-hover-hint">(hover for full prompt)</span></p>
+            <div class="prompt-tooltip-box">&ldquo;A robotics lab with two workbenches with robotic arms. Tool shelves on the wall hold tools, and a 3D printer sits in the corner.&rdquo;</div>
+          </div>
           <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
             <video class="lazy-video" muted playsinline controls
               data-src="./static/videos/scene_buildup/132.mp4"
@@ -271,7 +282,10 @@
           </div>
         </div>
         <div class="results-item">
-          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A yoga studio with yoga mats, a wall mirror, and meditation cushions&hellip;&rdquo;</p>
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A yoga studio with yoga mats, a wall mirror, and meditation cushions&hellip;&rdquo; <span class="prompt-hover-hint">(hover for full prompt)</span></p>
+            <div class="prompt-tooltip-box">&ldquo;A yoga studio with yoga mats on the floor, a mirror on the wall, and meditation cushions in the corner.&rdquo;</div>
+          </div>
           <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
             <video class="lazy-video" muted playsinline controls
               data-src="./static/videos/scene_buildup/129.mp4"
@@ -280,7 +294,10 @@
           </div>
         </div>
         <div class="results-item">
-          <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A small family home with a master bedroom, a kids room, a living-dining room, a kitchen, a hallway, and a bathroom&hellip;&rdquo;</p>
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;A small family home with a master bedroom, a kids room, a living-dining room, a kitchen, a hallway, and a bathroom&hellip;&rdquo; <span class="prompt-hover-hint">(hover for full prompt)</span></p>
+            <div class="prompt-tooltip-box">&ldquo;A small family home with a master bedroom, a kids room, a living-dining room, a kitchen, a hallway, and a bathroom. The master bedroom has a bed and a dresser. The kids room has a bunk bed and a toy box. The living-dining room has a sofa, a dining table with four chairs, and a TV. The kitchen has a refrigerator and a stove. The hallway has a coat rack and a shoe cabinet. The bathroom has a toilet, a sink, and a bathtub.&rdquo;</div>
+          </div>
           <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
             <video class="lazy-video" muted playsinline controls
               data-src="./static/videos/scene_buildup/full_house_buildup_animation.mp4"
@@ -553,7 +570,7 @@
         <div class="column is-8">
           <div class="box viewer-box" id="room-viewer">
             <!-- Progress bar -->
-            <div class="progress-wrapper" id="room-progress">
+            <div class="progress-wrapper is-hidden" id="room-progress">
               <p class="progress-text">Loading scene...</p>
               <progress class="progress is-primary" max="100" value="0">0%</progress>
             </div>
@@ -674,7 +691,7 @@
         <div class="column is-8">
           <div class="box viewer-box" id="house-viewer">
             <!-- Progress bar -->
-            <div class="progress-wrapper" id="house-progress">
+            <div class="progress-wrapper is-hidden" id="house-progress">
               <p class="progress-text">Loading scene...</p>
               <progress class="progress is-primary" max="100" value="0">0%</progress>
             </div>
@@ -1160,15 +1177,21 @@
       }
     }
 
-    // Show/hide progress bar
+    // Show/hide progress bar. value=-1 means indeterminate (no Content-Length).
     function setProgress(progressId, value, visible) {
       const wrapper = document.getElementById(progressId);
       const progress = wrapper.querySelector('progress');
       if (visible) {
         wrapper.classList.remove('is-hidden');
-        progress.value = value;
+        if (value < 0) {
+          // Indeterminate: remove value attribute so the bar pulses
+          progress.removeAttribute('value');
+        } else {
+          progress.value = value;
+        }
       } else {
         wrapper.classList.add('is-hidden');
+        progress.value = 0;
       }
     }
 
@@ -1301,6 +1324,9 @@
       document.getElementById(`${prefix}-joint-controls`).innerHTML = '';
     }
 
+    // Track hide timers per prefix to avoid race conditions
+    const progressHideTimers = {};
+
     // Setup a viewer section
     function setupViewer(prefix, scenes) {
       const viewer = new SceneSmithViewer(
@@ -1308,9 +1334,17 @@
         {
           isolatedContainer: document.getElementById(`${prefix}-isolated-viewer`),
           onProgress: (percent) => {
+            // Cancel any pending hide timer from a previous load
+            if (progressHideTimers[prefix]) {
+              clearTimeout(progressHideTimers[prefix]);
+              progressHideTimers[prefix] = null;
+            }
             setProgress(`${prefix}-progress`, percent, true);
             if (percent >= 100) {
-              setTimeout(() => setProgress(`${prefix}-progress`, 100, false), 300);
+              progressHideTimers[prefix] = setTimeout(() => {
+                setProgress(`${prefix}-progress`, 100, false);
+                progressHideTimers[prefix] = null;
+              }, 300);
             }
           },
           onSelect: (object, name, meta) => {
@@ -1391,11 +1425,18 @@
         const select = e.target;
         if (select.value) {
           const option = select.options[select.selectedIndex];
+          // Cancel any pending hide timer before showing new progress
+          if (progressHideTimers[prefix]) {
+            clearTimeout(progressHideTimers[prefix]);
+            progressHideTimers[prefix] = null;
+          }
           setProgress(`${prefix}-progress`, 0, true);
           try {
             await viewer.loadScene(option.dataset.path, select.value);
             updatePromptDisplay(`${prefix}-prompt`, option.dataset.prompt);
           } catch (err) {
+            // AbortError means a newer load superseded this one — don't touch the progress bar
+            if (err.name === 'AbortError') return;
             console.error('Failed to load scene:', err);
             setProgress(`${prefix}-progress`, 0, false);
           }
@@ -1673,11 +1714,17 @@
         const select = document.getElementById(`${prefix}-selector`);
         const firstScene = scenes[0];
         select.value = firstScene.id;
+        // Cancel any pending hide timer before showing new progress
+        if (progressHideTimers[prefix]) {
+          clearTimeout(progressHideTimers[prefix]);
+          progressHideTimers[prefix] = null;
+        }
         setProgress(`${prefix}-progress`, 0, true);
         try {
           await viewer.loadScene(firstScene.path, firstScene.id);
           updatePromptDisplay(`${prefix}-prompt`, firstScene.prompt);
         } catch (err) {
+          if (err.name === 'AbortError') return;
           console.error('Failed to load first scene:', err);
           setProgress(`${prefix}-progress`, 0, false);
         }
