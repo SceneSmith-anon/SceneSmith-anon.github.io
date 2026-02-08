@@ -25,10 +25,17 @@
 
   <title>SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes</title>
 
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <!-- Three.js import map - MUST come before any module scripts -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+    }
+  }
+  </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
 
@@ -46,33 +53,11 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="stylesheet" href="./static/css/viewer.css">
 
-  <!-- Three.js import map -->
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
-      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
-    }
-  }
-  </script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
+  <script type="text/javascript" src="./static/slick/slick.min.js"></script>
   <script src="./static/js/index.js"></script>
   <script src="./static/js/vis.js" defer></script>
-  <script type="text/javascript" src="./static/slick/slick.min.js"></script>
-
-  <!-- Prevent model-viewer interactions from triggering carousel navigation -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('model-viewer').forEach(viewer => {
-        viewer.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
-        viewer.addEventListener('mousedown', e => e.stopPropagation());
-        viewer.addEventListener('pointerdown', e => e.stopPropagation());
-      });
-    });
-  </script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>

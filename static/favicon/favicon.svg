@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1045.2 905.17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8a77e;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        fill: #67c0a4;
+      }
+
+      .cls-4 {
+        fill: #8b9fcc;
+      }
+
+      .cls-5 {
+        stroke-width: 23.21px;
+      }
+
+      .cls-5, .cls-6 {
+        fill: none;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        stroke-width: 17.41px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-3" points="522.6 23.21 20.1 893.57 522.6 603.45 522.6 23.21"/>
+  <polygon class="cls-4" points="1025.1 893.57 522.6 23.21 522.6 603.45 1025.1 893.57"/>
+  <polygon class="cls-1" points="522.6 603.45 20.1 893.57 1025.1 893.57 522.6 603.45"/>
+  <line class="cls-6" x1="20.1" y1="893.57" x2="522.6" y2="603.45"/>
+  <line class="cls-6" x1="1025.1" y1="893.57" x2="522.6" y2="603.45"/>
+  <line class="cls-6" x1="522.6" y1="603.45" x2="522.6" y2="23.21"/>
+  <polygon class="cls-5" points="522.6 23.21 20.1 893.57 1025.1 893.57 522.6 23.21"/>
+  <circle class="cls-2" cx="522.6" cy="603.45" r="20.82"/>
+</svg>
