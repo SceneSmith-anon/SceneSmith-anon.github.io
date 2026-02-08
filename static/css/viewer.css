@@ -177,7 +177,7 @@
 }
 
 #isolated-fullscreen-modal .modal-close {
-  z-index: 100;
+  z-index: 1100;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -254,7 +254,7 @@
 }
 
 #viewer-fullscreen-modal .modal-close {
-  z-index: 100;
+  z-index: 1100;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -286,6 +286,10 @@
 
 .help-tooltip li {
   margin-bottom: 0.25rem;
+}
+
+.help-tooltip strong {
+  color: #fff;
 }
 
 .help-tooltip kbd {

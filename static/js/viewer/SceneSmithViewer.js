@@ -667,9 +667,10 @@ export class SceneSmithViewer {
    * Handle keyboard shortcuts
    */
   handleKeyDown(event) {
-    // Only handle if viewer container is focused or has a child focused
+    // Only handle if viewer is relevant: container focused, body focused, or has selection
     if (!this.container.contains(document.activeElement) &&
-        document.activeElement !== document.body) {
+        document.activeElement !== document.body &&
+        !this.selectedObject) {
       return;
     }
 
@@ -683,8 +684,11 @@ export class SceneSmithViewer {
       case 'h':
         this.hideSelected();
         break;
-      case 'escape':
+      case 'c':
         this.clearSelection();
+        break;
+      case 's':
+        this.showAll();
         break;
     }
   }

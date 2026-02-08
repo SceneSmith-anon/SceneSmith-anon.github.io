@@ -589,7 +589,8 @@
                 <li><kbd>F</kbd> Frame selected object</li>
                 <li><kbd>H</kbd> Hide selected object</li>
                 <li><kbd>R</kbd> Reset camera</li>
-                <li><kbd>Esc</kbd> Clear selection</li>
+                <li><kbd>C</kbd> Clear selection
+                <li><kbd>S</kbd> Show all hidden</li>
               </ul>
             </div>
           </div>
@@ -709,7 +710,8 @@
                 <li><kbd>F</kbd> Frame selected object</li>
                 <li><kbd>H</kbd> Hide selected object</li>
                 <li><kbd>R</kbd> Reset camera</li>
-                <li><kbd>Esc</kbd> Clear selection</li>
+                <li><kbd>C</kbd> Clear selection
+                <li><kbd>S</kbd> Show all hidden</li>
               </ul>
             </div>
           </div>
@@ -1563,6 +1565,7 @@
       fullscreenViewer = viewer;
       modal.classList.add('is-active');
       document.body.style.overflow = 'hidden';
+      document.getElementById('site-nav').style.display = 'none';
 
       // Sync control state
       updateFullscreenControls();
@@ -1580,6 +1583,7 @@
 
       modal.classList.remove('is-active');
       document.body.style.overflow = '';
+      document.getElementById('site-nav').style.display = '';
       fullscreenViewer = null;
       originalContainer = null;
       currentPrefix = null;
@@ -1689,7 +1693,7 @@
       const canvas = document.getElementById('isolated-fullscreen-canvas');
       const nameEl = document.getElementById('isolated-fullscreen-name');
 
-      nameEl.textContent = objectName || '';
+      nameEl.textContent = objectName ? formatObjectName(objectName) : '';
 
       // Sync fullscreen overlay button visibility with panel buttons
       const meta = viewer._currentSelectedMeta;
@@ -1718,6 +1722,7 @@
       isolatedFullscreenViewer = viewer;
       modal.classList.add('is-active');
       document.body.style.overflow = 'hidden';
+      document.getElementById('site-nav').style.display = 'none';
     }
 
     function closeIsolatedFullscreen() {
@@ -1731,6 +1736,7 @@
 
       modal.classList.remove('is-active');
       document.body.style.overflow = '';
+      document.getElementById('site-nav').style.display = '';
       isolatedFullscreenViewer = null;
       isolatedOriginalContainer = null;
     }
@@ -1828,6 +1834,16 @@
         });
       }, { threshold: 0.3 });
       sections.forEach(sec => linkObserver.observe(sec));
+
+      // Close any fullscreen modals when clicking nav links
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          document.querySelectorAll('.modal.is-active').forEach(modal => {
+            modal.classList.remove('is-active');
+          });
+          document.body.style.overflow = '';
+        });
+      });
     });
   </script>
 </body>
