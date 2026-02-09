@@ -614,10 +614,6 @@ html {
 .pipeline-stage:nth-child(4) { border-top-color: var(--accent-warm); }
 .pipeline-stage:nth-child(5) { border-top-color: #ef4444; }
 
-.pipeline-stage:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-}
 
 .pipeline-stage .stage-num {
   font-family: 'Google Sans', sans-serif;
@@ -712,6 +708,35 @@ html {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* ---- Video Play Indicator ---- */
+.video-play-indicator {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+  z-index: 3;
+  pointer-events: none;
+  animation: playPulse 2s ease-in-out infinite;
+  transition: opacity 0.4s ease;
+}
+
+.video-play-indicator.hidden {
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes playPulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.08); opacity: 1; }
 }
 
 /* ---- RBY1 Video Labels ---- */

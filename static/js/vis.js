@@ -479,6 +479,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Text-to-scene video: autoplay when fully visible, pause when not
 document.addEventListener('DOMContentLoaded', function() {
   const textToSceneVideo = document.getElementById('text-to-scene-video');
+  const playIndicator = document.getElementById('text-to-scene-play-indicator');
   if (!textToSceneVideo) return;
 
   function loadAndPlay() {
@@ -490,6 +491,21 @@ document.addEventListener('DOMContentLoaded', function() {
       textToSceneVideo.load();
     }
     textToSceneVideo.play().catch(function() {});
+  }
+
+  // Hide play indicator once animation starts moving, show again on loop reset
+  if (playIndicator) {
+    textToSceneVideo.addEventListener('timeupdate', function() {
+      if (textToSceneVideo.currentTime > 3.0) {
+        playIndicator.classList.add('hidden');
+      } else {
+        playIndicator.classList.remove('hidden');
+      }
+    });
+
+    textToSceneVideo.addEventListener('pause', function() {
+      playIndicator.classList.remove('hidden');
+    });
   }
 
   if ('IntersectionObserver' in window) {
