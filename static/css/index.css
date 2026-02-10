@@ -131,6 +131,17 @@ html {
   display: block;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .hero-video-bg video {
+    display: none;
+  }
+  .hero-video-bg {
+    background-image: url('../videos/teaser_poster.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 /* Overlay: gradient from semi-transparent to dark at bottom for text readability */
 .hero-overlay {
   position: absolute;
