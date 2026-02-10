@@ -99,9 +99,19 @@
   <section class="hero-section" id="hero">
     <!-- Background video -->
     <div class="hero-video-bg">
-      <video muted autoplay loop playsinline poster="./static/videos/teaser_poster.jpg">
+      <video id="hero-video" muted autoplay loop playsinline preload="auto" poster="./static/videos/teaser_poster.jpg">
         <source src="./static/videos/teaser_bg.mp4" type="video/mp4">
       </video>
+      <script>
+        // Recover from CDN stalls on GitHub Pages
+        (function() {
+          var v = document.getElementById('hero-video');
+          v.addEventListener('stalled', function() { v.load(); });
+          v.addEventListener('waiting', function() {
+            setTimeout(function() { if (v.paused) v.play(); }, 2000);
+          });
+        })();
+      </script>
     </div>
     <!-- Dark overlay gradient -->
     <div class="hero-overlay"></div>
