@@ -1,5 +1,21 @@
 window.HELP_IMPROVE_VIDEOJS = false;
 
+function initSlickCarousel(selector) {
+  const carousel = $(selector);
+  if (!carousel.length || carousel.hasClass('slick-initialized')) {
+    return;
+  }
+
+  carousel.slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: false,
+    initialSlide: 0,
+  });
+}
+
 $(document).ready(function () {
   // Check for click events on the navbar burger icon
   $(".navbar-burger").click(function () {
@@ -8,37 +24,24 @@ $(document).ready(function () {
   });
 
   // Initialize buildup carousel
-  $('#buildup-carousel').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    autoplay: false,
-    initialSlide: 0,
-  });
+  initSlickCarousel('#buildup-carousel');
 
   // Initialize RBY1 teleoperation carousel
-  $('#rby1-carousel').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    autoplay: false,
-    initialSlide: 0,
-  });
+  initSlickCarousel('#rby1-carousel');
+
+  // Initialize zero-shot carousel
+  initSlickCarousel('#zero-shot-carousel');
 
   // Initialize robot evaluation carousel
-  $('#robot-eval-carousel').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    autoplay: false,
-    initialSlide: 0,
-  });
+  initSlickCarousel('#robot-eval-carousel');
 });
 
 $(window).on("load", function () {
+  initSlickCarousel('#buildup-carousel');
+  initSlickCarousel('#rby1-carousel');
+  initSlickCarousel('#zero-shot-carousel');
+  initSlickCarousel('#robot-eval-carousel');
+
   // Reset gifs once everything is loaded to synchronize playback.
   $('.preload').attr('src', function (i, a) {
     $(this).attr('src', '').removeClass('preload').attr('src', a);

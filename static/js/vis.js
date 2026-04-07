@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
             source.type = "video/mp4";
             video.appendChild(source);
             video.load();
+            applyConfiguredPlaybackRate(video);
+            video.addEventListener('loadedmetadata', function() {
+              applyConfiguredPlaybackRate(video);
+            }, { once: true });
             console.log("Source added and video.load() called");
           }
           lazyVideoObserver.unobserve(video);
@@ -34,6 +38,10 @@ document.addEventListener("DOMContentLoaded", function() {
         source.type = "video/mp4";
         video.appendChild(source);
         video.load();
+        applyConfiguredPlaybackRate(video);
+        video.addEventListener('loadedmetadata', function() {
+          applyConfiguredPlaybackRate(video);
+        }, { once: true });
         console.log("Fallback: Source added and video.load() called");
       }
     });
@@ -61,6 +69,32 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+function applyConfiguredPlaybackRate(video) {
+  if (!video || !video.dataset || !video.dataset.playbackRate) return;
+  const targetRate = parseFloat(video.dataset.playbackRate);
+  if (!Number.isFinite(targetRate)) return;
+
+  video.defaultPlaybackRate = targetRate;
+  video.playbackRate = targetRate;
+}
+
+// Apply custom playback rates to videos that request them.
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('video[data-playback-rate]').forEach(function(video) {
+    if (video.readyState >= 1) {
+      applyConfiguredPlaybackRate(video);
+    } else {
+      video.addEventListener('loadedmetadata', function() {
+        applyConfiguredPlaybackRate(video);
+      }, { once: true });
+    }
+
+    video.addEventListener('play', function() {
+      applyConfiguredPlaybackRate(video);
+    });
+  });
+});
+
 // Function to load video source for a specific slide element
 function loadVideoForSlide(slideElement) {
   // Find the video wrapper within the slide
@@ -78,6 +112,13 @@ function loadVideoForSlide(slideElement) {
     source.type = "video/mp4";
     video.appendChild(source);
     video.load(); // Important: tell the video to load the new source
+    applyConfiguredPlaybackRate(video);
+    video.addEventListener('loadedmetadata', function() {
+      applyConfiguredPlaybackRate(video);
+    }, { once: true });
+    video.addEventListener('canplay', function() {
+      applyConfiguredPlaybackRate(video);
+    }, { once: true });
 
     // Handle spinner visibility
     if (spinner) {
@@ -89,6 +130,7 @@ function loadVideoForSlide(slideElement) {
       // video.addEventListener('playing', () => spinner.style.display = 'none');
     }
   } else if (video && video.querySelector('source') && spinner) {
+      applyConfiguredPlaybackRate(video);
       // If source already exists (e.g., navigating back), ensure spinner is hidden if video is playable
       if (!video.paused || video.readyState >= 3) { // readyState 3 (HAVE_FUTURE_DATA) or 4 (HAVE_ENOUGH_DATA)
           spinner.style.display = 'none';
@@ -146,6 +188,9 @@ document.addEventListener('DOMContentLoaded', function() {
       text-align: center;
     }
     #rby1-carousel .results-item {
+      text-align: center;
+    }
+    #zero-shot-carousel .results-item {
       text-align: center;
     }
   `;
@@ -443,6 +488,90 @@ document.addEventListener('DOMContentLoaded', function() {
   $(robotEvalCarousel).on('afterChange', function() {
     const video = getRobotEvalActiveVideo();
     attachRobotEvalEndedHandler(video);
+  });
+});
+
+// Zero-shot carousel: autoplay videos when visible, pause when not
+document.addEventListener('DOMContentLoaded', function() {
+  const zeroShotCarousel = document.getElementById('zero-shot-carousel');
+  if (!zeroShotCarousel) return;
+
+  let zeroShotInView = false;
+
+  function getZeroShotActiveVideo() {
+    return zeroShotCarousel.querySelector('.slick-current .video-wrapper video.lazy-video') || null;
+  }
+
+  function playZeroShotActiveVideo() {
+    if (!zeroShotInView) return;
+    const video = getZeroShotActiveVideo();
+    if (!video) return;
+    if (video.dataset.src && !video.querySelector('source')) {
+      loadVideoForSlide(video.closest('.results-item'));
+      video.addEventListener('canplay', function() {
+        applyConfiguredPlaybackRate(video);
+        video.play().catch(function() {});
+      }, { once: true });
+      return;
+    }
+    applyConfiguredPlaybackRate(video);
+    video.play().catch(function() {});
+  }
+
+  function pauseZeroShotActiveVideo() {
+    const video = getZeroShotActiveVideo();
+    if (video) video.pause();
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        zeroShotInView = entry.isIntersecting;
+        if (zeroShotInView) {
+          playZeroShotActiveVideo();
+        } else {
+          pauseZeroShotActiveVideo();
+        }
+      });
+    }, { threshold: [0] });
+    observer.observe(zeroShotCarousel);
+  }
+
+  $(zeroShotCarousel).on('afterChange', function() {
+    const activeSlide = zeroShotCarousel.querySelector('.slick-current .results-item') ||
+                        zeroShotCarousel.querySelector('.slick-current');
+    if (activeSlide) {
+      loadVideoForSlide(activeSlide);
+    }
+    if (zeroShotInView) {
+      setTimeout(playZeroShotActiveVideo, 50);
+    }
+  });
+
+  $(zeroShotCarousel).on('beforeChange', function() {
+    const video = getZeroShotActiveVideo();
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+  });
+
+  function attachZeroShotEndedHandler(video) {
+    if (!video || video._zeroShotEndedAttached) return;
+    video._zeroShotEndedAttached = true;
+    video.addEventListener('ended', function() {
+      if (!zeroShotInView) return;
+      setTimeout(function() {
+        $(zeroShotCarousel).slick('slickNext');
+      }, 500);
+    });
+  }
+
+  zeroShotCarousel.querySelectorAll('video.lazy-video').forEach(attachZeroShotEndedHandler);
+
+  $(zeroShotCarousel).on('afterChange', function() {
+    const video = getZeroShotActiveVideo();
+    attachZeroShotEndedHandler(video);
   });
 });
 

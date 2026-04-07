@@ -508,6 +508,10 @@ html {
   padding: 0 20px;
 }
 
+#zero-shot-carousel .results-item {
+  text-align: center;
+}
+
 .results-carousel .title.is-5 {
   min-height: 40px;
   margin-bottom: 1rem;
@@ -583,6 +587,17 @@ html {
 #buildup-carousel .slick-list {
   overflow-x: clip;
   overflow-y: visible;
+}
+
+#rby1-teleoperation-section .content,
+#zero-shot-policy-section .content {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#zero-shot-policy-section .prompt-tooltip-wrap p {
+  letter-spacing: 0.01em;
 }
 
 /* ---- Teaser Image ---- */
@@ -1153,6 +1168,16 @@ footer.footer .footer-bottom p {
     right: -20px;
   }
 
+  #rby1-teleoperation-section .content.has-text-justified,
+  #zero-shot-policy-section .content.has-text-justified {
+    text-align: left !important;
+  }
+
+  #zero-shot-policy-section .prompt-tooltip-wrap p {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem !important;
+  }
+
   .agent-roles {
     flex-direction: column;
     align-items: center;
@@ -1162,6 +1187,7 @@ footer.footer .footer-bottom p {
     flex-direction: column;
     text-align: center;
   }
+
 }
 
 @media (max-width: 480px) {

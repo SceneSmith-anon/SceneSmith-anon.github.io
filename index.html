@@ -50,15 +50,15 @@
     href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=20260407-zero-shot-carousel-3">
   <link rel="stylesheet" href="./static/css/viewer.css">
   <link rel="preload" href="./static/videos/teaser_bg.mp4" as="video" type="video/mp4">
 
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script type="text/javascript" src="./static/slick/slick.min.js"></script>
-  <script src="./static/js/index.js"></script>
-  <script src="./static/js/vis.js" defer></script>
+  <script src="./static/js/index.js?v=20260407-zero-shot-carousel-2"></script>
+  <script src="./static/js/vis.js?v=20260407-zero-shot-carousel-2" defer></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -76,6 +76,7 @@
       <div class="nav-links">
         <a href="#buildup-section">Construction</a>
         <a href="#rby1-teleoperation-section">Teleoperation</a>
+        <a href="#zero-shot-policy-section">Zero-Shot</a>
         <a href="#text-to-scene-section">Text-to-Scene</a>
         <a href="#earthquake-section">Simulation</a>
         <a href="#room-scenes-section">Room Scenes</a>
@@ -486,6 +487,119 @@
       </div>
     </div>
   </section>
+
+  <!-- Zero-Shot External Policy Section -->
+  <section class="section" id="zero-shot-policy-section">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered fade-in">Zero-Shot External Policy in Generated Scenes</h2>
+      <div class="content has-text-justified mb-5">
+        <p>
+          SceneSmith scenes also support downstream interaction from an external pretrained robot
+          policy trained following the final model recipe from
+          <a href="https://arxiv.org/abs/2602.01067" target="_blank" rel="noopener noreferrer">this paper</a>.
+          The policy did not see our scenes or assets during training. The successful
+          language-conditioned executions below provide complementary qualitative evidence that
+          SceneSmith scenes are realistic and physically usable for downstream robotic manipulation.
+        </p>
+      </div>
+
+      <div id="zero-shot-carousel" class="carousel">
+        <div class="results-item">
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Take the apple from the bowl and place it onto the cutting board.&rdquo;</p>
+          </div>
+          <div class="video-wrapper rby1-video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video zero-shot-video" muted playsinline controls
+              data-src="./static/videos/zero_shot/scene153_apple_to_cutting_board_oxe-try1_recording.mp4"
+              data-playback-rate="2"
+              poster="./static/images/zero_shot/scene153_apple_to_cutting_board.jpg"
+              aria-label="Take the apple from the bowl and place it onto the cutting board."
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+            <span class="video-view-label video-view-label-left">2&times; Speed</span>
+          </div>
+        </div>
+        <div class="results-item">
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Take the lemon from the bowl and place it on the cutting board.&rdquo;</p>
+          </div>
+          <div class="video-wrapper rby1-video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video zero-shot-video" muted playsinline controls
+              data-src="./static/videos/zero_shot/scene153_lemon2_to_cutting_board_oxe-v1_recording.mp4"
+              data-playback-rate="2"
+              poster="./static/images/zero_shot/scene153_lemon2_to_cutting_board.jpg"
+              aria-label="Take the lemon from the bowl and place it on the cutting board."
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+            <span class="video-view-label video-view-label-left">2&times; Speed</span>
+          </div>
+        </div>
+        <div class="results-item">
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick up the glass on the left and place it on the plate on the left.&rdquo;</p>
+          </div>
+          <div class="video-wrapper rby1-video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video zero-shot-video" muted playsinline controls
+              data-src="./static/videos/zero_shot/scene015_glass1_to_plate0_ts1ms-rerun-base-a1_recording.mp4"
+              data-playback-rate="2"
+              poster="./static/images/zero_shot/scene015_glass1_to_plate0.jpg"
+              aria-label="Pick up the glass on the left and place it on the plate on the left."
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+            <span class="video-view-label video-view-label-left">2&times; Speed</span>
+          </div>
+        </div>
+        <div class="results-item">
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Take the lemon from the bowl and place it on the cutting board.&rdquo;</p>
+          </div>
+          <div class="video-wrapper rby1-video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video zero-shot-video" muted playsinline controls
+              data-src="./static/videos/zero_shot/scene159_lemon0_to_cutting_board_oxe-v1_recording.mp4"
+              data-playback-rate="2"
+              poster="./static/images/zero_shot/scene159_lemon0_to_cutting_board.jpg"
+              aria-label="Take the lemon from the bowl and place it on the cutting board."
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+            <span class="video-view-label video-view-label-left">2&times; Speed</span>
+          </div>
+        </div>
+        <div class="results-item">
+          <div class="prompt-tooltip-wrap">
+            <p class="has-text-centered has-text-grey is-italic mb-2">&ldquo;Pick up the glass and place it on the plate.&rdquo;</p>
+          </div>
+          <div class="video-wrapper rby1-video-wrapper" style="position: relative; display: inline-block; width: 100%; aspect-ratio: 16 / 9;">
+            <video class="lazy-video zero-shot-video" muted playsinline controls
+              data-src="./static/videos/zero_shot/scene157_tumbler7_to_plate7_ts1ms-wave9e-base_recording.mp4"
+              data-playback-rate="2"
+              poster="./static/images/zero_shot/scene157_tumbler7_to_plate7.jpg"
+              aria-label="Pick up the glass and place it on the plate."
+              style="width: 100%; height: 100%; object-fit: contain;"></video>
+            <div class="video-spinner"></div>
+            <span class="video-view-label video-view-label-left">2&times; Speed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('#zero-shot-carousel video.zero-shot-video').forEach(function(video) {
+        const targetRate = parseFloat(video.dataset.playbackRate || '2');
+        if (!Number.isFinite(targetRate)) return;
+
+        function applyRate() {
+          video.defaultPlaybackRate = targetRate;
+          video.playbackRate = targetRate;
+        }
+
+        applyRate();
+        video.addEventListener('loadedmetadata', applyRate);
+        video.addEventListener('canplay', applyRate);
+        video.addEventListener('play', applyRate);
+      });
+    });
+  </script>
 
   <!-- Text-to-Scene Section -->
   <section class="section section-alt" id="text-to-scene-section">
@@ -1077,6 +1191,7 @@
             <a href="#buildup-section">Construction</a>
             <a href="#room-scenes-section">Explore Scenes</a>
             <a href="#robot-eval-section">Robot Eval</a>
+            <a href="#zero-shot-policy-section">Zero-Shot</a>
           </div>
         </div>
       </div>
